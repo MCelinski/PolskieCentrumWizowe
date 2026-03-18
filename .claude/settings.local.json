@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(cd:*)",
+      "Read(//c/Users/Tsuyoroshi/source/repos/**)",
+      "Bash(npx create-next-app@latest pcw-temp --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(cp:*)",
+      "Bash(taskkill:*)",
+      "Bash(npx kill-port:*)"
+    ]
+  }
+}

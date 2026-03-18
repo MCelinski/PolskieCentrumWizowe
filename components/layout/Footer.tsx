@@ -20,14 +20,13 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="mb-5">
               <Image
-                src="/logo.svg"
+                src="/logo-footer.svg"
                 alt="Polskie Centrum Wizowe"
-                width={160}
-                height={38}
+                width={280}
+                height={44}
                 style={{
                   height: "38px",
                   width: "auto",
-                  filter: "brightness(0) invert(1)",
                   opacity: 0.9,
                 }}
               />

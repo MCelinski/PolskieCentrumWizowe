@@ -20,8 +20,8 @@ export default function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
-        backgroundColor: scrolled ? "rgba(248, 247, 244, 0.97)" : "transparent",
-        borderBottom: scrolled ? "1px solid var(--color-sand-300)" : "1px solid transparent",
+        backgroundColor: scrolled ? "rgba(26, 29, 34, 0.97)" : "transparent",
+        borderBottom: scrolled ? "1px solid rgba(255,255,255,0.08)" : "1px solid transparent",
         backdropFilter: scrolled ? "blur(8px)" : "none",
       }}
     >
@@ -30,16 +30,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" aria-label="Polskie Centrum Wizowe — strona główna">
             <Image
-              src="/logo.svg"
+              src="/logo-dark.svg"
               alt="Polskie Centrum Wizowe"
-              width={140}
-              height={33}
+              width={380}
+              height={80}
               priority
               style={{
-                height: "33px",
+                height: "52px",
                 width: "auto",
-                filter: scrolled ? "none" : "brightness(0) invert(1)",
-                transition: "filter 0.3s",
               }}
             />
           </Link>
@@ -51,7 +49,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className="font-sans text-sm font-medium transition-colors duration-200 hover:opacity-70"
-                style={{ color: scrolled ? "var(--color-navy-800)" : "rgba(248,247,244,0.85)" }}
+                style={{ color: "rgba(240,237,232,0.85)" }}
               >
                 {link.label}
               </Link>
@@ -64,9 +62,9 @@ export default function Navbar() {
               href="/konsultacje"
               className="font-sans text-sm font-medium px-5 py-2.5 transition-all duration-200"
               style={{
-                backgroundColor: scrolled ? "var(--color-navy-900)" : "transparent",
-                color: scrolled ? "var(--color-cream)" : "var(--color-cream)",
-                border: `1px solid ${scrolled ? "var(--color-navy-900)" : "rgba(248,247,244,0.5)"}`,
+                backgroundColor: "transparent",
+                color: "var(--color-cream)",
+                border: "1px solid rgba(240,237,232,0.4)",
               }}
             >
               {nav.cta}
@@ -83,21 +81,21 @@ export default function Navbar() {
             <span
               className="w-5 h-px transition-all duration-200"
               style={{
-                backgroundColor: scrolled || menuOpen ? "var(--color-navy-900)" : "var(--color-cream)",
+                backgroundColor: "var(--color-cream)",
                 transform: menuOpen ? "rotate(45deg) translate(3px, 3px)" : "none",
               }}
             />
             <span
               className="w-5 h-px transition-all duration-200"
               style={{
-                backgroundColor: scrolled || menuOpen ? "var(--color-navy-900)" : "var(--color-cream)",
+                backgroundColor: "var(--color-cream)",
                 opacity: menuOpen ? 0 : 1,
               }}
             />
             <span
               className="w-5 h-px transition-all duration-200"
               style={{
-                backgroundColor: scrolled || menuOpen ? "var(--color-navy-900)" : "var(--color-cream)",
+                backgroundColor: "var(--color-cream)",
                 transform: menuOpen ? "rotate(-45deg) translate(3px, -3px)" : "none",
               }}
             />

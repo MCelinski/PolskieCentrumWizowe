@@ -44,6 +44,77 @@
   --shadow-lifted: 0 2px 8px rgba(43, 47, 54, 0.07), 0 8px 32px rgba(43, 47, 54, 0.05);
 }
 
+/* ─── Animations ─────────────────────────────────────────────────────────────── */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-enter {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes flag-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+@keyframes count-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Section scroll-trigger fade */
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hero stagger entrance */
+.animate-hero-enter {
+  opacity: 0;
+  animation: hero-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Flag floating */
+.animate-flag-float {
+  animation: flag-float 3.2s ease-in-out infinite;
+}
+
+/* Stat count entrance */
+.animate-count-in {
+  opacity: 0;
+  animation: count-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* In-view trigger: add .is-visible to parent to fire child animations */
+.in-view-group .animate-fade-up {
+  animation-play-state: paused;
+}
+.in-view-group.is-visible .animate-fade-up {
+  animation-play-state: running;
+}
+
+.in-view-group .animate-count-in {
+  animation-play-state: paused;
+}
+.in-view-group.is-visible .animate-count-in {
+  animation-play-state: running;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-hero-enter,
+  .animate-flag-float,
+  .animate-count-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ─── Base Styles ───────────────────────────────────────────────────────────── */
 
 *, *::before, *::after {
@@ -90,8 +161,15 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Utility Classes ───────────────────────────────────────────────────────── */
 
 .section-padding {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 820" width="600" height="820">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&amp;display=swap');
+      text { font-family: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    </style>
+    <clipPath id="globe-clip-lg">
+      <circle cx="22" cy="22" r="15.5"/>
+    </clipPath>
+    <clipPath id="globe-clip-sm">
+      <circle cx="14" cy="14" r="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION LABEL BG STRIPS                    -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Panel 1: Light full horizontal -->
+  <rect x="0" y="0" width="600" height="200" fill="#F7F6F3"/>
+  <!-- Panel 2: Dark full horizontal -->
+  <rect x="0" y="200" width="600" height="200" fill="#1A1D22"/>
+  <!-- Panel 3: Light compact + icons -->
+  <rect x="0" y="400" width="600" height="210" fill="#F7F6F3"/>
+  <!-- Panel 4: Dark compact + icons -->
+  <rect x="0" y="610" width="600" height="210" fill="#1A1D22"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PANEL LABELS                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="40" y="28" font-size="8" letter-spacing="2" fill="#1A1A1A" opacity="0.35" font-weight="400">01 — FULL HORIZONTAL · LIGHT</text>
+  <text x="40" y="228" font-size="8" letter-spacing="2" fill="#F0EDE8" opacity="0.35" font-weight="400">02 — FULL HORIZONTAL · DARK</text>
+  <text x="40" y="428" font-size="8" letter-spacing="2" fill="#1A1A1A" opacity="0.35" font-weight="400">03 — COMPACT HEADER · ICON MARK · LIGHT</text>
+  <text x="40" y="638" font-size="8" letter-spacing="2" fill="#F0EDE8" opacity="0.35" font-weight="400">04 — COMPACT HEADER · ICON MARK · DARK</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PANEL 1 — FULL HORIZONTAL LIGHT            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(40, 80)">
+    <!-- Globe icon 44×44 -->
+    <g transform="translate(0,0)">
+      <g clip-path="url(#globe-clip-lg)" transform="translate(0,0)">
+        <!-- horizontals -->
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#2B2F36" stroke-width="1.3"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <!-- meridians -->
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#2B2F36" stroke-width="1.3"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#2B2F36" stroke-width="1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#2B2F36" stroke-width="1.6"/>
+      <circle cx="22" cy="22" r="2.2" fill="#8B1E1E"/>
+    </g>
+    <!-- Vertical divider -->
+    <line x1="56" y1="6" x2="56" y2="38" stroke="#1A1A1A" stroke-width="0.8" opacity="0.18"/>
+    <!-- Wordmark -->
+    <text x="68" y="19" font-size="15" font-weight="600" fill="#1A1A1A" letter-spacing="1.8">POLSKIE CENTRUM</text>
+    <text x="68" y="33" font-size="9.5" font-weight="400" fill="#1A1A1A" letter-spacing="4" opacity="0.5">WIZOWE</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PANEL 2 — FULL HORIZONTAL DARK             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(40, 280)">
+    <g>
+      <g clip-path="url(#globe-clip-lg)">
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#E8E4DC" stroke-width="1.3"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#E8E4DC" stroke-width="1.3"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#E8E4DC" stroke-width="1.6"/>
+      <circle cx="22" cy="22" r="2.2" fill="#C94040"/>
+    </g>
+    <line x1="56" y1="6" x2="56" y2="38" stroke="#F0EDE8" stroke-width="0.8" opacity="0.18"/>
+    <text x="68" y="19" font-size="15" font-weight="600" fill="#F0EDE8" letter-spacing="1.8">POLSKIE CENTRUM</text>
+    <text x="68" y="33" font-size="9.5" font-weight="400" fill="#F0EDE8" letter-spacing="4" opacity="0.5">WIZOWE</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PANEL 3 — COMPACT + ICONS LIGHT            -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Compact navbar logo -->
+  <g transform="translate(40, 470)">
+    <!-- Small globe 28×28 -->
+    <g transform="scale(0.636) translate(0,0)">
+      <g clip-path="url(#globe-clip-lg)">
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#2B2F36" stroke-width="1.4"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#2B2F36" stroke-width="1.1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#2B2F36" stroke-width="1.1"/>
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#2B2F36" stroke-width="1.4"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#2B2F36" stroke-width="1.1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#2B2F36" stroke-width="1.1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#2B2F36" stroke-width="1.8"/>
+      <circle cx="22" cy="22" r="2.4" fill="#8B1E1E"/>
+    </g>
+    <line x1="36" y1="4" x2="36" y2="24" stroke="#1A1A1A" stroke-width="0.7" opacity="0.18"/>
+    <!-- PCW · Centrum Wizowe -->
+    <text x="44" y="10" font-size="10" font-weight="600" fill="#1A1A1A" letter-spacing="1.8">PCW</text>
+    <circle cx="68" cy="7.5" r="1.5" fill="#8B1E1E"/>
+    <text x="74" y="10" font-size="10" font-weight="400" fill="#1A1A1A" letter-spacing="1.4" opacity="0.7">Centrum Wizowe</text>
+    <text x="0" y="38" font-size="7" letter-spacing="1.5" fill="#1A1A1A" opacity="0.3" font-weight="400">COMPACT · NAVBAR</text>
+  </g>
+
+  <!-- Icon only (standalone) -->
+  <g transform="translate(280, 458)">
+    <g>
+      <g clip-path="url(#globe-clip-lg)">
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#2B2F36" stroke-width="1.3"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#2B2F36" stroke-width="1.3"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#2B2F36" stroke-width="1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#2B2F36" stroke-width="1.6"/>
+      <circle cx="22" cy="22" r="2.2" fill="#8B1E1E"/>
+    </g>
+    <text x="22" y="54" font-size="7" letter-spacing="1.5" fill="#1A1A1A" opacity="0.3" font-weight="400" text-anchor="middle">ICON · FAVICON</text>
+  </g>
+
+  <!-- Badge / avatar -->
+  <g transform="translate(390, 458)">
+    <circle cx="22" cy="22" r="22" fill="#2B2F36"/>
+    <g>
+      <g clip-path="url(#globe-clip-lg)">
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#F0EDE8" stroke-width="1.3"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#F0EDE8" stroke-width="1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#F0EDE8" stroke-width="1"/>
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#F0EDE8" stroke-width="1.3"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#F0EDE8" stroke-width="1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#F0EDE8" stroke-width="1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#F0EDE8" stroke-width="1.6"/>
+      <circle cx="22" cy="22" r="2.2" fill="#C94040"/>
+    </g>
+    <text x="22" y="54" font-size="7" letter-spacing="1.5" fill="#1A1A1A" opacity="0.3" font-weight="400" text-anchor="middle">BADGE · AVATAR</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PANEL 4 — COMPACT + ICONS DARK             -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Compact navbar dark -->
+  <g transform="translate(40, 680)">
+    <g transform="scale(0.636) translate(0,0)">
+      <g clip-path="url(#globe-clip-lg)">
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#E8E4DC" stroke-width="1.4"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#E8E4DC" stroke-width="1.1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#E8E4DC" stroke-width="1.1"/>
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#E8E4DC" stroke-width="1.4"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#E8E4DC" stroke-width="1.1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#E8E4DC" stroke-width="1.1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#E8E4DC" stroke-width="1.8"/>
+      <circle cx="22" cy="22" r="2.4" fill="#C94040"/>
+    </g>
+    <line x1="36" y1="4" x2="36" y2="24" stroke="#F0EDE8" stroke-width="0.7" opacity="0.18"/>
+    <text x="44" y="10" font-size="10" font-weight="600" fill="#F0EDE8" letter-spacing="1.8">PCW</text>
+    <circle cx="68" cy="7.5" r="1.5" fill="#C94040"/>
+    <text x="74" y="10" font-size="10" font-weight="400" fill="#F0EDE8" letter-spacing="1.4" opacity="0.7">Centrum Wizowe</text>
+    <text x="0" y="38" font-size="7" letter-spacing="1.5" fill="#F0EDE8" opacity="0.3" font-weight="400">COMPACT · DARK NAVBAR</text>
+  </g>
+
+  <!-- Icon only dark -->
+  <g transform="translate(280, 668)">
+    <g>
+      <g clip-path="url(#globe-clip-lg)">
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#E8E4DC" stroke-width="1.3"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#E8E4DC" stroke-width="1.3"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#E8E4DC" stroke-width="1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#E8E4DC" stroke-width="1.6"/>
+      <circle cx="22" cy="22" r="2.2" fill="#C94040"/>
+    </g>
+    <text x="22" y="54" font-size="7" letter-spacing="1.5" fill="#F0EDE8" opacity="0.3" font-weight="400" text-anchor="middle">ICON · DARK</text>
+  </g>
+
+  <!-- Badge dark (light badge on dark panel) -->
+  <g transform="translate(390, 668)">
+    <circle cx="22" cy="22" r="22" fill="#F7F6F3"/>
+    <g>
+      <g clip-path="url(#globe-clip-lg)">
+        <line x1="6" y1="22" x2="38" y2="22" stroke="#2B2F36" stroke-width="1.3"/>
+        <path d="M8.5 15 Q22 13.5 35.5 15" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <path d="M8.5 29 Q22 30.5 35.5 29" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <line x1="22" y1="6" x2="22" y2="38" stroke="#2B2F36" stroke-width="1.3"/>
+        <path d="M22 6 A10 16 0 0 0 22 38" fill="none" stroke="#2B2F36" stroke-width="1"/>
+        <path d="M22 6 A10 16 0 0 1 22 38" fill="none" stroke="#2B2F36" stroke-width="1"/>
+      </g>
+      <circle cx="22" cy="22" r="15.5" fill="none" stroke="#2B2F36" stroke-width="1.6"/>
+      <circle cx="22" cy="22" r="2.2" fill="#8B1E1E"/>
+    </g>
+    <text x="22" y="54" font-size="7" letter-spacing="1.5" fill="#F0EDE8" opacity="0.3" font-weight="400" text-anchor="middle">BADGE · LIGHT</text>
+  </g>
+
+</svg>

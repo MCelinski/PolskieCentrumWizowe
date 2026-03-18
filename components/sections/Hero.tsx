@@ -1,6 +1,19 @@
 import Link from "next/link";
 import content from "@/content/site-content.json";
 
+const FLAGS = [
+  { emoji: "🇺🇦", label: "Ukraina" },
+  { emoji: "🇮🇳", label: "Indie" },
+  { emoji: "🇯🇵", label: "Japonia" },
+  { emoji: "🇨🇳", label: "Chiny" },
+  { emoji: "🇺🇸", label: "USA" },
+  { emoji: "🇬🇧", label: "Wielka Brytania" },
+  { emoji: "🇩🇪", label: "Niemcy" },
+  { emoji: "🇻🇳", label: "Wietnam" },
+  { emoji: "🇰🇷", label: "Korea" },
+  { emoji: "🇹🇷", label: "Turcja" },
+];
+
 export default function Hero() {
   const { hero } = content.home;
 
@@ -16,7 +29,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Subtle texture overlay */}
+      {/* Subtle radial overlay */}
       <div
         className="absolute inset-0 opacity-15"
         style={{
@@ -25,38 +38,36 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Vertical accent line (Swiss style) */}
+      {/* Swiss vertical accent line */}
       <div
         className="absolute left-0 top-0 bottom-0 w-px opacity-15"
         style={{ backgroundColor: "var(--color-navy-200)" }}
         aria-hidden="true"
       />
 
-      {/* Red accent top bar */}
-      <div
-        className="absolute top-0 left-0 right-0 h-0.5"
-        style={{ backgroundColor: "var(--color-red-600)" }}
-        aria-hidden="true"
-      />
-
       {/* Content */}
-      <div className="container-editorial relative z-10 pb-24 md:pb-32 pt-40 md:pt-48">
+      <div className="container-editorial relative z-10 pb-20 md:pb-28 pt-40 md:pt-48">
         <div className="max-w-4xl">
+
           {/* Eyebrow */}
           <p
-            className="section-eyebrow mb-10"
-            style={{ color: "rgba(197,201,208,0.75)" }}
+            className="section-eyebrow animate-hero-enter mb-8 md:mb-10"
+            style={{
+              color: "rgba(197,201,208,0.75)",
+              animationDelay: "0ms",
+            }}
           >
             {hero.eyebrow}
           </p>
 
-          {/* Main headline */}
+          {/* Headline */}
           <h1
-            className="font-serif font-medium leading-none mb-10"
+            className="font-serif font-medium leading-none animate-hero-enter mb-8 md:mb-10"
             style={{
               color: "var(--color-cream)",
               fontSize: "clamp(3rem, 7vw, 6rem)",
               letterSpacing: "-0.03em",
+              animationDelay: "120ms",
             }}
           >
             {hero.headline}
@@ -64,14 +75,21 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p
-            className="font-sans text-base md:text-lg leading-relaxed mb-14"
-            style={{ color: "rgba(197,201,208,0.72)", maxWidth: "520px" }}
+            className="font-sans text-base md:text-lg leading-relaxed animate-hero-enter mb-12 md:mb-14"
+            style={{
+              color: "rgba(197,201,208,0.72)",
+              maxWidth: "520px",
+              animationDelay: "240ms",
+            }}
           >
             {hero.subheadline}
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-20">
+          <div
+            className="flex flex-col sm:flex-row gap-4 animate-hero-enter mb-16 md:mb-20"
+            style={{ animationDelay: "360ms" }}
+          >
             <Link
               href={hero.cta_primary.href}
               className="inline-flex items-center justify-center font-sans text-sm font-medium px-8 py-4 transition-opacity duration-200 hover:opacity-90"
@@ -85,42 +103,69 @@ export default function Hero() {
             <Link
               href={hero.cta_secondary.href}
               className="inline-flex items-center justify-center font-sans text-sm font-medium px-8 py-4 transition-all duration-200 hover:bg-white/8"
-              style={{
-                color: "rgba(247,246,243,0.75)",
-              }}
+              style={{ color: "rgba(247,246,243,0.75)" }}
             >
               {hero.cta_secondary.label} →
             </Link>
           </div>
 
-          {/* Trust indicator */}
+          {/* ── Flag strip ── */}
           <div
-            className="flex items-center gap-3 pt-8 border-t"
-            style={{ borderColor: "rgba(197,201,208,0.15)" }}
+            className="animate-hero-enter border-t pt-8"
+            style={{
+              borderColor: "rgba(197,201,208,0.12)",
+              animationDelay: "480ms",
+            }}
           >
-            <div
-              className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-              style={{ backgroundColor: "var(--color-red-600)" }}
-              aria-hidden="true"
-            />
             <p
-              className="font-sans text-sm"
-              style={{ color: "rgba(197,201,208,0.65)" }}
+              className="font-sans text-xs mb-5 uppercase tracking-widest"
+              style={{ color: "rgba(197,201,208,0.4)", letterSpacing: "0.14em" }}
             >
-              {hero.trust_indicator}
+              Obsługujemy obywateli z&nbsp;40+ krajów
             </p>
+            <div className="flex items-center gap-3 flex-wrap" role="list" aria-label="Obsługiwane kraje">
+              {FLAGS.map((flag, i) => (
+                <span
+                  key={flag.label}
+                  className="animate-flag-float"
+                  role="listitem"
+                  aria-label={flag.label}
+                  style={{
+                    fontSize: "clamp(1.5rem, 3vw, 2rem)",
+                    lineHeight: 1,
+                    animationDelay: `${i * 180}ms`,
+                    cursor: "default",
+                  }}
+                  title={flag.label}
+                >
+                  {flag.emoji}
+                </span>
+              ))}
+              <span
+                className="font-sans text-xs ml-1"
+                style={{ color: "rgba(197,201,208,0.35)" }}
+                aria-hidden="true"
+              >
+                +30 więcej
+              </span>
+            </div>
           </div>
+
         </div>
       </div>
 
-      {/* Bottom scroll indicator */}
+      {/* Scroll indicator */}
       <div
         className="absolute bottom-8 right-8 md:right-12 flex flex-col items-center gap-2"
         aria-hidden="true"
       >
         <span
           className="font-sans text-xs uppercase tracking-widest"
-          style={{ color: "rgba(197,201,208,0.35)", letterSpacing: "0.15em", writingMode: "vertical-rl" }}
+          style={{
+            color: "rgba(197,201,208,0.35)",
+            letterSpacing: "0.15em",
+            writingMode: "vertical-rl",
+          }}
         >
           Przewiń
         </span>
