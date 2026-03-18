@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import content from "@/content/site-content.json";
 
 export default function Footer() {
@@ -17,18 +18,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 pb-12 border-b" style={{ borderColor: "var(--color-navy-800)" }}>
           {/* Brand column */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-5">
-              <div
-                className="w-7 h-7 flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: "var(--color-cream)" }}
-              >
-                <span className="font-serif font-medium text-sm" style={{ color: "var(--color-navy-900)", lineHeight: 1 }}>
-                  P
-                </span>
-              </div>
-              <span className="font-sans text-sm font-medium" style={{ color: "rgba(248,247,244,0.9)" }}>
-                {nav.logo.name}
-              </span>
+            <div className="mb-5">
+              <Image
+                src="/logo.svg"
+                alt="Polskie Centrum Wizowe"
+                width={160}
+                height={38}
+                style={{
+                  height: "38px",
+                  width: "auto",
+                  filter: "brightness(0) invert(1)",
+                  opacity: 0.9,
+                }}
+              />
             </div>
             <p className="font-sans text-sm leading-relaxed max-w-xs" style={{ color: "rgba(168,196,224,0.7)" }}>
               {footer.tagline}

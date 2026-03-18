@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import content from "@/content/site-content.json";
 
 export default function Navbar() {
@@ -27,29 +28,20 @@ export default function Navbar() {
       <div className="container-editorial">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group" aria-label="Polskie Centrum Wizowe — strona główna">
-            {/* Logo mark */}
-            <div
-              className="w-7 h-7 flex items-center justify-center flex-shrink-0"
-              style={{ backgroundColor: "var(--color-navy-900)" }}
-              aria-hidden="true"
-            >
-              <span
-                className="font-serif font-medium text-sm"
-                style={{ color: "var(--color-cream)", lineHeight: 1 }}
-              >
-                P
-              </span>
-            </div>
-            {/* Logo text */}
-            <div className="hidden sm:block">
-              <span
-                className="font-sans text-sm font-medium tracking-wide"
-                style={{ color: scrolled ? "var(--color-navy-900)" : "var(--color-cream)" }}
-              >
-                Polskie Centrum Wizowe
-              </span>
-            </div>
+          <Link href="/" aria-label="Polskie Centrum Wizowe — strona główna">
+            <Image
+              src="/logo.svg"
+              alt="Polskie Centrum Wizowe"
+              width={140}
+              height={33}
+              priority
+              style={{
+                height: "33px",
+                width: "auto",
+                filter: scrolled ? "none" : "brightness(0) invert(1)",
+                transition: "filter 0.3s",
+              }}
+            />
           </Link>
 
           {/* Desktop Nav */}
