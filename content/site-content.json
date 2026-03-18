@@ -1,0 +1,280 @@
+{
+  "_meta": {
+    "lang": "pl",
+    "version": "1.0.0",
+    "note": "All website content. Structure supports future i18n extension."
+  },
+  "nav": {
+    "logo": {
+      "name": "Polskie Centrum Wizowe",
+      "abbr": "PCW"
+    },
+    "links": [
+      { "label": "O nas", "href": "/#o-nas" },
+      { "label": "Usługi", "href": "/#uslugi" },
+      { "label": "Opinie", "href": "/#opinie" },
+      { "label": "Kontakt", "href": "/#kontakt" }
+    ],
+    "cta": "Umów konsultację"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Doradztwo wizowe i migracyjne",
+      "headline": "Bezpieczna droga do Polski zaczyna się tutaj",
+      "subheadline": "Pomagamy osobom i firmom przejść przez procesy wizowe i migracyjne — sprawnie, pewnie i z pełnym wsparciem na każdym etapie.",
+      "cta_primary": {
+        "label": "Umów konsultację",
+        "href": "/konsultacje"
+      },
+      "cta_secondary": {
+        "label": "Poznaj nasze usługi",
+        "href": "/#uslugi"
+      },
+      "trust_indicator": "Zaufało nam ponad 500 klientów z 40 krajów"
+    },
+    "about": {
+      "section_label": "O nas",
+      "headline": "Doświadczenie i dyskrecja w służbie Twoich planów",
+      "paragraphs": [
+        "Polskie Centrum Wizowe to butikowa firma doradcza specjalizująca się w prawie wizowym i migracyjnym. Od ponad dekady wspieramy osoby prywatne, przedsiębiorców i firmy w procesach relokacji do Polski.",
+        "Naszą pracę cechuje precyzja, indywidualne podejście i pełna odpowiedzialność za każdą sprawę. Nie zajmujemy się masową obsługą — każdy klient otrzymuje dedykowanego doradcę i spersonalizowany plan działania.",
+        "80% naszych klientów pochodzi z rekomendacji — to najlepsza miara naszej rzetelności."
+      ],
+      "highlight": "80% klientów z polecenia"
+    },
+    "services": {
+      "section_label": "Usługi",
+      "headline": "Kompleksowe wsparcie na każdym etapie",
+      "subheadline": "Oferujemy pełen zakres usług wizowych i migracyjnych, dostosowanych do indywidualnych potrzeb klientów.",
+      "items": [
+        {
+          "id": "praca",
+          "icon": "briefcase",
+          "title": "Wizy pracownicze",
+          "description": "Kompleksowa obsługa wiz i zezwoleń na pracę dla obcokrajowców zatrudnianych przez polskie firmy. Obejmuje m.in. wizy D, zezwolenia na pracę i pobyt.",
+          "tags": ["Wiza D", "Zezwolenie na pracę", "Pobyt czasowy"]
+        },
+        {
+          "id": "biznes",
+          "icon": "building",
+          "title": "Wizy biznesowe",
+          "description": "Doradztwo dla przedsiębiorców, inwestorów i menedżerów delegowanych do Polski. Obsługa wiz Schengen, wiz biznesowych i rejestracji spółek.",
+          "tags": ["Wiza Schengen", "Zezwolenie inwestora", "Delegowanie"]
+        },
+        {
+          "id": "pobyt",
+          "icon": "home",
+          "title": "Zezwolenia na pobyt",
+          "description": "Profesjonalna obsługa postępowań o pobyt czasowy i stały. Przygotowanie dokumentacji, reprezentacja przed organami i monitoring sprawy.",
+          "tags": ["Pobyt czasowy", "Pobyt stały", "Karta stałego pobytu"]
+        },
+        {
+          "id": "rodzina",
+          "icon": "users",
+          "title": "Łączenie rodzin",
+          "description": "Pomoc w sprowadzeniu rodziny do Polski — przygotowanie wniosków, doradztwo w zakresie wymagań i koordynacja całego procesu.",
+          "tags": ["Wiza rodzinna", "Łączenie rodzin", "Nieletni"]
+        },
+        {
+          "id": "studia",
+          "icon": "graduation-cap",
+          "title": "Wizy studenckie",
+          "description": "Wsparcie dla studentów zagranicznych planujących studia w Polsce. Obsługa wiz studenckich, kart pobytu studenta i przedłużeń.",
+          "tags": ["Wiza studencka", "Karta pobytu studenta", "Przedłużenie"]
+        },
+        {
+          "id": "obywatelstwo",
+          "icon": "shield",
+          "title": "Obywatelstwo polskie",
+          "description": "Doradztwo w zakresie ubiegania się o obywatelstwo polskie — analiza podstaw prawnych, przygotowanie dokumentacji i reprezentacja.",
+          "tags": ["Obywatelstwo", "Naturalizacja", "Potwierdzenie"]
+        }
+      ]
+    },
+    "testimonials": {
+      "section_label": "Opinie klientów",
+      "headline": "Co mówią o nas klienci",
+      "items": [
+        {
+          "id": 1,
+          "quote": "Polskie Centrum Wizowe przeprowadziło naszą firmę przez skomplikowany proces relokacji 12 pracowników z Ukrainy i Białorusi. Perfekcyjna organizacja, zero niespodzianek.",
+          "author": "Tomasz Wierzbicki",
+          "role": "Dyrektor HR",
+          "company": "FinTech Solutions Sp. z o.o."
+        },
+        {
+          "id": 2,
+          "quote": "Otrzymałam kartę stałego pobytu w ciągu 4 miesięcy. Doradcy prowadzili mnie krok po kroku i zawsze byli dostępni na wszelkie pytania. Polecam z całego serca.",
+          "author": "Yuki Tanaka",
+          "role": "Inżynierka oprogramowania",
+          "company": "Warszawa"
+        },
+        {
+          "id": 3,
+          "quote": "Jako inwestor z Japonii potrzebowałem specjalistycznej wiedzy. PCW zapewniło mi nie tylko obsługę prawną, ale też pełne wsparcie w adaptacji do polskich realiów biznesowych.",
+          "author": "Hiroshi Nakamura",
+          "role": "Prezes zarządu",
+          "company": "Nakamura Trading Group"
+        },
+        {
+          "id": 4,
+          "quote": "Sprawna, dyskretna i profesjonalna obsługa. Moja wiza pracownicza została wydana bez jednego błędu w dokumentacji. To rzadkość w tej branży.",
+          "author": "Maria Kowalenko",
+          "role": "Menedżerka projektu",
+          "company": "Global Logistics Polska"
+        }
+      ]
+    },
+    "trust_metrics": {
+      "section_label": "Nasze liczby",
+      "headline": "Doświadczenie, które mówi samo za siebie",
+      "items": [
+        { "value": "500+", "label": "Klientów obsłużonych", "sublabel": "z ponad 40 krajów" },
+        { "value": "95%", "label": "Wskaźnik sukcesu", "sublabel": "pozytywnych decyzji" },
+        { "value": "10+", "label": "Lat doświadczenia", "sublabel": "w prawie migracyjnym" },
+        { "value": "80%", "label": "Klientów z polecenia", "sublabel": "najlepsza rekomendacja" }
+      ]
+    },
+    "partners": {
+      "section_label": "Współpracujemy z",
+      "items": [
+        { "id": 1, "name": "Urząd ds. Cudzoziemców" },
+        { "id": 2, "name": "Krajowa Izba Gospodarcza" },
+        { "id": 3, "name": "Ambasada RP w Tokio" },
+        { "id": 4, "name": "Business Link" },
+        { "id": 5, "name": "Polska Agencja Inwestycji i Handlu" },
+        { "id": 6, "name": "Warsaw Enterprise Institute" }
+      ]
+    },
+    "contact": {
+      "section_label": "Kontakt",
+      "headline": "Zacznijmy rozmowę",
+      "subheadline": "Skontaktuj się z nami i dowiedz się, jak możemy Ci pomóc.",
+      "email": "kontakt@pcw.pl",
+      "phone": "+48 22 123 45 67",
+      "address": "ul. Nowy Świat 15, 00-029 Warszawa",
+      "hours": "Pon–Pt: 9:00–17:00",
+      "cta": {
+        "label": "Umów konsultację online",
+        "href": "/konsultacje"
+      }
+    }
+  },
+  "consultations": {
+    "page_title": "Konsultacje",
+    "hero": {
+      "eyebrow": "Pierwsze kroki",
+      "headline": "Umów konsultację",
+      "subheadline": "Wybierz formę kontaktu odpowiednią do Twojej sytuacji. Odpowiadamy w ciągu 24 godzin w dni robocze."
+    },
+    "visa_form": {
+      "title": "Wstępna kwalifikacja wizowa",
+      "description": "Wypełnij poniższy formularz, aby sprawdzić, jakie opcje wizowe są dostępne w Twojej sytuacji. Odpiszemy ze wstępną oceną w ciągu 24 godzin.",
+      "fields": {
+        "citizenship": {
+          "label": "Obywatelstwo",
+          "placeholder": "np. Ukraina, Japonia, Indie..."
+        },
+        "purpose": {
+          "label": "Cel przyjazdu do Polski",
+          "placeholder": "Wybierz cel",
+          "options": [
+            { "value": "praca", "label": "Praca" },
+            { "value": "biznes", "label": "Biznes / inwestycja" },
+            { "value": "studia", "label": "Studia" },
+            { "value": "rodzina", "label": "Łączenie rodzin" },
+            { "value": "inne", "label": "Inne" }
+          ]
+        },
+        "duration": {
+          "label": "Planowany czas pobytu",
+          "placeholder": "Wybierz okres",
+          "options": [
+            { "value": "do_3m", "label": "Do 3 miesięcy" },
+            { "value": "3_6m", "label": "3–6 miesięcy" },
+            { "value": "6_12m", "label": "6–12 miesięcy" },
+            { "value": "powyzej_roku", "label": "Powyżej roku" }
+          ]
+        },
+        "job_offer": {
+          "label": "Czy posiada Pan/Pani ofertę pracy w Polsce?",
+          "options": [
+            { "value": "tak", "label": "Tak" },
+            { "value": "nie", "label": "Nie" },
+            { "value": "w_trakcie", "label": "W trakcie rozmów" }
+          ]
+        },
+        "family_in_poland": {
+          "label": "Czy ma Pan/Pani rodzinę w Polsce?",
+          "options": [
+            { "value": "tak", "label": "Tak" },
+            { "value": "nie", "label": "Nie" }
+          ]
+        }
+      },
+      "submit": "Sprawdź kwalifikowalność",
+      "disclaimer": "Formularz nie stanowi porady prawnej. Po analizie skontaktujemy się z Tobą z wstępną oceną Twojej sytuacji.",
+      "success": "Dziękujemy! Odpiszemy w ciągu 24 godzin w dni robocze."
+    },
+    "general_form": {
+      "title": "Konsultacja ogólna",
+      "description": "Masz pytania lub chcesz omówić swoją sytuację? Napisz do nas — doradca skontaktuje się z Tobą, aby ustalić szczegóły i zaproponować termin spotkania.",
+      "fields": {
+        "name": {
+          "label": "Imię i nazwisko",
+          "placeholder": "Jan Kowalski"
+        },
+        "email": {
+          "label": "Adres e-mail",
+          "placeholder": "jan@przykład.pl"
+        },
+        "phone": {
+          "label": "Numer telefonu",
+          "placeholder": "+48 600 000 000"
+        },
+        "message": {
+          "label": "Krótki opis sytuacji",
+          "placeholder": "Opisz krótko swoją sytuację i pytania, z którymi chcesz się do nas zgłosić..."
+        }
+      },
+      "submit": "Wyślij zapytanie",
+      "disclaimer": "Twoje dane są chronione zgodnie z RODO. Nie udostępniamy ich osobom trzecim.",
+      "success": "Wiadomość wysłana! Skontaktujemy się z Tobą w ciągu 24 godzin."
+    }
+  },
+  "footer": {
+    "tagline": "Profesjonalne doradztwo wizowe i migracyjne.",
+    "columns": [
+      {
+        "title": "Usługi",
+        "links": [
+          { "label": "Wizy pracownicze", "href": "/#uslugi" },
+          { "label": "Wizy biznesowe", "href": "/#uslugi" },
+          { "label": "Zezwolenia na pobyt", "href": "/#uslugi" },
+          { "label": "Łączenie rodzin", "href": "/#uslugi" }
+        ]
+      },
+      {
+        "title": "Firma",
+        "links": [
+          { "label": "O nas", "href": "/#o-nas" },
+          { "label": "Opinie klientów", "href": "/#opinie" },
+          { "label": "Kontakt", "href": "/#kontakt" },
+          { "label": "Konsultacje", "href": "/konsultacje" }
+        ]
+      }
+    ],
+    "contact": {
+      "email": "kontakt@pcw.pl",
+      "phone": "+48 22 123 45 67",
+      "address": "ul. Nowy Świat 15, 00-029 Warszawa"
+    },
+    "legal": {
+      "copyright": "© 2024 Polskie Centrum Wizowe. Wszelkie prawa zastrzeżone.",
+      "links": [
+        { "label": "Polityka prywatności", "href": "/polityka-prywatnosci" },
+        { "label": "Regulamin", "href": "/regulamin" }
+      ]
+    }
+  }
+}
