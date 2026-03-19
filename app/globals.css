@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "flag-icons/css/flag-icons.min.css";
 
 /* ─── Design Tokens: Polskie Centrum Wizowe ──────────────────────────────────
    Swiss Modernism 2.0 × Minimalism × Editorial Grid
@@ -61,6 +62,11 @@
   50%       { transform: translateY(-6px); }
 }
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 @keyframes count-in {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -81,6 +87,41 @@
 /* Flag floating */
 .animate-flag-float {
   animation: flag-float 3.2s ease-in-out infinite;
+}
+
+/* Flag marquee */
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Flag icon: desaturated at rest, vivid on hover */
+.flag-icon {
+  transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1),
+              filter 250ms ease;
+  filter: saturate(0.55) brightness(0.85);
+}
+.animate-marquee:hover .flag-icon {
+  filter: saturate(0.8) brightness(0.95);
+}
+.flag-item-wrapper:hover .flag-icon {
+  transform: translateY(-5px) scale(1.25);
+  filter: saturate(1) brightness(1.05);
+}
+
+/* Country name tooltip */
+.flag-label {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+.flag-item-wrapper:hover .flag-label {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Stat count entrance */
@@ -112,6 +153,18 @@
     animation: none;
     opacity: 1;
     transform: none;
+  }
+  .animate-marquee {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto !important;
+  }
+  /* hide duplicated flags used for seamless loop */
+  .animate-marquee .flag-item-wrapper:nth-child(n + 16) {
+    display: none;
+  }
+  .flag-icon {
+    filter: saturate(1) brightness(1);
   }
 }
 

@@ -2,16 +2,21 @@ import Link from "next/link";
 import content from "@/content/site-content.json";
 
 const FLAGS = [
-  { emoji: "🇺🇦", label: "Ukraina" },
-  { emoji: "🇮🇳", label: "Indie" },
-  { emoji: "🇯🇵", label: "Japonia" },
-  { emoji: "🇨🇳", label: "Chiny" },
-  { emoji: "🇺🇸", label: "USA" },
-  { emoji: "🇬🇧", label: "Wielka Brytania" },
-  { emoji: "🇩🇪", label: "Niemcy" },
-  { emoji: "🇻🇳", label: "Wietnam" },
-  { emoji: "🇰🇷", label: "Korea" },
-  { emoji: "🇹🇷", label: "Turcja" },
+  { code: "ua", label: "Ukraina" },
+  { code: "in", label: "Indie" },
+  { code: "jp", label: "Japonia" },
+  { code: "cn", label: "Chiny" },
+  { code: "us", label: "USA" },
+  { code: "gb", label: "Wielka Brytania" },
+  { code: "de", label: "Niemcy" },
+  { code: "vn", label: "Wietnam" },
+  { code: "kr", label: "Korea" },
+  { code: "tr", label: "Turcja" },
+  { code: "fr", label: "Francja" },
+  { code: "it", label: "Włochy" },
+  { code: "es", label: "Hiszpania" },
+  { code: "ph", label: "Filipiny" },
+  { code: "id", label: "Indonezja" },
 ];
 
 export default function Hero() {
@@ -111,43 +116,87 @@ export default function Hero() {
 
           {/* ── Flag strip ── */}
           <div
-            className="animate-hero-enter border-t pt-8"
-            style={{
-              borderColor: "rgba(197,201,208,0.12)",
-              animationDelay: "480ms",
-            }}
+            className="animate-hero-enter"
+            style={{ animationDelay: "480ms" }}
           >
-            <p
-              className="font-sans text-xs mb-5 uppercase tracking-widest"
-              style={{ color: "rgba(197,201,208,0.4)", letterSpacing: "0.14em" }}
+            {/* Editorial stat header */}
+            <div
+              className="flex items-center gap-5 mb-7 border-t pt-8"
+              style={{ borderColor: "rgba(197,201,208,0.10)" }}
             >
-              Obsługujemy obywateli z&nbsp;40+ krajów
-            </p>
-            <div className="flex items-center gap-3 flex-wrap" role="list" aria-label="Obsługiwane kraje">
-              {FLAGS.map((flag, i) => (
-                <span
-                  key={flag.label}
-                  className="animate-flag-float"
-                  role="listitem"
-                  aria-label={flag.label}
-                  style={{
-                    fontSize: "clamp(1.5rem, 3vw, 2rem)",
-                    lineHeight: 1,
-                    animationDelay: `${i * 180}ms`,
-                    cursor: "default",
-                  }}
-                  title={flag.label}
-                >
-                  {flag.emoji}
-                </span>
-              ))}
-              <span
-                className="font-sans text-xs ml-1"
-                style={{ color: "rgba(197,201,208,0.35)" }}
-                aria-hidden="true"
+              <p
+                className="font-sans text-xs uppercase tracking-widest shrink-0"
+                style={{ color: "rgba(197,201,208,0.42)", letterSpacing: "0.16em" }}
               >
-                +30 więcej
-              </span>
+                Obsługiwane kraje
+              </p>
+              <div
+                className="h-px flex-1"
+                style={{ backgroundColor: "rgba(197,201,208,0.08)" }}
+                aria-hidden="true"
+              />
+              <div className="flex items-baseline gap-1 shrink-0">
+                <span
+                  className="font-serif font-medium"
+                  style={{
+                    color: "var(--color-cream)",
+                    fontSize: "clamp(1.25rem, 2.5vw, 1.625rem)",
+                    letterSpacing: "-0.03em",
+                    lineHeight: 1,
+                  }}
+                >
+                  40
+                </span>
+                <span
+                  className="font-sans"
+                  style={{ color: "rgba(197,201,208,0.55)", fontSize: "0.8125rem", fontWeight: 500 }}
+                >
+                  + krajów
+                </span>
+              </div>
+            </div>
+
+            {/* Marquee — pauses on hover, individual flag reveals name */}
+            <div
+              className="relative overflow-hidden"
+              style={{
+                maskImage:
+                  "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+                WebkitMaskImage:
+                  "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+                paddingBottom: "30px",
+              }}
+              role="list"
+              aria-label="Obsługiwane kraje"
+            >
+              <div className="animate-marquee flex items-center gap-7 w-max">
+                {[...FLAGS, ...FLAGS].map((flag, i) => (
+                  <div
+                    key={`${flag.code}-${i}`}
+                    className="flag-item-wrapper relative flex flex-col items-center shrink-0"
+                    role="listitem"
+                  >
+                    <span
+                      className={`fi fi-${flag.code} flag-icon`}
+                      aria-label={flag.label}
+                      style={{
+                        fontSize: "clamp(1.625rem, 2.5vw, 2rem)",
+                        lineHeight: 1,
+                        borderRadius: "3px",
+                        cursor: "default",
+                        display: "block",
+                      }}
+                    />
+                    <span
+                      className="flag-label absolute top-full mt-2.5 font-sans text-xs whitespace-nowrap"
+                      style={{ color: "rgba(197,201,208,0.6)", letterSpacing: "0.04em" }}
+                      aria-hidden="true"
+                    >
+                      {flag.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
