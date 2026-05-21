@@ -1,0 +1,409 @@
+{
+  "nav": {
+    "logo": { "name": "Polskie Centrum Wizowe", "abbr": "PCW" },
+    "links": [
+      { "label": "O nas", "href": "/#o-nas" },
+      { "label": "Usługi", "href": "/#uslugi" },
+      { "label": "Private Client", "href": "/#private-client" },
+      { "label": "Kontakt", "href": "/#kontakt" }
+    ],
+    "cta": "Inicjuj kontakt"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DORADZTWO MIGRACYJNE I ADMINISTRACYJNE",
+      "headline": "Postępowania wizowe i migracyjne. Prowadzone do skutku.",
+      "subheadline": "Reprezentujemy klientów indywidualnych i korporacyjnych w procedurach legalizacji pobytu, zatrudnienia oraz uzyskania obywatelstwa polskiego. Każda sprawa — jeden dedykowany zespół, jedna odpowiedzialność, jedno zakończenie.",
+      "cta_primary": { "label": "Inicjuj kontakt", "href": "/#kontakt" },
+      "cta_secondary": { "label": "Zakres usług", "href": "/#uslugi" },
+      "microcopy": "Pierwsza rozmowa — bezpłatna, do 30 minut, bez zobowiązań.",
+      "trust_indicators": [
+        "Klienci z ponad 40 jurysdykcji",
+        "Postępowania prowadzone od 2018 roku",
+        "Obsługa w pięciu językach"
+      ]
+    },
+    "trust_bar": {
+      "label": "Prowadzimy postępowania przed:",
+      "institutions": [
+        "Konsulaty",
+        "Urząd do Spraw Cudzoziemców",
+        "Wojewoda",
+        "Prezydent RP",
+        "Państwowa Inspekcja Pracy (PIP)",
+        "Straż Graniczna",
+        "Urząd Pracy"
+      ]
+    },
+    "about": {
+      "section_label": "O nas",
+      "headline": "Pionierskie podejście do prawa migracyjnego. Architektura procesów administracyjnych.",
+      "paragraphs": [
+        "Polskie Centrum Wizowe to elitarna butikowa firma doradcza, specjalizująca się w prawie migracyjnym oraz administracyjnym. Zapewniamy strategiczne wsparcie dla osób fizycznych, rodzin oraz międzynarodowych grup kapitałowych, których status wymaga nienagannej biegłości prawnej i operacyjnej.",
+        "Działamy w modelu multi-disciplinary. Strukturę każdego projektu tworzą dedykowani adwokaci, radcowie prawni oraz eksperci rynków międzynarodowych. Integralność całego procesu — od wstępnej analizy ryzyka po ostateczne rozstrzygnięcie — zabezpiecza osobiście wyznaczony Partner Zarządzający.",
+        "Specjalizujemy się w sprawach o najwyższym stopniu złożoności: wielojurysdykcyjnych, łączących procedury migracyjne z międzynarodowym prawem korporacyjnym oraz wymagających reprezentacji przed kluczowymi organami państwowymi i służbami kontrolnymi.",
+        "Nasz fundament to bezwzględna dyskrecja, klarowność intencji i pełna odpowiedzialność procesowa. Przyjmujemy wyłącznie ograniczoną liczbę spraw rocznie, gwarantując naszym Klientom absolutny priorytet."
+      ],
+      "highlight": "80% klientów z polecenia",
+      "highlight_sublabel": "Najlepsza miara naszej rzetelności"
+    },
+    "slogan": "Doradztwo wykraczające poza wniosek.",
+    "services": {
+      "section_label": "Usługi",
+      "headline": "Pełen zakres postępowań migracyjnych",
+      "subheadline": "Od wiz i zezwoleń na pobyt po obywatelstwo i odwołania — prowadzimy każdy etap postępowania.",
+      "items": [
+        {
+          "id": "wizy-pracownicze",
+          "icon": "briefcase",
+          "title": "Wizy pracownicze",
+          "tags": ["Wiza krajowa typu D", "Zezwolenie na pracę", "Procedura konsularna"],
+          "description": "Kompleksowa obsługa procesu wizowego dla cudzoziemców podejmujących zatrudnienie w Polsce. Prowadzimy postępowania o wizę krajową typu D, łącząc je z uzyskaniem zezwolenia na pracę oraz przygotowaniem dokumentacji wymaganej przez konsulat. Zespół koordynuje pracodawcę i pracownika, eliminując ryzyko proceduralne na każdym etapie — od audytu kwalifikowalności po odbiór decyzji."
+        },
+        {
+          "id": "wizy-biznesowe",
+          "icon": "building",
+          "title": "Wizy biznesowe",
+          "tags": ["Wiza Schengen typu C", "Wiza krajowa typu D", "Delegowanie"],
+          "description": "Doradztwo wizowe dla przedsiębiorców, kadry zarządzającej i osób delegowanych do Polski. Obsługujemy wizy Schengen typu C oraz krajowe typu D w celach gospodarczych, zarządzamy aspektami formalnymi delegacji oraz koordynujemy procedury z działami HR macierzystych spółek. Pracujemy zarówno z polskimi podmiotami zapraszającymi, jak i z zagranicznymi grupami kapitałowymi."
+        },
+        {
+          "id": "wizy-studenckie",
+          "icon": "graduation-cap",
+          "title": "Wizy studenckie",
+          "tags": ["Wiza krajowa typu D", "Pobyt czasowy w celu kształcenia", "Przedłużenia"],
+          "description": "Wsparcie dla osób podejmujących studia w polskich uczelniach. Prowadzimy postępowania wizowe oraz przygotowujemy klientów do uzyskania zezwolenia na pobyt czasowy w celu kształcenia. Współpracujemy z uczelniami w zakresie wymaganej dokumentacji oraz z konsulatami w zakresie procedur, przejmując całość czynności formalnych."
+        },
+        {
+          "id": "pobyt-czasowy",
+          "icon": "home",
+          "title": "Zezwolenie na pobyt czasowy",
+          "tags": ["Postępowanie przed wojewodą", "Karta pobytu", "Reprezentacja"],
+          "description": "Postępowanie administracyjne prowadzone przed wojewodą właściwym dla miejsca pobytu cudzoziemca. Obejmuje pełną analizę podstaw prawnych, sporządzenie wniosku, kompletację dokumentacji oraz reprezentację w toku postępowania. Prowadzimy sprawy we wszystkich trybach przewidzianych ustawą: zatrudnienia, prowadzenia działalności gospodarczej, studiów, pobytu z członkiem rodziny obywatela polskiego oraz pozostałych podstaw ustawowych."
+        },
+        {
+          "id": "pobyt-staly",
+          "icon": "shield",
+          "title": "Zezwolenie na pobyt stały",
+          "tags": ["Karta Polaka", "Małżonek obywatela RP", "Pobyt bezterminowy"],
+          "description": "Postępowanie zarezerwowane dla osób spełniających ustawowe przesłanki — między innymi małżonków obywateli polskich, posiadaczy Karty Polaka oraz osób polskiego pochodzenia. Prowadzimy szczegółową analizę uprawnień, kompletujemy dokumentację potwierdzającą podstawę wniosku oraz reprezentujemy klienta przed wojewodą. Konsekwencje praktyczne uzyskanego zezwolenia: pobyt bezterminowy oraz uprawnienie do ubiegania się o obywatelstwo polskie."
+        },
+        {
+          "id": "rezydent-ue",
+          "icon": "award",
+          "title": "Zezwolenie na pobyt rezydenta długoterminowego UE",
+          "tags": ["Dyrektywa 2003/109/WE", "Mobilność wewnątrz UE", "Wojewoda"],
+          "description": "Status prawny przewidziany dyrektywą Rady 2003/109/WE, umożliwiający długoterminowy pobyt na terytorium państw członkowskich Unii Europejskiej. Obsługujemy postępowanie w pełnym zakresie: weryfikacja okresu legalnego pobytu, dochodów oraz znajomości języka polskiego, sporządzenie wniosku oraz reprezentacja przed wojewodą. Status otwiera możliwość przeniesienia centrum aktywności życiowej do innego państwa UE w trybie uproszczonym."
+        },
+        {
+          "id": "obywatelstwo",
+          "icon": "globe",
+          "title": "Obywatelstwo polskie",
+          "tags": ["Nadanie przez Prezydenta RP", "Uznanie przez wojewodę", "Potwierdzenie obywatelstwa"],
+          "description": "Dwa odrębne tryby uzyskania: nadanie obywatelstwa przez Prezydenta Rzeczypospolitej Polskiej oraz uznanie za obywatela polskiego przez wojewodę. Analizujemy ścieżkę optymalną dla danej sytuacji, sporządzamy uzasadnienie wniosku oraz kompletujemy dokumentację potwierdzającą integrację z Rzeczpospolitą. W sprawach złożonych prowadzimy także postępowania o potwierdzenie posiadania obywatelstwa polskiego — istotne w przypadkach historycznych oraz wynikających z linii rodzinnej."
+        },
+        {
+          "id": "pip-sg",
+          "icon": "file-check",
+          "title": "Reprezentacja przed PIP i Strażą Graniczną",
+          "tags": ["Postępowania kontrolne", "Audyt zgodności", "Odwołania"],
+          "description": "Reprezentacja pracodawców i cudzoziemców w postępowaniach kontrolnych prowadzonych przez Państwową Inspekcję Pracy oraz Straż Graniczną. Zakres obejmuje udział w czynnościach kontrolnych, sporządzanie wyjaśnień i zastrzeżeń, reprezentację w postępowaniach mandatowych oraz odwoławczych. Prowadzimy także audyty wewnętrzne weryfikujące zgodność zatrudnienia cudzoziemców z obowiązującymi przepisami — element profilaktyki ryzyk regulacyjnych dla pracodawców o większej skali."
+        },
+        {
+          "id": "zezwolenia-praca",
+          "icon": "scale",
+          "title": "Zezwolenia na pracę",
+          "tags": ["Typy A–E", "Niebieska Karta UE", "Oświadczenia o powierzeniu"],
+          "description": "Obsługa wszystkich typów zezwoleń na pracę: A, B, C, D oraz E, zezwoleń sezonowych typu S, oświadczeń o powierzeniu wykonywania pracy oraz wniosków w ramach systemu Niebieskiej Karty Unii Europejskiej. Procesy prowadzimy w pełnej koordynacji z pracodawcą, zarządzając obowiązkami wobec wojewody, urzędu pracy oraz organów kontrolnych. Każde postępowanie kończymy raportem zamknięcia z rekomendacjami dla kolejnych zatrudnień."
+        }
+      ]
+    },
+    "private_client": {
+      "section_label": "Private Client",
+      "headline": "Private Client",
+      "subheadline": "Indywidualna obsługa strategiczna",
+      "description": "Dedykowany ekosystem prawny dla wymagających kapitałowo. Linia Private Client powstała dla Klientów, których status prawny, biznesowy i osobisty wymaga holistycznej koordynacji wykraczającej poza standardowe ramy proceduralne. Obsługujemy przedsiębiorców, inwestorów, kadrę zarządzającą szczebla C-suite oraz family offices zarządzające złożonym majątkiem w wielu jurysdykcjach. Każda relacja objęta jest nadzorem indywidualnego Opiekuna Prawnego, który koordynuje pracą konsorcjum ekspertów — od prawa migracyjnego i podatkowego, po strukturyzację korporacyjną.",
+      "scope": [
+        "Relokację rodzinną i osobistą: pełna koordynacja logistyczna, w tym zabezpieczenie ciągłości edukacyjnej i prywatnych zasobów mieszkaniowych.",
+        "Strukturyzację obecności biznesowej: analiza i implementacja optymalnych form prawnych dla kapitału zagranicznego w Polsce.",
+        "Konsolidację międzynarodową: płynna współpraca z zagranicznymi doradcami Klienta — bankierskimi, prawnymi i podatkowymi.",
+        "Prewencję i ochronę prawną: bieżąca asysta w sprawach administracyjnych, kontrolnych i kryzysowych.",
+        "Architekturę statusu: długofalowe planowanie pozycji prawnej — od rezydentury po obywatelstwo."
+      ],
+      "operating_mode": "Tryb operacyjny: bezwzględna poufność, pojedynczy punkt kontaktu (single point of contact), dostępność 24/7/365. Praca oparta na metodologii projektowej, gwarantująca przewidywalność kamieni milowych.",
+      "engagement_note": "Współpraca z linią Private Client ma charakter elitarny. Warunki zaangażowania oraz struktura honorariów są definiowane indywidualnie po przeprowadzeniu wstępnego audytu intencji.",
+      "cta": { "label": "Inicjuj kontakt", "href": "/konsultacje" }
+    },
+    "process": {
+      "section_label": "Jak pracujemy",
+      "headline": "Proces współpracy",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Wstępna konsultacja",
+          "description": "Analiza sytuacji prawnej klienta, ocena dostępnych ścieżek postępowania i określenie optymalnej strategii. Konsultacja online lub stacjonarna."
+        },
+        {
+          "number": "02",
+          "title": "Analiza i strategia postępowania",
+          "description": "Przygotowanie szczegółowego planu postępowania, listy wymaganych dokumentów i harmonogramu działań. Weryfikacja dokumentacji i uzupełnienie braków."
+        },
+        {
+          "number": "03",
+          "title": "Reprezentacja przed organami",
+          "description": "Złożenie wniosku, aktywna reprezentacja przed organem administracyjnym, bieżący monitoring sprawy i odpowiedź na wezwania i zapytania urzędowe."
+        },
+        {
+          "number": "04",
+          "title": "Decyzja i wsparcie po-postępowaniu",
+          "description": "Odbiór decyzji, analiza jej treści i dalsze kroki — w tym odwołanie, jeśli jest zasadne. Wsparcie przy kolejnych etapach (przedłużenie, pobyt stały, obywatelstwo)."
+        }
+      ]
+    },
+    "trust_metrics": {
+      "section_label": "Nasze liczby",
+      "headline": "Doświadczenie, które mówi samo za siebie",
+      "items": [
+        { "value": "500+", "label": "Spraw zakończonych sukcesem", "sublabel": "z ponad 40 krajów" },
+        { "value": "95%", "label": "Wskaźnik skuteczności", "sublabel": "pozytywnych decyzji" },
+        { "value": "10+", "label": "Lat doświadczenia", "sublabel": "w prawie migracyjnym" },
+        { "value": "80%", "label": "Klientów z polecenia", "sublabel": "najlepsza rekomendacja" }
+      ]
+    },
+"testimonials": {
+  "section_label": "Doświadczenia klientów",
+  "headline": "Co mówią o nas klienci",
+  "items": [
+    {
+      "id": 1,
+      "quote": "Przeprowadzili nas przez relokację siedmiu osób z trzech krajów w ciągu jednego kwartału. To, co mi zostało w pamięci, to fakt, że nigdy nie musiałem pytać „co dalej”. Każdego tygodnia otrzymywałem zaktualizowany status. Dla działu HR, który prowadzi pięć innych projektów równolegle, to ma realną wartość.",
+      "author": "T. W.",
+      "role": "CFO",
+      "entity": "producent komponentów przemysłowych"
+    },
+    {
+      "id": 2,
+      "quote": "Sprawa o uznanie za obywatela polskiego, którą wcześniej dwukrotnie próbowałem prowadzić samodzielnie. Pani mecenas zwróciła uwagę na trzy elementy, których wcześniej nikt mi nie wskazał. Decyzja pozytywna w czternastym miesiącu. Bez ich precyzji prawdopodobnie nadal bym próbował.",
+      "author": "Karol M.",
+      "role": "Lublin",
+      "entity": ""
+    },
+    {
+      "id": 3,
+      "quote": "Sprawa wymagająca koordynacji z naszym biurem podatkowym w Zurychu, kancelarią imigracyjną w Londynie oraz zespołem w Warszawie. Polecam bez zastrzeżeń.",
+      "author": "Partner zarządzający",
+      "role": "family office",
+      "entity": "Szwajcaria"
+    },
+    {
+      "id": 4,
+      "quote": "Pierwsza sprawa, w której nikt mi niczego nie obiecywał na pierwszej rozmowie. Powiedzieli mi dokładnie, jakie są ryzyka, co możemy zrobić i jak długo to potrwa. Dla mnie to był moment, w którym poczułam, że trafiłam we właściwe miejsce.",
+      "author": "Yulia K.",
+      "role": "Wrocław",
+      "entity": ""
+    },
+    {
+      "id": 5,
+      "quote": "Po dwudziestu latach prowadzenia działalności we Włoszech zdecydowałem się przenieść centrum aktywności do Polski. Procedura prowadzona kompleksowo, w komunikacji wyłącznie po włosku z dedykowaną osobą z zespołu. Najważniejsze: nikt nie tłumaczył mi, że „tak się robi w Polsce”. Wyjaśnili, jak my to zrobimy w mojej konkretnej sprawie.",
+      "author": "A. B.",
+      "role": "założyciel grupy hotelowej",
+      "entity": "Włochy"
+    },
+    {
+      "id": 6,
+      "quote": "Niebieska Karta UE w siedem tygodni. Pracodawca powiedział, że to najszybsze tempo, jakie widział.",
+      "author": "R. P.",
+      "role": "dyrektor inżynieryjny",
+      "entity": "Indie"
+    },
+    {
+      "id": 7,
+      "quote": "Po sprzedaży biznesu w Azji szukałam neutralnej, stabilnej jurysdykcji europejskiej. Zespół pomógł mi zrozumieć, dlaczego Polska — a nie Portugalia ani Malta — będzie sensownym wyborem na najbliższą dekadę. To była konsultacja, o której będę pamiętać.",
+      "author": "S. L.",
+      "role": "inwestorka prywatna",
+      "entity": "Singapur"
+    },
+    {
+      "id": 8,
+      "quote": "Sprawa wrażliwa, wymagająca pełnej dyskrecji. Wszystkie warunki, o które prosiłam, zostały zachowane. Nie mam co dodać, poza tym że poleciłam dalej.",
+      "author": "Klientka indywidualna",
+      "role": "Białoruś",
+      "entity": ""
+    },
+    {
+      "id": 9,
+      "quote": "Przenieśliśmy z Frankfurtu do Warszawy trzech członków zarządu wraz z rodzinami — dziewięć osób, w tym dzieci w wieku szkolnym. Zespół koordynował nie tylko procedury wizowe, ale również doradzał w sprawach szkół międzynarodowych i nieruchomości. Bez ich pracy projekt przeciągnąłby się o pół roku.",
+      "author": "H. K.",
+      "role": "CEO",
+      "entity": "grupa farmaceutyczna, Niemcy"
+    },
+    {
+      "id": 10,
+      "quote": "Współpracujemy regularnie w sprawach klientów wymagających koordynacji z amerykańskim systemem imigracyjnym. Jakość pracy porównywalna z biurami, z którymi pracujemy w Londynie i Wiedniu.",
+      "author": "Partner",
+      "role": "kancelaria imigracyjna",
+      "entity": "Stany Zjednoczone"
+    },
+    {
+      "id": 11,
+      "quote": "Sprawa trudna — bardzo trudna. Dostałem to, na co czekałem dwadzieścia siedem lat.",
+      "author": "Y. D.",
+      "role": "klient indywidualny",
+      "entity": "Turcja"
+    },
+    {
+      "id": 12,
+      "quote": "Polska jest dla naszego funduszu strategiczna. Zespół przeprowadził nas przez procesy migracyjne i połączył je ze strukturą holdingową w Luksemburgu. Wartość dodana była nieoczywista — i istotna.",
+      "author": "Założyciel",
+      "role": "fundusz rodzinny",
+      "entity": "Zjednoczone Emiraty Arabskie"
+    },
+    {
+      "id": 13,
+      "quote": "Czterdziestu pracowników produkcji w jednym kwartale. Bez jednej odmownej decyzji.",
+      "author": "Dyrektor HR",
+      "role": "producent elektroniki",
+      "entity": "Wietnam"
+    },
+    {
+      "id": 14,
+      "quote": "Polskie procedury migracyjne nie są intuicyjne dla osoby przyzwyczajonej do systemu portugalskojęzycznego. Wyjaśniali wszystko cierpliwie, dwukrotnie. Decyzja pozytywna.",
+      "author": "M. S.",
+      "role": "architekt",
+      "entity": "Brazylia"
+    },
+    {
+      "id": 15,
+      "quote": "Trzy lata po pierwszej konsultacji — ten sam zespół prowadzi moje postępowanie o pobyt stały. Ciągłość obsługi to coś, czego nie da się kupić po fakcie.",
+      "author": "J. K.",
+      "role": "klient indywidualny",
+      "entity": "Korea Południowa"
+    }
+  ]
+},
+    "client_logos": {
+      "section_label": "Zaufali nam",
+      "items": []
+    },
+    "contact": {
+      "section_label": "Kontakt",
+      "headline": "Zacznijmy rozmowę",
+      "subheadline": "Skontaktuj się z nami i dowiedz się, jak możemy Ci pomóc.",
+      "email": "kontakt@pcw.pl",
+      "phone": "+48 22 123 45 67",
+      "address": "ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
+      "hours": "Pon–Pt: 9:00–17:00",
+      "cta": { "label": "Inicjuj kontakt", "href": "/#kontakt" }
+    }
+  },
+  "consultations": {
+    "page_title": "Konsultacje",
+    "hero": {
+      "eyebrow": "Pierwsze kroki",
+      "headline": "Umów konsultację",
+      "subheadline": "Wybierz formę kontaktu odpowiednią do Twojej sytuacji. Odpowiadamy w ciągu 24 godzin w dni robocze."
+    },
+    "visa_form": {
+      "title": "Wstępna kwalifikacja wizowa",
+      "description": "Wypełnij poniższy formularz, aby sprawdzić, jakie opcje wizowe są dostępne w Twojej sytuacji. Odpiszemy ze wstępną oceną w ciągu 24 godzin.",
+      "fields": {
+        "citizenship": { "label": "Obywatelstwo", "placeholder": "np. Ukraina, Japonia, Indie..." },
+        "purpose": {
+          "label": "Cel przyjazdu do Polski",
+          "placeholder": "Wybierz cel",
+          "options": [
+            { "value": "praca", "label": "Praca" },
+            { "value": "biznes", "label": "Biznes / inwestycja" },
+            { "value": "studia", "label": "Studia" },
+            { "value": "rodzina", "label": "Łączenie rodzin" },
+            { "value": "inne", "label": "Inne" }
+          ]
+        },
+        "duration": {
+          "label": "Planowany czas pobytu",
+          "placeholder": "Wybierz okres",
+          "options": [
+            { "value": "do_3m", "label": "Do 3 miesięcy" },
+            { "value": "3_6m", "label": "3–6 miesięcy" },
+            { "value": "6_12m", "label": "6–12 miesięcy" },
+            { "value": "powyzej_roku", "label": "Powyżej roku" }
+          ]
+        },
+        "job_offer": {
+          "label": "Czy posiada Pan/Pani ofertę pracy w Polsce?",
+          "options": [
+            { "value": "tak", "label": "Tak" },
+            { "value": "nie", "label": "Nie" },
+            { "value": "w_trakcie", "label": "W trakcie rozmów" }
+          ]
+        },
+        "family_in_poland": {
+          "label": "Czy ma Pan/Pani rodzinę w Polsce?",
+          "options": [
+            { "value": "tak", "label": "Tak" },
+            { "value": "nie", "label": "Nie" }
+          ]
+        }
+      },
+      "submit": "Sprawdź kwalifikowalność",
+      "disclaimer": "Formularz nie stanowi porady prawnej. Po analizie skontaktujemy się z Tobą z wstępną oceną Twojej sytuacji.",
+      "success": "Dziękujemy! Odpiszemy w ciągu 24 godzin w dni robocze."
+    },
+    "general_form": {
+      "title": "Konsultacja ogólna",
+      "description": "Masz pytania lub chcesz omówić swoją sytuację? Napisz do nas — doradca skontaktuje się z Tobą, aby ustalić szczegóły i zaproponować termin spotkania.",
+      "fields": {
+        "name": { "label": "Imię i nazwisko", "placeholder": "Jan Kowalski" },
+        "email": { "label": "Adres e-mail", "placeholder": "jan@przykład.pl" },
+        "phone": { "label": "Numer telefonu", "placeholder": "+48 600 000 000" },
+        "message": { "label": "Krótki opis sytuacji", "placeholder": "Opisz krótko swoją sytuację i pytania, z którymi chcesz się do nas zgłosić..." }
+      },
+      "submit": "Wyślij zapytanie",
+      "disclaimer": "Twoje dane są chronione zgodnie z RODO. Nie udostępniamy ich osobom trzecim.",
+      "success": "Wiadomość wysłana! Skontaktujemy się z Tobą w ciągu 24 godzin."
+    }
+  },
+  "footer": {
+    "tagline": "Butikowa kancelaria prawa migracyjnego i administracyjnego.",
+    "columns": [
+      {
+        "title": "Usługi",
+        "links": [
+          { "label": "Pobyt czasowy", "href": "/#uslugi" },
+          { "label": "Pobyt stały", "href": "/#uslugi" },
+          { "label": "Zezwolenia na pracę", "href": "/#uslugi" },
+          { "label": "Wizy", "href": "/#uslugi" },
+          { "label": "Obywatelstwo", "href": "/#uslugi" }
+        ]
+      },
+      {
+        "title": "Firma",
+        "links": [
+          { "label": "O nas", "href": "/#o-nas" },
+          { "label": "Private Client", "href": "/#private-client" },
+          { "label": "Kontakt", "href": "/#kontakt" },
+          { "label": "Konsultacje", "href": "/konsultacje" }
+        ]
+      }
+    ],
+    "contact": {
+      "email": "kontakt@pcw.pl",
+      "phone": "+48 22 123 45 67",
+      "address": "ul. Górnośląska 6 lok. 1, 00-444 Warszawa"
+    },
+    "registration": {
+      "label": "Dane rejestrowe",
+      "nip": "[NIP — do uzupełnienia]",
+      "krs": "[KRS — do uzupełnienia]",
+      "regon": "[REGON — do uzupełnienia]"
+    },
+    "legal": {
+      "copyright": "© 2025 Polskie Centrum Wizowe. Wszelkie prawa zastrzeżone.",
+      "disclaimer": "Polskie Centrum Wizowe jest prywatnym podmiotem doradczym. Nie stanowimy organu administracji państwowej Rzeczypospolitej Polskiej.",
+      "links": [
+        { "label": "Polityka prywatności", "href": "/polityka-prywatnosci" },
+        { "label": "Regulamin", "href": "/regulamin" }
+      ]
+    }
+  }
+}

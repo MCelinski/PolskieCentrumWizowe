@@ -15,13 +15,13 @@ interface ButtonProps {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-navy-900 text-cream hover:bg-navy-800 border border-navy-900 hover:border-navy-800",
+    "bg-navy-800 text-white border border-navy-800 hover:bg-navy-900 hover:border-navy-900",
   secondary:
-    "bg-transparent text-navy-900 border border-navy-900 hover:bg-navy-900 hover:text-cream",
+    "bg-transparent text-navy-800 border border-navy-800 hover:bg-navy-800 hover:text-white",
   ghost:
-    "bg-transparent text-navy-700 hover:text-navy-900 border border-transparent",
+    "bg-transparent text-navy-600 hover:text-navy-800 border border-transparent",
   "outline-light":
-    "bg-transparent text-cream border border-cream/40 hover:bg-cream/10 hover:border-cream/60",
+    "bg-transparent text-white border border-white/45 hover:bg-white/10 hover:border-white/70",
 };
 
 const sizeStyles: Record<string, string> = {
@@ -41,7 +41,7 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center font-sans font-medium tracking-wide transition-all duration-200 ease-out cursor-pointer select-none focus-visible:outline-2 focus-visible:outline-offset-2";
+    "inline-flex items-center justify-center font-sans font-semibold tracking-[0.02em] transition-all duration-200 ease-out cursor-pointer select-none focus-visible:outline-2 focus-visible:outline-offset-2";
   const classes = `${base} ${variantStyles[variant]} ${sizeStyles[size]} ${className} ${disabled ? "opacity-50 cursor-not-allowed" : ""}`;
 
   if (href) {

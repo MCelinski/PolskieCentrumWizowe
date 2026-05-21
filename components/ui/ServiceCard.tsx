@@ -4,26 +4,27 @@ interface ServiceCardProps {
   tags: string[];
   index: number;
   dark?: boolean;
+  className?: string;
 }
 
-export default function ServiceCard({ title, description, tags, index, dark }: ServiceCardProps) {
+export default function ServiceCard({ title, description, tags, index, dark, className = "" }: ServiceCardProps) {
   const indexStr = String(index + 1).padStart(2, "0");
 
-  const borderColor = dark ? "rgba(197,201,208,0.12)" : "var(--color-sand-300)";
-  const indexColor = dark ? "rgba(197,201,208,0.3)" : "var(--color-sand-400)";
-  const titleColor = dark ? "var(--color-cream)" : "var(--color-navy-900)";
-  const descColor = dark ? "rgba(197,201,208,0.65)" : "var(--color-sand-600)";
-  const tagColor = dark ? "rgba(197,201,208,0.4)" : "var(--color-navy-400)";
-  const separatorColor = dark ? "rgba(197,201,208,0.2)" : "var(--color-sand-400)";
+  const borderColor = dark ? "rgba(214, 224, 236, 0.18)" : "var(--color-sand-300)";
+  const indexColor = dark ? "rgba(223, 230, 242, 0.52)" : "var(--color-navy-500)";
+  const titleColor = dark ? "var(--color-white)" : "var(--color-navy-800)";
+  const descColor = dark ? "rgba(224, 232, 243, 0.8)" : "var(--color-sand-600)";
+  const tagColor = dark ? "rgba(224, 232, 243, 0.7)" : "var(--color-navy-500)";
+  const separatorColor = dark ? "rgba(196, 32, 33, 0.7)" : "var(--color-red-500)";
 
   return (
     <article
-      className="group border-t py-8 md:py-10 lg:py-12"
+      className={`group border-t py-8 md:py-10 lg:py-11 ${className}`}
       style={{ borderColor }}
     >
       <div className="flex items-baseline gap-4 md:gap-6 mb-4 md:mb-5">
         <span
-          className="font-sans text-xs font-medium flex-shrink-0 w-7 tabular-nums"
+          className="font-sans text-xs font-semibold flex-shrink-0 w-8 tabular-nums"
           style={{ color: indexColor, letterSpacing: "0.1em" }}
         >
           {indexStr}
@@ -33,7 +34,7 @@ export default function ServiceCard({ title, description, tags, index, dark }: S
           style={{
             color: titleColor,
             letterSpacing: "-0.02em",
-            fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
+            fontSize: "clamp(1.35rem, 2.4vw, 1.95rem)",
           }}
         >
           {title}
@@ -41,7 +42,7 @@ export default function ServiceCard({ title, description, tags, index, dark }: S
       </div>
       <div className="ml-11 md:ml-[3.25rem]">
         <p
-          className="font-sans text-sm md:text-base leading-relaxed mb-4 md:mb-5"
+          className="font-sans text-sm md:text-base leading-relaxed mb-5"
           style={{ color: descColor, maxWidth: "560px" }}
         >
           {description}

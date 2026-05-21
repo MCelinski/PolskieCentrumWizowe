@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.codex/
+
+# claude
+.claude/settings.local.json
+
+# temp / working files
+.tmp_docx_extract.zip
+.tmp_docx_extract/
+.tmp_docx_text.txt
+.tmp_docx_text_utf8.txt
+PCW_input_rev.docx
+content/site-content.recovered-from-next.json

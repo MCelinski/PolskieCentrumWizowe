@@ -1,60 +1,53 @@
-import content from "@/content/site-content.json";
+﻿"use client";
+
+import { useLangContent } from "@/contexts/LanguageContext";
+import { useInView } from "@/hooks/useInView";
 import ServiceCard from "@/components/ui/ServiceCard";
 import Button from "@/components/ui/Button";
 
 export default function Services() {
+  const content = useLangContent();
   const { services } = content.home;
+  const { ref, inView } = useInView(0.08);
 
   return (
     <section
+      ref={ref as React.RefObject<HTMLElement>}
       id="uslugi"
-      className="section-padding relative"
-      style={{ backgroundColor: "var(--color-navy-900)" }}
+      className={`section-padding surface-navy relative in-view-group${inView ? " is-visible" : ""}`}
       aria-labelledby="services-heading"
     >
-      {/* Top accent line */}
-      <div
-        className="absolute left-0 right-0 h-px opacity-20"
-        style={{ backgroundColor: "var(--color-navy-200)" }}
-        aria-hidden="true"
-      />
+      <div className="absolute top-0 left-0 right-0 h-px" style={{ backgroundColor: "rgba(222, 231, 242, 0.22)" }} aria-hidden="true" />
 
       <div className="container-editorial">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
-
-          {/* Left sticky column */}
-          <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
-            <p
-              className="section-eyebrow mb-5"
-              style={{ color: "rgba(197,201,208,0.5)" }}
-            >
-              {services.section_label}
-            </p>
+          <div className="lg:col-span-4 lg:sticky lg:top-[7.5rem] self-start animate-fade-right" style={{ animationDelay: "0ms" }}>
+            <p className="section-eyebrow section-eyebrow-light mb-5 animate-fade-up" style={{ animationDelay: "20ms" }}>{services.section_label}</p>
+            <div className="accent-rule mb-6 animate-scale-in" style={{ animationDelay: "80ms" }} aria-hidden="true" />
             <h2
               id="services-heading"
-              className="font-serif font-medium mb-6 md:mb-8"
+              className="font-serif mb-6 animate-fade-up"
               style={{
-                color: "var(--color-cream)",
-                letterSpacing: "-0.025em",
+                color: "var(--color-white)",
+                fontSize: "clamp(2rem, 4.7vw, 3.9rem)",
                 lineHeight: 1.05,
-                fontSize: "clamp(2.25rem, 4.5vw, 3.75rem)",
+                letterSpacing: "-0.03em",
+                animationDelay: "120ms",
               }}
             >
               {services.headline}
             </h2>
             {services.subheadline && (
-              <p
-                className="font-sans text-sm leading-relaxed mb-8 md:mb-10"
-                style={{ color: "rgba(197,201,208,0.6)", maxWidth: "320px" }}
-              >
+              <p className="font-sans text-base leading-relaxed mb-9 animate-fade-up" style={{ color: "rgba(225, 233, 243, 0.84)", maxWidth: "360px", animationDelay: "180ms" }}>
                 {services.subheadline}
               </p>
             )}
-            <Button label="Umów konsultację" href="/konsultacje" variant="outline-light" />
+            <div className="animate-fade-up" style={{ animationDelay: "240ms" }}>
+              <Button label={content.nav.cta} href="/konsultacje" variant="outline-light" />
+            </div>
           </div>
 
-          {/* Right list column */}
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-8 animate-fade-left" style={{ animationDelay: "80ms" }}>
             {services.items.map((service, index) => (
               <ServiceCard
                 key={service.id}
@@ -63,15 +56,11 @@ export default function Services() {
                 tags={service.tags}
                 index={index}
                 dark
+                className="animate-fade-up"
               />
             ))}
-            {/* Closing divider */}
-            <div
-              className="border-t"
-              style={{ borderColor: "rgba(197,201,208,0.12)" }}
-            />
+            <div className="border-t animate-scale-in" style={{ borderColor: "rgba(214, 224, 236, 0.18)", animationDelay: "360ms" }} />
           </div>
-
         </div>
       </div>
     </section>

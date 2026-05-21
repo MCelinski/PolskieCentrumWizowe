@@ -20,17 +20,22 @@ export default function SectionHeader({
       {eyebrow && (
         <p
           className="section-eyebrow mb-5"
-          style={{ color: light ? "rgba(197,201,208,0.85)" : undefined }}
+          style={{ color: light ? "rgba(232, 238, 246, 0.78)" : undefined }}
         >
           {eyebrow}
         </p>
       )}
+      <div
+        className={`${isCenter ? "mx-auto" : ""} accent-rule mb-6`}
+        aria-hidden="true"
+      />
       <h2
-        className="font-serif text-5xl md:text-6xl font-medium"
+        className="font-serif font-medium"
         style={{
-          color: light ? "#F7F6F3" : "var(--color-navy-900)",
+          color: light ? "var(--color-white)" : "var(--color-navy-800)",
           letterSpacing: "-0.025em",
-          lineHeight: 1.05,
+          lineHeight: 1.08,
+          fontSize: "clamp(2rem, 5vw, 3.9rem)",
         }}
       >
         {headline}
@@ -39,8 +44,8 @@ export default function SectionHeader({
         <p
           className="mt-6 text-base md:text-lg leading-relaxed"
           style={{
-            color: light ? "rgba(197,201,208,0.8)" : "var(--color-sand-600)",
-            maxWidth: "600px",
+            color: light ? "rgba(224, 233, 243, 0.82)" : "var(--color-sand-600)",
+            maxWidth: "640px",
             marginLeft: isCenter ? "auto" : undefined,
             marginRight: isCenter ? "auto" : undefined,
           }}

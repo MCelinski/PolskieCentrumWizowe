@@ -1,0 +1,320 @@
+{
+  "nav": {
+    "logo": { "name": "Polish Visa Centre", "abbr": "PCW" },
+      "links": [
+        { "label": "About", "href": "/#o-nas" },
+      { "label": "Services", "href": "/#uslugi" },
+      { "label": "Private Client", "href": "/#private-client" },
+      { "label": "Contact", "href": "/#kontakt" }
+    ],
+    "cta": "Initiate contact"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "IMMIGRATION AND ADMINISTRATIVE ADVISORY",
+      "headline": "Immigration proceedings. Conducted to conclusion.",
+      "subheadline": "We represent individual and corporate clients in proceedings for visas, residence permits, work authorization and Polish citizenship. One dedicated team per matter. One point of accountability. One outcome.",
+      "cta_primary": { "label": "Confidential consultation", "href": "/#kontakt" },
+      "cta_secondary": { "label": "View services", "href": "/#uslugi" },
+      "microcopy": "Initial conversation — complimentary, up to 30 minutes, no commitment.",
+      "trust_indicators": [
+        "Clients from over 40 jurisdictions",
+        "Conducting proceedings since 2018",
+        "Counsel in five languages"
+      ]
+    },
+    "trust_bar": {
+      "label": "Proceedings before:",
+      "institutions": [
+        "Consulates",
+        "Urząd do Spraw Cudzoziemców",
+        "Voivode (Wojewoda)",
+        "Prezydent RP",
+        "Państwowa Inspekcja Pracy (PIP)",
+        "Straż Graniczna",
+        "Urząd Pracy"
+      ]
+    },
+    "about": {
+      "section_label": "About",
+      "headline": "A pioneering approach to immigration law. The architecture of administrative procedures.",
+      "paragraphs": [
+        "Polskie Centrum Wizowe is an elite boutique advisory firm specializing in immigration and administrative law. We provide strategic counsel to individuals, families and international corporate groups whose status demands impeccable legal and operational command.",
+        "We operate within a multi-disciplinary model. Each engagement is structured around dedicated attorneys-at-law (adwokaci), legal advisors (radcowie prawni) and experts in international markets. The integrity of the entire process — from initial risk analysis to final resolution — is personally secured by a designated Managing Partner.",
+        "Our practice focuses on matters of the highest degree of complexity: multi-jurisdictional, combining immigration procedures with international corporate law, and requiring representation before key state authorities and inspection services.",
+        "Our foundation is absolute discretion, clarity of intent and full procedural accountability. We accept only a limited number of matters per year, guaranteeing our Clients absolute priority."
+      ],
+      "highlight": "80% clients by referral",
+      "highlight_sublabel": "The best measure of our reliability"
+    },
+    "slogan": "Counsel beyond the application.",
+    "services": {
+      "section_label": "Services",
+      "headline": "Full scope of immigration proceedings",
+      "subheadline": "From visas and residence permits to citizenship and appeals — we handle every stage of the proceedings.",
+      "items": [
+        {
+          "id": "wizy-pracownicze",
+          "icon": "briefcase",
+          "title": "Employment visas",
+          "tags": ["National D visa", "Work authorization", "Consular procedure"],
+          "description": "End-to-end handling of visa procedures for foreign nationals taking up employment in Poland. We conduct national D-type visa proceedings together with work authorization and consular documentation. Our team coordinates between employer and employee, eliminating procedural risk at every stage — from eligibility audit to issuance of the decision."
+        },
+        {
+          "id": "wizy-biznesowe",
+          "icon": "building",
+          "title": "Business visas",
+          "tags": ["Schengen C visa", "National D visa", "Secondment"],
+          "description": "Advisory services for entrepreneurs, executives and individuals seconded to Poland. We handle Schengen C-type and national D-type visas for business purposes, manage the formal aspects of secondment, and coordinate procedures with HR departments of parent entities. We work both with Polish inviting parties and foreign corporate groups."
+        },
+        {
+          "id": "wizy-studenckie",
+          "icon": "graduation-cap",
+          "title": "Student visas",
+          "tags": ["National D visa", "Temporary residence for education", "Extensions"],
+          "description": "Support for individuals pursuing studies at Polish universities. We conduct visa proceedings and prepare clients for temporary residence permits for the purpose of education. We coordinate with universities on required documentation and with consulates on procedural matters, taking on the full administrative workload."
+        },
+        {
+          "id": "pobyt-czasowy",
+          "icon": "home",
+          "title": "Temporary residence permit",
+          "tags": ["Voivode proceedings", "Residence card", "Representation"],
+          "description": "Administrative proceedings before the voivode (regional governor) with jurisdiction over the foreign national's place of residence. We provide full legal analysis of permit grounds, draft the application, compile supporting documentation and represent the client throughout the proceedings. We handle matters under all statutory grounds: employment, business activity, studies, residence with a family member of a Polish national, and other grounds prescribed by law."
+        },
+        {
+          "id": "pobyt-staly",
+          "icon": "shield",
+          "title": "Permanent residence permit",
+          "tags": ["Pole's Card", "Spouse of Polish citizen", "Indefinite residence"],
+          "description": "Available to individuals meeting statutory criteria — including spouses of Polish citizens, holders of the Pole's Card (Karta Polaka) and persons of Polish origin. We conduct detailed eligibility analysis, compile supporting documentation, and represent the client before the voivode. Practical outcome of a granted permit: indefinite right of residence and eligibility to apply for Polish citizenship."
+        },
+        {
+          "id": "rezydent-ue",
+          "icon": "award",
+          "title": "EU long-term resident permit",
+          "tags": ["Directive 2003/109/EC", "Intra-EU mobility", "Voivode"],
+          "description": "A status established under Council Directive 2003/109/EC, granting long-term residence rights across EU member states. We handle the full procedure: verification of lawful residence period, income and Polish language proficiency, application drafting and representation before the voivode. The status enables transfer of one's centre of life to another EU member state under a simplified regime."
+        },
+        {
+          "id": "obywatelstwo",
+          "icon": "globe",
+          "title": "Polish citizenship",
+          "tags": ["Grant by the President", "Recognition by the voivode", "Citizenship confirmation"],
+          "description": "Two distinct procedures: grant of citizenship by the President of the Republic of Poland, and recognition as a Polish citizen by the voivode. We assess the optimal route for each situation, draft the substantive reasoning of the application, and compile evidence of integration with the Republic. In complex cases, we also conduct proceedings confirming existing Polish citizenship — relevant in historical and lineage-based situations."
+        },
+        {
+          "id": "pip-sg",
+          "icon": "file-check",
+          "title": "Representation before the National Labour Inspectorate and Border Guard",
+          "tags": ["Inspection proceedings", "Compliance audit", "Appeals"],
+          "description": "Representation of employers and foreign nationals in inspection proceedings conducted by the National Labour Inspectorate (Państwowa Inspekcja Pracy / PIP) and the Border Guard (Straż Graniczna). Scope includes attendance during inspections, drafting of written explanations and objections, representation in administrative penalty and appeal proceedings. We also conduct internal compliance audits regarding foreign national employment — a regulatory risk-prevention measure for employers of larger scale."
+        },
+        {
+          "id": "zezwolenia-praca",
+          "icon": "scale",
+          "title": "Work authorization",
+          "tags": ["Types A–E", "EU Blue Card", "Statements of intent"],
+          "description": "Handling of all work permit types: A, B, C, D and E; seasonal permits type S; statements of intent to entrust work (oświadczenia o powierzeniu); and applications under the EU Blue Card framework. We conduct procedures in full coordination with the employer, managing obligations toward the voivode, the labour office (urząd pracy) and inspection authorities. Every matter is closed with a wrap-up report containing recommendations for subsequent hires."
+        }
+      ]
+    },
+    "private_client": {
+      "section_label": "Private Client",
+      "headline": "Private Client",
+      "subheadline": "Individual strategic advisory",
+      "description": "A dedicated legal ecosystem for clients of substantial means. The Private Client line was established for Clients whose legal, business and personal status requires holistic coordination beyond standard procedural frameworks. We serve entrepreneurs, investors, C-suite executives and family offices managing complex wealth across multiple jurisdictions. Every relationship is overseen by an individual Relationship Counsel, who coordinates the work of a consortium of experts — from immigration and tax law to corporate structuring.",
+      "scope": [
+        "Family and personal relocation: full logistical coordination, including continuity of education and private residential arrangements.",
+        "Structuring of business presence: analysis and implementation of optimal legal forms for foreign capital in Poland.",
+        "International consolidation: seamless cooperation with the Client's foreign advisors — banking, legal and tax.",
+        "Prevention and legal protection: ongoing assistance in administrative, inspection and crisis matters.",
+        "Status architecture: long-term planning of legal positioning — from residence to citizenship."
+      ],
+      "operating_mode": "Operating mode: absolute confidentiality, a single point of contact, availability 24/7/365. Work is conducted under project methodology, ensuring the predictability of milestones.",
+      "engagement_note": "Engagement within the Private Client line is of an elite character. The terms of engagement and fee structure are defined individually following an initial audit of intent.",
+      "cta": { "label": "Initiate contact", "href": "/konsultacje" }
+    },
+    "process": {
+      "section_label": "How we work",
+      "headline": "Collaboration process",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Initial consultation",
+          "description": "Analysis of the client's legal situation, assessment of available procedural routes and determination of the optimal strategy. Online or in-person consultation."
+        },
+        {
+          "number": "02",
+          "title": "Analysis and case strategy",
+          "description": "Preparation of a detailed procedural plan, list of required documents and timeline. Documentation verification and gap-filling."
+        },
+        {
+          "number": "03",
+          "title": "Representation before authorities",
+          "description": "Filing the application, active representation before the administrative body, ongoing case monitoring and response to official requests and correspondence."
+        },
+        {
+          "number": "04",
+          "title": "Decision and post-proceeding support",
+          "description": "Receipt of decision, analysis and next steps — including appeal if warranted. Support through subsequent stages (extension, permanent residence, citizenship)."
+        }
+      ]
+    },
+    "trust_metrics": {
+      "section_label": "Our figures",
+      "headline": "Experience that speaks for itself",
+      "items": [
+        { "value": "500+", "label": "Cases completed successfully", "sublabel": "from over 40 countries" },
+        { "value": "95%", "label": "Success rate", "sublabel": "positive decisions" },
+        { "value": "10+", "label": "Years of experience", "sublabel": "in immigration law" },
+        { "value": "80%", "label": "Clients by referral", "sublabel": "the best recommendation" }
+      ]
+    },
+    "testimonials": {
+      "section_label": "Client experiences",
+      "headline": "What our clients say",
+      "items": [
+        { "id": 1, "quote": "\"They moved seven people from three jurisdictions through relocation in a single quarter. What stayed with me was that I never had to ask 'what's next.' Every week, an updated status. For an HR function running five other projects in parallel, that has real value.\"", "author": "T. W.", "role": "CFO", "entity": "industrial components manufacturer" },
+        { "id": 2, "quote": "\"A citizenship recognition matter that I had previously attempted twice on my own. Counsel identified three issues that no one had flagged before. Positive decision in the fourteenth month. Without their precision, I would probably still be trying.\"", "author": "Karol M.", "role": "Lublin", "entity": "" },
+        { "id": 3, "quote": "\"An engagement requiring coordination with our tax practice in Zurich, our immigration counsel in London and the team in Warsaw. I recommend without reservation.\"", "author": "Managing Partner", "role": "family office", "entity": "Switzerland" },
+        { "id": 4, "quote": "\"The first matter where no one promised me anything in the first call. They told me exactly what the risks were, what could be done and how long it would take. That was the moment I knew I had come to the right place.\"", "author": "Yulia K.", "role": "Wrocław", "entity": "" },
+        { "id": 5, "quote": "\"After twenty years of operating in Italy, I decided to move my centre of activity to Poland. The procedure was conducted in full, with communication exclusively in Italian through a dedicated team member. What mattered most: no one told me 'this is how it's done in Poland.' They explained how we would do it in my particular matter.\"", "author": "A. B.", "role": "founder, hotel group", "entity": "Italy" },
+        { "id": 6, "quote": "\"EU Blue Card in seven weeks. My employer said it was the fastest he had seen.\"", "author": "R. P.", "role": "Engineering Director", "entity": "India" },
+        { "id": 7, "quote": "\"After the sale of my business in Asia, I was looking for a neutral, stable European jurisdiction. The team helped me understand why Poland — rather than Portugal or Malta — would be a sensible choice for the coming decade. It was a consultation I will remember.\"", "author": "S. L.", "role": "private investor", "entity": "Singapore" },
+        { "id": 8, "quote": "\"A sensitive matter requiring full discretion. Every condition I requested was observed. I have nothing to add, other than that I have recommended onward.\"", "author": "Private client", "role": "Belarus", "entity": "" },
+        { "id": 9, "quote": "\"We relocated three board members and their families from Frankfurt to Warsaw — nine people, including school-aged children. The team coordinated not only the visa procedures, but also advised on international schools and residential properties. Without their work, the project would have stretched out by six months.\"", "author": "H. K.", "role": "CEO", "entity": "pharmaceutical group, Germany" },
+        { "id": 10, "quote": "\"We collaborate regularly on matters requiring coordination with the U.S. immigration system. The quality of work is comparable to firms we work with in London and Vienna.\"", "author": "Partner", "role": "immigration law firm", "entity": "United States" },
+        { "id": 11, "quote": "\"A difficult matter — very difficult. I received what I had been waiting twenty-seven years for.\"", "author": "Y. D.", "role": "private client", "entity": "Türkiye" },
+        { "id": 12, "quote": "\"Poland is strategic for our fund. The team guided us through immigration processes and integrated them with our holding structure in Luxembourg. The added value was not obvious — and it was material.\"", "author": "Founder", "role": "family fund", "entity": "United Arab Emirates" },
+        { "id": 13, "quote": "\"Forty production workers in a single quarter. Without a single negative decision.\"", "author": "HR Director", "role": "electronics manufacturer", "entity": "Vietnam" },
+        { "id": 14, "quote": "\"Polish immigration procedures are not intuitive to someone accustomed to the Portuguese-language system. They explained everything patiently, twice. Positive decision.\"", "author": "M. S.", "role": "architect", "entity": "Brazil" },
+        { "id": 15, "quote": "\"Three years after the first consultation, the same team is handling my permanent residence proceedings. Continuity of representation is something that cannot be bought after the fact.\"", "author": "J. K.", "role": "private client", "entity": "South Korea" }
+      ]
+    },
+    "client_logos": {
+      "section_label": "They trusted us",
+      "items": []
+    },
+    "contact": {
+      "section_label": "Contact",
+      "headline": "Let's start a conversation",
+      "subheadline": "Get in touch and find out how we can help you.",
+      "email": "kontakt@pcw.pl",
+      "phone": "+48 22 123 45 67",
+      "address": "ul. Górnośląska 6, suite 1, 00-444 Warsaw, Poland",
+      "hours": "Mon–Fri: 9:00–17:00",
+      "cta": { "label": "Initiate contact", "href": "/#kontakt" }
+    }
+  },
+  "consultations": {
+    "page_title": "Consultations",
+    "hero": {
+      "eyebrow": "First steps",
+      "headline": "Book a consultation",
+      "subheadline": "Choose the form of contact appropriate for your situation. We respond within 24 hours on business days."
+    },
+    "visa_form": {
+      "title": "Initial Visa Qualification",
+      "description": "Fill in the form below to check which visa options are available in your situation. We will respond with a preliminary assessment within 24 hours.",
+      "fields": {
+        "citizenship": { "label": "Citizenship", "placeholder": "e.g. Ukraine, Japan, India..." },
+        "purpose": {
+          "label": "Purpose of visit to Poland",
+          "placeholder": "Select purpose",
+          "options": [
+            { "value": "praca", "label": "Employment" },
+            { "value": "biznes", "label": "Business / investment" },
+            { "value": "studia", "label": "Studies" },
+            { "value": "rodzina", "label": "Family reunion" },
+            { "value": "inne", "label": "Other" }
+          ]
+        },
+        "duration": {
+          "label": "Planned length of stay",
+          "placeholder": "Select period",
+          "options": [
+            { "value": "do_3m", "label": "Up to 3 months" },
+            { "value": "3_6m", "label": "3–6 months" },
+            { "value": "6_12m", "label": "6–12 months" },
+            { "value": "powyzej_roku", "label": "Over a year" }
+          ]
+        },
+        "job_offer": {
+          "label": "Do you have a job offer in Poland?",
+          "options": [
+            { "value": "tak", "label": "Yes" },
+            { "value": "nie", "label": "No" },
+            { "value": "w_trakcie", "label": "In discussions" }
+          ]
+        },
+        "family_in_poland": {
+          "label": "Do you have family in Poland?",
+          "options": [
+            { "value": "tak", "label": "Yes" },
+            { "value": "nie", "label": "No" }
+          ]
+        }
+      },
+      "submit": "Check eligibility",
+      "disclaimer": "This form does not constitute legal advice. After analysis, we will contact you with a preliminary assessment of your situation.",
+      "success": "Thank you! We will respond within 24 business hours."
+    },
+    "general_form": {
+      "title": "General Consultation",
+      "description": "Have questions or want to discuss your situation? Write to us — an advisor will contact you to agree on the details and propose a meeting time.",
+      "fields": {
+        "name": { "label": "Full name", "placeholder": "John Smith" },
+        "email": { "label": "Email address", "placeholder": "john@example.com" },
+        "phone": { "label": "Phone number", "placeholder": "+48 600 000 000" },
+        "message": { "label": "Brief description of your situation", "placeholder": "Briefly describe your situation and the questions you would like to discuss..." }
+      },
+      "submit": "Send enquiry",
+      "disclaimer": "Your data is protected in accordance with GDPR. We do not share it with third parties.",
+      "success": "Message sent! We will contact you within 24 hours."
+    }
+  },
+  "footer": {
+    "tagline": "Boutique immigration and administrative law firm.",
+    "columns": [
+      {
+        "title": "Services",
+      "links": [
+        { "label": "Temporary residence", "href": "/#uslugi" },
+          { "label": "Permanent residence", "href": "/#uslugi" },
+          { "label": "Work authorization", "href": "/#uslugi" },
+          { "label": "Visas", "href": "/#uslugi" },
+          { "label": "Citizenship", "href": "/#uslugi" }
+        ]
+      },
+      {
+        "title": "Company",
+      "links": [
+        { "label": "About", "href": "/#o-nas" },
+          { "label": "Private Client", "href": "/#private-client" },
+          { "label": "Contact", "href": "/#kontakt" },
+          { "label": "Consultations", "href": "/konsultacje" }
+        ]
+      }
+    ],
+    "contact": {
+      "email": "kontakt@pcw.pl",
+      "phone": "+48 22 123 45 67",
+      "address": "ul. Górnośląska 6, suite 1, 00-444 Warsaw, Poland"
+    },
+    "registration": {
+      "label": "Registration details",
+      "nip": "[NIP — to be filled in]",
+      "krs": "[KRS — to be filled in]",
+      "regon": "[REGON — to be filled in]"
+    },
+    "legal": {
+      "copyright": "© 2025 Polskie Centrum Wizowe. All rights reserved.",
+      "disclaimer": "Polskie Centrum Wizowe is a private advisory firm. We are not a public administration body of the Republic of Poland.",
+      "disclaimer_full": "Polskie Centrum Wizowe is a private commercial entity providing advisory services on commercial terms. We are not a public administration body of the Republic of Poland, a unit of the public finance sector, nor an entity organizationally or capital-affiliated with the State Treasury. Our services constitute legal and administrative advisory; proceedings for visas, residence permits, work authorization and Polish citizenship are conducted by the competent administrative authorities — consulates, voivodes, the Office for Foreigners (Urząd do Spraw Cudzoziemców), the President of the Republic of Poland, and other authorities empowered by statute.",
+      "links": [
+        { "label": "Privacy Policy", "href": "/polityka-prywatnosci" },
+        { "label": "Terms of Service", "href": "/regulamin" }
+      ]
+    }
+  }
+}

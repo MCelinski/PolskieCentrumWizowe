@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import content from "@/content/site-content.json";
+import { useLangContent } from "@/contexts/LanguageContext";
 
 type FormData = {
   citizenship: string;
@@ -20,7 +20,7 @@ const initialData: FormData = {
 };
 
 export default function VisaQualificationForm() {
-  const { visa_form } = content.consultations;
+  const { visa_form } = useLangContent().consultations;
   const [formData, setFormData] = useState<FormData>(initialData);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -90,7 +90,7 @@ export default function VisaQualificationForm() {
             style={inputStyle}
           >
             <option value="">{visa_form.fields.purpose.placeholder}</option>
-            {visa_form.fields.purpose.options.map((o) => (
+            {visa_form.fields.purpose.options.map((o: { value: string; label: string }) => (
               <option key={o.value} value={o.value}>{o.label}</option>
             ))}
           </select>
@@ -107,7 +107,7 @@ export default function VisaQualificationForm() {
             style={inputStyle}
           >
             <option value="">{visa_form.fields.duration.placeholder}</option>
-            {visa_form.fields.duration.options.map((o) => (
+            {visa_form.fields.duration.options.map((o: { value: string; label: string }) => (
               <option key={o.value} value={o.value}>{o.label}</option>
             ))}
           </select>
@@ -116,7 +116,7 @@ export default function VisaQualificationForm() {
         {/* Job offer */}
         <FormField label={visa_form.fields.job_offer.label} id="job_offer" required>
           <div className="flex flex-col sm:flex-row gap-4 mt-1" role="radiogroup" aria-labelledby="job_offer-label">
-            {visa_form.fields.job_offer.options.map((o) => (
+            {visa_form.fields.job_offer.options.map((o: { value: string; label: string }) => (
               <RadioOption
                 key={o.value}
                 id={`job_offer_${o.value}`}
@@ -133,7 +133,7 @@ export default function VisaQualificationForm() {
         {/* Family in Poland */}
         <FormField label={visa_form.fields.family_in_poland.label} id="family_in_poland" required>
           <div className="flex gap-4 mt-1" role="radiogroup" aria-labelledby="family_in_poland-label">
-            {visa_form.fields.family_in_poland.options.map((o) => (
+            {visa_form.fields.family_in_poland.options.map((o: { value: string; label: string }) => (
               <RadioOption
                 key={o.value}
                 id={`family_${o.value}`}
@@ -251,7 +251,7 @@ function RadioOption({
 const inputStyle: React.CSSProperties = {
   width: "100%",
   padding: "0.875rem 1rem",
-  fontFamily: "var(--font-inter), system-ui, sans-serif",
+  fontFamily: "var(--font-sans)",
   fontSize: "0.875rem",
   color: "var(--color-navy-900)",
   backgroundColor: "var(--color-cream)",

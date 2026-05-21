@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function KonsultacjePage() {
-  const { consultations } = content;
+  const { consultations } = content.pl;
   const { hero, visa_form, general_form } = consultations;
 
   return (

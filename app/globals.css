@@ -1,176 +1,177 @@
 @import "tailwindcss";
-@import "flag-icons/css/flag-icons.min.css";
-
-/* ─── Design Tokens: Polskie Centrum Wizowe ──────────────────────────────────
-   Swiss Modernism 2.0 × Minimalism × Editorial Grid
-   Primary: Charcoal | Background: Warm Off-White | Accent: Deep Red
-   ─────────────────────────────────────────────────────────────────────────── */
 
 @theme {
-  /* ── Colors ── */
-  --color-navy-950:   #1A1A1A;
-  --color-navy-900:   #2B2F36;
-  --color-navy-800:   #3A3F47;
-  --color-navy-700:   #4A4F58;
-  --color-navy-600:   #5A5F68;
-  --color-navy-400:   #8B9099;
-  --color-navy-200:   #C5C9D0;
-  --color-navy-100:   #E0E2E6;
+  --color-navy-950: #06142a;
+  --color-navy-900: #071b3a;
+  --color-navy-800: #0b1f3a;
+  --color-navy-700: #1b3357;
+  --color-navy-600: #355174;
+  --color-navy-500: #4a6180;
+  --color-navy-400: #5b6472;
+  --color-navy-200: #d7dde6;
+  --color-navy-100: #eef2f7;
 
-  --color-cream:      #F7F6F3;
-  --color-sand-100:   #ECEAE6;
-  --color-sand-200:   #E4E1DC;
-  --color-sand-300:   #D8D5D0;
-  --color-sand-400:   #C0BDB8;
-  --color-sand-500:   #9B9590;
-  --color-sand-600:   #6B6F76;
+  --color-white: #ffffff;
+  --color-cream: #f8f7f4;
+  --color-sand-100: #f7f8fa;
+  --color-sand-200: #edf1f6;
+  --color-sand-300: #e5e7eb;
+  --color-sand-400: #c8ced8;
+  --color-sand-500: #7d8898;
+  --color-sand-600: #5b6472;
 
-  --color-red-700:    #6E1818;
-  --color-red-600:    #8B1E1E;
-  --color-red-500:    #A52020;
-  --color-red-100:    #F5E0E0;
+  --color-red-700: #9f1818;
+  --color-red-600: #b91c1c;
+  --color-red-500: #c42021;
+  --color-red-100: #fce8e8;
 
-  /* ── Typography ── */
-  --font-serif:       var(--font-cormorant), Georgia, 'Times New Roman', serif;
-  --font-sans:        var(--font-source-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-
-  /* ── Spacing additions (8dp system) ── */
-  --spacing-18: 4.5rem;
-  --spacing-22: 5.5rem;
-  --spacing-26: 6.5rem;
-  --spacing-30: 7.5rem;
-
-  /* ── Shadows (restrained) ── */
-  --shadow-card:   0 1px 3px rgba(43, 47, 54, 0.05), 0 4px 16px rgba(43, 47, 54, 0.03);
-  --shadow-lifted: 0 2px 8px rgba(43, 47, 54, 0.07), 0 8px 32px rgba(43, 47, 54, 0.05);
+  --font-serif: var(--font-playfair), "Times New Roman", serif;
+  --font-sans: var(--font-manrope), "Segoe UI", system-ui, sans-serif;
 }
 
-/* ─── Animations ─────────────────────────────────────────────────────────────── */
-
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes hero-enter {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes flag-float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-6px); }
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes count-in {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Section scroll-trigger fade */
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in-soft {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .animate-fade-up {
   opacity: 0;
   animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Hero stagger entrance */
 .animate-hero-enter {
   opacity: 0;
   animation: hero-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Flag floating */
-.animate-flag-float {
-  animation: flag-float 3.2s ease-in-out infinite;
-}
-
-/* Flag marquee */
-.animate-marquee {
-  animation: marquee 32s linear infinite;
-  will-change: transform;
-}
-.animate-marquee:hover {
-  animation-play-state: paused;
-}
-
-/* Flag icon: desaturated at rest, vivid on hover */
-.flag-icon {
-  transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1),
-              filter 250ms ease;
-  filter: saturate(0.55) brightness(0.85);
-}
-.animate-marquee:hover .flag-icon {
-  filter: saturate(0.8) brightness(0.95);
-}
-.flag-item-wrapper:hover .flag-icon {
-  transform: translateY(-5px) scale(1.25);
-  filter: saturate(1) brightness(1.05);
-}
-
-/* Country name tooltip */
-.flag-label {
-  opacity: 0;
-  transform: translateY(5px);
-  transition: opacity 180ms ease, transform 180ms ease;
-  pointer-events: none;
-}
-.flag-item-wrapper:hover .flag-label {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Stat count entrance */
 .animate-count-in {
   opacity: 0;
   animation: count-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* In-view trigger: add .is-visible to parent to fire child animations */
-.in-view-group .animate-fade-up {
+.animate-fade-left {
+  opacity: 0;
+  animation: fade-left 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-right {
+  opacity: 0;
+  animation: fade-right 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: scale-in-soft 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.in-view-group .animate-fade-up,
+.in-view-group .animate-count-in,
+.in-view-group .animate-fade-left,
+.in-view-group .animate-fade-right,
+.in-view-group .animate-scale-in {
   animation-play-state: paused;
 }
-.in-view-group.is-visible .animate-fade-up {
+
+.in-view-group.is-visible .animate-fade-up,
+.in-view-group.is-visible .animate-count-in,
+.in-view-group.is-visible .animate-fade-left,
+.in-view-group.is-visible .animate-fade-right,
+.in-view-group.is-visible .animate-scale-in {
   animation-play-state: running;
 }
 
-.in-view-group .animate-count-in {
-  animation-play-state: paused;
+@keyframes trust-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
-.in-view-group.is-visible .animate-count-in {
-  animation-play-state: running;
+
+.trust-bar-track {
+  animation: trust-marquee 36s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-hero-enter,
-  .animate-flag-float,
-  .animate-count-in {
+  .animate-count-in,
+  .animate-fade-left,
+  .animate-fade-right,
+  .animate-scale-in {
     animation: none;
     opacity: 1;
     transform: none;
   }
-  .animate-marquee {
+
+  .trust-bar-track {
     animation: none;
     flex-wrap: wrap;
-    width: auto !important;
-  }
-  /* hide duplicated flags used for seamless loop */
-  .animate-marquee .flag-item-wrapper:nth-child(n + 16) {
-    display: none;
-  }
-  .flag-icon {
-    filter: saturate(1) brightness(1);
+    gap: 0.5rem 2rem;
   }
 }
 
-/* ─── Base Styles ───────────────────────────────────────────────────────────── */
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -180,29 +181,37 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 7.5rem;
+  }
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-cream);
-  color: var(--color-navy-900);
-  line-height: 1.75;
+  background-color: var(--color-white);
+  color: var(--color-navy-800);
+  line-height: 1.7;
 }
 
-/* ─── Typography Defaults ───────────────────────────────────────────────────── */
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.08;
   letter-spacing: -0.02em;
-  color: var(--color-navy-900);
+  color: var(--color-navy-800);
 }
 
-/* ─── Focus States ──────────────────────────────────────────────────────────── */
-
 :focus-visible {
-  outline: 2px solid var(--color-navy-600);
+  outline: 2px solid var(--color-red-600);
   outline-offset: 3px;
 }
 
@@ -211,30 +220,28 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-navy-900);
 }
 
-/* ─── Utility Classes ───────────────────────────────────────────────────────── */
-
 .section-padding {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 @media (min-width: 768px) {
   .section-padding {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .section-padding {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
   }
 }
 
 .container-editorial {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -255,16 +262,38 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.surface-navy {
+  background-color: var(--color-navy-900);
+  color: var(--color-white);
+}
+
+.surface-white {
+  background-color: var(--color-white);
+}
+
+.surface-soft {
+  background-color: var(--color-sand-100);
+}
+
 .section-eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-navy-600);
 }
 
-.divider-rule {
-  height: 1px;
-  background-color: var(--color-sand-300);
+.section-eyebrow-light {
+  color: rgba(230, 237, 246, 0.74);
+}
+
+.text-muted {
+  color: var(--color-sand-600);
+}
+
+.accent-rule {
+  width: 2.5rem;
+  height: 2px;
+  background-color: var(--color-red-500);
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import content from "@/content/site-content.json";
+import { useLangContent } from "@/contexts/LanguageContext";
 
 type FormData = {
   name: string;
@@ -18,7 +18,7 @@ const initialData: FormData = {
 };
 
 export default function GeneralConsultationForm() {
-  const { general_form } = content.consultations;
+  const { general_form } = useLangContent().consultations;
   const [formData, setFormData] = useState<FormData>(initialData);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -175,7 +175,7 @@ function FormField({
 const inputStyle: React.CSSProperties = {
   width: "100%",
   padding: "0.875rem 1rem",
-  fontFamily: "var(--font-inter), system-ui, sans-serif",
+  fontFamily: "var(--font-sans)",
   fontSize: "0.875rem",
   color: "var(--color-navy-900)",
   backgroundColor: "var(--color-cream)",

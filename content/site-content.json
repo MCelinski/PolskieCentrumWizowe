@@ -1,280 +1,2264 @@
 {
   "_meta": {
-    "lang": "pl",
-    "version": "1.0.0",
-    "note": "All website content. Structure supports future i18n extension."
-  },
-  "nav": {
-    "logo": {
-      "name": "Polskie Centrum Wizowe",
-      "abbr": "PCW"
-    },
-    "links": [
-      { "label": "O nas", "href": "/#o-nas" },
-      { "label": "Usługi", "href": "/#uslugi" },
-      { "label": "Opinie", "href": "/#opinie" },
-      { "label": "Kontakt", "href": "/#kontakt" }
+    "version": "2.1.0",
+    "defaultLang": "pl",
+    "langs": [
+      "pl",
+      "en",
+      "ua",
+      "ru"
     ],
-    "cta": "Umów konsultację"
+    "note": "All website content. Edit here — no code changes needed for content updates.",
+    "source": "manual-docx-sync"
   },
-  "home": {
-    "hero": {
-      "eyebrow": "Doradztwo wizowe i migracyjne",
-      "headline": "Bezpieczna droga do Polski zaczyna się tutaj",
-      "subheadline": "Pomagamy osobom i firmom przejść przez procesy wizowe i migracyjne — sprawnie, pewnie i z pełnym wsparciem na każdym etapie.",
-      "cta_primary": {
-        "label": "Umów konsultację",
-        "href": "/konsultacje"
+  "pl": {
+    "nav": {
+      "logo": {
+        "name": "Polskie Centrum Wizowe",
+        "abbr": "PCW"
       },
-      "cta_secondary": {
-        "label": "Poznaj nasze usługi",
-        "href": "/#uslugi"
-      },
-      "trust_indicator": "Zaufało nam ponad 500 klientów z 40 krajów"
-    },
-    "about": {
-      "section_label": "O nas",
-      "headline": "Doświadczenie i dyskrecja w służbie Twoich planów",
-      "paragraphs": [
-        "Polskie Centrum Wizowe to butikowa firma doradcza specjalizująca się w prawie wizowym i migracyjnym. Od ponad dekady wspieramy osoby prywatne, przedsiębiorców i firmy w procesach relokacji do Polski.",
-        "Naszą pracę cechuje precyzja, indywidualne podejście i pełna odpowiedzialność za każdą sprawę. Nie zajmujemy się masową obsługą — każdy klient otrzymuje dedykowanego doradcę i spersonalizowany plan działania.",
-        "80% naszych klientów pochodzi z rekomendacji — to najlepsza miara naszej rzetelności."
-      ],
-      "highlight": "80% klientów z polecenia"
-    },
-    "services": {
-      "section_label": "Usługi",
-      "headline": "Kompleksowe wsparcie na każdym etapie",
-      "subheadline": "Oferujemy pełen zakres usług wizowych i migracyjnych, dostosowanych do indywidualnych potrzeb klientów.",
-      "items": [
-        {
-          "id": "praca",
-          "icon": "briefcase",
-          "title": "Wizy pracownicze",
-          "description": "Kompleksowa obsługa wiz i zezwoleń na pracę dla obcokrajowców zatrudnianych przez polskie firmy. Obejmuje m.in. wizy D, zezwolenia na pracę i pobyt.",
-          "tags": ["Wiza D", "Zezwolenie na pracę", "Pobyt czasowy"]
-        },
-        {
-          "id": "biznes",
-          "icon": "building",
-          "title": "Wizy biznesowe",
-          "description": "Doradztwo dla przedsiębiorców, inwestorów i menedżerów delegowanych do Polski. Obsługa wiz Schengen, wiz biznesowych i rejestracji spółek.",
-          "tags": ["Wiza Schengen", "Zezwolenie inwestora", "Delegowanie"]
-        },
-        {
-          "id": "pobyt",
-          "icon": "home",
-          "title": "Zezwolenia na pobyt",
-          "description": "Profesjonalna obsługa postępowań o pobyt czasowy i stały. Przygotowanie dokumentacji, reprezentacja przed organami i monitoring sprawy.",
-          "tags": ["Pobyt czasowy", "Pobyt stały", "Karta stałego pobytu"]
-        },
-        {
-          "id": "rodzina",
-          "icon": "users",
-          "title": "Łączenie rodzin",
-          "description": "Pomoc w sprowadzeniu rodziny do Polski — przygotowanie wniosków, doradztwo w zakresie wymagań i koordynacja całego procesu.",
-          "tags": ["Wiza rodzinna", "Łączenie rodzin", "Nieletni"]
-        },
-        {
-          "id": "studia",
-          "icon": "graduation-cap",
-          "title": "Wizy studenckie",
-          "description": "Wsparcie dla studentów zagranicznych planujących studia w Polsce. Obsługa wiz studenckich, kart pobytu studenta i przedłużeń.",
-          "tags": ["Wiza studencka", "Karta pobytu studenta", "Przedłużenie"]
-        },
-        {
-          "id": "obywatelstwo",
-          "icon": "shield",
-          "title": "Obywatelstwo polskie",
-          "description": "Doradztwo w zakresie ubiegania się o obywatelstwo polskie — analiza podstaw prawnych, przygotowanie dokumentacji i reprezentacja.",
-          "tags": ["Obywatelstwo", "Naturalizacja", "Potwierdzenie"]
-        }
-      ]
-    },
-    "testimonials": {
-      "section_label": "Opinie klientów",
-      "headline": "Co mówią o nas klienci",
-      "items": [
-        {
-          "id": 1,
-          "quote": "Polskie Centrum Wizowe przeprowadziło naszą firmę przez skomplikowany proces relokacji 12 pracowników z Ukrainy i Białorusi. Perfekcyjna organizacja, zero niespodzianek.",
-          "author": "Tomasz Wierzbicki",
-          "role": "Dyrektor HR",
-          "company": "FinTech Solutions Sp. z o.o."
-        },
-        {
-          "id": 2,
-          "quote": "Otrzymałam kartę stałego pobytu w ciągu 4 miesięcy. Doradcy prowadzili mnie krok po kroku i zawsze byli dostępni na wszelkie pytania. Polecam z całego serca.",
-          "author": "Yuki Tanaka",
-          "role": "Inżynierka oprogramowania",
-          "company": "Warszawa"
-        },
-        {
-          "id": 3,
-          "quote": "Jako inwestor z Japonii potrzebowałem specjalistycznej wiedzy. PCW zapewniło mi nie tylko obsługę prawną, ale też pełne wsparcie w adaptacji do polskich realiów biznesowych.",
-          "author": "Hiroshi Nakamura",
-          "role": "Prezes zarządu",
-          "company": "Nakamura Trading Group"
-        },
-        {
-          "id": 4,
-          "quote": "Sprawna, dyskretna i profesjonalna obsługa. Moja wiza pracownicza została wydana bez jednego błędu w dokumentacji. To rzadkość w tej branży.",
-          "author": "Maria Kowalenko",
-          "role": "Menedżerka projektu",
-          "company": "Global Logistics Polska"
-        }
-      ]
-    },
-    "trust_metrics": {
-      "section_label": "Nasze liczby",
-      "headline": "Doświadczenie, które mówi samo za siebie",
-      "items": [
-        { "value": "500+", "label": "Klientów obsłużonych", "sublabel": "z ponad 40 krajów" },
-        { "value": "95%", "label": "Wskaźnik sukcesu", "sublabel": "pozytywnych decyzji" },
-        { "value": "10+", "label": "Lat doświadczenia", "sublabel": "w prawie migracyjnym" },
-        { "value": "80%", "label": "Klientów z polecenia", "sublabel": "najlepsza rekomendacja" }
-      ]
-    },
-    "partners": {
-      "section_label": "Współpracujemy z",
-      "items": [
-        { "id": 1, "name": "Urząd ds. Cudzoziemców" },
-        { "id": 2, "name": "Krajowa Izba Gospodarcza" },
-        { "id": 3, "name": "Ambasada RP w Tokio" },
-        { "id": 4, "name": "Business Link" },
-        { "id": 5, "name": "Polska Agencja Inwestycji i Handlu" },
-        { "id": 6, "name": "Warsaw Enterprise Institute" }
-      ]
-    },
-    "contact": {
-      "section_label": "Kontakt",
-      "headline": "Zacznijmy rozmowę",
-      "subheadline": "Skontaktuj się z nami i dowiedz się, jak możemy Ci pomóc.",
-      "email": "kontakt@pcw.pl",
-      "phone": "+48 22 123 45 67",
-      "address": "ul. Nowy Świat 15, 00-029 Warszawa",
-      "hours": "Pon–Pt: 9:00–17:00",
-      "cta": {
-        "label": "Umów konsultację online",
-        "href": "/konsultacje"
-      }
-    }
-  },
-  "consultations": {
-    "page_title": "Konsultacje",
-    "hero": {
-      "eyebrow": "Pierwsze kroki",
-      "headline": "Umów konsultację",
-      "subheadline": "Wybierz formę kontaktu odpowiednią do Twojej sytuacji. Odpowiadamy w ciągu 24 godzin w dni robocze."
-    },
-    "visa_form": {
-      "title": "Wstępna kwalifikacja wizowa",
-      "description": "Wypełnij poniższy formularz, aby sprawdzić, jakie opcje wizowe są dostępne w Twojej sytuacji. Odpiszemy ze wstępną oceną w ciągu 24 godzin.",
-      "fields": {
-        "citizenship": {
-          "label": "Obywatelstwo",
-          "placeholder": "np. Ukraina, Japonia, Indie..."
-        },
-        "purpose": {
-          "label": "Cel przyjazdu do Polski",
-          "placeholder": "Wybierz cel",
-          "options": [
-            { "value": "praca", "label": "Praca" },
-            { "value": "biznes", "label": "Biznes / inwestycja" },
-            { "value": "studia", "label": "Studia" },
-            { "value": "rodzina", "label": "Łączenie rodzin" },
-            { "value": "inne", "label": "Inne" }
-          ]
-        },
-        "duration": {
-          "label": "Planowany czas pobytu",
-          "placeholder": "Wybierz okres",
-          "options": [
-            { "value": "do_3m", "label": "Do 3 miesięcy" },
-            { "value": "3_6m", "label": "3–6 miesięcy" },
-            { "value": "6_12m", "label": "6–12 miesięcy" },
-            { "value": "powyzej_roku", "label": "Powyżej roku" }
-          ]
-        },
-        "job_offer": {
-          "label": "Czy posiada Pan/Pani ofertę pracy w Polsce?",
-          "options": [
-            { "value": "tak", "label": "Tak" },
-            { "value": "nie", "label": "Nie" },
-            { "value": "w_trakcie", "label": "W trakcie rozmów" }
-          ]
-        },
-        "family_in_poland": {
-          "label": "Czy ma Pan/Pani rodzinę w Polsce?",
-          "options": [
-            { "value": "tak", "label": "Tak" },
-            { "value": "nie", "label": "Nie" }
-          ]
-        }
-      },
-      "submit": "Sprawdź kwalifikowalność",
-      "disclaimer": "Formularz nie stanowi porady prawnej. Po analizie skontaktujemy się z Tobą z wstępną oceną Twojej sytuacji.",
-      "success": "Dziękujemy! Odpiszemy w ciągu 24 godzin w dni robocze."
-    },
-    "general_form": {
-      "title": "Konsultacja ogólna",
-      "description": "Masz pytania lub chcesz omówić swoją sytuację? Napisz do nas — doradca skontaktuje się z Tobą, aby ustalić szczegóły i zaproponować termin spotkania.",
-      "fields": {
-        "name": {
-          "label": "Imię i nazwisko",
-          "placeholder": "Jan Kowalski"
-        },
-        "email": {
-          "label": "Adres e-mail",
-          "placeholder": "jan@przykład.pl"
-        },
-        "phone": {
-          "label": "Numer telefonu",
-          "placeholder": "+48 600 000 000"
-        },
-        "message": {
-          "label": "Krótki opis sytuacji",
-          "placeholder": "Opisz krótko swoją sytuację i pytania, z którymi chcesz się do nas zgłosić..."
-        }
-      },
-      "submit": "Wyślij zapytanie",
-      "disclaimer": "Twoje dane są chronione zgodnie z RODO. Nie udostępniamy ich osobom trzecim.",
-      "success": "Wiadomość wysłana! Skontaktujemy się z Tobą w ciągu 24 godzin."
-    }
-  },
-  "footer": {
-    "tagline": "Profesjonalne doradztwo wizowe i migracyjne.",
-    "columns": [
-      {
-        "title": "Usługi",
-        "links": [
-          { "label": "Wizy pracownicze", "href": "/#uslugi" },
-          { "label": "Wizy biznesowe", "href": "/#uslugi" },
-          { "label": "Zezwolenia na pobyt", "href": "/#uslugi" },
-          { "label": "Łączenie rodzin", "href": "/#uslugi" }
-        ]
-      },
-      {
-        "title": "Firma",
-        "links": [
-          { "label": "O nas", "href": "/#o-nas" },
-          { "label": "Opinie klientów", "href": "/#opinie" },
-          { "label": "Kontakt", "href": "/#kontakt" },
-          { "label": "Konsultacje", "href": "/konsultacje" }
-        ]
-      }
-    ],
-    "contact": {
-      "email": "kontakt@pcw.pl",
-      "phone": "+48 22 123 45 67",
-      "address": "ul. Nowy Świat 15, 00-029 Warszawa"
-    },
-    "legal": {
-      "copyright": "© 2024 Polskie Centrum Wizowe. Wszelkie prawa zastrzeżone.",
       "links": [
-        { "label": "Polityka prywatności", "href": "/polityka-prywatnosci" },
-        { "label": "Regulamin", "href": "/regulamin" }
-      ]
+        {
+          "label": "O nas",
+          "href": "/#o-nas"
+        },
+        {
+          "label": "Usługi",
+          "href": "/#uslugi"
+        },
+        {
+          "label": "Private Client",
+          "href": "/#private-client"
+        },
+        {
+          "label": "Kontakt",
+          "href": "/#kontakt"
+        }
+      ],
+      "cta": "Inicjuj kontakt"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "DORADZTWO MIGRACYJNE I ADMINISTRACYJNE",
+        "headline": "Postępowania wizowe i migracyjne. Prowadzone do skutku.",
+        "subheadline": "Reprezentujemy klientów indywidualnych i korporacyjnych w procedurach legalizacji pobytu, zatrudnienia oraz uzyskania obywatelstwa polskiego. Każda sprawa — jeden dedykowany zespół, jedna odpowiedzialność, jedno zakończenie.",
+        "cta_primary": {
+          "label": "Inicjuj kontakt",
+          "href": "/#kontakt"
+        },
+        "cta_secondary": {
+          "label": "Zakres usług",
+          "href": "/#uslugi"
+        },
+        "microcopy": "Pierwsza rozmowa — bezpłatna, do 30 minut, bez zobowiązań.",
+        "trust_indicators": [
+          "Klienci z ponad 40 jurysdykcji",
+          "Postępowania prowadzone od 2018 roku",
+          "Obsługa w pięciu językach"
+        ]
+      },
+      "trust_bar": {
+        "label": "Prowadzimy postępowania przed:",
+        "institutions": [
+          "Konsulaty",
+          "Urząd do Spraw Cudzoziemców",
+          "Wojewoda",
+          "Prezydent RP",
+          "Państwowa Inspekcja Pracy (PIP)",
+          "Straż Graniczna",
+          "Urząd Pracy"
+        ]
+      },
+      "about": {
+        "section_label": "O nas",
+        "headline": "Pionierskie podejście do prawa migracyjnego. Architektura procesów administracyjnych.",
+        "paragraphs": [
+          "Polskie Centrum Wizowe to elitarna butikowa firma doradcza, specjalizująca się w prawie migracyjnym oraz administracyjnym. Zapewniamy strategiczne wsparcie dla osób fizycznych, rodzin oraz międzynarodowych grup kapitałowych, których status wymaga nienagannej biegłości prawnej i operacyjnej.",
+          "Działamy w modelu multi-disciplinary. Strukturę każdego projektu tworzą dedykowani adwokaci, radcowie prawni oraz eksperci rynków międzynarodowych. Integralność całego procesu — od wstępnej analizy ryzyka po ostateczne rozstrzygnięcie — zabezpiecza osobiście wyznaczony Partner Zarządzający.",
+          "Specjalizujemy się w sprawach o najwyższym stopniu złożoności: wielojurysdykcyjnych, łączących procedury migracyjne z międzynarodowym prawem korporacyjnym oraz wymagających reprezentacji przed kluczowymi organami państwowymi i służbami kontrolnymi.",
+          "Nasz fundament to bezwzględna dyskrecja, klarowność intencji i pełna odpowiedzialność procesowa. Przyjmujemy wyłącznie ograniczoną liczbę spraw rocznie, gwarantując naszym Klientom absolutny priorytet."
+        ],
+        "highlight": "80% klientów z polecenia",
+        "highlight_sublabel": "Najlepsza miara naszej rzetelności"
+      },
+      "services": {
+        "section_label": "Usługi",
+        "headline": "Pełen zakres postępowań migracyjnych",
+        "subheadline": "Od wiz i zezwoleń na pobyt po obywatelstwo i odwołania — prowadzimy każdy etap postępowania.",
+        "items": [
+          {
+            "id": "wizy-pracownicze",
+            "icon": "briefcase",
+            "title": "Wizy pracownicze",
+            "description": "Kompleksowa obsługa procesu wizowego dla cudzoziemców podejmujących zatrudnienie w Polsce. Prowadzimy postępowania o wizę krajową typu D, łącząc je z uzyskaniem zezwolenia na pracę oraz przygotowaniem dokumentacji wymaganej przez konsulat. Zespół koordynuje pracodawcę i pracownika, eliminując ryzyko proceduralne na każdym etapie — od audytu kwalifikowalności po odbiór decyzji.",
+            "tags": [
+              "Wiza krajowa typu D · Zezwolenie na pracę · Procedura konsularna"
+            ]
+          },
+          {
+            "id": "wizy-biznesowe",
+            "icon": "building",
+            "title": "Wizy biznesowe",
+            "description": "Doradztwo wizowe dla przedsiębiorców, kadry zarządzającej i osób delegowanych do Polski. Obsługujemy wizy Schengen typu C oraz krajowe typu D w celach gospodarczych, zarządzamy aspektami formalnymi delegacji oraz koordynujemy procedury z działami HR macierzystych spółek. Pracujemy zarówno z polskimi podmiotami zapraszającymi, jak i z zagranicznymi grupami kapitałowymi.",
+            "tags": [
+              "Wiza Schengen typu C · Wiza krajowa typu D · Delegowanie"
+            ]
+          },
+          {
+            "id": "wizy-studenckie",
+            "icon": "graduation-cap",
+            "title": "Wizy studenckie",
+            "description": "Wsparcie dla osób podejmujących studia w polskich uczelniach. Prowadzimy postępowania wizowe oraz przygotowujemy klientów do uzyskania zezwolenia na pobyt czasowy w celu kształcenia. Współpracujemy z uczelniami w zakresie wymaganej dokumentacji oraz z konsulatami w zakresie procedur, przejmując całość czynności formalnych.",
+            "tags": [
+              "Wiza krajowa typu D · Pobyt czasowy w celu kształcenia · Przedłużenia"
+            ]
+          },
+          {
+            "id": "pobyt-czasowy",
+            "icon": "home",
+            "title": "Zezwolenie na pobyt czasowy",
+            "description": "Postępowanie administracyjne prowadzone przed wojewodą właściwym dla miejsca pobytu cudzoziemca. Obejmuje pełną analizę podstaw prawnych, sporządzenie wniosku, kompletację dokumentacji oraz reprezentację w toku postępowania. Prowadzimy sprawy we wszystkich trybach przewidzianych ustawą: zatrudnienia, prowadzenia działalności gospodarczej, studiów, pobytu z członkiem rodziny obywatela polskiego oraz pozostałych podstaw ustawowych.",
+            "tags": [
+              "Postępowanie przed wojewodą · Karta pobytu · Reprezentacja"
+            ]
+          },
+          {
+            "id": "pobyt-staly",
+            "icon": "shield",
+            "title": "Zezwolenie na pobyt stały",
+            "description": "Postępowanie zarezerwowane dla osób spełniających ustawowe przesłanki — między innymi małżonków obywateli polskich, posiadaczy Karty Polaka oraz osób polskiego pochodzenia. Prowadzimy szczegółową analizę uprawnień, kompletujemy dokumentację potwierdzającą podstawę wniosku oraz reprezentujemy klienta przed wojewodą. Konsekwencje praktyczne uzyskanego zezwolenia: pobyt bezterminowy oraz uprawnienie do ubiegania się o obywatelstwo polskie.",
+            "tags": [
+              "Karta Polaka · Małżonek obywatela RP · Pobyt bezterminowy"
+            ]
+          },
+          {
+            "id": "rezydent-ue",
+            "icon": "award",
+            "title": "Zezwolenie na pobyt rezydenta długoterminowego UE",
+            "description": "Status prawny przewidziany dyrektywą Rady 2003/109/WE, umożliwiający długoterminowy pobyt na terytorium państw członkowskich Unii Europejskiej. Obsługujemy postępowanie w pełnym zakresie: weryfikacja okresu legalnego pobytu, dochodów oraz znajomości języka polskiego, sporządzenie wniosku oraz reprezentacja przed wojewodą. Status otwiera możliwość przeniesienia centrum aktywności życiowej do innego państwa UE w trybie uproszczonym.",
+            "tags": [
+              "Dyrektywa 2003/109/WE · Mobilność wewnątrz UE · Wojewoda"
+            ]
+          },
+          {
+            "id": "obywatelstwo",
+            "icon": "globe",
+            "title": "Obywatelstwo polskie",
+            "description": "Dwa odrębne tryby uzyskania: nadanie obywatelstwa przez Prezydenta Rzeczypospolitej Polskiej oraz uznanie za obywatela polskiego przez wojewodę. Analizujemy ścieżkę optymalną dla danej sytuacji, sporządzamy uzasadnienie wniosku oraz kompletujemy dokumentację potwierdzającą integrację z Rzeczpospolitą. W sprawach złożonych prowadzimy także postępowania o potwierdzenie posiadania obywatelstwa polskiego — istotne w przypadkach historycznych oraz wynikających z linii rodzinnej.",
+            "tags": [
+              "Nadanie przez Prezydenta RP · Uznanie przez wojewodę · Potwierdzenie obywatelstwa"
+            ]
+          },
+          {
+            "id": "pip-sg",
+            "icon": "file-check",
+            "title": "Reprezentacja przed PIP i Strażą Graniczną",
+            "description": "Reprezentacja pracodawców i cudzoziemców w postępowaniach kontrolnych prowadzonych przez Państwową Inspekcję Pracy oraz Straż Graniczną. Zakres obejmuje udział w czynnościach kontrolnych, sporządzanie wyjaśnień i zastrzeżeń, reprezentację w postępowaniach mandatowych oraz odwoławczych. Prowadzimy także audyty wewnętrzne weryfikujące zgodność zatrudnienia cudzoziemców z obowiązującymi przepisami — element profilaktyki ryzyk regulacyjnych dla pracodawców o większej skali.",
+            "tags": [
+              "Postępowania kontrolne · Audyt zgodności · Odwołania"
+            ]
+          },
+          {
+            "id": "zezwolenia-praca",
+            "icon": "scale",
+            "title": "Zezwolenia na pracę",
+            "description": "Obsługa wszystkich typów zezwoleń na pracę: A, B, C, D oraz E, zezwoleń sezonowych typu S, oświadczeń o powierzeniu wykonywania pracy oraz wniosków w ramach systemu Niebieskiej Karty Unii Europejskiej. Procesy prowadzimy w pełnej koordynacji z pracodawcą, zarządzając obowiązkami wobec wojewody, urzędu pracy oraz organów kontrolnych. Każde postępowanie kończymy raportem zamknięcia z rekomendacjami dla kolejnych zatrudnień.",
+            "tags": [
+              "Typy A–E · Niebieska Karta UE · Oświadczenia o powierzeniu"
+            ]
+          }
+        ]
+      },
+      "private_client": {
+        "section_label": "Private Client",
+        "headline": "Private Client",
+        "subheadline": "Dla klientów, dla których czas i dyskrecja są wartościami nadrzędnymi",
+        "description": "Podtytuł: Indywidualna obsługa strategiczna",
+        "scope": [
+          "Kompleksowe planowanie ścieżki migracyjnej dla klienta i jego rodziny",
+          "Priorytetowa obsługa z gwarantowanym czasem reakcji",
+          "Koordynacja z prawnikami, doradcami podatkowymi i notariuszami",
+          "Dyskretna obsługa spraw wrażliwych i niestandardowych",
+          "Dostęp do sieci kontaktów instytucjonalnych",
+          "Raportowanie i monitoring statusu wszystkich postępowań"
+        ],
+        "operating_mode": "Dostępni 24/7/365. Spotkania w siedzibie klienta lub w formie zdalnej.",
+        "cta": {
+          "label": "Zapytaj o program",
+          "href": "/konsultacje"
+        }
+      },
+      "process": {
+        "section_label": "Jak pracujemy",
+        "headline": "Proces współpracy",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Wstępna konsultacja",
+            "description": "Analiza sytuacji prawnej klienta, ocena dostępnych ścieżek postępowania i określenie optymalnej strategii. Konsultacja online lub stacjonarna."
+          },
+          {
+            "number": "02",
+            "title": "Analiza i strategia postępowania",
+            "description": "Przygotowanie szczegółowego planu postępowania, listy wymaganych dokumentów i harmonogramu działań. Weryfikacja dokumentacji i uzupełnienie braków."
+          },
+          {
+            "number": "03",
+            "title": "Reprezentacja przed organami",
+            "description": "Złożenie wniosku, aktywna reprezentacja przed organem administracyjnym, bieżący monitoring sprawy i odpowiedź na wezwania i zapytania urzędowe."
+          },
+          {
+            "number": "04",
+            "title": "Decyzja i wsparcie po-postępowaniu",
+            "description": "Odbiór decyzji, analiza jej treści i dalsze kroki — w tym odwołanie, jeśli jest zasadne. Wsparcie przy kolejnych etapach (przedłużenie, pobyt stały, obywatelstwo)."
+          }
+        ]
+      },
+      "trust_metrics": {
+        "section_label": "Nasze liczby",
+        "headline": "Doświadczenie, które mówi samo za siebie",
+        "items": [
+          {
+            "value": "500+",
+            "label": "Spraw zakończonych sukcesem",
+            "sublabel": "z ponad 40 krajów"
+          },
+          {
+            "value": "95%",
+            "label": "Wskaźnik skuteczności",
+            "sublabel": "pozytywnych decyzji"
+          },
+          {
+            "value": "10+",
+            "label": "Lat doświadczenia",
+            "sublabel": "w prawie migracyjnym"
+          },
+          {
+            "value": "80%",
+            "label": "Klientów z polecenia",
+            "sublabel": "najlepsza rekomendacja"
+          }
+        ]
+      },
+      "testimonials": {
+        "section_label": "Do?wiadczenia klient?w",
+        "headline": "Co mówią o nas klienci",
+        "items": [
+          {
+            "id": 1,
+            "quote": "„Przeprowadzili nas przez relokację siedmiu osób z trzech krajów w ciągu jednego kwartału. To, co mi zostało w pamięci, to fakt, że nigdy nie musiałem pytać »co dalej«. Każdego tygodnia otrzymywałem zaktualizowany status. Dla działu HR, który prowadzi pięć innych projektów równolegle, to ma realną wartość.\"",
+            "author": "— T. W.",
+            "role": "CFO",
+            "entity": "producent komponentów przemysłowych"
+          },
+          {
+            "id": 2,
+            "quote": "„Sprawa o uznanie za obywatela polskiego, którą wcześniej dwukrotnie próbowałem prowadzić samodzielnie. Pani mecenas zwróciła uwagę na trzy elementy, których wcześniej nikt mi nie wskazał. Decyzja pozytywna w czternastym miesiącu. Bez ich precyzji prawdopodobnie nadal bym próbował.\"",
+            "author": "— Karol M.",
+            "role": "Lublin",
+            "entity": ""
+          },
+          {
+            "id": 3,
+            "quote": "„Sprawa wymagająca koordynacji z naszym biurem podatkowym w Zurychu, kancelarią imigracyjną w Londynie oraz zespołem w Warszawie. Polecam bez zastrzeżeń.\"",
+            "author": "— Partner zarządzający",
+            "role": "family office (Szwajcaria)",
+            "entity": ""
+          },
+          {
+            "id": 4,
+            "quote": "„Pierwsza sprawa, w której nikt mi niczego nie obiecywał na pierwszej rozmowie. Powiedzieli mi dokładnie, jakie są ryzyka, co możemy zrobić i jak długo to potrwa. Dla mnie to był moment, w którym poczułam, że trafiłam we właściwe miejsce.\"",
+            "author": "— Yulia K.",
+            "role": "Wrocław",
+            "entity": ""
+          },
+          {
+            "id": 5,
+            "quote": "„Po dwudziestu latach prowadzenia działalności we Włoszech zdecydowałem się przenieść centrum aktywności do Polski. Procedura prowadzona kompleksowo, w komunikacji wyłącznie po włosku z dedykowaną osobą z zespołu. Najważniejsze: nikt nie tłumaczył mi, że »tak się robi w Polsce«. Wyjaśnili, jak my to zrobimy w mojej konkretnej sprawie.\"",
+            "author": "— A. B.",
+            "role": "założyciel grupy hotelowej",
+            "entity": "Włochy"
+          },
+          {
+            "id": 6,
+            "quote": "„Niebieska Karta UE w siedem tygodni. Pracodawca powiedział, że to najszybsze tempo, jakie widział.\"",
+            "author": "— R. P.",
+            "role": "dyrektor inżynieryjny",
+            "entity": "Indie"
+          },
+          {
+            "id": 7,
+            "quote": "„Po sprzedaży biznesu w Azji szukałam neutralnej, stabilnej jurysdykcji europejskiej. Zespół pomógł mi zrozumieć, dlaczego Polska — a nie Portugalia ani Malta — będzie sensownym wyborem na najbliższą dekadę. To była konsultacja, o której będę pamiętać.\"",
+            "author": "— S. L.",
+            "role": "inwestorka prywatna",
+            "entity": "Singapur"
+          },
+          {
+            "id": 8,
+            "quote": "„Sprawa wrażliwa, wymagająca pełnej dyskrecji. Wszystkie warunki, o które prosiłam, zostały zachowane. Nie mam co dodać, poza tym że poleciłam dalej.\"",
+            "author": "— Klientka indywidualna",
+            "role": "Białoruś",
+            "entity": ""
+          },
+          {
+            "id": 9,
+            "quote": "„Przenieśliśmy z Frankfurtu do Warszawy trzech członków zarządu wraz z rodzinami — dziewięć osób, w tym dzieci w wieku szkolnym. Zespół koordynował nie tylko procedury wizowe, ale również doradzał w sprawach szkół międzynarodowych i nieruchomości. Bez ich pracy projekt przeciągnąłby się o pół roku.\"",
+            "author": "— H. K.",
+            "role": "CEO",
+            "entity": "grupa farmaceutyczna, Niemcy"
+          },
+          {
+            "id": 10,
+            "quote": "„Współpracujemy regularnie w sprawach klientów wymagających koordynacji z amerykańskim systemem imigracyjnym. Jakość pracy porównywalna z biurami, z którymi pracujemy w Londynie i Wiedniu.\"",
+            "author": "— Partner",
+            "role": "kancelaria imigracyjna",
+            "entity": "Stany Zjednoczone"
+          },
+          {
+            "id": 11,
+            "quote": "„Sprawa trudna — bardzo trudna. Dostałem to, na co czekałem dwadzieścia siedem lat.\"",
+            "author": "— Y. D.",
+            "role": "klient indywidualny",
+            "entity": "Turcja"
+          },
+          {
+            "id": 12,
+            "quote": "„Polska jest dla naszego funduszu strategiczna. Zespół przeprowadził nas przez procesy migracyjne i połączył je ze strukturą holdingową w Luksemburgu. Wartość dodana była nieoczywista — i istotna.\"",
+            "author": "— Założyciel",
+            "role": "fundusz rodzinny",
+            "entity": "Zjednoczone Emiraty Arabskie"
+          },
+          {
+            "id": 13,
+            "quote": "„Czterdziestu pracowników produkcji w jednym kwartale. Bez jednej odmownej decyzji.\"",
+            "author": "— Dyrektor HR",
+            "role": "producent elektroniki",
+            "entity": "Wietnam"
+          },
+          {
+            "id": 14,
+            "quote": "„Polskie procedury migracyjne nie są intuicyjne dla osoby przyzwyczajonej do systemu portugalskojęzycznego. Wyjaśniali wszystko cierpliwie, dwukrotnie. Decyzja pozytywna.\"",
+            "author": "— M. S.",
+            "role": "architekt",
+            "entity": "Brazylia"
+          },
+          {
+            "id": 15,
+            "quote": "„Trzy lata po pierwszej konsultacji — ten sam zespół prowadzi moje postępowanie o pobyt stały. Ciągłość obsługi to coś, czego nie da się kupić po fakcie.\"",
+            "author": "— J. K.",
+            "role": "klient indywidualny",
+            "entity": "Korea Południowa"
+          }
+        ]
+      },
+      "client_logos": {
+        "section_label": "Zaufali nam",
+        "items": []
+      },
+      "contact": {
+        "section_label": "Kontakt",
+        "headline": "Zacznijmy rozmowę",
+        "subheadline": "Skontaktuj się z nami i dowiedz się, jak możemy Ci pomóc.",
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "ul. G?rno?l?ska 6 lok. 1, 00-444 Warszawa",
+        "hours": "Pon–Pt: 9:00–17:00",
+        "cta": {
+          "label": "Inicjuj kontakt",
+          "href": "/#kontakt"
+        }
+      }
+    },
+    "consultations": {
+      "page_title": "Konsultacje",
+      "hero": {
+        "eyebrow": "Pierwsze kroki",
+        "headline": "Umów konsultację",
+        "subheadline": "Wybierz formę kontaktu odpowiednią do Twojej sytuacji. Odpowiadamy w ciągu 24 godzin w dni robocze."
+      },
+      "visa_form": {
+        "title": "Wstępna kwalifikacja wizowa",
+        "description": "Wypełnij poniższy formularz, aby sprawdzić, jakie opcje wizowe są dostępne w Twojej sytuacji. Odpiszemy ze wstępną oceną w ciągu 24 godzin.",
+        "fields": {
+          "citizenship": {
+            "label": "Obywatelstwo",
+            "placeholder": "np. Ukraina, Japonia, Indie..."
+          },
+          "purpose": {
+            "label": "Cel przyjazdu do Polski",
+            "placeholder": "Wybierz cel",
+            "options": [
+              {
+                "value": "praca",
+                "label": "Praca"
+              },
+              {
+                "value": "biznes",
+                "label": "Biznes / inwestycja"
+              },
+              {
+                "value": "studia",
+                "label": "Studia"
+              },
+              {
+                "value": "rodzina",
+                "label": "ĹÄ…czenie rodzin"
+              },
+              {
+                "value": "inne",
+                "label": "Inne"
+              }
+            ]
+          },
+          "duration": {
+            "label": "Planowany czas pobytu",
+            "placeholder": "Wybierz okres",
+            "options": [
+              {
+                "value": "do_3m",
+                "label": "Do 3 miesięcy"
+              },
+              {
+                "value": "3_6m",
+                "label": "3–6 miesięcy"
+              },
+              {
+                "value": "6_12m",
+                "label": "6–12 miesięcy"
+              },
+              {
+                "value": "powyzej_roku",
+                "label": "Powyżej roku"
+              }
+            ]
+          },
+          "job_offer": {
+            "label": "Czy posiada Pan/Pani ofertę pracy w Polsce?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Tak"
+              },
+              {
+                "value": "nie",
+                "label": "Nie"
+              },
+              {
+                "value": "w_trakcie",
+                "label": "W trakcie rozmów"
+              }
+            ]
+          },
+          "family_in_poland": {
+            "label": "Czy ma Pan/Pani rodzinę w Polsce?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Tak"
+              },
+              {
+                "value": "nie",
+                "label": "Nie"
+              }
+            ]
+          }
+        },
+        "submit": "Sprawdź kwalifikowalność",
+        "disclaimer": "Formularz nie stanowi porady prawnej. Po analizie skontaktujemy się z Tobą z wstępną oceną Twojej sytuacji.",
+        "success": "Dziękujemy! Odpiszemy w ciągu 24 godzin w dni robocze."
+      },
+      "general_form": {
+        "title": "Konsultacja ogólna",
+        "description": "Masz pytania lub chcesz omówić swoją sytuację? Napisz do nas — doradca skontaktuje się z Tobą, aby ustalić szczegóły i zaproponować termin spotkania.",
+        "fields": {
+          "name": {
+            "label": "Imię i nazwisko",
+            "placeholder": "Jan Kowalski"
+          },
+          "email": {
+            "label": "Adres e-mail",
+            "placeholder": "jan@przykład.pl"
+          },
+          "phone": {
+            "label": "Numer telefonu",
+            "placeholder": "+48 600 000 000"
+          },
+          "message": {
+            "label": "Krótki opis sytuacji",
+            "placeholder": "Opisz krótko swoją sytuację i pytania, z którymi chcesz się do nas zgłosić..."
+          }
+        },
+        "submit": "Wyślij zapytanie",
+        "disclaimer": "Twoje dane są chronione zgodnie z RODO. Nie udostępniamy ich osobom trzecim.",
+        "success": "Wiadomość wysłana! Skontaktujemy się z Tobą w ciągu 24 godzin."
+      }
+    },
+    "footer": {
+      "tagline": "Butikowa kancelaria prawa migracyjnego i administracyjnego.",
+      "columns": [
+        {
+          "title": "Usługi",
+          "links": [
+            {
+              "label": "Pobyt czasowy",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Pobyt stały",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Zezwolenia na pracę",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Wizy",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Obywatelstwo",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Odwołania",
+              "href": "/#uslugi"
+            }
+          ]
+        },
+        {
+          "title": "Firma",
+          "links": [
+            {
+              "label": "O nas",
+              "href": "/#o-nas"
+            },
+            {
+              "label": "Private Client",
+              "href": "/#private-client"
+            },
+            {
+              "label": "Kontakt",
+              "href": "/#kontakt"
+            },
+            {
+              "label": "Konsultacje",
+              "href": "/konsultacje"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "ul. G?rno?l?ska 6 lok. 1, 00-444 Warszawa"
+      },
+      "registration": {
+        "label": "Dane rejestrowe",
+        "nip": "[NIP — do uzupełnienia]",
+        "krs": "[KRS — do uzupełnienia]",
+        "regon": "[REGON — do uzupełnienia]"
+      },
+      "legal": {
+        "copyright": "© 2025 Polskie Centrum Wizowe. Wszelkie prawa zastrzeżone.",
+        "disclaimer": "Polskie Centrum Wizowe jest prywatnym podmiotem doradczym. Nie stanowimy organu administracji pa?stwowej Rzeczypospolitej Polskiej.",
+        "links": [
+          {
+            "label": "Polityka prywatności",
+            "href": "/polityka-prywatnosci"
+          },
+          {
+            "label": "Regulamin",
+            "href": "/regulamin"
+          }
+        ]
+      }
+    }
+  },
+  "en": {
+    "nav": {
+      "logo": {
+        "name": "Polish Visa Centre",
+        "abbr": "PCW"
+      },
+      "links": [
+        {
+          "label": "About",
+          "href": "/#o-nas"
+        },
+        {
+          "label": "Services",
+          "href": "/#uslugi"
+        },
+        {
+          "label": "Private Client",
+          "href": "/#private-client"
+        },
+        {
+          "label": "Contact",
+          "href": "/#kontakt"
+        }
+      ],
+      "cta": "Initiate contact"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "IMMIGRATION AND ADMINISTRATIVE ADVISORY",
+        "headline": "Immigration proceedings. Conducted to conclusion.",
+        "subheadline": "We represent individual and corporate clients in proceedings for visas, residence permits, work authorization and Polish citizenship. One dedicated team per matter. One point of accountability. One outcome.",
+        "cta_primary": {
+          "label": "Initiate contact",
+          "href": "/#kontakt"
+        },
+        "cta_secondary": {
+          "label": "View services",
+          "href": "/#uslugi"
+        },
+        "microcopy": "Initial conversation — complimentary, up to 30 minutes, no commitment.",
+        "trust_indicators": [
+          "Clients from over 40 jurisdictions",
+          "Conducting proceedings since 2018",
+          "Counsel in five languages"
+        ]
+      },
+      "trust_bar": {
+        "label": "We conduct proceedings before:",
+        "institutions": [
+          "Consulates",
+          "Office for Foreigners",
+          "Voivode",
+          "President of Poland",
+          "National Labour Inspectorate (PIP)",
+          "Border Guard",
+          "Labour Office"
+        ]
+      },
+      "about": {
+        "section_label": "About us",
+        "headline": "A pioneering approach to immigration law. The architecture of administrative procedures.",
+        "paragraphs": [
+          "Polskie Centrum Wizowe is an elite boutique advisory firm specializing in immigration and administrative law. We provide strategic counsel to individuals, families and international corporate groups whose status demands impeccable legal and operational command.",
+          "We operate within a multi-disciplinary model. Each engagement is structured around dedicated attorneys-at-law (adwokaci), legal advisors (radcowie prawni) and experts in international markets. The integrity of the entire process — from initial risk analysis to final resolution — is personally secured by a designated Managing Partner.",
+          "Our practice focuses on matters of the highest degree of complexity: multi-jurisdictional, combining immigration procedures with international corporate law, and requiring representation before key state authorities and inspection services.",
+          "Our foundation is absolute discretion, clarity of intent and full procedural accountability. We accept only a limited number of matters per year, guaranteeing our Clients absolute priority."
+        ],
+        "highlight": "80% of clients by referral",
+        "highlight_sublabel": "The best measure of our reliability"
+      },
+      "services": {
+        "section_label": "Services",
+        "headline": "Full scope of immigration proceedings",
+        "subheadline": "From visas and residence permits to citizenship and appeals — we handle every stage of the proceedings.",
+        "items": [
+          {
+            "id": "employment-visas",
+            "icon": "briefcase",
+            "title": "Employment visas",
+            "description": "End-to-end handling of visa procedures for foreign nationals taking up employment in Poland. We conduct national D-type visa proceedings together with work authorization and consular documentation. Our team coordinates between employer and employee, eliminating procedural risk at every stage — from eligibility audit to issuance of the decision.",
+            "tags": [
+              "National D visa · Work authorization · Consular procedure"
+            ]
+          },
+          {
+            "id": "business-visas",
+            "icon": "building",
+            "title": "Business visas",
+            "description": "Advisory services for entrepreneurs, executives and individuals seconded to Poland. We handle Schengen C-type and national D-type visas for business purposes, manage the formal aspects of secondment, and coordinate procedures with HR departments of parent entities. We work both with Polish inviting parties and foreign corporate groups.",
+            "tags": [
+              "Schengen C visa · National D visa · Secondment"
+            ]
+          },
+          {
+            "id": "student-visas",
+            "icon": "graduation-cap",
+            "title": "Student visas",
+            "description": "Support for individuals pursuing studies at Polish universities. We conduct visa proceedings and prepare clients for temporary residence permits for the purpose of education. We coordinate with universities on required documentation and with consulates on procedural matters, taking on the full administrative workload.",
+            "tags": [
+              "National D visa · Temporary residence for education · Extensions"
+            ]
+          },
+          {
+            "id": "temporary-residence",
+            "icon": "home",
+            "title": "Temporary residence permit",
+            "description": "Administrative proceedings before the voivode (regional governor) with jurisdiction over the foreign national's place of residence. We provide full legal analysis of permit grounds, draft the application, compile supporting documentation and represent the client throughout the proceedings. We handle matters under all statutory grounds: employment, business activity, studies, residence with a family member of a Polish national, and other grounds prescribed by law.",
+            "tags": [
+              "Voivode proceedings · Residence card · Representation"
+            ]
+          },
+          {
+            "id": "permanent-residence",
+            "icon": "shield",
+            "title": "Permanent residence permit",
+            "description": "Available to individuals meeting statutory criteria — including spouses of Polish citizens, holders of the Pole's Card (Karta Polaka) and persons of Polish origin. We conduct detailed eligibility analysis, compile supporting documentation, and represent the client before the voivode. Practical outcome of a granted permit: indefinite right of residence and eligibility to apply for Polish citizenship.",
+            "tags": [
+              "Pole's Card · Spouse of Polish citizen · Indefinite residence"
+            ]
+          },
+          {
+            "id": "eu-long-term-resident",
+            "icon": "award",
+            "title": "EU long-term resident permit",
+            "description": "A status established under Council Directive 2003/109/EC, granting long-term residence rights across EU member states. We handle the full procedure: verification of lawful residence period, income and Polish language proficiency, application drafting and representation before the voivode. The status enables transfer of one's centre of life to another EU member state under a simplified regime.",
+            "tags": [
+              "Directive 2003/109/EC · Intra-EU mobility · Voivode"
+            ]
+          },
+          {
+            "id": "polish-citizenship",
+            "icon": "globe",
+            "title": "Polish citizenship",
+            "description": "Two distinct procedures: grant of citizenship by the President of the Republic of Poland, and recognition as a Polish citizen by the voivode. We assess the optimal route for each situation, draft the substantive reasoning of the application, and compile evidence of integration with the Republic. In complex cases, we also conduct proceedings confirming existing Polish citizenship — relevant in historical and lineage-based situations.",
+            "tags": [
+              "Grant by the President · Recognition by the voivode · Citizenship confirmation"
+            ]
+          },
+          {
+            "id": "pip-border-guard",
+            "icon": "file-check",
+            "title": "Representation before the National Labour Inspectorate and Border Guard",
+            "description": "Representation of employers and foreign nationals in inspection proceedings conducted by the National Labour Inspectorate (Państwowa Inspekcja Pracy / PIP) and the Border Guard (Straż Graniczna). Scope includes attendance during inspections, drafting of written explanations and objections, representation in administrative penalty and appeal proceedings. We also conduct internal compliance audits regarding foreign national employment — a regulatory risk-prevention measure for employers of larger scale.",
+            "tags": [
+              "Inspection proceedings · Compliance audit · Appeals"
+            ]
+          },
+          {
+            "id": "work-permits",
+            "icon": "scale",
+            "title": "Work authorization",
+            "description": "Handling of all work permit types: A, B, C, D and E; seasonal permits type S; statements of intent to entrust work (oświadczenia o powierzeniu); and applications under the EU Blue Card framework. We conduct procedures in full coordination with the employer, managing obligations toward the voivode, the labour office (urząd pracy) and inspection authorities. Every matter is closed with a wrap-up report containing recommendations for subsequent hires.",
+            "tags": [
+              "Types A–E · EU Blue Card · Statements of intent"
+            ]
+          }
+        ]
+      },
+      "private_client": {
+        "section_label": "Private Client",
+        "headline": "Private Client",
+        "subheadline": "Individual strategic advisory",
+        "description": "Subtitle: Individual strategic advisory",
+        "scope": [
+          "Comprehensive migration path planning for the client and their family",
+          "Priority service with guaranteed response times",
+          "Coordination with lawyers, tax advisors and notaries",
+          "Discreet handling of sensitive and non-standard matters",
+          "Access to institutional network of contacts",
+          "Reporting and status monitoring of all proceedings"
+        ],
+        "operating_mode": "Available 24/7/365. Meetings at the client's premises or remotely.",
+        "cta": {
+          "label": "Enquire about the programme",
+          "href": "/konsultacje"
+        }
+      },
+      "process": {
+        "section_label": "How we work",
+        "headline": "Collaboration process",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Initial consultation",
+            "description": "Analysis of the client's legal situation, assessment of available proceedings paths and determination of the optimal strategy. Online or in-person consultation."
+          },
+          {
+            "number": "02",
+            "title": "Analysis and proceedings strategy",
+            "description": "Preparation of a detailed proceedings plan, list of required documents and action timeline. Documentation verification and gap completion."
+          },
+          {
+            "number": "03",
+            "title": "Representation before authorities",
+            "description": "Filing of the application, active representation before the administrative authority, ongoing case monitoring and response to summons and official queries."
+          },
+          {
+            "number": "04",
+            "title": "Decision and post-proceedings support",
+            "description": "Receipt of decision, analysis of its content and next steps — including appeal if warranted. Support for subsequent stages (renewal, permanent residence, citizenship)."
+          }
+        ]
+      },
+      "trust_metrics": {
+        "section_label": "Our numbers",
+        "headline": "Experience that speaks for itself",
+        "items": [
+          {
+            "value": "500+",
+            "label": "Successfully completed cases",
+            "sublabel": "from over 40 countries"
+          },
+          {
+            "value": "95%",
+            "label": "Success rate",
+            "sublabel": "positive decisions"
+          },
+          {
+            "value": "10+",
+            "label": "Years of experience",
+            "sublabel": "in immigration law"
+          },
+          {
+            "value": "80%",
+            "label": "Clients by referral",
+            "sublabel": "the best recommendation"
+          }
+        ]
+      },
+      "testimonials": {
+        "section_label": "Client experiences",
+        "headline": "What our clients say",
+        "items": [
+          {
+            "id": 1,
+            "quote": "\"They moved seven people from three jurisdictions through relocation in a single quarter. What stayed with me was that I never had to ask 'what's next.' Every week, an updated status. For an HR function running five other projects in parallel, that has real value.\"",
+            "author": "— T. W.",
+            "role": "CFO",
+            "entity": "industrial components manufacturer"
+          },
+          {
+            "id": 2,
+            "quote": "\"A citizenship recognition matter that I had previously attempted twice on my own. Counsel identified three issues that no one had flagged before. Positive decision in the fourteenth month. Without their precision, I would probably still be trying.\"",
+            "author": "— Karol M.",
+            "role": "Lublin",
+            "entity": ""
+          },
+          {
+            "id": 3,
+            "quote": "\"An engagement requiring coordination with our tax practice in Zurich, our immigration counsel in London and the team in Warsaw. I recommend without reservation.\"",
+            "author": "— Managing Partner",
+            "role": "family office (Switzerland)",
+            "entity": ""
+          },
+          {
+            "id": 4,
+            "quote": "\"The first matter where no one promised me anything in the first call. They told me exactly what the risks were, what could be done and how long it would take. That was the moment I knew I had come to the right place.\"",
+            "author": "— Yulia K.",
+            "role": "Wrocław",
+            "entity": ""
+          },
+          {
+            "id": 5,
+            "quote": "\"After twenty years of operating in Italy, I decided to move my centre of activity to Poland. The procedure was conducted in full, with communication exclusively in Italian through a dedicated team member. What mattered most: no one told me 'this is how it's done in Poland.' They explained how we would do it in my particular matter.\"",
+            "author": "— A. B.",
+            "role": "founder",
+            "entity": "hotel group, Italy"
+          },
+          {
+            "id": 6,
+            "quote": "\"EU Blue Card in seven weeks. My employer said it was the fastest he had seen.\"",
+            "author": "— R. P.",
+            "role": "Engineering Director",
+            "entity": "India"
+          },
+          {
+            "id": 7,
+            "quote": "\"After the sale of my business in Asia, I was looking for a neutral, stable European jurisdiction. The team helped me understand why Poland — rather than Portugal or Malta — would be a sensible choice for the coming decade. It was a consultation I will remember.\"",
+            "author": "— S. L.",
+            "role": "private investor",
+            "entity": "Singapore"
+          },
+          {
+            "id": 8,
+            "quote": "\"A sensitive matter requiring full discretion. Every condition I requested was observed. I have nothing to add, other than that I have recommended onward.\"",
+            "author": "— Private client",
+            "role": "Belarus",
+            "entity": ""
+          },
+          {
+            "id": 9,
+            "quote": "\"We relocated three board members and their families from Frankfurt to Warsaw — nine people, including school-aged children. The team coordinated not only the visa procedures, but also advised on international schools and residential properties. Without their work, the project would have stretched out by six months.\"",
+            "author": "— H. K.",
+            "role": "CEO",
+            "entity": "pharmaceutical group, Germany"
+          },
+          {
+            "id": 10,
+            "quote": "\"We collaborate regularly on matters requiring coordination with the U.S. immigration system. The quality of work is comparable to firms we work with in London and Vienna.\"",
+            "author": "— Partner",
+            "role": "immigration law firm",
+            "entity": "United States"
+          },
+          {
+            "id": 11,
+            "quote": "\"A difficult matter — very difficult. I received what I had been waiting twenty-seven years for.\"",
+            "author": "— Y. D.",
+            "role": "private client",
+            "entity": "Türkiye"
+          },
+          {
+            "id": 12,
+            "quote": "\"Poland is strategic for our fund. The team guided us through immigration processes and integrated them with our holding structure in Luxembourg. The added value was not obvious — and it was material.\"",
+            "author": "— Founder",
+            "role": "family fund",
+            "entity": "United Arab Emirates"
+          },
+          {
+            "id": 13,
+            "quote": "\"Forty production workers in a single quarter. Without a single negative decision.\"",
+            "author": "— HR Director",
+            "role": "electronics manufacturer",
+            "entity": "Vietnam"
+          },
+          {
+            "id": 14,
+            "quote": "\"Polish immigration procedures are not intuitive to someone accustomed to the Portuguese-language system. They explained everything patiently, twice. Positive decision.\"",
+            "author": "— M. S.",
+            "role": "architect",
+            "entity": "Brazil"
+          },
+          {
+            "id": 15,
+            "quote": "\"Three years after the first consultation, the same team is handling my permanent residence proceedings. Continuity of representation is something that cannot be bought after the fact.\"",
+            "author": "— J. K.",
+            "role": "private client",
+            "entity": "South Korea"
+          }
+        ]
+      },
+      "client_logos": {
+        "section_label": "Trusted by",
+        "items": []
+      },
+      "contact": {
+        "section_label": "Contact",
+        "headline": "Let's start a conversation",
+        "subheadline": "Get in touch to find out how we can help you.",
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "ul. G?rno?l?ska 6, suite 1, 00-444 Warsaw, Poland",
+        "hours": "Mon–Fri: 9:00–17:00",
+        "cta": {
+          "label": "Initiate contact",
+          "href": "/#kontakt"
+        }
+      }
+    },
+    "consultations": {
+      "page_title": "Consultations",
+      "hero": {
+        "eyebrow": "First steps",
+        "headline": "Book a consultation",
+        "subheadline": "Choose the contact method suited to your situation. We respond within 24 hours on business days."
+      },
+      "visa_form": {
+        "title": "Initial visa qualification",
+        "description": "Complete the form below to check what visa options are available in your situation. We will reply with a preliminary assessment within 24 hours.",
+        "fields": {
+          "citizenship": {
+            "label": "Citizenship",
+            "placeholder": "e.g. Ukraine, Japan, India..."
+          },
+          "purpose": {
+            "label": "Purpose of stay in Poland",
+            "placeholder": "Select purpose",
+            "options": [
+              {
+                "value": "praca",
+                "label": "Work"
+              },
+              {
+                "value": "biznes",
+                "label": "Business / investment"
+              },
+              {
+                "value": "studia",
+                "label": "Studies"
+              },
+              {
+                "value": "rodzina",
+                "label": "Family reunification"
+              },
+              {
+                "value": "inne",
+                "label": "Other"
+              }
+            ]
+          },
+          "duration": {
+            "label": "Planned length of stay",
+            "placeholder": "Select period",
+            "options": [
+              {
+                "value": "do_3m",
+                "label": "Up to 3 months"
+              },
+              {
+                "value": "3_6m",
+                "label": "3–6 months"
+              },
+              {
+                "value": "6_12m",
+                "label": "6–12 months"
+              },
+              {
+                "value": "powyzej_roku",
+                "label": "Over a year"
+              }
+            ]
+          },
+          "job_offer": {
+            "label": "Do you have a job offer in Poland?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Yes"
+              },
+              {
+                "value": "nie",
+                "label": "No"
+              },
+              {
+                "value": "w_trakcie",
+                "label": "In negotiation"
+              }
+            ]
+          },
+          "family_in_poland": {
+            "label": "Do you have family in Poland?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Yes"
+              },
+              {
+                "value": "nie",
+                "label": "No"
+              }
+            ]
+          }
+        },
+        "submit": "Check eligibility",
+        "disclaimer": "This form does not constitute legal advice. After analysis, we will contact you with a preliminary assessment of your situation.",
+        "success": "Thank you! We will reply within 24 hours on business days."
+      },
+      "general_form": {
+        "title": "General consultation",
+        "description": "Have questions or want to discuss your situation? Write to us — an advisor will contact you to arrange details and propose a meeting time.",
+        "fields": {
+          "name": {
+            "label": "Full name",
+            "placeholder": "John Smith"
+          },
+          "email": {
+            "label": "Email address",
+            "placeholder": "john@example.com"
+          },
+          "phone": {
+            "label": "Phone number",
+            "placeholder": "+48 600 000 000"
+          },
+          "message": {
+            "label": "Brief description of your situation",
+            "placeholder": "Briefly describe your situation and the questions you would like to discuss with us..."
+          }
+        },
+        "submit": "Send enquiry",
+        "disclaimer": "Your data is protected under GDPR. We do not share it with third parties.",
+        "success": "Message sent! We will contact you within 24 hours."
+      }
+    },
+    "footer": {
+      "tagline": "Boutique immigration and administrative law firm.",
+      "columns": [
+        {
+          "title": "Services",
+          "links": [
+            {
+              "label": "Temporary residence",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Permanent residence",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Work permits",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Visas",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Citizenship",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Appeals",
+              "href": "/#uslugi"
+            }
+          ]
+        },
+        {
+          "title": "Company",
+          "links": [
+            {
+              "label": "About us",
+              "href": "/#o-nas"
+            },
+            {
+              "label": "Private Client",
+              "href": "/#private-client"
+            },
+            {
+              "label": "Contact",
+              "href": "/#kontakt"
+            },
+            {
+              "label": "Consultations",
+              "href": "/konsultacje"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "ul. G?rno?l?ska 6, suite 1, 00-444 Warsaw, Poland"
+      },
+      "registration": {
+        "label": "Registration details",
+        "nip": "[VAT — to be provided]",
+        "krs": "[KRS — to be provided]",
+        "regon": "[REGON — to be provided]"
+      },
+      "legal": {
+        "copyright": "© 2025 Polskie Centrum Wizowe. All rights reserved.",
+        "disclaimer": "Polskie Centrum Wizowe is a private advisory firm. We are not a public administration body of the Republic of Poland.",
+        "links": [
+          {
+            "label": "Privacy policy",
+            "href": "/polityka-prywatnosci"
+          },
+          {
+            "label": "Terms",
+            "href": "/regulamin"
+          }
+        ]
+      }
+    }
+  },
+  "ua": {
+    "nav": {
+      "logo": {
+        "name": "ĐźĐľĐ»ŃŚŃŃŚĐşĐ¸Đą Đ˛Ń–Đ·ĐľĐ˛Đ¸Đą Ń†ĐµĐ˝Ń‚Ń€",
+        "abbr": "PCW"
+      },
+      "links": [
+        {
+          "label": "ĐźŃ€Đľ Đ˝Đ°Ń",
+          "href": "/#o-nas"
+        },
+        {
+          "label": "ĐźĐľŃĐ»ŃĐłĐ¸",
+          "href": "/#uslugi"
+        },
+        {
+          "label": "Private Client",
+          "href": "/#private-client"
+        },
+        {
+          "label": "Контакт",
+          "href": "/#kontakt"
+        }
+      ],
+      "cta": "ÐÐ½ÑÑÑÑÐ²Ð°ÑÐ¸ ÐºÐ¾Ð½ÑÐ°ÐºÑ"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "МІГРАЦІЙНА ТА АДМІНІСТРАТИВНА КОНСУЛЬТАЦІЯ",
+        "headline": "Візові та міграційні провадження. Доведені до результату.",
+        "subheadline": "Представляємо приватних та корпоративних клієнтів у провадженнях щодо легалізації перебування, працевлаштування та отримання польського громадянства. Одна спеціалізована команда на справу. Одна відповідальність. Один результат.",
+        "cta_primary": {
+          "label": "ÐÐ½ÑÑÑÑÐ²Ð°ÑÐ¸ ÐºÐ¾Ð½ÑÐ°ÐºÑ",
+          "href": "/#kontakt"
+        },
+        "cta_secondary": {
+          "label": "Перелік послуг",
+          "href": "/#uslugi"
+        },
+        "microcopy": "Перша розмова — безкоштовна, до 30 хвилин, без зобов'язань.",
+        "trust_indicators": [
+          "Клієнти з понад 40 юрисдикцій",
+          "Провадження ведемо з 2018 року",
+          "Консультації п'ятьма мовами"
+        ]
+      },
+      "trust_bar": {
+        "label": "Ми ведемо провадження перед:",
+        "institutions": [
+          "ĐšĐľĐ˝ŃŃĐ»ŃŚŃŃ‚Đ˛Đ°",
+          "ĐŁĐżŃ€Đ°Đ˛Đ»Ń–Đ˝Đ˝ŃŹ Ń ŃĐżŃ€Đ°Đ˛Đ°Ń… Ń–Đ˝ĐľĐ·ĐµĐĽŃ†Ń–Đ˛",
+          "Воєвода",
+          "Президент Польщі",
+          "Đ”ĐµŃ€Đ¶Đ°Đ˛Đ˝Đ° Ń–Đ˝ŃĐżĐµĐşŃ†Ń–ŃŹ ĐżŃ€Đ°Ń†Ń– (PIP)",
+          "ĐźŃ€Đ¸ĐşĐľŃ€Đ´ĐľĐ˝Đ˝Đ° ŃĐ»ŃĐ¶Đ±Đ°",
+          "Управління праці"
+        ]
+      },
+      "about": {
+        "section_label": "ĐźŃ€Đľ Đ˝Đ°Ń",
+        "headline": "Піонерський підхід до міграційного права. Архітектура адміністративних процесів.",
+        "paragraphs": [
+          "Polskie Centrum Wizowe — це елітна бутикова консультаційна фірма, що спеціалізується на міграційному та адміністративному праві. Забезпечуємо стратегічну підтримку для фізичних осіб, родин та міжнародних корпоративних груп, чий статус вимагає бездоганного правового та операційного володіння справою.",
+          "Працюємо за моделлю multi-disciplinary. Структуру кожного проекту формують спеціалізовані адвокати, юридичні радники та експерти міжнародних ринків. Цілісність усього процесу — від попереднього аналізу ризиків до остаточного рішення — особисто гарантує призначений Керуючий Партнер.",
+          "Спеціалізуємось на справах найвищого ступеня складності: мультиюрисдикційних, що поєднують міграційні процедури з міжнародним корпоративним правом, а також тих, що вимагають представництва перед ключовими державними органами та контрольними службами.",
+          "Наш фундамент — це безумовна дискретність, ясність намірів та повна процесуальна відповідальність. Приймаємо виключно обмежену кількість справ на рік, гарантуючи нашим Клієнтам абсолютний пріоритет."
+        ],
+        "highlight": "80% клієнтів за рекомендацією",
+        "highlight_sublabel": "ĐťĐ°ĐąĐşŃ€Đ°Ń‰Đ¸Đą ĐżĐľĐşĐ°Đ·Đ˝Đ¸Đş Đ˝Đ°ŃĐľŃ— Đ˝Đ°Đ´Ń–ĐąĐ˝ĐľŃŃ‚Ń–"
+      },
+      "services": {
+        "section_label": "ĐźĐľŃĐ»ŃĐłĐ¸",
+        "headline": "ĐźĐľĐ˛Đ˝Đ¸Đą ŃĐżĐµĐşŃ‚Ń€ ĐĽŃ–ĐłŃ€Đ°Ń†Ń–ĐąĐ˝Đ¸Ń… ĐżŃ€ĐľĐ˛Đ°Đ´Đ¶ĐµĐ˝ŃŚ",
+        "subheadline": "Đ’Ń–Đ´ Đ˛Ń–Đ· Ń‚Đ° Đ´ĐľĐ·Đ˛ĐľĐ»Ń–Đ˛ Đ˝Đ° ĐżŃ€ĐľĐ¶Đ¸Đ˛Đ°Đ˝Đ˝ŃŹ Đ´Đľ ĐłŃ€ĐľĐĽĐ°Đ´ŃŹĐ˝ŃŃ‚Đ˛Đ° Ń‚Đ° ĐľŃĐşĐ°Ń€Đ¶ĐµĐ˝ŃŚ â€” ĐĽĐ¸ Đ˛ĐµĐ´ĐµĐĽĐľ ĐşĐľĐ¶ĐµĐ˝ ĐµŃ‚Đ°Đż ĐżŃ€ĐľĐ˛Đ°Đ´Đ¶ĐµĐ˝Đ˝ŃŹ.",
+        "items": [
+          {
+            "id": "wizy-pracownicze",
+            "icon": "briefcase",
+            "title": "Робочі візи",
+            "description": "Комплексний супровід візової процедури для іноземців, які працевлаштовуються в Польщі. Ведемо провадження щодо національної візи типу D, поєднуючи їх з отриманням дозволу на роботу та підготовкою документації, необхідної для консульства. Команда координує роботу між роботодавцем та працівником, усуваючи процедурні ризики на кожному етапі — від аудиту прийнятності до отримання рішення.",
+            "tags": [
+              "Національна віза типу D · Дозвіл на роботу · Консульська процедура"
+            ]
+          },
+          {
+            "id": "wizy-biznesowe",
+            "icon": "building",
+            "title": "Бізнес-візи",
+            "description": "Візова консультація для підприємців, керівників та осіб, відряджених до Польщі. Обслуговуємо шенгенські візи типу C та національні візи типу D для бізнес-цілей, керуємо формальними аспектами відрядження та координуємо процедури з відділами кадрів материнських компаній. Працюємо як з польськими приймаючими сторонами, так і з іноземними корпоративними групами.",
+            "tags": [
+              "Шенгенська віза типу C · Національна віза типу D · Відрядження"
+            ]
+          },
+          {
+            "id": "wizy-studenckie",
+            "icon": "graduation-cap",
+            "title": "Студентські візи",
+            "description": "Підтримка осіб, які навчаються в польських університетах. Ведемо візові провадження та готуємо клієнтів до отримання дозволу на тимчасове проживання з метою навчання. Співпрацюємо з університетами щодо необхідної документації та з консульствами щодо процедур, переймаючи всі формальні дії.",
+            "tags": [
+              "Національна віза типу D · Тимчасове проживання з метою навчання · Продовження"
+            ]
+          },
+          {
+            "id": "pobyt-czasowy",
+            "icon": "home",
+            "title": "Дозвіл на тимчасове проживання",
+            "description": "Адміністративне провадження перед воєводою за місцем перебування іноземця. Включає повний аналіз правових підстав, складання заяви, комплектацію документації та представництво протягом усього провадження. Ведемо справи за всіма законодавчими підставами: працевлаштування, ведення підприємницької діяльності, навчання, перебування з членом родини громадянина Польщі та іншими підставами, передбаченими законом.",
+            "tags": [
+              "Провадження перед воєводою · Картка перебування · Представництво"
+            ]
+          },
+          {
+            "id": "pobyt-staly",
+            "icon": "shield",
+            "title": "Дозвіл на постійне проживання",
+            "description": "Провадження, доступне особам, які відповідають законодавчим критеріям — зокрема, подружжю громадян Польщі, власникам Карти поляка та особам польського походження. Проводимо детальний аналіз правомочності, комплектуємо документацію, що підтверджує підставу заяви, та представляємо клієнта перед воєводою. Практичні наслідки отриманого дозволу: безстрокове право на проживання та можливість подати заяву на отримання польського громадянства.",
+            "tags": [
+              "Карта поляка · Подружжя громадянина Польщі · Безстрокове проживання"
+            ]
+          },
+          {
+            "id": "rezydent-ue",
+            "icon": "award",
+            "title": "Дозвіл на проживання довготермінового резидента ЄС",
+            "description": "Правовий статус, передбачений Директивою Ради 2003/109/ЄС, що надає право на довгострокове проживання на території держав-членів ЄС. Обслуговуємо процедуру в повному обсязі: верифікація періоду законного перебування, доходів та володіння польською мовою, складання заяви та представництво перед воєводою. Статус відкриває можливість перенесення центру життєвої активності до іншої держави ЄС у спрощеному порядку.",
+            "tags": [
+              "Директива 2003/109/ЄС · Мобільність у межах ЄС · Воєвода"
+            ]
+          },
+          {
+            "id": "obywatelstwo",
+            "icon": "globe",
+            "title": "Польське громадянство",
+            "description": "Дві окремі процедури отримання: надання громадянства Президентом Республіки Польща та визнання громадянином Польщі воєводою. Аналізуємо оптимальний шлях для конкретної ситуації, складаємо обґрунтування заяви та комплектуємо документацію, що підтверджує інтеграцію з Республікою. У складних справах ведемо також провадження про підтвердження польського громадянства — суттєві в історичних випадках та тих, що випливають з родинної лінії.",
+            "tags": [
+              "Надання Президентом РП · Визнання воєводою · Підтвердження громадянства"
+            ]
+          },
+          {
+            "id": "pip-sg",
+            "icon": "file-check",
+            "title": "Представництво перед Державною інспекцією праці та Прикордонною службою",
+            "description": "Представництво роботодавців та іноземців у контрольних провадженнях, що проводяться Державною інспекцією праці (Państwowa Inspekcja Pracy / PIP) та Прикордонною службою (Straż Graniczna). Включає участь у контрольних діях, складання письмових пояснень та заперечень, представництво в провадженнях за адміністративними штрафами та апеляційних провадженнях. Проводимо також внутрішні аудити відповідності працевлаштування іноземців чинному законодавству — захід профілактики регуляторних ризиків для роботодавців більшого масштабу.",
+            "tags": [
+              "Контрольні провадження · Аудит відповідності · Апеляції"
+            ]
+          },
+          {
+            "id": "zezwolenia-praca",
+            "icon": "scale",
+            "title": "Дозволи на роботу",
+            "description": "Обслуговування всіх типів дозволів на роботу: A, B, C, D та E; сезонних дозволів типу S; заяв про доручення виконання роботи (oświadczenia o powierzeniu); а також заяв у межах системи Блакитної Карти ЄС. Процеси ведемо у повній координації з роботодавцем, керуючи зобов'язаннями перед воєводою, бюро праці (urząd pracy) та контрольними органами. Кожне провадження завершуємо підсумковим звітом з рекомендаціями для подальших найманнь.",
+            "tags": [
+              "Типи A–E · Блакитна Карта ЄС · Заяви про доручення"
+            ]
+          }
+        ]
+      },
+      "private_client": {
+        "section_label": "Private Client",
+        "headline": "Private Client",
+        "subheadline": "Індивідуальний стратегічний супровід",
+        "description": "Назва: Private Client",
+        "scope": [
+          "??????? ?? ???????? ?????????: ????? ?????????? ???????????, ??????? ?? ????????????? ?????????????? ?????? ?? ????????? ???????? ????????.",
+          "?????????????? ??????? ???????????: ?????? ? ???????????? ??????????? ???????? ???? ??? ?????????? ???????? ? ??????.",
+          "?????????? ????????????: ???????????? ????????? ?? ???????????? ????????? ??????? ? ????????????, ?????????? ?? ???????????.",
+          "????????? ?? ???????? ??????: ??????? ?????????? ? ????????????????, ??????????? ? ???????? ???????.",
+          "??????????? ???????: ????????????? ?????????? ???????? ??????? ? ??? ???????????? ?? ????????????."
+        ],
+        "operating_mode": "??????????? ?????: ????????? ????????????????, ????? ????? ???????? (single point of contact), ??????????? 24/7/365. ?????? ????????? ?? ????????? ???????????, ?? ???????? ???????????????? ???????? ??????.",
+        "cta": {
+          "label": "Đ”Ń–Đ·Đ˝Đ°Ń‚Đ¸ŃŃŹ ĐżŃ€Đľ ĐżŃ€ĐľĐłŃ€Đ°ĐĽŃ",
+          "href": "/konsultacje"
+        }
+      },
+      "process": {
+        "section_label": "Як ми працюємо",
+        "headline": "ĐźŃ€ĐľŃ†ĐµŃ ŃĐżŃ–Đ˛ĐżŃ€Đ°Ń†Ń–",
+        "steps": [
+          {
+            "number": "01",
+            "title": "ĐźĐľŃ‡Đ°Ń‚ĐşĐľĐ˛Đ° ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Ń–ŃŹ",
+            "description": "ĐĐ˝Đ°Đ»Ń–Đ· ĐżŃ€Đ°Đ˛ĐľĐ˛ĐľŃ— ŃĐ¸Ń‚ŃĐ°Ń†Ń–Ń— ĐşĐ»Ń–Ń”Đ˝Ń‚Đ°, ĐľŃ†Ń–Đ˝ĐşĐ° Đ´ĐľŃŃ‚ŃĐżĐ˝Đ¸Ń… ŃĐ»ŃŹŃ…Ń–Đ˛ ĐżŃ€ĐľĐ˛Đ°Đ´Đ¶ĐµĐ˝Đ˝ŃŹ Ń‚Đ° Đ˛Đ¸Đ·Đ˝Đ°Ń‡ĐµĐ˝Đ˝ŃŹ ĐľĐżŃ‚Đ¸ĐĽĐ°Đ»ŃŚĐ˝ĐľŃ— ŃŃ‚Ń€Đ°Ń‚ĐµĐłŃ–Ń—. ĐžĐ˝Đ»Đ°ĐąĐ˝ Đ°Đ±Đľ ĐľŃ‡Đ˝Đ° ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Ń–ŃŹ."
+          },
+          {
+            "number": "02",
+            "title": "ĐĐ˝Đ°Đ»Ń–Đ· Ń‚Đ° ŃŃ‚Ń€Đ°Ń‚ĐµĐłŃ–ŃŹ ĐżŃ€ĐľĐ˛Đ°Đ´Đ¶ĐµĐ˝Đ˝ŃŹ",
+            "description": "ĐźŃ–Đ´ĐłĐľŃ‚ĐľĐ˛ĐşĐ° Đ´ĐµŃ‚Đ°Đ»ŃŚĐ˝ĐľĐłĐľ ĐżĐ»Đ°Đ˝Ń ĐżŃ€ĐľĐ˛Đ°Đ´Đ¶ĐµĐ˝Đ˝ŃŹ, ĐżĐµŃ€ĐµĐ»Ń–ĐşŃ Đ˝ĐµĐľĐ±Ń…Ń–Đ´Đ˝Đ¸Ń… Đ´ĐľĐşŃĐĽĐµĐ˝Ń‚Ń–Đ˛ Ń‚Đ° ĐłŃ€Đ°Ń„Ń–ĐşŃ Đ´Ń–Đą. ĐźĐµŃ€ĐµĐ˛Ń–Ń€ĐşĐ° Đ´ĐľĐşŃĐĽĐµĐ˝Ń‚Đ°Ń†Ń–Ń— Ń‚Đ° ŃŃŃĐ˝ĐµĐ˝Đ˝ŃŹ Đ˝ĐµĐ´ĐľĐ»Ń–ĐşŃ–Đ˛."
+          },
+          {
+            "number": "03",
+            "title": "ĐźŃ€ĐµĐ´ŃŃ‚Đ°Đ˛Đ˝Đ¸Ń†Ń‚Đ˛Đľ ĐżĐµŃ€ĐµĐ´ ĐľŃ€ĐłĐ°Đ˝Đ°ĐĽĐ¸",
+            "description": "ĐźĐľĐ´Đ°Đ˝Đ˝ŃŹ Đ·Đ°ŃŹĐ˛Đ¸, Đ°ĐşŃ‚Đ¸Đ˛Đ˝Đµ ĐżŃ€ĐµĐ´ŃŃ‚Đ°Đ˛Đ˝Đ¸Ń†Ń‚Đ˛Đľ ĐżĐµŃ€ĐµĐ´ Đ°Đ´ĐĽŃ–Đ˝Ń–ŃŃ‚Ń€Đ°Ń‚Đ¸Đ˛Đ˝Đ¸ĐĽ ĐľŃ€ĐłĐ°Đ˝ĐľĐĽ, ĐżĐľŃ‚ĐľŃ‡Đ˝Đ¸Đą ĐĽĐľĐ˝Ń–Ń‚ĐľŃ€Đ¸Đ˝Đł ŃĐżŃ€Đ°Đ˛Đ¸ Ń‚Đ° Đ˛Ń–Đ´ĐżĐľĐ˛Ń–Đ´Ń– Đ˝Đ° Đ˛Đ¸ĐşĐ»Đ¸ĐşĐ¸ Ń‚Đ° ĐľŃ„Ń–Ń†Ń–ĐąĐ˝Ń– Đ·Đ°ĐżĐ¸Ń‚Đ¸."
+          },
+          {
+            "number": "04",
+            "title": "Đ Ń–ŃĐµĐ˝Đ˝ŃŹ Ń‚Đ° ĐżŃ–Đ´Ń‚Ń€Đ¸ĐĽĐşĐ° ĐżŃ–ŃĐ»ŃŹ ĐżŃ€ĐľĐ˛Đ°Đ´Đ¶ĐµĐ˝Đ˝ŃŹ",
+            "description": "ĐžŃ‚Ń€Đ¸ĐĽĐ°Đ˝Đ˝ŃŹ Ń€Ń–ŃĐµĐ˝Đ˝ŃŹ, Đ°Đ˝Đ°Đ»Ń–Đ· ĐąĐľĐłĐľ Đ·ĐĽŃ–ŃŃ‚Ń Ń‚Đ° ĐżĐľĐ´Đ°Đ»ŃŚŃŃ– ĐşŃ€ĐľĐşĐ¸ â€” Đ˛ĐşĐ»ŃŽŃ‡Đ°ŃŽŃ‡Đ¸ ĐľŃĐşĐ°Ń€Đ¶ĐµĐ˝Đ˝ŃŹ, ŃŹĐşŃ‰Đľ Đ˛ĐľĐ˝Đľ ĐľĐ±Ň‘Ń€ŃĐ˝Ń‚ĐľĐ˛Đ°Đ˝Đµ. ĐźŃ–Đ´Ń‚Ń€Đ¸ĐĽĐşĐ° Đ˝Đ° Đ˝Đ°ŃŃ‚ŃĐżĐ˝Đ¸Ń… ĐµŃ‚Đ°ĐżĐ°Ń… (ĐżŃ€ĐľĐ´ĐľĐ˛Đ¶ĐµĐ˝Đ˝ŃŹ, ĐżĐľŃŃ‚Ń–ĐąĐ˝Đµ ĐżŃ€ĐľĐ¶Đ¸Đ˛Đ°Đ˝Đ˝ŃŹ, ĐłŃ€ĐľĐĽĐ°Đ´ŃŹĐ˝ŃŃ‚Đ˛Đľ)."
+          }
+        ]
+      },
+      "trust_metrics": {
+        "section_label": "ĐťĐ°ŃŃ– Ń†Đ¸Ń„Ń€Đ¸",
+        "headline": "Đ”ĐľŃĐ˛Ń–Đ´, ŃŹĐşĐ¸Đą ĐłĐľĐ˛ĐľŃ€Đ¸Ń‚ŃŚ ŃĐ°ĐĽ Đ·Đ° ŃĐµĐ±Đµ",
+        "items": [
+          {
+            "value": "500+",
+            "label": "ĐŁŃĐżŃ–ŃĐ˝Đľ Đ·Đ°Đ˛ĐµŃ€ŃĐµĐ˝Đ¸Ń… ŃĐżŃ€Đ°Đ˛",
+            "sublabel": "з понад 40 країн"
+          },
+          {
+            "value": "95%",
+            "label": "ĐźĐľĐşĐ°Đ·Đ˝Đ¸Đş ŃŃĐżŃ–ŃĐ˝ĐľŃŃ‚Ń–",
+            "sublabel": "ĐżĐľĐ·Đ¸Ń‚Đ¸Đ˛Đ˝Đ¸Ń… Ń€Ń–ŃĐµĐ˝ŃŚ"
+          },
+          {
+            "value": "10+",
+            "label": "Đ ĐľĐşŃ–Đ˛ Đ´ĐľŃĐ˛Ń–Đ´Ń",
+            "sublabel": "Ń ĐĽŃ–ĐłŃ€Đ°Ń†Ń–ĐąĐ˝ĐľĐĽŃ ĐżŃ€Đ°Đ˛Ń–"
+          },
+          {
+            "value": "80%",
+            "label": "Клієнтів за рекомендацією",
+            "sublabel": "найкраща рекомендація"
+          }
+        ]
+      },
+      "testimonials": {
+        "section_label": "?????? ????????",
+        "headline": "Đ©Đľ ĐłĐľĐ˛ĐľŃ€ŃŹŃ‚ŃŚ Đ˝Đ°ŃŃ– ĐşĐ»Ń–Ń”Đ˝Ń‚Đ¸",
+        "items": [
+          {
+            "id": 1,
+            "quote": "„Вони провели через релокацію сім осіб з трьох юрисдикцій за один квартал. Що мені запам'яталося, так це те, що мені ніколи не доводилося питати »що далі«. Кожного тижня — оновлений статус. Для відділу кадрів, який веде п'ять інших проектів паралельно, це має реальну цінність.\"",
+            "author": "— Т. В.",
+            "role": "CFO",
+            "entity": "виробник промислових компонентів"
+          },
+          {
+            "id": 2,
+            "quote": "„Справа про визнання громадянином Польщі, яку я раніше двічі намагався вести самостійно. Адвокат звернула увагу на три моменти, на які раніше ніхто не вказував. Позитивне рішення на чотирнадцятому місяці. Без їхньої точності я, ймовірно, досі намагався б.\"",
+            "author": "— Кароль М.",
+            "role": "Люблін",
+            "entity": ""
+          },
+          {
+            "id": 3,
+            "quote": "„Робота, що вимагала координації з нашою податковою практикою в Цюріху, нашим імміграційним юристом у Лондоні та командою у Варшаві. Без тертя. Без сюрпризів. Рекомендую без застережень.\"",
+            "author": "— Керуючий партнер",
+            "role": "family office (Швейцарія)",
+            "entity": ""
+          },
+          {
+            "id": 4,
+            "quote": "„Перша справа, в якій ніхто нічого не обіцяв мені на першій розмові. Сказали мені точно, які ризики, що можна зробити і скільки часу це займе. Для мене це був момент, коли я зрозуміла, що потрапила в правильне місце.\"",
+            "author": "— Юлія К.",
+            "role": "Вроцлав",
+            "entity": ""
+          },
+          {
+            "id": 5,
+            "quote": "„Після двадцяти років ведення діяльності в Італії я вирішив перенести центр активності до Польщі. Процедура велася комплексно, у спілкуванні виключно італійською мовою з виділеним членом команди. Найважливіше: ніхто не пояснював мені, що »в Польщі так робиться«. Пояснили, як ми зробимо це у моїй конкретній справі.\"",
+            "author": "— А. Б.",
+            "role": "засновник готельної групи",
+            "entity": "Італія"
+          },
+          {
+            "id": 6,
+            "quote": "„Блакитна Карта ЄС за сім тижнів. Роботодавець сказав, що це найшвидший темп, який він бачив.\"",
+            "author": "— Р. П.",
+            "role": "інженерний директор",
+            "entity": "Індія"
+          },
+          {
+            "id": 7,
+            "quote": "„Після продажу бізнесу в Азії я шукала нейтральну, стабільну європейську юрисдикцію. Команда допомогла мені зрозуміти, чому Польща — а не Португалія чи Мальта — буде розумним вибором на наступне десятиліття. Це була консультація, яку я запам'ятаю.\"",
+            "author": "— С. Л.",
+            "role": "приватний інвестор",
+            "entity": "Сінгапур"
+          },
+          {
+            "id": 8,
+            "quote": "„Чутлива справа, що вимагала повної конфіденційності. Усі умови, про які я просила, було дотримано. Мені нічого додати, крім того, що я рекомендувала далі.\"",
+            "author": "— Приватний клієнт",
+            "role": "Білорусь",
+            "entity": ""
+          },
+          {
+            "id": 9,
+            "quote": "„Ми перевели з Франкфурта до Варшави трьох членів правління разом із родинами — дев'ять осіб, включно з дітьми шкільного віку. Команда координувала не лише візові процедури, але також консультувала у справах міжнародних шкіл та нерухомості. Без їхньої роботи проект розтягнувся б на півроку.\"",
+            "author": "— Г. К.",
+            "role": "CEO",
+            "entity": "фармацевтична група, Німеччина"
+          },
+          {
+            "id": 10,
+            "quote": "„Ми регулярно співпрацюємо у справах, що вимагають координації з американською імміграційною системою. Якість роботи зіставна з фірмами, з якими ми працюємо в Лондоні та Відні.\"",
+            "author": "— Партнер",
+            "role": "імміграційна юридична фірма",
+            "entity": "США"
+          },
+          {
+            "id": 11,
+            "quote": "„Складна справа — дуже складна. Я отримав те, на що чекав двадцять сім років.\"",
+            "author": "— Й. Д.",
+            "role": "приватний клієнт",
+            "entity": "Туреччина"
+          },
+          {
+            "id": 12,
+            "quote": "„Польща є стратегічною для нашого фонду. Команда провела нас через міграційні процеси та поєднала їх з нашою холдинговою структурою в Люксембурзі. Додана вартість була неочевидною — і суттєвою.\"",
+            "author": "— Засновник",
+            "role": "родинний фонд",
+            "entity": "ОАЕ"
+          },
+          {
+            "id": 13,
+            "quote": "„Сорок виробничих працівників за один квартал. Без жодного відмовного рішення.\"",
+            "author": "— HR-директор",
+            "role": "виробник електроніки",
+            "entity": "В'єтнам"
+          },
+          {
+            "id": 14,
+            "quote": "„Польські міграційні процедури не є інтуїтивними для людини, що звикла до португаломовної системи. Пояснювали все терпляче, двічі. Позитивне рішення.\"",
+            "author": "— М. С.",
+            "role": "архітектор",
+            "entity": "Бразилія"
+          },
+          {
+            "id": 15,
+            "quote": "„Через три роки після першої консультації — та сама команда веде моє провадження про постійне проживання. Безперервність обслуговування — це те, що неможливо купити постфактум.\"",
+            "author": "— Дж. К.",
+            "role": "приватний клієнт",
+            "entity": "Південна Корея"
+          }
+        ]
+      },
+      "client_logos": {
+        "section_label": "Нам довіряють",
+        "items": []
+      },
+      "contact": {
+        "section_label": "Контакт",
+        "headline": "Đ ĐľĐ·ĐżĐľŃ‡Đ˝ĐµĐĽĐľ Ń€ĐľĐ·ĐĽĐľĐ˛Ń",
+        "subheadline": "Đ—Đ˛'ŃŹĐ¶Ń–Ń‚ŃŚŃŃŹ Đ· Đ˝Đ°ĐĽĐ¸ Ń– Đ´Ń–Đ·Đ˝Đ°ĐąŃ‚ĐµŃŃŹ, ŃŹĐş ĐĽĐ¸ ĐĽĐľĐ¶ĐµĐĽĐľ Đ˛Đ°ĐĽ Đ´ĐľĐżĐľĐĽĐľĐłŃ‚Đ¸.",
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "Ð²ÑÐ». GÃ³rnoÅlÄska 6, Ð¾Ñ. 1, 00-444 ÐÐ°ÑÑÐ°Ð²Ð°, ÐÐ¾Ð»ÑÑÐ°",
+        "hours": "Пн–Пт: 9:00–17:00",
+        "cta": {
+          "label": "ÐÐ½ÑÑÑÑÐ²Ð°ÑÐ¸ ÐºÐ¾Ð½ÑÐ°ÐºÑ",
+          "href": "/#kontakt"
+        }
+      }
+    },
+    "consultations": {
+      "page_title": "ĐšĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Ń–Ń—",
+      "hero": {
+        "eyebrow": "ĐźĐµŃ€ŃŃ– ĐşŃ€ĐľĐşĐ¸",
+        "headline": "Đ—Đ°ĐżĐ¸ŃĐ°Ń‚Đ¸ŃŃŹ Đ˝Đ° ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Ń–ŃŽ",
+        "subheadline": "ĐžĐ±ĐµŃ€Ń–Ń‚ŃŚ Ń„ĐľŃ€ĐĽŃ Đ·Đ˛'ŃŹĐ·ĐşŃ, Ń‰Đľ ĐżŃ–Đ´Ń…ĐľĐ´Đ¸Ń‚ŃŚ Đ´Đ»ŃŹ Đ˛Đ°ŃĐľŃ— ŃĐ¸Ń‚ŃĐ°Ń†Ń–Ń—. Đ’Ń–Đ´ĐżĐľĐ˛Ń–Đ´Đ°Ń”ĐĽĐľ ĐżŃ€ĐľŃ‚ŃŹĐłĐľĐĽ 24 ĐłĐľĐ´Đ¸Đ˝ Ń Ń€ĐľĐ±ĐľŃ‡Ń– Đ´Đ˝Ń–."
+      },
+      "visa_form": {
+        "title": "Попередня візова кваліфікація",
+        "description": "Đ—Đ°ĐżĐľĐ˛Đ˝Ń–Ń‚ŃŚ Ń„ĐľŃ€ĐĽŃ Đ˝Đ¸Đ¶Ń‡Đµ, Ń‰ĐľĐ± ĐżĐµŃ€ĐµĐ˛Ń–Ń€Đ¸Ń‚Đ¸, ŃŹĐşŃ– Đ˛Ń–Đ·ĐľĐ˛Ń– Đ˛Đ°Ń€Ń–Đ°Đ˝Ń‚Đ¸ Đ´ĐľŃŃ‚ŃĐżĐ˝Ń– Ń Đ˛Đ°ŃŃ–Đą ŃĐ¸Ń‚ŃĐ°Ń†Ń–Ń—. ĐśĐ¸ Đ˛Ń–Đ´ĐżĐľĐ˛Ń–ĐĽĐľ Đ· ĐżĐľĐżĐµŃ€ĐµĐ´Đ˝ŃŚĐľŃŽ ĐľŃ†Ń–Đ˝ĐşĐľŃŽ ĐżŃ€ĐľŃ‚ŃŹĐłĐľĐĽ 24 ĐłĐľĐ´Đ¸Đ˝.",
+        "fields": {
+          "citizenship": {
+            "label": "Đ“Ń€ĐľĐĽĐ°Đ´ŃŹĐ˝ŃŃ‚Đ˛Đľ",
+            "placeholder": "напр. Україна, Японія, Індія..."
+          },
+          "purpose": {
+            "label": "ĐśĐµŃ‚Đ° ĐżĐµŃ€ĐµĐ±ŃĐ˛Đ°Đ˝Đ˝ŃŹ Đ˛ ĐźĐľĐ»ŃŚŃ‰Ń–",
+            "placeholder": "ĐžĐ±ĐµŃ€Ń–Ń‚ŃŚ ĐĽĐµŃ‚Ń",
+            "options": [
+              {
+                "value": "praca",
+                "label": "Робота"
+              },
+              {
+                "value": "biznes",
+                "label": "Đ‘Ń–Đ·Đ˝ĐµŃ / Ń–Đ˝Đ˛ĐµŃŃ‚Đ¸Ń†Ń–Ń—"
+              },
+              {
+                "value": "studia",
+                "label": "Навчання"
+              },
+              {
+                "value": "rodzina",
+                "label": "Đ’ĐľĐ·Đ·'Ń”Đ´Đ˝Đ°Đ˝Đ˝ŃŹ ŃŃ–ĐĽ'Ń—"
+              },
+              {
+                "value": "inne",
+                "label": "Đ†Đ˝ŃĐµ"
+              }
+            ]
+          },
+          "duration": {
+            "label": "ĐźĐ»Đ°Đ˝ĐľĐ˛Đ°Đ˝Đ¸Đą Ń‚ĐµŃ€ĐĽŃ–Đ˝ ĐżĐµŃ€ĐµĐ±ŃĐ˛Đ°Đ˝Đ˝ŃŹ",
+            "placeholder": "Оберіть термін",
+            "options": [
+              {
+                "value": "do_3m",
+                "label": "Đ”Đľ 3 ĐĽŃ–ŃŃŹŃ†Ń–Đ˛"
+              },
+              {
+                "value": "3_6m",
+                "label": "3â€“6 ĐĽŃ–ŃŃŹŃ†Ń–Đ˛"
+              },
+              {
+                "value": "6_12m",
+                "label": "6â€“12 ĐĽŃ–ŃŃŹŃ†Ń–Đ˛"
+              },
+              {
+                "value": "powyzej_roku",
+                "label": "Понад рік"
+              }
+            ]
+          },
+          "job_offer": {
+            "label": "Чи маєте ви пропозицію роботи в Польщі?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Так"
+              },
+              {
+                "value": "nie",
+                "label": "Ні"
+              },
+              {
+                "value": "w_trakcie",
+                "label": "ĐŁ ĐżŃ€ĐľŃ†ĐµŃŃ– ĐżĐµŃ€ĐµĐłĐľĐ˛ĐľŃ€Ń–Đ˛"
+              }
+            ]
+          },
+          "family_in_poland": {
+            "label": "Đ§Đ¸ ĐĽĐ°Ń”Ń‚Đµ Đ˛Đ¸ ŃŃ–ĐĽ'ŃŽ Đ˛ ĐźĐľĐ»ŃŚŃ‰Ń–?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Так"
+              },
+              {
+                "value": "nie",
+                "label": "Ні"
+              }
+            ]
+          }
+        },
+        "submit": "ĐźĐµŃ€ĐµĐ˛Ń–Ń€Đ¸Ń‚Đ¸ Đ˛Ń–Đ´ĐżĐľĐ˛Ń–Đ´Đ˝Ń–ŃŃ‚ŃŚ",
+        "disclaimer": "Đ¤ĐľŃ€ĐĽĐ° Đ˝Đµ Ń” ŃŽŃ€Đ¸Đ´Đ¸Ń‡Đ˝ĐľŃŽ ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Ń–Ń”ŃŽ. ĐźŃ–ŃĐ»ŃŹ Đ°Đ˝Đ°Đ»Ń–Đ·Ń ĐĽĐ¸ Đ·Đ˛'ŃŹĐ¶ĐµĐĽĐľŃŃŹ Đ· Đ˛Đ°ĐĽĐ¸ Đ· ĐżĐľĐżĐµŃ€ĐµĐ´Đ˝ŃŚĐľŃŽ ĐľŃ†Ń–Đ˝ĐşĐľŃŽ Đ˛Đ°ŃĐľŃ— ŃĐ¸Ń‚ŃĐ°Ń†Ń–Ń—.",
+        "success": "Đ”ŃŹĐşŃŃ”ĐĽĐľ! Đ’Ń–Đ´ĐżĐľĐ˛Ń–ĐĽĐľ ĐżŃ€ĐľŃ‚ŃŹĐłĐľĐĽ 24 ĐłĐľĐ´Đ¸Đ˝ Ń Ń€ĐľĐ±ĐľŃ‡Ń– Đ´Đ˝Ń–."
+      },
+      "general_form": {
+        "title": "Đ—Đ°ĐłĐ°Đ»ŃŚĐ˝Đ° ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Ń–ŃŹ",
+        "description": "ĐśĐ°Ń”Ń‚Đµ Đ·Đ°ĐżĐ¸Ń‚Đ°Đ˝Đ˝ŃŹ Đ°Đ±Đľ Ń…ĐľŃ‡ĐµŃ‚Đµ ĐľĐ±ĐłĐľĐ˛ĐľŃ€Đ¸Ń‚Đ¸ Đ˛Đ°ŃŃ ŃĐ¸Ń‚ŃĐ°Ń†Ń–ŃŽ? ĐťĐ°ĐżĐ¸ŃŃ–Ń‚ŃŚ Đ˝Đ°ĐĽ â€” ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Đ˝Ń‚ Đ·Đ˛'ŃŹĐ¶ĐµŃ‚ŃŚŃŃŹ Đ· Đ˛Đ°ĐĽĐ¸, Ń‰ĐľĐ± ŃŃ‚ĐľŃ‡Đ˝Đ¸Ń‚Đ¸ Đ´ĐµŃ‚Đ°Đ»Ń– Ń‚Đ° Đ·Đ°ĐżŃ€ĐľĐżĐľĐ˝ŃĐ˛Đ°Ń‚Đ¸ Ń‡Đ°Ń Đ·ŃŃŃ‚Ń€Ń–Ń‡Ń–.",
+        "fields": {
+          "name": {
+            "label": "Ім'я та прізвище",
+            "placeholder": "Іван Іваненко"
+          },
+          "email": {
+            "label": "ĐĐ´Ń€ĐµŃĐ° ĐµĐ»ĐµĐşŃ‚Ń€ĐľĐ˝Đ˝ĐľŃ— ĐżĐľŃŃ‚Đ¸",
+            "placeholder": "ivan@priklad.ua"
+          },
+          "phone": {
+            "label": "ĐťĐľĐĽĐµŃ€ Ń‚ĐµĐ»ĐµŃ„ĐľĐ˝Ń",
+            "placeholder": "+48 600 000 000"
+          },
+          "message": {
+            "label": "ĐšĐľŃ€ĐľŃ‚ĐşĐ¸Đą ĐľĐżĐ¸Ń ŃĐ¸Ń‚ŃĐ°Ń†Ń–Ń—",
+            "placeholder": "ĐžĐżĐ¸ŃŃ–Ń‚ŃŚ ĐşĐľŃ€ĐľŃ‚ĐşĐľ ŃĐ˛ĐľŃŽ ŃĐ¸Ń‚ŃĐ°Ń†Ń–ŃŽ Ń‚Đ° Đ·Đ°ĐżĐ¸Ń‚Đ°Đ˝Đ˝ŃŹ, Đ· ŃŹĐşĐ¸ĐĽĐ¸ Ń…ĐľŃ‡ĐµŃ‚Đµ Đ´Đľ Đ˝Đ°Ń Đ·Đ˛ĐµŃ€Đ˝ŃŃ‚Đ¸ŃŃŹ..."
+          }
+        },
+        "submit": "ĐťĐ°Đ´Ń–ŃĐ»Đ°Ń‚Đ¸ Đ·Đ°ĐżĐ¸Ń‚",
+        "disclaimer": "Đ’Đ°ŃŃ– Đ´Đ°Đ˝Ń– Đ·Đ°Ń…Đ¸Ń‰ĐµĐ˝Ń– Đ˛Ń–Đ´ĐżĐľĐ˛Ń–Đ´Đ˝Đľ Đ´Đľ GDPR. ĐśĐ¸ Đ˝Đµ ĐżĐµŃ€ĐµĐ´Đ°Ń”ĐĽĐľ Ń—Ń… Ń‚Ń€ĐµŃ‚Ń–ĐĽ ĐľŃĐľĐ±Đ°ĐĽ.",
+        "success": "ĐźĐľĐ˛Ń–Đ´ĐľĐĽĐ»ĐµĐ˝Đ˝ŃŹ Đ˝Đ°Đ´Ń–ŃĐ»Đ°Đ˝Đľ! ĐśĐ¸ Đ·Đ˛'ŃŹĐ¶ĐµĐĽĐľŃŃŹ Đ· Đ˛Đ°ĐĽĐ¸ ĐżŃ€ĐľŃ‚ŃŹĐłĐľĐĽ 24 ĐłĐľĐ´Đ¸Đ˝."
+      }
+    },
+    "footer": {
+      "tagline": "Đ‘ŃŃ‚Đ¸ĐşĐľĐ˛Đ° ŃŽŃ€Đ¸Đ´Đ¸Ń‡Đ˝Đ° Ń„Ń–Ń€ĐĽĐ° Đ· ĐĽŃ–ĐłŃ€Đ°Ń†Ń–ĐąĐ˝ĐľĐłĐľ Ń‚Đ° Đ°Đ´ĐĽŃ–Đ˝Ń–ŃŃ‚Ń€Đ°Ń‚Đ¸Đ˛Đ˝ĐľĐłĐľ ĐżŃ€Đ°Đ˛Đ°.",
+      "columns": [
+        {
+          "title": "ĐźĐľŃĐ»ŃĐłĐ¸",
+          "links": [
+            {
+              "label": "Đ˘Đ¸ĐĽŃ‡Đ°ŃĐľĐ˛Đµ ĐżŃ€ĐľĐ¶Đ¸Đ˛Đ°Đ˝Đ˝ŃŹ",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "ĐźĐľŃŃ‚Ń–ĐąĐ˝Đµ ĐżŃ€ĐľĐ¶Đ¸Đ˛Đ°Đ˝Đ˝ŃŹ",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Đ”ĐľĐ·Đ˛ĐľĐ»Đ¸ Đ˝Đ° Ń€ĐľĐ±ĐľŃ‚Ń",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Візи",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Đ“Ń€ĐľĐĽĐ°Đ´ŃŹĐ˝ŃŃ‚Đ˛Đľ",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "ĐžŃĐşĐ°Ń€Đ¶ĐµĐ˝Đ˝ŃŹ",
+              "href": "/#uslugi"
+            }
+          ]
+        },
+        {
+          "title": "Компанія",
+          "links": [
+            {
+              "label": "ĐźŃ€Đľ Đ˝Đ°Ń",
+              "href": "/#o-nas"
+            },
+            {
+              "label": "Private Client",
+              "href": "/#private-client"
+            },
+            {
+              "label": "Контакт",
+              "href": "/#kontakt"
+            },
+            {
+              "label": "ĐšĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Ń–Ń—",
+              "href": "/konsultacje"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "Ð²ÑÐ». GÃ³rnoÅlÄska 6, Ð¾Ñ. 1, 00-444 ÐÐ°ÑÑÐ°Ð²Ð°, ÐÐ¾Ð»ÑÑÐ°"
+      },
+      "registration": {
+        "label": "Đ ĐµŃ”ŃŃ‚Ń€Đ°Ń†Ń–ĐąĐ˝Ń– Đ´Đ°Đ˝Ń–",
+        "nip": "[NIP â€” Đ±ŃĐ´Đµ Đ˝Đ°Đ´Đ°Đ˝Đľ]",
+        "krs": "[KRS â€” Đ±ŃĐ´Đµ Đ˝Đ°Đ´Đ°Đ˝Đľ]",
+        "regon": "[REGON â€” Đ±ŃĐ´Đµ Đ˝Đ°Đ´Đ°Đ˝Đľ]"
+      },
+      "legal": {
+        "copyright": "Â© 2025 Polskie Centrum Wizowe. ĐŁŃŃ– ĐżŃ€Đ°Đ˛Đ° Đ·Đ°Ń…Đ¸Ń‰ĐµĐ˝Ń–.",
+        "disclaimer": "Polskie Centrum Wizowe Ñ Ð¿ÑÐ¸Ð²Ð°ÑÐ½Ð¾Ñ ÐºÐ¾Ð½ÑÑÐ»ÑÑÐ°ÑÑÐ¹Ð½Ð¾Ñ ÑÑÑÐ¼Ð¾Ñ. ÐÐ¸ Ð½Ðµ Ñ Ð¾ÑÐ³Ð°Ð½Ð¾Ð¼ Ð´ÐµÑÐ¶Ð°Ð²Ð½Ð¾Ñ Ð°Ð´Ð¼ÑÐ½ÑÑÑÑÐ°ÑÑÑ Ð ÐµÑÐ¿ÑÐ±Ð»ÑÐºÐ¸ ÐÐ¾Ð»ÑÑÐ°.",
+        "links": [
+          {
+            "label": "ĐźĐľĐ»Ń–Ń‚Đ¸ĐşĐ° ĐşĐľĐ˝Ń„Ń–Đ´ĐµĐ˝Ń†Ń–ĐąĐ˝ĐľŃŃ‚Ń–",
+            "href": "/polityka-prywatnosci"
+          },
+          {
+            "label": "ĐŁĐĽĐľĐ˛Đ¸ Đ˛Đ¸ĐşĐľŃ€Đ¸ŃŃ‚Đ°Đ˝Đ˝ŃŹ",
+            "href": "/regulamin"
+          }
+        ]
+      }
+    }
+  },
+  "ru": {
+    "nav": {
+      "logo": {
+        "name": "ĐźĐľĐ»ŃŚŃĐşĐ¸Đą Đ˛Đ¸Đ·ĐľĐ˛Ń‹Đą Ń†ĐµĐ˝Ń‚Ń€",
+        "abbr": "PCW"
+      },
+      "links": [
+        {
+          "label": "Đž Đ˝Đ°Ń",
+          "href": "/#o-nas"
+        },
+        {
+          "label": "ĐŁŃĐ»ŃĐłĐ¸",
+          "href": "/#uslugi"
+        },
+        {
+          "label": "Private Client",
+          "href": "/#private-client"
+        },
+        {
+          "label": "Контакт",
+          "href": "/#kontakt"
+        }
+      ],
+      "cta": "ÐÐ½Ð¸ÑÐ¸Ð¸ÑÐ¾Ð²Ð°ÑÑ ÐºÐ¾Ð½ÑÐ°ÐºÑ"
+    },
+    "home": {
+      "hero": {
+        "eyebrow": "МИГРАЦИОННАЯ И АДМИНИСТРАТИВНАЯ КОНСУЛЬТАЦИЯ",
+        "headline": "Визовые и миграционные производства. Доведённые до результата.",
+        "subheadline": "Представляем частных и корпоративных клиентов в производствах по легализации пребывания, трудоустройства и получения польского гражданства. Одна специализированная команда на дело. Одна ответственность. Один результат.",
+        "cta_primary": {
+          "label": "ÐÐ½Ð¸ÑÐ¸Ð¸ÑÐ¾Ð²Ð°ÑÑ ÐºÐ¾Ð½ÑÐ°ÐºÑ",
+          "href": "/#kontakt"
+        },
+        "cta_secondary": {
+          "label": "Перечень услуг",
+          "href": "/#uslugi"
+        },
+        "microcopy": "Первый разговор — бесплатный, до 30 минут, без обязательств.",
+        "trust_indicators": [
+          "Клиенты более чем из 40 юрисдикций",
+          "Ведём производства с 2018 года",
+          "Консультации на пяти языках"
+        ]
+      },
+      "trust_bar": {
+        "label": "ĐśŃ‹ Đ˛ĐµĐ´Ń‘ĐĽ ĐżŃ€ĐľĐ¸Đ·Đ˛ĐľĐ´ŃŃ‚Đ˛Đ° ĐżĐµŃ€ĐµĐ´:",
+        "institutions": [
+          "ĐšĐľĐ˝ŃŃĐ»ŃŚŃŃ‚Đ˛Đ°",
+          "ĐŁĐżŃ€Đ°Đ˛Đ»ĐµĐ˝Đ¸Đµ ĐżĐľ Đ´ĐµĐ»Đ°ĐĽ Đ¸Đ˝ĐľŃŃ‚Ń€Đ°Đ˝Ń†ĐµĐ˛",
+          "Воевода",
+          "ĐźŃ€ĐµĐ·Đ¸Đ´ĐµĐ˝Ń‚ ĐźĐľĐ»ŃŚŃĐ¸",
+          "Đ“ĐľŃŃĐ´Đ°Ń€ŃŃ‚Đ˛ĐµĐ˝Đ˝Đ°ŃŹ Đ¸Đ˝ŃĐżĐµĐşŃ†Đ¸ŃŹ Ń‚Ń€ŃĐ´Đ° (PIP)",
+          "ĐźĐľĐłŃ€Đ°Đ˝Đ¸Ń‡Đ˝Đ°ŃŹ ŃĐ»ŃĐ¶Đ±Đ°",
+          "ĐŁĐżŃ€Đ°Đ˛Đ»ĐµĐ˝Đ¸Đµ Ń‚Ń€ŃĐ´Đ°"
+        ]
+      },
+      "about": {
+        "section_label": "Đž Đ˝Đ°Ń",
+        "headline": "Пионерский подход к миграционному праву. Архитектура административных процессов.",
+        "paragraphs": [
+          "Polskie Centrum Wizowe — это элитная бутиковая консультационная фирма, специализирующаяся на миграционном и административном праве. Обеспечиваем стратегическую поддержку для физических лиц, семей и международных корпоративных групп, чей статус требует безупречного правового и операционного владения делом.",
+          "Работаем по модели multi-disciplinary. Структуру каждого проекта формируют специализированные адвокаты, юридические советники и эксперты международных рынков. Целостность всего процесса — от первоначального анализа рисков до окончательного решения — лично гарантирует назначенный Управляющий Партнёр.",
+          "Специализируемся на делах высочайшей степени сложности: мультиюрисдикционных, объединяющих миграционные процедуры с международным корпоративным правом, а также требующих представительства перед ключевыми государственными органами и контрольными службами.",
+          "Наш фундамент — это безусловная конфиденциальность, ясность намерений и полная процессуальная ответственность. Принимаем исключительно ограниченное количество дел в год, гарантируя нашим Клиентам абсолютный приоритет."
+        ],
+        "highlight": "80% клиентов по рекомендации",
+        "highlight_sublabel": "Đ›ŃŃ‡ŃĐ¸Đą ĐżĐľĐşĐ°Đ·Đ°Ń‚ĐµĐ»ŃŚ Đ˝Đ°ŃĐµĐą Đ˝Đ°Đ´Ń‘Đ¶Đ˝ĐľŃŃ‚Đ¸"
+      },
+      "services": {
+        "section_label": "ĐŁŃĐ»ŃĐłĐ¸",
+        "headline": "ĐźĐľĐ»Đ˝Ń‹Đą ŃĐżĐµĐşŃ‚Ń€ ĐĽĐ¸ĐłŃ€Đ°Ń†Đ¸ĐľĐ˝Đ˝Ń‹Ń… ĐżŃ€ĐľĐ¸Đ·Đ˛ĐľĐ´ŃŃ‚Đ˛",
+        "subheadline": "ĐžŃ‚ Đ˛Đ¸Đ· Đ¸ Ń€Đ°Đ·Ń€ĐµŃĐµĐ˝Đ¸Đą Đ˝Đ° ĐżŃ€ĐľĐ¶Đ¸Đ˛Đ°Đ˝Đ¸Đµ Đ´Đľ ĐłŃ€Đ°Đ¶Đ´Đ°Đ˝ŃŃ‚Đ˛Đ° Đ¸ ĐľĐ±Đ¶Đ°Đ»ĐľĐ˛Đ°Đ˝Đ¸Đą â€” ĐĽŃ‹ Đ˛ĐµĐ´Ń‘ĐĽ ĐşĐ°Đ¶Đ´Ń‹Đą ŃŤŃ‚Đ°Đż ĐżŃ€ĐľĐ¸Đ·Đ˛ĐľĐ´ŃŃ‚Đ˛Đ°.",
+        "items": [
+          {
+            "id": "wizy-pracownicze",
+            "icon": "briefcase",
+            "title": "Рабочие визы",
+            "description": "Комплексное сопровождение визовой процедуры для иностранцев, трудоустраивающихся в Польше. Ведём производства по национальной визе типа D, объединяя их с получением разрешения на работу и подготовкой документации, необходимой для консульства. Команда координирует работу между работодателем и работником, устраняя процедурные риски на каждом этапе — от аудита приемлемости до получения решения.",
+            "tags": [
+              "Национальная виза типа D · Разрешение на работу · Консульская процедура"
+            ]
+          },
+          {
+            "id": "wizy-biznesowe",
+            "icon": "building",
+            "title": "Бизнес-визы",
+            "description": "Визовая консультация для предпринимателей, руководителей и лиц, командированных в Польшу. Обслуживаем шенгенские визы типа C и национальные визы типа D для бизнес-целей, управляем формальными аспектами командирования и координируем процедуры с отделами кадров материнских компаний. Работаем как с польскими принимающими сторонами, так и с иностранными корпоративными группами.",
+            "tags": [
+              "Шенгенская виза типа C · Национальная виза типа D · Командирование"
+            ]
+          },
+          {
+            "id": "wizy-studenckie",
+            "icon": "graduation-cap",
+            "title": "Студенческие визы",
+            "description": "Поддержка лиц, обучающихся в польских университетах. Ведём визовые производства и готовим клиентов к получению разрешения на временное пребывание с целью обучения. Сотрудничаем с университетами по необходимой документации и с консульствами по процедурам, принимая на себя весь объём формальных действий.",
+            "tags": [
+              "Национальная виза типа D · Временное пребывание для обучения · Продления"
+            ]
+          },
+          {
+            "id": "pobyt-czasowy",
+            "icon": "home",
+            "title": "Разрешение на временное пребывание",
+            "description": "Административное производство перед воеводой по месту пребывания иностранца. Включает полный анализ правовых оснований, составление заявления, комплектацию документации и представительство в течение всего производства. Ведём дела по всем законодательным основаниям: трудоустройство, ведение предпринимательской деятельности, обучение, пребывание с членом семьи гражданина Польши и иным основаниям, предусмотренным законом.",
+            "tags": [
+              "Производство перед воеводой · Карта пребывания · Представительство"
+            ]
+          },
+          {
+            "id": "pobyt-staly",
+            "icon": "shield",
+            "title": "Разрешение на постоянное пребывание",
+            "description": "Производство, доступное лицам, отвечающим законодательным критериям — в частности, супругам граждан Польши, обладателям Карты поляка и лицам польского происхождения. Проводим детальный анализ правомочности, комплектуем документацию, подтверждающую основание заявления, и представляем клиента перед воеводой. Практические последствия полученного разрешения: бессрочное право на пребывание и возможность подать заявление на получение польского гражданства.",
+            "tags": [
+              "Карта поляка · Супруг(а) гражданина Польши · Бессрочное пребывание"
+            ]
+          },
+          {
+            "id": "rezydent-ue",
+            "icon": "award",
+            "title": "Разрешение на пребывание долгосрочного резидента ЕС",
+            "description": "Правовой статус, предусмотренный Директивой Совета 2003/109/EC, предоставляющий право на долгосрочное пребывание на территории государств-членов ЕС. Обслуживаем процедуру в полном объёме: верификация периода законного пребывания, доходов и владения польским языком, составление заявления и представительство перед воеводой. Статус открывает возможность переноса центра жизненной активности в другое государство ЕС в упрощённом порядке.",
+            "tags": [
+              "Директива 2003/109/EC · Мобильность внутри ЕС · Воевода"
+            ]
+          },
+          {
+            "id": "obywatelstwo",
+            "icon": "globe",
+            "title": "Польское гражданство",
+            "description": "Две отдельные процедуры получения: предоставление гражданства Президентом Республики Польша и признание гражданином Польши воеводой. Анализируем оптимальный путь для конкретной ситуации, составляем обоснование заявления и комплектуем документацию, подтверждающую интеграцию с Республикой. В сложных делах ведём также производства о подтверждении польского гражданства — существенные в исторических случаях и вытекающих из родовой линии.",
+            "tags": [
+              "Предоставление Президентом РП · Признание воеводой · Подтверждение гражданства"
+            ]
+          },
+          {
+            "id": "pip-sg",
+            "icon": "file-check",
+            "title": "Представительство перед Государственной инспекцией труда и Пограничной службой",
+            "description": "Представительство работодателей и иностранцев в контрольных производствах, проводимых Государственной инспекцией труда (Państwowa Inspekcja Pracy / PIP) и Пограничной службой (Straż Graniczna). Включает участие в контрольных действиях, составление письменных объяснений и возражений, представительство в производствах по административным штрафам и апелляционных производствах. Проводим также внутренние аудиты соответствия трудоустройства иностранцев действующему законодательству — мера профилактики регуляторных рисков для работодателей более крупного масштаба.",
+            "tags": [
+              "Контрольные производства · Аудит соответствия · Апелляции"
+            ]
+          },
+          {
+            "id": "zezwolenia-praca",
+            "icon": "scale",
+            "title": "Разрешения на работу",
+            "description": "Обслуживание всех типов разрешений на работу: A, B, C, D и E; сезонных разрешений типа S; заявлений о поручении выполнения работы (oświadczenia o powierzeniu); а также заявлений в рамках системы Голубой Карты ЕС. Процессы ведём в полной координации с работодателем, управляя обязательствами перед воеводой, бюро труда (urząd pracy) и контрольными органами. Каждое производство завершаем итоговым отчётом с рекомендациями для последующих наймов.",
+            "tags": [
+              "Типы A–E · Голубая Карта ЕС · Заявления о поручении"
+            ]
+          }
+        ]
+      },
+      "private_client": {
+        "section_label": "Private Client",
+        "headline": "Private Client",
+        "subheadline": "Индивидуальное стратегическое сопровождение",
+        "description": "Название: Private Client",
+        "scope": [
+          "???????? ? ?????? ?????????: ?????? ????????????? ???????????, ??????? ??????????? ????????????? ??????????? ? ??????? ???????? ????????.",
+          "???????????????? ??????? ????????????????: ?????? ? ????????? ??????????? ???????? ???? ??? ???????????? ???????? ? ??????.",
+          "????????????? ????????????: ????????????? ?????????????? ? ??????????? ??????????? ??????? ? ???????????, ???????????? ? ??????????.",
+          "????????? ? ???????? ??????: ??????? ??????????? ? ????????????????, ??????????? ? ????????? ?????.",
+          "??????????? ???????: ???????????? ???????????? ???????? ??????? ? ?? ???????????? ?? ???????????."
+        ],
+        "operating_mode": "???????????? ?????: ??????????? ??????????????????, ?????? ????? ???????? (single point of contact), ??????????? 24/7/365. ?????? ???????? ?? ????????? ???????????, ????????????? ??????????????? ???????? ??????.",
+        "cta": {
+          "label": "Узнать о программе",
+          "href": "/konsultacje"
+        }
+      },
+      "process": {
+        "section_label": "Как мы работаем",
+        "headline": "ĐźŃ€ĐľŃ†ĐµŃŃ ŃĐľŃ‚Ń€ŃĐ´Đ˝Đ¸Ń‡ĐµŃŃ‚Đ˛Đ°",
+        "steps": [
+          {
+            "number": "01",
+            "title": "ĐźĐµŃ€Đ˛Đ¸Ń‡Đ˝Đ°ŃŹ ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Đ¸ŃŹ",
+            "description": "ĐĐ˝Đ°Đ»Đ¸Đ· ĐżŃ€Đ°Đ˛ĐľĐ˛ĐľĐą ŃĐ¸Ń‚ŃĐ°Ń†Đ¸Đ¸ ĐşĐ»Đ¸ĐµĐ˝Ń‚Đ°, ĐľŃ†ĐµĐ˝ĐşĐ° Đ´ĐľŃŃ‚ŃĐżĐ˝Ń‹Ń… ĐżŃŃ‚ĐµĐą ĐżŃ€ĐľĐ¸Đ·Đ˛ĐľĐ´ŃŃ‚Đ˛Đ° Đ¸ ĐľĐżŃ€ĐµĐ´ĐµĐ»ĐµĐ˝Đ¸Đµ ĐľĐżŃ‚Đ¸ĐĽĐ°Đ»ŃŚĐ˝ĐľĐą ŃŃ‚Ń€Đ°Ń‚ĐµĐłĐ¸Đ¸. ĐžĐ˝Đ»Đ°ĐąĐ˝ Đ¸Đ»Đ¸ ĐľŃ‡Đ˝Đ°ŃŹ ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Đ¸ŃŹ."
+          },
+          {
+            "number": "02",
+            "title": "ĐĐ˝Đ°Đ»Đ¸Đ· Đ¸ ŃŃ‚Ń€Đ°Ń‚ĐµĐłĐ¸ŃŹ ĐżŃ€ĐľĐ¸Đ·Đ˛ĐľĐ´ŃŃ‚Đ˛Đ°",
+            "description": "ĐźĐľĐ´ĐłĐľŃ‚ĐľĐ˛ĐşĐ° Đ´ĐµŃ‚Đ°Đ»ŃŚĐ˝ĐľĐłĐľ ĐżĐ»Đ°Đ˝Đ° ĐżŃ€ĐľĐ¸Đ·Đ˛ĐľĐ´ŃŃ‚Đ˛Đ°, ĐżĐµŃ€ĐµŃ‡Đ˝ŃŹ Đ˝ĐµĐľĐ±Ń…ĐľĐ´Đ¸ĐĽŃ‹Ń… Đ´ĐľĐşŃĐĽĐµĐ˝Ń‚ĐľĐ˛ Đ¸ ĐłŃ€Đ°Ń„Đ¸ĐşĐ° Đ´ĐµĐąŃŃ‚Đ˛Đ¸Đą. ĐźŃ€ĐľĐ˛ĐµŃ€ĐşĐ° Đ´ĐľĐşŃĐĽĐµĐ˝Ń‚Đ°Ń†Đ¸Đ¸ Đ¸ ŃŃŃ‚Ń€Đ°Đ˝ĐµĐ˝Đ¸Đµ Đ˝ĐµĐ´ĐľŃŃ‚Đ°Ń‚ĐşĐľĐ˛."
+          },
+          {
+            "number": "03",
+            "title": "ĐźŃ€ĐµĐ´ŃŃ‚Đ°Đ˛Đ¸Ń‚ĐµĐ»ŃŚŃŃ‚Đ˛Đľ ĐżĐµŃ€ĐµĐ´ ĐľŃ€ĐłĐ°Đ˝Đ°ĐĽĐ¸",
+            "description": "ĐźĐľĐ´Đ°Ń‡Đ° Đ·Đ°ŃŹĐ˛Đ»ĐµĐ˝Đ¸ŃŹ, Đ°ĐşŃ‚Đ¸Đ˛Đ˝ĐľĐµ ĐżŃ€ĐµĐ´ŃŃ‚Đ°Đ˛Đ¸Ń‚ĐµĐ»ŃŚŃŃ‚Đ˛Đľ ĐżĐµŃ€ĐµĐ´ Đ°Đ´ĐĽĐ¸Đ˝Đ¸ŃŃ‚Ń€Đ°Ń‚Đ¸Đ˛Đ˝Ń‹ĐĽ ĐľŃ€ĐłĐ°Đ˝ĐľĐĽ, Ń‚ĐµĐşŃŃ‰Đ¸Đą ĐĽĐľĐ˝Đ¸Ń‚ĐľŃ€Đ¸Đ˝Đł Đ´ĐµĐ»Đ° Đ¸ ĐľŃ‚Đ˛ĐµŃ‚Ń‹ Đ˝Đ° Đ˛Ń‹Đ·ĐľĐ˛Ń‹ Đ¸ ĐľŃ„Đ¸Ń†Đ¸Đ°Đ»ŃŚĐ˝Ń‹Đµ Đ·Đ°ĐżŃ€ĐľŃŃ‹."
+          },
+          {
+            "number": "04",
+            "title": "Đ ĐµŃĐµĐ˝Đ¸Đµ Đ¸ ĐżĐľĐ´Đ´ĐµŃ€Đ¶ĐşĐ° ĐżĐľŃĐ»Đµ ĐżŃ€ĐľĐ¸Đ·Đ˛ĐľĐ´ŃŃ‚Đ˛Đ°",
+            "description": "ĐźĐľĐ»ŃŃ‡ĐµĐ˝Đ¸Đµ Ń€ĐµŃĐµĐ˝Đ¸ŃŹ, Đ°Đ˝Đ°Đ»Đ¸Đ· ĐµĐłĐľ ŃĐľĐ´ĐµŃ€Đ¶Đ°Đ˝Đ¸ŃŹ Đ¸ Đ´Đ°Đ»ŃŚĐ˝ĐµĐąŃĐ¸Đµ ŃĐ°ĐłĐ¸ â€” Đ˛ĐşĐ»ŃŽŃ‡Đ°ŃŹ ĐľĐ±Đ¶Đ°Đ»ĐľĐ˛Đ°Đ˝Đ¸Đµ, ĐµŃĐ»Đ¸ ĐľĐ˝Đľ ĐľĐ±ĐľŃĐ˝ĐľĐ˛Đ°Đ˝Đ˝Đľ. ĐźĐľĐ´Đ´ĐµŃ€Đ¶ĐşĐ° Đ˝Đ° ĐżĐľŃĐ»ĐµĐ´ŃŃŽŃ‰Đ¸Ń… ŃŤŃ‚Đ°ĐżĐ°Ń… (ĐżŃ€ĐľĐ´Đ»ĐµĐ˝Đ¸Đµ, ĐżĐľŃŃ‚ĐľŃŹĐ˝Đ˝ĐľĐµ ĐżŃ€ĐľĐ¶Đ¸Đ˛Đ°Đ˝Đ¸Đµ, ĐłŃ€Đ°Đ¶Đ´Đ°Đ˝ŃŃ‚Đ˛Đľ)."
+          }
+        ]
+      },
+      "trust_metrics": {
+        "section_label": "ĐťĐ°ŃĐ¸ Ń†Đ¸Ń„Ń€Ń‹",
+        "headline": "ĐžĐżŃ‹Ń‚, ĐłĐľĐ˛ĐľŃ€ŃŹŃ‰Đ¸Đą ŃĐ°ĐĽ Đ·Đ° ŃĐµĐ±ŃŹ",
+        "items": [
+          {
+            "value": "500+",
+            "label": "ĐŁŃĐżĐµŃĐ˝Đľ Đ·Đ°Đ˛ĐµŃ€ŃŃ‘Đ˝Đ˝Ń‹Ń… Đ´ĐµĐ»",
+            "sublabel": "Đ¸Đ· Đ±ĐľĐ»ĐµĐµ Ń‡ĐµĐĽ 40 ŃŃ‚Ń€Đ°Đ˝"
+          },
+          {
+            "value": "95%",
+            "label": "ĐźĐľĐşĐ°Đ·Đ°Ń‚ĐµĐ»ŃŚ ŃŃĐżĐµŃ…Đ°",
+            "sublabel": "ĐżĐľĐ»ĐľĐ¶Đ¸Ń‚ĐµĐ»ŃŚĐ˝Ń‹Ń… Ń€ĐµŃĐµĐ˝Đ¸Đą"
+          },
+          {
+            "value": "10+",
+            "label": "Лет опыта",
+            "sublabel": "в миграционном праве"
+          },
+          {
+            "value": "80%",
+            "label": "Клиентов по рекомендации",
+            "sublabel": "Đ»ŃŃ‡ŃĐ°ŃŹ Ń€ĐµĐşĐľĐĽĐµĐ˝Đ´Đ°Ń†Đ¸ŃŹ"
+          }
+        ]
+      },
+      "testimonials": {
+        "section_label": "???? ????????",
+        "headline": "Đ§Ń‚Đľ ĐłĐľĐ˛ĐľŃ€ŃŹŃ‚ Đ˝Đ°ŃĐ¸ ĐşĐ»Đ¸ĐµĐ˝Ń‚Ń‹",
+        "items": [
+          {
+            "id": 1,
+            "quote": "„Они провели через релокацию семь человек из трёх юрисдикций за один квартал. Что мне запомнилось — это то, что мне никогда не приходилось спрашивать »что дальше«. Каждую неделю — обновлённый статус. Для отдела кадров, ведущего пять других проектов параллельно, это имеет реальную ценность.\"",
+            "author": "— Т. В.",
+            "role": "CFO",
+            "entity": "производитель промышленных компонентов"
+          },
+          {
+            "id": 2,
+            "quote": "„Дело о признании гражданином Польши, которое я ранее дважды пытался вести самостоятельно. Адвокат обратила внимание на три момента, на которые ранее никто не указывал. Положительное решение на четырнадцатом месяце. Без их точности я, вероятно, до сих пор пытался бы.\"",
+            "author": "— Кароль М.",
+            "role": "Люблин",
+            "entity": ""
+          },
+          {
+            "id": 3,
+            "quote": "„Работа, потребовавшая координации с нашей налоговой практикой в Цюрихе, нашим иммиграционным юристом в Лондоне и командой в Варшаве. Без трения. Без сюрпризов. Рекомендую без оговорок.\"",
+            "author": "— Управляющий партнёр",
+            "role": "family office (Швейцария)",
+            "entity": ""
+          },
+          {
+            "id": 4,
+            "quote": "„Первое дело, в котором никто ничего не обещал мне на первом разговоре. Сказали мне точно, какие риски, что можно сделать и сколько времени это займёт. Для меня это был момент, когда я поняла, что попала в правильное место.\"",
+            "author": "— Юлия К.",
+            "role": "Вроцлав",
+            "entity": ""
+          },
+          {
+            "id": 5,
+            "quote": "„После двадцати лет ведения деятельности в Италии я решил перенести центр активности в Польшу. Процедура велась комплексно, в общении исключительно на итальянском языке с выделенным членом команды. Главное: никто не объяснял мне, что »в Польше так делается«. Объяснили, как мы сделаем это в моём конкретном деле.\"",
+            "author": "— А. Б.",
+            "role": "основатель отельной группы",
+            "entity": "Италия"
+          },
+          {
+            "id": 6,
+            "quote": "„Голубая Карта ЕС за семь недель. Работодатель сказал, что это самый быстрый темп, который он видел.\"",
+            "author": "— Р. П.",
+            "role": "инженерный директор",
+            "entity": "Индия"
+          },
+          {
+            "id": 7,
+            "quote": "„После продажи бизнеса в Азии я искала нейтральную, стабильную европейскую юрисдикцию. Команда помогла мне понять, почему Польша — а не Португалия или Мальта — будет разумным выбором на ближайшее десятилетие. Это была консультация, которую я запомню.\"",
+            "author": "— С. Л.",
+            "role": "частный инвестор",
+            "entity": "Сингапур"
+          },
+          {
+            "id": 8,
+            "quote": "„Чувствительное дело, требовавшее полной конфиденциальности. Все условия, о которых я просила, были соблюдены. Мне нечего добавить, кроме того, что я рекомендовала дальше.\"",
+            "author": "— Частный клиент",
+            "role": "Беларусь",
+            "entity": ""
+          },
+          {
+            "id": 9,
+            "quote": "„Мы перевели из Франкфурта в Варшаву трёх членов правления вместе с семьями — девять человек, включая детей школьного возраста. Команда координировала не только визовые процедуры, но также консультировала по вопросам международных школ и недвижимости. Без их работы проект растянулся бы на полгода.\"",
+            "author": "— Г. К.",
+            "role": "CEO",
+            "entity": "фармацевтическая группа, Германия"
+          },
+          {
+            "id": 10,
+            "quote": "„Мы регулярно сотрудничаем по делам, требующим координации с американской иммиграционной системой. Качество работы сопоставимо с фирмами, с которыми мы работаем в Лондоне и Вене.\"",
+            "author": "— Партнёр",
+            "role": "иммиграционная юридическая фирма",
+            "entity": "США"
+          },
+          {
+            "id": 11,
+            "quote": "„Сложное дело — очень сложное. Я получил то, чего ждал двадцать семь лет.\"",
+            "author": "— Й. Д.",
+            "role": "частный клиент",
+            "entity": "Турция"
+          },
+          {
+            "id": 12,
+            "quote": "„Польша является стратегической для нашего фонда. Команда провела нас через миграционные процессы и объединила их с нашей холдинговой структурой в Люксембурге. Добавленная стоимость была неочевидной — и существенной.\"",
+            "author": "— Основатель",
+            "role": "семейный фонд",
+            "entity": "ОАЭ"
+          },
+          {
+            "id": 13,
+            "quote": "„Сорок производственных работников за один квартал. Без единого отказного решения.\"",
+            "author": "— HR-директор",
+            "role": "производитель электроники",
+            "entity": "Вьетнам"
+          },
+          {
+            "id": 14,
+            "quote": "„Польские миграционные процедуры не интуитивны для человека, привыкшего к португалоязычной системе. Объясняли всё терпеливо, дважды. Положительное решение.\"",
+            "author": "— М. С.",
+            "role": "архитектор",
+            "entity": "Бразилия"
+          },
+          {
+            "id": 15,
+            "quote": "„Через три года после первой консультации — та же команда ведёт моё производство о постоянном пребывании. Непрерывность обслуживания — это то, что невозможно купить постфактум.\"",
+            "author": "— Дж. К.",
+            "role": "частный клиент",
+            "entity": "Южная Корея"
+          }
+        ]
+      },
+      "client_logos": {
+        "section_label": "Нам доверяют",
+        "items": []
+      },
+      "contact": {
+        "section_label": "Контакт",
+        "headline": "Начнём разговор",
+        "subheadline": "ĐˇĐ˛ŃŹĐ¶Đ¸Ń‚ĐµŃŃŚ Ń Đ˝Đ°ĐĽĐ¸ Đ¸ ŃĐ·Đ˝Đ°ĐąŃ‚Đµ, ĐşĐ°Đş ĐĽŃ‹ ĐĽĐľĐ¶ĐµĐĽ Đ˛Đ°ĐĽ ĐżĐľĐĽĐľŃ‡ŃŚ.",
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "ÑÐ». GÃ³rnoÅlÄska 6, Ð¾Ñ. 1, 00-444 ÐÐ°ÑÑÐ°Ð²Ð°, ÐÐ¾Ð»ÑÑÐ°",
+        "hours": "Пн–Пт: 9:00–17:00",
+        "cta": {
+          "label": "ÐÐ½Ð¸ÑÐ¸Ð¸ÑÐ¾Ð²Ð°ÑÑ ÐºÐ¾Ð½ÑÐ°ÐºÑ",
+          "href": "/#kontakt"
+        }
+      }
+    },
+    "consultations": {
+      "page_title": "ĐšĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Đ¸Đ¸",
+      "hero": {
+        "eyebrow": "ĐźĐµŃ€Đ˛Ń‹Đµ ŃĐ°ĐłĐ¸",
+        "headline": "Đ—Đ°ĐżĐ¸ŃĐ°Ń‚ŃŚŃŃŹ Đ˝Đ° ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Đ¸ŃŽ",
+        "subheadline": "Đ’Ń‹Đ±ĐµŃ€Đ¸Ń‚Đµ Ń„ĐľŃ€ĐĽŃ ŃĐ˛ŃŹĐ·Đ¸, ĐżĐľĐ´Ń…ĐľĐ´ŃŹŃ‰ŃŃŽ Đ´Đ»ŃŹ Đ˛Đ°ŃĐµĐą ŃĐ¸Ń‚ŃĐ°Ń†Đ¸Đ¸. ĐžŃ‚Đ˛ĐµŃ‡Đ°ĐµĐĽ Đ˛ Ń‚ĐµŃ‡ĐµĐ˝Đ¸Đµ 24 Ń‡Đ°ŃĐľĐ˛ Đ˛ Ń€Đ°Đ±ĐľŃ‡Đ¸Đµ Đ´Đ˝Đ¸."
+      },
+      "visa_form": {
+        "title": "Предварительная визовая квалификация",
+        "description": "Đ—Đ°ĐżĐľĐ»Đ˝Đ¸Ń‚Đµ Ń„ĐľŃ€ĐĽŃ Đ˝Đ¸Đ¶Đµ, Ń‡Ń‚ĐľĐ±Ń‹ ĐżŃ€ĐľĐ˛ĐµŃ€Đ¸Ń‚ŃŚ, ĐşĐ°ĐşĐ¸Đµ Đ˛Đ¸Đ·ĐľĐ˛Ń‹Đµ Đ˛Đ°Ń€Đ¸Đ°Đ˝Ń‚Ń‹ Đ´ĐľŃŃ‚ŃĐżĐ˝Ń‹ Đ˛ Đ˛Đ°ŃĐµĐą ŃĐ¸Ń‚ŃĐ°Ń†Đ¸Đ¸. ĐśŃ‹ ĐľŃ‚Đ˛ĐµŃ‚Đ¸ĐĽ Ń ĐżŃ€ĐµĐ´Đ˛Đ°Ń€Đ¸Ń‚ĐµĐ»ŃŚĐ˝ĐľĐą ĐľŃ†ĐµĐ˝ĐşĐľĐą Đ˛ Ń‚ĐµŃ‡ĐµĐ˝Đ¸Đµ 24 Ń‡Đ°ŃĐľĐ˛.",
+        "fields": {
+          "citizenship": {
+            "label": "Đ“Ń€Đ°Đ¶Đ´Đ°Đ˝ŃŃ‚Đ˛Đľ",
+            "placeholder": "Đ˝Đ°ĐżŃ€. ĐŁĐşŃ€Đ°Đ¸Đ˝Đ°, ĐŻĐżĐľĐ˝Đ¸ŃŹ, ĐĐ˝Đ´Đ¸ŃŹ..."
+          },
+          "purpose": {
+            "label": "Đ¦ĐµĐ»ŃŚ ĐżŃ€ĐµĐ±Ń‹Đ˛Đ°Đ˝Đ¸ŃŹ Đ˛ ĐźĐľĐ»ŃŚŃĐµ",
+            "placeholder": "Выберите цель",
+            "options": [
+              {
+                "value": "praca",
+                "label": "Работа"
+              },
+              {
+                "value": "biznes",
+                "label": "Đ‘Đ¸Đ·Đ˝ĐµŃ / Đ¸Đ˝Đ˛ĐµŃŃ‚Đ¸Ń†Đ¸Đ¸"
+              },
+              {
+                "value": "studia",
+                "label": "Учёба"
+              },
+              {
+                "value": "rodzina",
+                "label": "Đ’ĐľŃŃĐľĐµĐ´Đ¸Đ˝ĐµĐ˝Đ¸Đµ ŃĐµĐĽŃŚĐ¸"
+              },
+              {
+                "value": "inne",
+                "label": "Đ”Ń€ŃĐłĐľĐµ"
+              }
+            ]
+          },
+          "duration": {
+            "label": "ĐźĐ»Đ°Đ˝Đ¸Ń€ŃĐµĐĽŃ‹Đą ŃŃ€ĐľĐş ĐżŃ€ĐµĐ±Ń‹Đ˛Đ°Đ˝Đ¸ŃŹ",
+            "placeholder": "Выберите период",
+            "options": [
+              {
+                "value": "do_3m",
+                "label": "Đ”Đľ 3 ĐĽĐµŃŃŹŃ†ĐµĐ˛"
+              },
+              {
+                "value": "3_6m",
+                "label": "3â€“6 ĐĽĐµŃŃŹŃ†ĐµĐ˛"
+              },
+              {
+                "value": "6_12m",
+                "label": "6â€“12 ĐĽĐµŃŃŹŃ†ĐµĐ˛"
+              },
+              {
+                "value": "powyzej_roku",
+                "label": "Более года"
+              }
+            ]
+          },
+          "job_offer": {
+            "label": "Đ•ŃŃ‚ŃŚ Đ»Đ¸ Ń Đ˛Đ°Ń ĐżŃ€ĐµĐ´Đ»ĐľĐ¶ĐµĐ˝Đ¸Đµ Đľ Ń€Đ°Đ±ĐľŃ‚Đµ Đ˛ ĐźĐľĐ»ŃŚŃĐµ?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Да"
+              },
+              {
+                "value": "nie",
+                "label": "Нет"
+              },
+              {
+                "value": "w_trakcie",
+                "label": "Đ’ ĐżŃ€ĐľŃ†ĐµŃŃĐµ ĐżĐµŃ€ĐµĐłĐľĐ˛ĐľŃ€ĐľĐ˛"
+              }
+            ]
+          },
+          "family_in_poland": {
+            "label": "Đ•ŃŃ‚ŃŚ Đ»Đ¸ Ń Đ˛Đ°Ń ŃĐµĐĽŃŚŃŹ Đ˛ ĐźĐľĐ»ŃŚŃĐµ?",
+            "options": [
+              {
+                "value": "tak",
+                "label": "Да"
+              },
+              {
+                "value": "nie",
+                "label": "Нет"
+              }
+            ]
+          }
+        },
+        "submit": "ĐźŃ€ĐľĐ˛ĐµŃ€Đ¸Ń‚ŃŚ ŃĐľĐľŃ‚Đ˛ĐµŃ‚ŃŃ‚Đ˛Đ¸Đµ",
+        "disclaimer": "Đ¤ĐľŃ€ĐĽĐ° Đ˝Đµ ŃŹĐ˛Đ»ŃŹĐµŃ‚ŃŃŹ ŃŽŃ€Đ¸Đ´Đ¸Ń‡ĐµŃĐşĐľĐą ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Đ¸ĐµĐą. ĐźĐľŃĐ»Đµ Đ°Đ˝Đ°Đ»Đ¸Đ·Đ° ĐĽŃ‹ ŃĐ˛ŃŹĐ¶ĐµĐĽŃŃŹ Ń Đ˛Đ°ĐĽĐ¸ Ń ĐżŃ€ĐµĐ´Đ˛Đ°Ń€Đ¸Ń‚ĐµĐ»ŃŚĐ˝ĐľĐą ĐľŃ†ĐµĐ˝ĐşĐľĐą Đ˛Đ°ŃĐµĐą ŃĐ¸Ń‚ŃĐ°Ń†Đ¸Đ¸.",
+        "success": "ĐˇĐżĐ°ŃĐ¸Đ±Đľ! ĐžŃ‚Đ˛ĐµŃ‚Đ¸ĐĽ Đ˛ Ń‚ĐµŃ‡ĐµĐ˝Đ¸Đµ 24 Ń‡Đ°ŃĐľĐ˛ Đ˛ Ń€Đ°Đ±ĐľŃ‡Đ¸Đµ Đ´Đ˝Đ¸."
+      },
+      "general_form": {
+        "title": "ĐžĐ±Ń‰Đ°ŃŹ ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Đ¸ŃŹ",
+        "description": "Đ•ŃŃ‚ŃŚ Đ˛ĐľĐżŃ€ĐľŃŃ‹ Đ¸Đ»Đ¸ Ń…ĐľŃ‚Đ¸Ń‚Đµ ĐľĐ±ŃŃĐ´Đ¸Ń‚ŃŚ Đ˛Đ°ŃŃ ŃĐ¸Ń‚ŃĐ°Ń†Đ¸ŃŽ? ĐťĐ°ĐżĐ¸ŃĐ¸Ń‚Đµ Đ˝Đ°ĐĽ â€” ĐşĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Đ˝Ń‚ ŃĐ˛ŃŹĐ¶ĐµŃ‚ŃŃŹ Ń Đ˛Đ°ĐĽĐ¸, Ń‡Ń‚ĐľĐ±Ń‹ ŃŃ‚ĐľŃ‡Đ˝Đ¸Ń‚ŃŚ Đ´ĐµŃ‚Đ°Đ»Đ¸ Đ¸ ĐżŃ€ĐµĐ´Đ»ĐľĐ¶Đ¸Ń‚ŃŚ Đ˛Ń€ĐµĐĽŃŹ Đ˛ŃŃ‚Ń€ĐµŃ‡Đ¸.",
+        "fields": {
+          "name": {
+            "label": "ĐĐĽŃŹ Đ¸ Ń„Đ°ĐĽĐ¸Đ»Đ¸ŃŹ",
+            "placeholder": "ĐĐ˛Đ°Đ˝ ĐĐ˛Đ°Đ˝ĐľĐ˛"
+          },
+          "email": {
+            "label": "ĐĐ´Ń€ĐµŃ ŃŤĐ»ĐµĐşŃ‚Ń€ĐľĐ˝Đ˝ĐľĐą ĐżĐľŃ‡Ń‚Ń‹",
+            "placeholder": "ivan@primer.ru"
+          },
+          "phone": {
+            "label": "Номер телефона",
+            "placeholder": "+48 600 000 000"
+          },
+          "message": {
+            "label": "ĐšŃ€Đ°Ń‚ĐşĐľĐµ ĐľĐżĐ¸ŃĐ°Đ˝Đ¸Đµ ŃĐ¸Ń‚ŃĐ°Ń†Đ¸Đ¸",
+            "placeholder": "ĐšŃ€Đ°Ń‚ĐşĐľ ĐľĐżĐ¸ŃĐ¸Ń‚Đµ ŃĐ˛ĐľŃŽ ŃĐ¸Ń‚ŃĐ°Ń†Đ¸ŃŽ Đ¸ Đ˛ĐľĐżŃ€ĐľŃŃ‹, Ń ĐşĐľŃ‚ĐľŃ€Ń‹ĐĽĐ¸ Ń…ĐľŃ‚Đ¸Ń‚Đµ Đş Đ˝Đ°ĐĽ ĐľĐ±Ń€Đ°Ń‚Đ¸Ń‚ŃŚŃŃŹ..."
+          }
+        },
+        "submit": "ĐžŃ‚ĐżŃ€Đ°Đ˛Đ¸Ń‚ŃŚ Đ·Đ°ĐżŃ€ĐľŃ",
+        "disclaimer": "Đ’Đ°ŃĐ¸ Đ´Đ°Đ˝Đ˝Ń‹Đµ Đ·Đ°Ń‰Đ¸Ń‰ĐµĐ˝Ń‹ Đ˛ ŃĐľĐľŃ‚Đ˛ĐµŃ‚ŃŃ‚Đ˛Đ¸Đ¸ Ń GDPR. ĐśŃ‹ Đ˝Đµ ĐżĐµŃ€ĐµĐ´Đ°Ń‘ĐĽ Đ¸Ń… Ń‚Ń€ĐµŃ‚ŃŚĐ¸ĐĽ Đ»Đ¸Ń†Đ°ĐĽ.",
+        "success": "ĐˇĐľĐľĐ±Ń‰ĐµĐ˝Đ¸Đµ ĐľŃ‚ĐżŃ€Đ°Đ˛Đ»ĐµĐ˝Đľ! ĐˇĐ˛ŃŹĐ¶ĐµĐĽŃŃŹ Ń Đ˛Đ°ĐĽĐ¸ Đ˛ Ń‚ĐµŃ‡ĐµĐ˝Đ¸Đµ 24 Ń‡Đ°ŃĐľĐ˛."
+      }
+    },
+    "footer": {
+      "tagline": "Đ‘ŃŃ‚Đ¸ĐşĐľĐ˛Đ°ŃŹ ŃŽŃ€Đ¸Đ´Đ¸Ń‡ĐµŃĐşĐ°ŃŹ Ń„Đ¸Ń€ĐĽĐ° ĐżĐľ ĐĽĐ¸ĐłŃ€Đ°Ń†Đ¸ĐľĐ˝Đ˝ĐľĐĽŃ Đ¸ Đ°Đ´ĐĽĐ¸Đ˝Đ¸ŃŃ‚Ń€Đ°Ń‚Đ¸Đ˛Đ˝ĐľĐĽŃ ĐżŃ€Đ°Đ˛Ń.",
+      "columns": [
+        {
+          "title": "ĐŁŃĐ»ŃĐłĐ¸",
+          "links": [
+            {
+              "label": "Временное проживание",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "ĐźĐľŃŃ‚ĐľŃŹĐ˝Đ˝ĐľĐµ ĐżŃ€ĐľĐ¶Đ¸Đ˛Đ°Đ˝Đ¸Đµ",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Đ Đ°Đ·Ń€ĐµŃĐµĐ˝Đ¸ŃŹ Đ˝Đ° Ń€Đ°Đ±ĐľŃ‚Ń",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Визы",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Đ“Ń€Đ°Đ¶Đ´Đ°Đ˝ŃŃ‚Đ˛Đľ",
+              "href": "/#uslugi"
+            },
+            {
+              "label": "Обжалования",
+              "href": "/#uslugi"
+            }
+          ]
+        },
+        {
+          "title": "Компания",
+          "links": [
+            {
+              "label": "Đž Đ˝Đ°Ń",
+              "href": "/#o-nas"
+            },
+            {
+              "label": "Private Client",
+              "href": "/#private-client"
+            },
+            {
+              "label": "Контакт",
+              "href": "/#kontakt"
+            },
+            {
+              "label": "ĐšĐľĐ˝ŃŃĐ»ŃŚŃ‚Đ°Ń†Đ¸Đ¸",
+              "href": "/konsultacje"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "email": "kontakt@pcw.pl",
+        "phone": "+48 22 123 45 67",
+        "address": "ÑÐ». GÃ³rnoÅlÄska 6, Ð¾Ñ. 1, 00-444 ÐÐ°ÑÑÐ°Ð²Ð°, ÐÐ¾Ð»ÑÑÐ°"
+      },
+      "registration": {
+        "label": "Đ ĐµĐłĐ¸ŃŃ‚Ń€Đ°Ń†Đ¸ĐľĐ˝Đ˝Ń‹Đµ Đ´Đ°Đ˝Đ˝Ń‹Đµ",
+        "nip": "[NIP â€” Đ±ŃĐ´ĐµŃ‚ ĐżŃ€ĐµĐ´ĐľŃŃ‚Đ°Đ˛Đ»ĐµĐ˝]",
+        "krs": "[KRS â€” Đ±ŃĐ´ĐµŃ‚ ĐżŃ€ĐµĐ´ĐľŃŃ‚Đ°Đ˛Đ»ĐµĐ˝]",
+        "regon": "[REGON â€” Đ±ŃĐ´ĐµŃ‚ ĐżŃ€ĐµĐ´ĐľŃŃ‚Đ°Đ˛Đ»ĐµĐ˝]"
+      },
+      "legal": {
+        "copyright": "Â© 2025 Polskie Centrum Wizowe. Đ’ŃĐµ ĐżŃ€Đ°Đ˛Đ° Đ·Đ°Ń‰Đ¸Ń‰ĐµĐ˝Ń‹.",
+        "disclaimer": "Polskie Centrum Wizowe ÑÐ²Ð»ÑÐµÑÑÑ ÑÐ°ÑÑÐ½Ð¾Ð¹ ÐºÐ¾Ð½ÑÑÐ»ÑÑÐ°ÑÐ¸Ð¾Ð½Ð½Ð¾Ð¹ ÑÐ¸ÑÐ¼Ð¾Ð¹. ÐÑ Ð½Ðµ ÑÐ²Ð»ÑÐµÐ¼ÑÑ Ð¾ÑÐ³Ð°Ð½Ð¾Ð¼ Ð³Ð¾ÑÑÐ´Ð°ÑÑÑÐ²ÐµÐ½Ð½Ð¾Ð¹ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑÑÐ°ÑÐ¸Ð¸ Ð ÐµÑÐ¿ÑÐ±Ð»Ð¸ÐºÐ¸ ÐÐ¾Ð»ÑÑÐ°.",
+        "links": [
+          {
+            "label": "ĐźĐľĐ»Đ¸Ń‚Đ¸ĐşĐ° ĐşĐľĐ˝Ń„Đ¸Đ´ĐµĐ˝Ń†Đ¸Đ°Đ»ŃŚĐ˝ĐľŃŃ‚Đ¸",
+            "href": "/polityka-prywatnosci"
+          },
+          {
+            "label": "ĐŁŃĐ»ĐľĐ˛Đ¸ŃŹ Đ¸ŃĐżĐľĐ»ŃŚĐ·ĐľĐ˛Đ°Đ˝Đ¸ŃŹ",
+            "href": "/regulamin"
+          }
+        ]
+      }
     }
   }
 }

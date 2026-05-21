@@ -1,97 +1,215 @@
 "use client";
 
-import content from "@/content/site-content.json";
+import Image from "next/image";
+import { useLangContent } from "@/contexts/LanguageContext";
 import { useInView } from "@/hooks/useInView";
 
 export default function About() {
+  const content = useLangContent();
   const { about } = content.home;
+  const legalDisclaimer = content.footer?.legal?.disclaimer;
   const { ref, inView } = useInView(0.1);
+
+  const [leadParagraph, ...remainingParagraphs] = about.paragraphs;
 
   return (
     <section
       ref={ref as React.RefObject<HTMLElement>}
       id="o-nas"
-      className={`section-padding in-view-group${inView ? " is-visible" : ""}`}
-      style={{ backgroundColor: "var(--color-cream)" }}
+      className={`surface-white in-view-group overflow-hidden${inView ? " is-visible" : ""}`}
       aria-labelledby="about-heading"
     >
-      <div className="container-editorial">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[820px]">
 
-          {/* Left column */}
-          <div className="lg:col-span-4 lg:sticky lg:top-32">
+        {/* ── LEFT col: full-bleed photo ── */}
+        <div
+          className="relative min-h-[460px] lg:min-h-0 order-2 lg:order-1 animate-fade-up"
+          style={{ animationDelay: "120ms" }}
+        >
+          <Image
+            src="/images/about.png"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            unoptimized
+          />
+
+          {/* Subtle mood tint — all viewports */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to top, rgba(7,27,58,0.28) 0%, rgba(7,27,58,0.12) 45%, transparent 80%)",
+            }}
+            aria-hidden="true"
+          />
+
+          {/* Desktop: right edge blends into white content column */}
+          <div
+            className="absolute inset-y-0 right-0 w-40 xl:w-56 hidden lg:block"
+            style={{
+              background:
+                "linear-gradient(to left, var(--color-white) 0%, rgba(255,255,255,0.6) 45%, transparent 100%)",
+            }}
+            aria-hidden="true"
+          />
+
+          {/* Mobile: top edge blends into white content above */}
+          <div
+            className="absolute inset-x-0 top-0 h-28 lg:hidden"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 40%, rgba(255,255,255,0.2) 75%, transparent 100%)",
+            }}
+            aria-hidden="true"
+          />
+
+          {/* Mobile: bottom edge — gentle darkening, no hard navy wall */}
+          <div
+            className="absolute inset-x-0 bottom-0 h-20 lg:hidden"
+            style={{
+              background:
+                "linear-gradient(to top, rgba(7,27,58,0.18) 0%, transparent 100%)",
+            }}
+            aria-hidden="true"
+          />
+
+          {/* Image label badge */}
+          <div
+            className="absolute top-5 left-5 md:top-8 md:left-8 border animate-fade-up"
+            style={{
+              animationDelay: "220ms",
+              borderColor: "rgba(225,233,243,0.18)",
+              backgroundColor: "rgba(7,27,58,0.42)",
+              backdropFilter: "blur(8px)",
+            }}
+          >
+            <div className="px-4 py-3 md:px-5 md:py-3.5">
+              <p
+                className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em]"
+                style={{ color: "rgba(225,233,243,0.68)" }}
+              >
+                {about.section_label}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ── RIGHT col: editorial content ── */}
+        <div className="relative order-1 lg:order-2 section-padding px-6 md:px-10 lg:pl-16 lg:pr-[max(3rem,calc((100vw-1240px)/2+3rem))] xl:pl-24 flex items-center">
+          <div className="relative max-w-[640px] w-full">
+
+            {/* Eyebrow */}
             <p
-              className="section-eyebrow animate-fade-up mb-4 md:mb-5"
+              className="section-eyebrow animate-fade-up mb-4"
               style={{ animationDelay: "0ms" }}
             >
               {about.section_label}
             </p>
+
+            {/* Accent rule */}
+            <div
+              className="accent-rule animate-fade-up mb-7"
+              style={{ animationDelay: "70ms" }}
+              aria-hidden="true"
+            />
+
+            {/* Headline */}
             <h2
               id="about-heading"
-              className="font-serif font-medium leading-tight animate-fade-up"
+              className="font-serif animate-fade-up mb-7"
               style={{
-                color: "var(--color-navy-900)",
-                letterSpacing: "-0.02em",
-                fontSize: "clamp(1.875rem, 4vw, 3rem)",
-                animationDelay: "80ms",
+                fontSize: "clamp(1.9rem, 3.8vw, 3.15rem)",
+                color: "var(--color-navy-800)",
+                lineHeight: 1.1,
+                letterSpacing: "-0.025em",
+                animationDelay: "140ms",
+                textWrap: "balance",
               }}
             >
               {about.headline}
             </h2>
-          </div>
 
-          {/* Right column */}
-          <div className="lg:col-span-7 lg:col-start-6">
-            <div className="space-y-5 md:space-y-7">
-              {about.paragraphs.map((para, i) => (
-                <p
-                  key={i}
-                  className="font-sans text-base md:text-lg animate-fade-up"
-                  style={{
-                    color: "var(--color-sand-600)",
-                    lineHeight: 1.8,
-                    maxWidth: "600px",
-                    animationDelay: `${160 + i * 80}ms`,
-                  }}
-                >
-                  {para}
-                </p>
-              ))}
+            {/* Lead paragraph — serif, slightly larger */}
+            {leadParagraph ? (
+              <p
+                className="font-serif animate-fade-up mb-8"
+                style={{
+                  color: "var(--color-navy-700)",
+                  fontSize: "clamp(1rem, 1.4vw, 1.18rem)",
+                  lineHeight: 1.7,
+                  fontStyle: "italic",
+                  animationDelay: "220ms",
+                  maxWidth: "52rem",
+                }}
+              >
+                {leadParagraph}
+              </p>
+            ) : null}
+
+            {/* Body paragraphs */}
+            <div
+              className="border-t border-b py-7 md:py-8 animate-fade-up"
+              style={{ borderColor: "var(--color-sand-300)", animationDelay: "300ms" }}
+            >
+              <div className="grid grid-cols-1 gap-5 md:gap-6">
+                {remainingParagraphs.map((para, i) => (
+                  <p
+                    key={i}
+                    className="font-sans text-[0.9375rem] md:text-[1rem] leading-[1.75]"
+                    style={{
+                      color: "var(--color-sand-600)",
+                      maxWidth: "60ch",
+                    }}
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
             </div>
 
-            <div
-              className="mt-8 md:mt-10 pt-8 md:pt-10 border-t flex items-center gap-5 md:gap-6 animate-fade-up"
-              style={{
-                borderColor: "var(--color-sand-300)",
-                animationDelay: "400ms",
-              }}
-            >
+            {/* Highlight block */}
+            <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_auto] gap-6 md:gap-8 items-start">
               <div
-                className="w-0.5 h-10 md:h-12 flex-shrink-0"
-                style={{ backgroundColor: "var(--color-red-600)" }}
-                aria-hidden="true"
-              />
-              <div>
+                className="border-l-2 pl-5 animate-fade-up"
+                style={{
+                  borderColor: "var(--color-red-500)",
+                  animationDelay: "420ms",
+                }}
+              >
                 <p
-                  className="font-serif font-medium"
+                  className="font-serif mb-1.5"
                   style={{
-                    color: "var(--color-navy-900)",
-                    fontSize: "clamp(1.5rem, 3vw, 1.875rem)",
+                    color: "var(--color-navy-800)",
+                    fontSize: "clamp(1.25rem, 2.1vw, 1.75rem)",
+                    lineHeight: 1.2,
+                    letterSpacing: "-0.02em",
                   }}
                 >
                   {about.highlight}
                 </p>
                 <p
-                  className="font-sans text-xs md:text-sm mt-1"
+                  className="font-sans text-xs md:text-sm"
                   style={{ color: "var(--color-sand-500)" }}
                 >
-                  Najlepsza miara naszej rzetelności
+                  {about.highlight_sublabel}
                 </p>
               </div>
-            </div>
-          </div>
 
+              {legalDisclaimer ? (
+                <p
+                  className="font-sans text-xs leading-relaxed animate-fade-up md:max-w-[18rem]"
+                  style={{ color: "var(--color-sand-500)", animationDelay: "520ms" }}
+                >
+                  {legalDisclaimer}
+                </p>
+              ) : null}
+            </div>
+
+          </div>
         </div>
+
       </div>
     </section>
   );

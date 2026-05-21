@@ -1,11 +1,14 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+import TrustBar from "@/components/sections/TrustBar";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
-import Testimonials from "@/components/sections/Testimonials";
+import PrivateClient from "@/components/sections/PrivateClient";
+import ProcessSection from "@/components/sections/ProcessSection";
 import TrustMetrics from "@/components/sections/TrustMetrics";
-import Partners from "@/components/sections/Partners";
+import Testimonials from "@/components/sections/Testimonials";
+import ClientLogos from "@/components/sections/ClientLogos";
 import Contact from "@/components/sections/Contact";
 
 export default function HomePage() {
@@ -13,12 +16,17 @@ export default function HomePage() {
     <>
       <Navbar />
       <main id="main-content">
-        <Hero />
+        <div className="flex flex-col min-h-[100svh]">
+          <Hero />
+          <TrustBar />
+        </div>
         <About />
         <Services />
-        <Testimonials />
+        <PrivateClient />
+        <ProcessSection />
         <TrustMetrics />
-        <Partners />
+        <Testimonials />
+        <ClientLogos />
         <Contact />
       </main>
       <Footer />
