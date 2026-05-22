@@ -279,11 +279,11 @@
       {
         "title": "Услуги",
       "links": [
-        { "label": "Временное пребывание", "href": "/#uslugi" },
-          { "label": "Постоянное пребывание", "href": "/#uslugi" },
+        { "label": "Рабочие визы", "href": "/#uslugi" },
+          { "label": "Бизнес-визы", "href": "/#uslugi" },
+          { "label": "Разрешения на пребывание", "href": "/#uslugi" },
           { "label": "Разрешения на работу", "href": "/#uslugi" },
-          { "label": "Визы", "href": "/#uslugi" },
-          { "label": "Гражданство", "href": "/#uslugi" }
+          { "label": "Польское гражданство", "href": "/#uslugi" }
         ]
       },
       {

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import { useLangContent } from "@/contexts/LanguageContext";
@@ -49,26 +49,36 @@ function AnimatedStat({ value, label, sublabel, triggered, delay }: AnimatedStat
       className="animate-count-in h-full border p-6 md:p-7 flex flex-col justify-between"
       style={{
         animationDelay: `${delay}ms`,
-        borderColor: "var(--color-sand-300)",
-        backgroundColor: "var(--color-cream)",
+        borderColor: "rgba(225,233,243,0.08)",
+        backgroundColor: "rgba(255,255,255,0.03)",
       }}
     >
       <span
         className="font-serif font-medium leading-none"
-        style={{ color: "var(--color-navy-800)", fontSize: "clamp(2.2rem, 4vw, 3.8rem)", letterSpacing: "-0.03em" }}
+        style={{
+          color: "var(--color-cream)",
+          fontSize: "clamp(2.2rem, 4vw, 3.8rem)",
+          letterSpacing: "-0.03em",
+        }}
       >
         {triggered ? count : 0}
         {suffix}
       </span>
-      <div className="mt-8 border-t pt-4" style={{ borderColor: "var(--color-sand-300)" }}>
+      <div
+        className="mt-8 border-t pt-4"
+        style={{ borderColor: "rgba(225,233,243,0.1)" }}
+      >
         <span
           className="font-sans text-xs font-semibold uppercase tracking-[0.16em]"
-          style={{ color: "var(--color-navy-600)" }}
+          style={{ color: "rgba(168,196,224,0.75)" }}
         >
           {label}
         </span>
         {sublabel && (
-          <span className="block mt-2 font-sans text-sm leading-relaxed" style={{ color: "var(--color-sand-500)" }}>
+          <span
+            className="block mt-2 font-sans text-sm leading-relaxed"
+            style={{ color: "rgba(168,196,224,0.45)" }}
+          >
             {sublabel}
           </span>
         )}
@@ -85,15 +95,15 @@ function FeaturedStat({ value, label, sublabel, triggered }: Omit<AnimatedStatPr
     <div
       className="animate-count-in relative overflow-hidden border p-7 md:p-9 lg:p-10"
       style={{
-        borderColor: "rgba(226,234,244,0.14)",
-        backgroundColor: "var(--color-navy-900)",
+        borderColor: "rgba(225,233,243,0.12)",
+        backgroundColor: "rgba(255,255,255,0.04)",
       }}
     >
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(520px 220px at 12% 18%, rgba(196,32,33,0.18), transparent 62%)",
+            "radial-gradient(520px 220px at 12% 18%, rgba(196,32,33,0.22), transparent 62%)",
         }}
         aria-hidden="true"
       />
@@ -119,7 +129,10 @@ function FeaturedStat({ value, label, sublabel, triggered }: Omit<AnimatedStatPr
           {sublabel ? (
             <p
               className="mt-5 max-w-[22rem] border-t pt-4 font-sans text-sm leading-relaxed text-pretty"
-              style={{ color: "rgba(225,233,243,0.66)", borderColor: "rgba(225,233,243,0.14)" }}
+              style={{
+                color: "rgba(225,233,243,0.66)",
+                borderColor: "rgba(225,233,243,0.14)",
+              }}
             >
               {sublabel}
             </p>
@@ -139,20 +152,44 @@ export default function TrustMetrics() {
   return (
     <section
       ref={ref as React.RefObject<HTMLElement>}
-      className={`section-padding surface-white in-view-group${inView ? " is-visible" : ""}`}
+      className={`relative section-padding in-view-group${inView ? " is-visible" : ""}`}
+      style={{ backgroundColor: "var(--color-navy-950)" }}
       aria-labelledby="trust-heading"
     >
+      {/* Red top accent */}
+      <div
+        className="absolute top-0 left-0 right-0 h-px"
+        style={{ backgroundColor: "var(--color-red-500)", opacity: 0.5 }}
+        aria-hidden="true"
+      />
+      {/* Red bottom accent */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-px"
+        style={{ backgroundColor: "var(--color-red-500)", opacity: 0.18 }}
+        aria-hidden="true"
+      />
+
       <div className="container-editorial">
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.45fr)] gap-6 lg:gap-8 items-stretch">
-          <div className="border p-6 md:p-8 flex flex-col justify-between" style={{ borderColor: "var(--color-sand-300)", backgroundColor: "var(--color-white)" }}>
+
+          {/* Header card */}
+          <div
+            className="border p-6 md:p-8 flex flex-col justify-between"
+            style={{
+              borderColor: "rgba(225,233,243,0.1)",
+              backgroundColor: "transparent",
+            }}
+          >
             <div>
-              <p className="section-eyebrow mb-5">{trust_metrics.section_label}</p>
+              <p className="section-eyebrow section-eyebrow-light mb-5">
+                {trust_metrics.section_label}
+              </p>
               <div className="accent-rule mb-6" aria-hidden="true" />
               <h2
                 id="trust-heading"
                 className="font-serif max-w-[14ch]"
                 style={{
-                  color: "var(--color-navy-800)",
+                  color: "var(--color-cream)",
                   fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)",
                   lineHeight: 1.1,
                   textWrap: "balance",
@@ -164,17 +201,21 @@ export default function TrustMetrics() {
 
             <div
               className="mt-8 pt-5 border-t animate-fade-up"
-              style={{ borderColor: "var(--color-sand-300)", animationDelay: "120ms" }}
+              style={{
+                borderColor: "rgba(225,233,243,0.1)",
+                animationDelay: "120ms",
+              }}
             >
               <p
                 className="font-sans text-sm leading-relaxed max-w-[28rem]"
-                style={{ color: "var(--color-sand-600)" }}
+                style={{ color: "rgba(225,233,243,0.5)" }}
               >
                 Skala prowadzonych spraw, zasięg jurysdykcyjny i ciągłość praktyki pokazane przez mierzalne rezultaty.
               </p>
             </div>
           </div>
 
+          {/* Stats grid */}
           <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1.2fr)_minmax(280px,0.8fr)] gap-4 md:gap-5">
             {primaryItem ? (
               <FeaturedStat
@@ -203,4 +244,3 @@ export default function TrustMetrics() {
     </section>
   );
 }
-

@@ -1,13 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
+import disclaimers from "@/content/disclaimers";
 import { useInView } from "@/hooks/useInView";
 
 export default function About() {
   const content = useLangContent();
   const { about } = content.home;
-  const legalDisclaimer = content.footer?.legal?.disclaimer;
+  const { lang } = useLanguage();
+  const disclaimer = disclaimers[lang];
   const { ref, inView } = useInView(0.1);
 
   const [leadParagraph, ...remainingParagraphs] = about.paragraphs;
@@ -131,6 +133,18 @@ export default function About() {
               {about.headline}
             </h2>
 
+            {/* Legal disclaimer — first info under heading, per regulatory requirement */}
+            <p
+              className="font-sans leading-relaxed animate-fade-up mb-5"
+              style={{
+                fontSize: "12px",
+                color: "var(--color-sand-500)",
+                animationDelay: "155ms",
+              }}
+            >
+              {disclaimer.short}
+            </p>
+
             {/* Lead paragraph — serif, slightly larger */}
             {leadParagraph ? (
               <p
@@ -170,7 +184,7 @@ export default function About() {
             </div>
 
             {/* Highlight block */}
-            <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_auto] gap-6 md:gap-8 items-start">
+            <div className="mt-8 md:mt-10">
               <div
                 className="border-l-2 pl-5 animate-fade-up"
                 style={{
@@ -196,15 +210,6 @@ export default function About() {
                   {about.highlight_sublabel}
                 </p>
               </div>
-
-              {legalDisclaimer ? (
-                <p
-                  className="font-sans text-xs leading-relaxed animate-fade-up md:max-w-[18rem]"
-                  style={{ color: "var(--color-sand-500)", animationDelay: "520ms" }}
-                >
-                  {legalDisclaimer}
-                </p>
-              ) : null}
             </div>
 
           </div>

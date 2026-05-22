@@ -369,11 +369,11 @@
       {
         "title": "Usługi",
         "links": [
-          { "label": "Pobyt czasowy", "href": "/#uslugi" },
-          { "label": "Pobyt stały", "href": "/#uslugi" },
+          { "label": "Wizy pracownicze", "href": "/#uslugi" },
+          { "label": "Wizy biznesowe", "href": "/#uslugi" },
+          { "label": "Zezwolenie na pobyt", "href": "/#uslugi" },
           { "label": "Zezwolenia na pracę", "href": "/#uslugi" },
-          { "label": "Wizy", "href": "/#uslugi" },
-          { "label": "Obywatelstwo", "href": "/#uslugi" }
+          { "label": "Obywatelstwo polskie", "href": "/#uslugi" }
         ]
       },
       {

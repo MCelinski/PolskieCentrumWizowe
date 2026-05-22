@@ -279,11 +279,11 @@
       {
         "title": "Послуги",
       "links": [
-        { "label": "Тимчасове перебування", "href": "/#uslugi" },
-          { "label": "Постійне перебування", "href": "/#uslugi" },
+        { "label": "Робочі візи", "href": "/#uslugi" },
+          { "label": "Бізнес-візи", "href": "/#uslugi" },
+          { "label": "Дозволи на перебування", "href": "/#uslugi" },
           { "label": "Дозволи на роботу", "href": "/#uslugi" },
-          { "label": "Візи", "href": "/#uslugi" },
-          { "label": "Громадянство", "href": "/#uslugi" }
+          { "label": "Польське громадянство", "href": "/#uslugi" }
         ]
       },
       {

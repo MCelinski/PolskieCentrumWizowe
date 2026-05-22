@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import VisaQualificationForm from "@/components/forms/VisaQualificationForm";
 import GeneralConsultationForm from "@/components/forms/GeneralConsultationForm";
 import content from "@/content/site-content.json";
+import disclaimers from "@/content/disclaimers";
 
 export const metadata: Metadata = {
   title: "Konsultacje — Polskie Centrum Wizowe",
@@ -78,6 +79,13 @@ export default function KonsultacjePage() {
           style={{ backgroundColor: "var(--color-cream)" }}
         >
           <div className="container-editorial">
+            {/* Legal disclaimer — required before forms */}
+            <div className="mb-8 pb-8 border-b" style={{ borderColor: "var(--color-sand-300)" }}>
+              <p className="font-sans leading-relaxed" style={{ fontSize: "12px", color: "var(--color-sand-600)" }}>
+                {disclaimers.pl.short}
+              </p>
+            </div>
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-px" style={{ backgroundColor: "var(--color-sand-300)" }}>
               {/* Form A: Visa Qualification */}
               <div

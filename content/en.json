@@ -279,11 +279,11 @@
       {
         "title": "Services",
       "links": [
-        { "label": "Temporary residence", "href": "/#uslugi" },
-          { "label": "Permanent residence", "href": "/#uslugi" },
+        { "label": "Employment visas", "href": "/#uslugi" },
+          { "label": "Business visas", "href": "/#uslugi" },
+          { "label": "Residence permits", "href": "/#uslugi" },
           { "label": "Work authorization", "href": "/#uslugi" },
-          { "label": "Visas", "href": "/#uslugi" },
-          { "label": "Citizenship", "href": "/#uslugi" }
+          { "label": "Polish citizenship", "href": "/#uslugi" }
         ]
       },
       {

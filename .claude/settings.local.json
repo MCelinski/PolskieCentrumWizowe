@@ -9,7 +9,32 @@
       "Bash(cp:*)",
       "Bash(taskkill:*)",
       "Bash(npx kill-port:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Skill(ui-ux-pro-max:ui-ux-pro-max)",
+      "Bash(dir /s /b *.tsx *.ts *.json)",
+      "Bash(findstr /v node_modules)",
+      "Bash(findstr /v .next)",
+      "Bash(powershell *)",
+      "Bash(npx tsc *)",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\Users\\\\Tsuyoroshi\\\\source\\\\repos\\\\PolskieCentrumWizowe\\\\content\\\\site-content.json\"\\); $bytes[0..3] | ForEach-Object { $_.ToString\\(\"X2\"\\) })",
+      "PowerShell($content = [System.IO.File]::ReadAllText\\(\"C:\\\\Users\\\\Tsuyoroshi\\\\source\\\\repos\\\\PolskieCentrumWizowe\\\\content\\\\site-content.json\", [System.Text.Encoding]::UTF8\\); $idx = $content.IndexOf\\(\"Us\"\\); $content.Substring\\($idx, 10\\))",
+      "PowerShell($content1250 = [System.IO.File]::ReadAllText\\(\"C:\\\\Users\\\\Tsuyoroshi\\\\source\\\\repos\\\\PolskieCentrumWizowe\\\\content\\\\site-content.json\", [System.Text.Encoding]::GetEncoding\\(1250\\)\\); $idx = $content1250.IndexOf\\(\"Us\"\\); $content1250.Substring\\($idx, 10\\))",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\Users\\\\Tsuyoroshi\\\\source\\\\repos\\\\PolskieCentrumWizowe\\\\content\\\\site-content.json\"\\); $idx = 0; for \\($i=0; $i -lt $bytes.Length; $i++\\) { if \\($bytes[$i] -eq 0x55 -and $bytes[$i+1] -eq 0x73\\) { $idx = $i; break } }; $bytes[$idx..\\($idx+12\\)] | ForEach-Object { $_.ToString\\(\"X2\"\\) })",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\Users\\\\Tsuyoroshi\\\\source\\\\repos\\\\PolskieCentrumWizowe\\\\content\\\\site-content.json\"\\); $idx = 0; for \\($i=0; $i -lt $bytes.Length-10; $i++\\) { if \\($bytes[$i] -eq 0x22 -and $bytes[$i+1] -eq 0x6C -and $bytes[$i+2] -eq 0x61 -and $bytes[$i+3] -eq 0x62\\) { $idx = $i; break } }; Write-Host \"Position: $idx\"; $bytes[\\($idx+9\\)..\\($idx+25\\)] | ForEach-Object { $_.ToString\\(\"X2\"\\) })",
+      "Bash(Get-Content \"C:\\\\Users\\\\Tsuyoroshi\\\\source\\\\repos\\\\PolskieCentrumWizowe\\\\content\\\\site-content.json\" -Encoding UTF8)",
+      "Bash(Select-String -Pattern \"[\\\\x{0400}-\\\\x{04FF}]\")",
+      "Bash(Select-Object -First 5)",
+      "Bash(node -e \"require\\('./content/pl.json'\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"try{require\\('./content/ua.json'\\);console.log\\('ua OK'\\)}catch\\(e\\){console.log\\('ua FAIL:',e.message\\)}\")",
+      "Bash(node -e \"try{require\\('./content/ru.json'\\);console.log\\('ru OK'\\)}catch\\(e\\){console.log\\('ru FAIL:',e.message\\)}\")",
+      "Bash(node -e \"try{require\\('./content/en.json'\\);console.log\\('en OK'\\)}catch\\(e\\){console.log\\('en FAIL:',e.message\\)}\")",
+      "Bash(node -e \"try{require\\('./content/pl.json'\\);console.log\\('pl OK'\\)}catch\\(e\\){console.log\\('pl FAIL:',e.message\\)}\")",
+      "Bash(dir \"C:\\\\Users\\\\Tsuyoroshi\\\\source\\\\repos\\\\PolskieCentrumWizowe\\\\public\")",
+      "PowerShell(New-Item *)",
+      "Bash(node *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)"
     ]
   }
 }

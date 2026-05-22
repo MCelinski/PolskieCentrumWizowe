@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
+import disclaimers from "@/content/disclaimers";
 
 export default function Footer() {
   const content = useLangContent();
   const { footer } = content;
+  const { lang } = useLanguage();
+  const disclaimer = disclaimers[lang];
 
   return (
     <footer className="border-t" style={{ backgroundColor: "var(--color-navy-950)", borderColor: "rgba(225, 233, 243, 0.18)" }}>
@@ -73,13 +76,14 @@ export default function Footer() {
           ))}
         </div>
 
-        {footer.legal.disclaimer && (
-          <div className="py-6 border-b" style={{ borderColor: "rgba(225, 233, 243, 0.1)" }}>
-            <p className="font-sans text-xs leading-relaxed" style={{ color: "rgba(223, 232, 243, 0.38)", maxWidth: "900px" }}>
-              {footer.legal.disclaimer}
-            </p>
-          </div>
-        )}
+        <div className="py-6 border-b" style={{ borderColor: "rgba(225, 233, 243, 0.1)" }}>
+          <p
+            className="font-sans leading-relaxed"
+            style={{ fontSize: "12px", color: "rgba(223, 232, 243, 0.55)", maxWidth: "960px" }}
+          >
+            {disclaimer.full}
+          </p>
+        </div>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-7">
           <p className="font-sans text-xs" style={{ color: "rgba(223, 232, 243, 0.5)" }}>
