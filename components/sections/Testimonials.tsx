@@ -226,7 +226,7 @@ export default function Testimonials() {
         {/* ── RIGHT: full-bleed cinematic image ── */}
         <div className="relative min-h-[300px] lg:min-h-0 order-1 lg:order-2">
           <Image
-            src="/images/testimonials.png"
+            src="/images/testimonials2.png"
             alt=""
             fill
             className="object-cover"
@@ -234,10 +234,13 @@ export default function Testimonials() {
             unoptimized
           />
 
-          {/* Base mood tint */}
+          {/* Subtle mood tint — all viewports */}
           <div
             className="absolute inset-0"
-            style={{ backgroundColor: "rgba(7,27,58,0.18)" }}
+            style={{
+              background:
+                "linear-gradient(to top, rgba(7,27,58,0.28) 0%, rgba(7,27,58,0.12) 45%, transparent 80%)",
+            }}
             aria-hidden="true"
           />
 
@@ -245,19 +248,9 @@ export default function Testimonials() {
           <div
             className="absolute inset-y-0 left-0 hidden lg:block"
             style={{
-              width: "48%",
+              width: "56%",
               background:
-                "linear-gradient(to right, #f7f8fa 0%, rgba(247,248,250,0.72) 30%, rgba(247,248,250,0.22) 62%, transparent 100%)",
-            }}
-            aria-hidden="true"
-          />
-
-          {/* Top-right corner vignette — depth */}
-          <div
-            className="absolute inset-0 hidden lg:block"
-            style={{
-              backgroundImage:
-                "radial-gradient(ellipse at 90% 6%, rgba(4,14,32,0.52) 0%, transparent 44%)",
+                "linear-gradient(to right, #f4f7fa 0%, rgba(244,247,250,0.82) 22%, rgba(244,247,250,0.48) 50%, rgba(244,247,250,0.12) 78%, transparent 100%)",
             }}
             aria-hidden="true"
           />
@@ -268,36 +261,41 @@ export default function Testimonials() {
             style={{
               height: "38%",
               background:
-                "linear-gradient(to top, rgba(7,27,58,0.42) 0%, rgba(7,27,58,0.12) 55%, transparent 100%)",
+                "linear-gradient(to top, rgba(7,27,58,0.28) 0%, rgba(7,27,58,0.12) 45%, transparent 100%)",
             }}
             aria-hidden="true"
           />
 
-          {/* Mobile: top fade into sand */}
+          {/* Bottom-left corner blend — fills the gap where left and bottom gradients meet */}
           <div
-            className="absolute inset-x-0 top-0 h-28 lg:hidden"
+            className="absolute bottom-0 left-0 hidden lg:block"
+            style={{
+              width: "62%",
+              height: "55%",
+              background:
+                "radial-gradient(ellipse at 0% 100%, #f4f7fa 0%, rgba(244,247,250,0.72) 22%, rgba(244,247,250,0.32) 48%, transparent 72%)",
+            }}
+            aria-hidden="true"
+          />
+
+          {/* Mobile: bottom edge blends into sand content below */}
+          <div
+            className="absolute inset-x-0 bottom-0 h-28 lg:hidden"
             style={{
               background:
-                "linear-gradient(to bottom, #f7f8fa 0%, rgba(247,248,250,0.65) 42%, transparent 100%)",
+                "linear-gradient(to top, #f4f7fa 0%, rgba(244,247,250,0.7) 40%, rgba(244,247,250,0.2) 75%, transparent 100%)",
             }}
             aria-hidden="true"
           />
 
-          {/* Discrete identity badge */}
+          {/* Corner crop mark */}
           <div
-            className="absolute bottom-6 right-6 z-10 font-sans"
-            style={{
-              fontSize: "0.55rem",
-              color: "rgba(225,233,243,0.22)",
-              border: "1px solid rgba(225,233,243,0.08)",
-              padding: "0.45rem 0.95rem",
-              backdropFilter: "blur(16px)",
-              backgroundColor: "rgba(4,14,32,0.28)",
-              letterSpacing: "0.32em",
-              textTransform: "uppercase",
-            }}
+            className="absolute bottom-6 right-6 z-10"
+            style={{ width: "20px", height: "20px" }}
+            aria-hidden="true"
           >
-            PCW — Klienci
+            <div style={{ position: "absolute", bottom: 0, right: 0, width: "100%", height: "1px", backgroundColor: "rgba(196,32,33,0.45)" }} />
+            <div style={{ position: "absolute", bottom: 0, right: 0, width: "1px", height: "100%", backgroundColor: "rgba(196,32,33,0.45)" }} />
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 
 type FormData = {
   name: string;
@@ -10,6 +10,9 @@ type FormData = {
   message: string;
 };
 
+type FieldErrors = Partial<Record<"name" | "email" | "message", string>>;
+type Touched = Partial<Record<keyof FormData, boolean>>;
+
 const initialData: FormData = {
   name: "",
   email: "",
@@ -17,18 +20,65 @@ const initialData: FormData = {
   message: "",
 };
 
+const MESSAGE_MAX = 2000;
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export default function GeneralConsultationForm() {
   const { general_form } = useLangContent().consultations;
+  const { lang } = useLanguage();
   const [formData, setFormData] = useState<FormData>(initialData);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
+  const [touched, setTouched] = useState<Touched>({});
+
+  const validate = (data: FormData): FieldErrors => {
+    const e = general_form.errors;
+    const errs: FieldErrors = {};
+    if (!data.name || data.name.trim().length < 2) errs.name = e.name;
+    if (!data.email || !EMAIL_RE.test(data.email)) errs.email = e.email;
+    if (!data.message || data.message.trim().length < 5) errs.message = e.message;
+    return errs;
+  };
+
+  const handleBlur = (field: "name" | "email" | "message") => {
+    setTouched((prev) => ({ ...prev, [field]: true }));
+    setFieldErrors((prev) => ({ ...prev, [field]: validate(formData)[field] }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const allTouched: Touched = { name: true, email: true, phone: true, message: true };
+    setTouched(allTouched);
+    const errs = validate(formData);
+    setFieldErrors(errs);
+    if (Object.keys(errs).length > 0) {
+      const firstErr = (["name", "email", "message"] as const).find((k) => errs[k]);
+      if (firstErr) document.getElementById(firstErr)?.focus();
+      return;
+    }
+
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    setLoading(false);
-    setSubmitted(true);
+    setError(null);
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formType: "general", lang, ...formData }),
+      });
+      const json = await res.json();
+      if (!res.ok || !json.success) {
+        setError(json.error || general_form.server_error);
+      } else {
+        setSubmitted(true);
+      }
+    } catch {
+      setError(general_form.network_error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -48,7 +98,7 @@ export default function GeneralConsultationForm() {
           </svg>
         </div>
         <p className="font-serif text-2xl font-medium mb-2" style={{ color: "var(--color-navy-900)" }}>
-          Wiadomość wysłana!
+          {general_form.success_title}
         </p>
         <p className="font-sans text-sm" style={{ color: "var(--color-sand-600)" }}>
           {general_form.success}
@@ -61,7 +111,12 @@ export default function GeneralConsultationForm() {
     <form onSubmit={handleSubmit} noValidate>
       <div className="space-y-7">
         {/* Name */}
-        <FormField label={general_form.fields.name.label} id="name" required>
+        <FormField
+          label={general_form.fields.name.label}
+          id="name"
+          required
+          error={touched.name ? fieldErrors.name : undefined}
+        >
           <input
             id="name"
             type="text"
@@ -69,14 +124,21 @@ export default function GeneralConsultationForm() {
             autoComplete="name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            onBlur={() => handleBlur("name")}
             placeholder={general_form.fields.name.placeholder}
-            required
-            style={inputStyle}
+            aria-invalid={touched.name && !!fieldErrors.name}
+            className="pcw-input"
+            style={inputStyle(touched.name && !!fieldErrors.name)}
           />
         </FormField>
 
         {/* Email */}
-        <FormField label={general_form.fields.email.label} id="email" required>
+        <FormField
+          label={general_form.fields.email.label}
+          id="email"
+          required
+          error={touched.email ? fieldErrors.email : undefined}
+        >
           <input
             id="email"
             type="email"
@@ -85,14 +147,20 @@ export default function GeneralConsultationForm() {
             inputMode="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            onBlur={() => handleBlur("email")}
             placeholder={general_form.fields.email.placeholder}
-            required
-            style={inputStyle}
+            aria-invalid={touched.email && !!fieldErrors.email}
+            className="pcw-input"
+            style={inputStyle(touched.email && !!fieldErrors.email)}
           />
         </FormField>
 
-        {/* Phone */}
-        <FormField label={general_form.fields.phone.label} id="phone">
+        {/* Phone (optional) */}
+        <FormField
+          label={general_form.fields.phone.label}
+          id="phone"
+          helperText={general_form.fields.phone.helper}
+        >
           <input
             id="phone"
             type="tel"
@@ -102,27 +170,59 @@ export default function GeneralConsultationForm() {
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             placeholder={general_form.fields.phone.placeholder}
-            style={inputStyle}
+            aria-describedby="phone-hint"
+            className="pcw-input"
+            style={inputStyle()}
           />
         </FormField>
 
         {/* Message */}
-        <FormField label={general_form.fields.message.label} id="message" required>
-          <textarea
-            id="message"
-            name="message"
-            rows={5}
-            value={formData.message}
-            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder={general_form.fields.message.placeholder}
-            required
-            style={{ ...inputStyle, resize: "vertical" }}
-          />
+        <FormField
+          label={general_form.fields.message.label}
+          id="message"
+          required
+          error={touched.message ? fieldErrors.message : undefined}
+        >
+          <div style={{ position: "relative" }}>
+            <textarea
+              id="message"
+              name="message"
+              rows={5}
+              maxLength={MESSAGE_MAX}
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              onBlur={() => handleBlur("message")}
+              placeholder={general_form.fields.message.placeholder}
+              aria-invalid={touched.message && !!fieldErrors.message}
+              className="pcw-input"
+              style={{ ...inputStyle(touched.message && !!fieldErrors.message), resize: "vertical" }}
+            />
+            <p
+              className="font-sans text-xs mt-1.5 text-right tabular-nums"
+              style={{ color: formData.message.length > MESSAGE_MAX * 0.9 ? "var(--color-red-600)" : "var(--color-sand-400)" }}
+              aria-live="polite"
+            >
+              {formData.message.length} / {MESSAGE_MAX}
+            </p>
+          </div>
         </FormField>
       </div>
 
       {/* Submit */}
       <div className="mt-10">
+        {error && (
+          <p
+            className="font-sans text-sm mb-4 p-3 flex items-start gap-2"
+            style={{ color: "var(--color-red-600)", border: "1px solid var(--color-red-600)", backgroundColor: "rgba(196,32,33,0.05)" }}
+            role="alert"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0 mt-0.5">
+              <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.3" />
+              <path d="M8 5v3.5M8 10.5v.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+            </svg>
+            {error}
+          </p>
+        )}
         <button
           type="submit"
           disabled={loading}
@@ -132,7 +232,7 @@ export default function GeneralConsultationForm() {
             color: "var(--color-cream)",
           }}
         >
-          {loading ? "Wysyłanie..." : general_form.submit}
+          {loading ? general_form.loading : general_form.submit}
         </button>
         <p className="font-sans text-xs mt-4 text-center" style={{ color: "var(--color-sand-500)" }}>
           {general_form.disclaimer}
@@ -147,11 +247,15 @@ function FormField({
   id,
   children,
   required,
+  error,
+  helperText,
 }: {
   label: string;
   id: string;
   children: React.ReactNode;
   required?: boolean;
+  error?: string;
+  helperText?: string;
 }) {
   return (
     <div>
@@ -168,18 +272,42 @@ function FormField({
         )}
       </label>
       {children}
+      {helperText && !error && (
+        <p
+          id={`${id}-hint`}
+          className="font-sans text-xs mt-1.5"
+          style={{ color: "var(--color-sand-500)" }}
+        >
+          {helperText}
+        </p>
+      )}
+      {error && (
+        <p
+          id={`${id}-error`}
+          className="font-sans text-xs mt-1.5 flex items-center gap-1.5"
+          style={{ color: "var(--color-red-600)" }}
+          role="alert"
+          aria-live="polite"
+        >
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" className="flex-shrink-0">
+            <circle cx="6" cy="6" r="5.25" stroke="currentColor" strokeWidth="1.25" />
+            <path d="M6 3.75V6.25M6 8v.25" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" />
+          </svg>
+          {error}
+        </p>
+      )}
     </div>
   );
 }
 
-const inputStyle: React.CSSProperties = {
+const inputStyle = (isError?: boolean): React.CSSProperties => ({
   width: "100%",
   padding: "0.875rem 1rem",
   fontFamily: "var(--font-sans)",
   fontSize: "0.875rem",
   color: "var(--color-navy-900)",
   backgroundColor: "var(--color-cream)",
-  border: "1px solid var(--color-sand-300)",
+  border: `1px solid ${isError ? "var(--color-red-600)" : "var(--color-sand-300)"}`,
   outline: "none",
   display: "block",
-};
+});

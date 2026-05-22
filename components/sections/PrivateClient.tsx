@@ -17,12 +17,6 @@ export default function PrivateClient() {
       className={`relative overflow-hidden surface-navy in-view-group${inView ? " is-visible" : ""}`}
       aria-labelledby="private-client-heading"
     >
-      {/* ── Premium top accent — brand frame ── */}
-      <div
-        className="absolute top-0 inset-x-0 z-20 pointer-events-none"
-        style={{ height: "1px", backgroundColor: "var(--color-red-500)", opacity: 0.5 }}
-        aria-hidden="true"
-      />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[960px]">
 
@@ -249,10 +243,13 @@ export default function PrivateClient() {
             unoptimized
           />
 
-          {/* Cinematic base overlay */}
+          {/* Subtle mood tint — all viewports */}
           <div
             className="absolute inset-0"
-            style={{ backgroundColor: "rgba(7,27,58,0.18)" }}
+            style={{
+              background:
+                "linear-gradient(to top, rgba(4,28,45,0.28) 0%, rgba(4,28,45,0.12) 45%, transparent 80%)",
+            }}
             aria-hidden="true"
           />
 
@@ -260,19 +257,30 @@ export default function PrivateClient() {
           <div
             className="absolute inset-y-0 left-0 hidden lg:block"
             style={{
-              width: "52%",
+              width: "58%",
               background:
-                "linear-gradient(to right, var(--color-navy-900) 0%, rgba(7,27,58,0.75) 38%, rgba(7,27,58,0.2) 72%, transparent 100%)",
+                "linear-gradient(to right, #041c2d 0%, rgba(4,28,45,0.88) 18%, rgba(4,28,45,0.55) 42%, rgba(4,28,45,0.15) 72%, transparent 100%)",
             }}
             aria-hidden="true"
           />
 
-          {/* Top-right vignette — depth, draws eye to center */}
+          {/* Right edge vignette — full height */}
+          <div
+            className="absolute inset-y-0 right-0 hidden lg:block"
+            style={{
+              width: "30%",
+              background:
+                "linear-gradient(to left, rgba(4,28,45,0.55) 0%, rgba(4,28,45,0.18) 42%, transparent 75%)",
+            }}
+            aria-hidden="true"
+          />
+
+          {/* Top-right corner fade — desktop */}
           <div
             className="absolute inset-0 hidden lg:block"
             style={{
-              backgroundImage:
-                "radial-gradient(ellipse at 92% 4%, rgba(4,14,32,0.65) 0%, transparent 48%)",
+              background:
+                "radial-gradient(ellipse at 100% 0%, rgba(4,28,45,0.58) 0%, rgba(4,28,45,0.22) 30%, transparent 62%)",
             }}
             aria-hidden="true"
           />
@@ -283,7 +291,7 @@ export default function PrivateClient() {
             style={{
               height: "45%",
               background:
-                "linear-gradient(to top, rgba(7,27,58,0.52) 0%, rgba(7,27,58,0.15) 55%, transparent 100%)",
+                "linear-gradient(to top, rgba(4,28,45,0.6) 0%, rgba(4,28,45,0.18) 55%, transparent 100%)",
             }}
             aria-hidden="true"
           />
@@ -293,7 +301,7 @@ export default function PrivateClient() {
             className="absolute inset-x-0 top-0 h-52 lg:hidden"
             style={{
               background:
-                "linear-gradient(to bottom, var(--color-navy-900) 0%, rgba(7,27,58,0.82) 28%, rgba(7,27,58,0.12) 70%, transparent 100%)",
+                "linear-gradient(to bottom, #041c2d 0%, rgba(4,28,45,0.82) 28%, rgba(4,28,45,0.12) 70%, transparent 100%)",
             }}
             aria-hidden="true"
           />
@@ -303,26 +311,19 @@ export default function PrivateClient() {
             className="absolute inset-x-0 bottom-0 h-28 lg:hidden"
             style={{
               background:
-                "linear-gradient(to top, rgba(7,27,58,0.42) 0%, transparent 100%)",
+                "linear-gradient(to top, rgba(4,28,45,0.42) 0%, transparent 100%)",
             }}
             aria-hidden="true"
           />
 
-          {/* Discrete identity badge */}
+          {/* Corner crop mark */}
           <div
-            className="absolute bottom-7 right-7 z-10 font-sans"
-            style={{
-              fontSize: "0.55rem",
-              color: "rgba(225,233,243,0.2)",
-              border: "1px solid rgba(225,233,243,0.06)",
-              padding: "0.45rem 0.95rem",
-              backdropFilter: "blur(16px)",
-              backgroundColor: "rgba(4,14,32,0.32)",
-              letterSpacing: "0.32em",
-              textTransform: "uppercase",
-            }}
+            className="absolute bottom-7 right-7 z-10"
+            style={{ width: "20px", height: "20px" }}
+            aria-hidden="true"
           >
-            Private Client
+            <div style={{ position: "absolute", bottom: 0, right: 0, width: "100%", height: "1px", backgroundColor: "rgba(196,32,33,0.45)" }} />
+            <div style={{ position: "absolute", bottom: 0, right: 0, width: "1px", height: "100%", backgroundColor: "rgba(196,32,33,0.45)" }} />
           </div>
 
         </div>

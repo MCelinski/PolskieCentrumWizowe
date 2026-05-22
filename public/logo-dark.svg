@@ -19,8 +19,8 @@
 
   <line x1="82" y1="16" x2="82" y2="74" stroke="#E6EDF6" stroke-width="1" opacity="0.58" />
 
-  <text x="103" y="34" font-family="'Manrope','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="2.8" fill="#F6F9FC">POLSKIE</text>
-  <text x="103" y="50" font-family="'Manrope','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="2.8" fill="#F6F9FC">CENTRUM</text>
-  <text x="103" y="66" font-family="'Manrope','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="2.8" fill="#F6F9FC">WIZOWE</text>
+  <text x="139" y="34" font-family="'Manrope','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="4.2" fill="#F6F9FC" text-anchor="middle">POLSKIE</text>
+  <text x="139" y="50" font-family="'Manrope','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="2.8" fill="#F6F9FC" text-anchor="middle">CENTRUM</text>
+  <text x="139" y="66" font-family="'Manrope','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="4.8" fill="#F6F9FC" text-anchor="middle">WIZOWE</text>
   <line x1="103" y1="75" x2="175" y2="75" stroke="#C42021" stroke-width="1.7" />
 </svg>

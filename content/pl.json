@@ -14,14 +14,9 @@
       "eyebrow": "DORADZTWO MIGRACYJNE I ADMINISTRACYJNE",
       "headline": "Postępowania wizowe i migracyjne. Prowadzone do skutku.",
       "subheadline": "Reprezentujemy klientów indywidualnych i korporacyjnych w procedurach legalizacji pobytu, zatrudnienia oraz uzyskania obywatelstwa polskiego. Każda sprawa — jeden dedykowany zespół, jedna odpowiedzialność, jedno zakończenie.",
-      "cta_primary": { "label": "Inicjuj kontakt", "href": "/#kontakt" },
+      "cta_primary": { "label": "Inicjuj kontakt", "href": "/konsultacje" },
       "cta_secondary": { "label": "Zakres usług", "href": "/#uslugi" },
-      "microcopy": "Pierwsza rozmowa — bezpłatna, do 30 minut, bez zobowiązań.",
-      "trust_indicators": [
-        "Klienci z ponad 40 jurysdykcji",
-        "Postępowania prowadzone od 2018 roku",
-        "Obsługa w pięciu językach"
-      ]
+      "microcopy": "Pierwsza rozmowa — bezpłatna, do 30 minut, bez zobowiązań."
     },
     "trust_bar": {
       "label": "Prowadzimy postępowania przed:",
@@ -37,7 +32,7 @@
     },
     "about": {
       "section_label": "O nas",
-      "headline": "Pionierskie podejście do prawa migracyjnego. Architektura procesów administracyjnych.",
+      "headline": "Pionierskie podejście do prawa migracyjnego.",
       "paragraphs": [
         "Polskie Centrum Wizowe to elitarna butikowa firma doradcza, specjalizująca się w prawie migracyjnym oraz administracyjnym. Zapewniamy strategiczne wsparcie dla osób fizycznych, rodzin oraz międzynarodowych grup kapitałowych, których status wymaga nienagannej biegłości prawnej i operacyjnej.",
         "Działamy w modelu multi-disciplinary. Strukturę każdego projektu tworzą dedykowani adwokaci, radcowie prawni oraz eksperci rynków międzynarodowych. Integralność całego procesu — od wstępnej analizy ryzyka po ostateczne rozstrzygnięcie — zabezpiecza osobiście wyznaczony Partner Zarządzający.",
@@ -293,7 +288,9 @@
       "phone": "+48 22 123 45 67",
       "address": "ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
       "hours": "Pon–Pt: 9:00–17:00",
-      "cta": { "label": "Inicjuj kontakt", "href": "/#kontakt" }
+      "cta": { "label": "Inicjuj kontakt", "href": "/konsultacje" },
+      "cta_panel_title": "Umów pierwszą rozmowę",
+      "cta_assurance": "Pierwsza rozmowa bezpłatna · Odpowiedź w ciągu 24 godzin"
     }
   },
   "consultations": {
@@ -303,14 +300,45 @@
       "headline": "Umów konsultację",
       "subheadline": "Wybierz formę kontaktu odpowiednią do Twojej sytuacji. Odpowiadamy w ciągu 24 godzin w dni robocze."
     },
+    "trust_metrics": [
+      { "value": "24h", "label": "Czas odpowiedzi", "sub": "w dni robocze" },
+      { "value": "500+", "label": "Spraw prowadzonych", "sub": "rocznie" },
+      { "value": "10 lat", "label": "Doświadczenia", "sub": "w prawie migracyjnym" }
+    ],
+    "trust_bar": [
+      { "label": "Bezpieczne dane", "description": "Ochrona zgodna z RODO" },
+      { "label": "Odpowiedź w 24h", "description": "W dni robocze" },
+      { "label": "Bez zobowiązań", "description": "Wstępna analiza gratis" }
+    ],
+    "labels": {
+      "for_whom": "Dla kogo?",
+      "whats_next": "Co dalej?",
+      "nav_a": "Kwalifikacja wizowa",
+      "nav_b": "Konsultacja ogólna",
+      "time_a": "~3 minuty",
+      "time_b": "~2 minuty"
+    },
     "visa_form": {
       "title": "Wstępna kwalifikacja wizowa",
       "description": "Wypełnij poniższy formularz, aby sprawdzić, jakie opcje wizowe są dostępne w Twojej sytuacji. Odpiszemy ze wstępną oceną w ciągu 24 godzin.",
+      "ideal_for": [
+        "Planujesz przeprowadzić się do Polski",
+        "Chcesz sprawdzić dostępne ścieżki wizowe",
+        "Masz ofertę pracy lub planujesz inwestycję",
+        "Jesteś na wczesnym etapie planowania"
+      ],
+      "whats_next": [
+        { "title": "Analizujemy Twoje dane", "desc": "Sprawdzamy aktualną sytuację prawną i dostępne ścieżki wizowe." },
+        { "title": "Wstępna ocena w 24h", "desc": "Doradca odpisuje z wstępną analizą i rekomendacją następnego kroku." },
+        { "title": "Konsultacja szczegółowa", "desc": "Opcjonalnie umawiamy spotkanie dla omówienia szczegółów sprawy." }
+      ],
       "fields": {
-        "citizenship": { "label": "Obywatelstwo", "placeholder": "np. Ukraina, Japonia, Indie..." },
+        "email": { "label": "Adres e-mail", "placeholder": "jan@przyklad.pl" },
+        "citizenship": { "label": "Obywatelstwo", "placeholder": "np. Ukraina, Japonia, Indie...", "hint": "Wpisz pełną nazwę kraju, np. Ukraina, Japonia, Indie" },
         "purpose": {
           "label": "Cel przyjazdu do Polski",
           "placeholder": "Wybierz cel",
+          "hint": "Pomaga nam wybrać właściwą ścieżkę wizową",
           "options": [
             { "value": "praca", "label": "Praca" },
             { "value": "biznes", "label": "Biznes / inwestycja" },
@@ -347,20 +375,52 @@
       },
       "submit": "Sprawdź kwalifikowalność",
       "disclaimer": "Formularz nie stanowi porady prawnej. Po analizie skontaktujemy się z Tobą z wstępną oceną Twojej sytuacji.",
-      "success": "Dziękujemy! Odpiszemy w ciągu 24 godzin w dni robocze."
+      "success": "Dziękujemy! Odpiszemy w ciągu 24 godzin w dni robocze.",
+      "success_title": "Dziękujemy!",
+      "loading": "Wysyłanie...",
+      "network_error": "Nie można połączyć się z serwerem. Spróbuj ponownie.",
+      "server_error": "Wystąpił błąd. Spróbuj ponownie.",
+      "errors": {
+        "email": "Podaj poprawny adres e-mail",
+        "citizenship": "Podaj obywatelstwo (min. 2 znaki)",
+        "purpose": "Wybierz cel przyjazdu",
+        "duration": "Wybierz planowany czas pobytu",
+        "job_offer": "Zaznacz odpowiedź",
+        "family_in_poland": "Zaznacz odpowiedź"
+      }
     },
     "general_form": {
       "title": "Konsultacja ogólna",
       "description": "Masz pytania lub chcesz omówić swoją sytuację? Napisz do nas — doradca skontaktuje się z Tobą, aby ustalić szczegóły i zaproponować termin spotkania.",
+      "ideal_for": [
+        "Masz konkretne pytania o pobyt lub wizę",
+        "Jesteś już w Polsce i potrzebujesz pomocy",
+        "Szukasz pomocy prawnej dla siebie lub rodziny",
+        "Chcesz porozmawiać zanim wypełnisz formularz"
+      ],
+      "whats_next": [
+        { "title": "Czytamy Twoją wiadomość", "desc": "Zapoznajemy się z opisem Twojej sytuacji jeszcze tego samego dnia." },
+        { "title": "Doradca skontaktuje się", "desc": "Telefon lub e-mail w ciągu 24 godzin w dni robocze." },
+        { "title": "Ustalamy termin", "desc": "Proponujemy termin spotkania online lub w naszym biurze w Warszawie." }
+      ],
       "fields": {
         "name": { "label": "Imię i nazwisko", "placeholder": "Jan Kowalski" },
         "email": { "label": "Adres e-mail", "placeholder": "jan@przykład.pl" },
-        "phone": { "label": "Numer telefonu", "placeholder": "+48 600 000 000" },
+        "phone": { "label": "Numer telefonu", "placeholder": "+48 600 000 000", "helper": "Opcjonalnie — przyspiesza kontakt" },
         "message": { "label": "Krótki opis sytuacji", "placeholder": "Opisz krótko swoją sytuację i pytania, z którymi chcesz się do nas zgłosić..." }
       },
       "submit": "Wyślij zapytanie",
       "disclaimer": "Twoje dane są chronione zgodnie z RODO. Nie udostępniamy ich osobom trzecim.",
-      "success": "Wiadomość wysłana! Skontaktujemy się z Tobą w ciągu 24 godzin."
+      "success": "Wiadomość wysłana! Skontaktujemy się z Tobą w ciągu 24 godzin.",
+      "success_title": "Wiadomość wysłana!",
+      "loading": "Wysyłanie...",
+      "network_error": "Nie można połączyć się z serwerem. Spróbuj ponownie.",
+      "server_error": "Wystąpił błąd. Spróbuj ponownie.",
+      "errors": {
+        "name": "Podaj imię i nazwisko (min. 2 znaki)",
+        "email": "Podaj poprawny adres e-mail",
+        "message": "Wiadomość jest za krótka (min. 5 znaków)"
+      }
     }
   },
   "footer": {

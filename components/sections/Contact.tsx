@@ -33,29 +33,92 @@ export default function Contact() {
           </div>
 
           <div className="lg:col-span-6 lg:col-start-7 animate-fade-left" style={{ animationDelay: "100ms" }}>
-            <div className="p-9 md:p-12 surface-white animate-scale-in" style={{ animationDelay: "180ms" }}>
-              <p className="section-eyebrow mb-4" style={{ color: "var(--color-navy-600)" }}>
-                {contact.section_label}
-              </p>
-              <div className="accent-rule mb-5" aria-hidden="true" />
+            <div
+              className="relative p-9 md:p-12"
+              style={{
+                border: "1px solid rgba(225,233,243,0.1)",
+                background: "rgba(225,233,243,0.025)",
+              }}
+            >
+              {/* Corner crop mark — top left */}
+              <div className="absolute top-0 left-0" style={{ width: "20px", height: "20px" }} aria-hidden="true">
+                <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "1px", backgroundColor: "rgba(196,32,33,0.55)" }} />
+                <div style={{ position: "absolute", top: 0, left: 0, width: "1px", height: "100%", backgroundColor: "rgba(196,32,33,0.55)" }} />
+              </div>
+              {/* Corner crop mark — bottom right */}
+              <div className="absolute bottom-0 right-0" style={{ width: "20px", height: "20px" }} aria-hidden="true">
+                <div style={{ position: "absolute", bottom: 0, right: 0, width: "100%", height: "1px", backgroundColor: "rgba(196,32,33,0.55)" }} />
+                <div style={{ position: "absolute", bottom: 0, right: 0, width: "1px", height: "100%", backgroundColor: "rgba(196,32,33,0.55)" }} />
+              </div>
+
+              {/* Red accent line */}
+              <div
+                className="mb-9"
+                style={{ width: "36px", height: "1px", backgroundColor: "var(--color-red-500)", opacity: 0.55 }}
+                aria-hidden="true"
+              />
+
+              {/* Panel heading */}
               <h3
-                className="font-serif text-3xl md:text-4xl mb-5"
-                style={{ color: "var(--color-navy-800)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
+                className="font-serif mb-9"
+                style={{
+                  color: "var(--color-white)",
+                  fontSize: "clamp(1.8rem, 2.6vw, 2.5rem)",
+                  lineHeight: 1.08,
+                  letterSpacing: "-0.035em",
+                }}
               >
-                {contact.headline}
+                {contact.cta_panel_title}
               </h3>
-              <p className="font-sans text-sm leading-relaxed mb-8" style={{ color: "var(--color-sand-600)" }}>
-                {contact.subheadline}
-              </p>
+
+              {/* Separator */}
+              <div
+                style={{ height: "1px", backgroundColor: "rgba(225,233,243,0.07)", marginBottom: "2.5rem" }}
+                aria-hidden="true"
+              />
+
+              {/* Primary CTA button */}
               <Link
                 href={contact.cta.href}
-                className="inline-flex items-center justify-center w-full font-sans text-sm font-semibold px-8 py-4 border transition-colors duration-200"
-                style={{ backgroundColor: "var(--color-navy-800)", color: "var(--color-white)", borderColor: "var(--color-navy-800)" }}
+                className="group inline-flex items-center justify-between w-full font-sans font-medium tracking-[0.12em] uppercase transition-all duration-200 mb-5"
+                style={{
+                  fontSize: "0.7rem",
+                  color: "var(--color-navy-900)",
+                  backgroundColor: "var(--color-white)",
+                  padding: "1.15rem 1.75rem",
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(255,255,255,0.9)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.backgroundColor = "var(--color-white)";
+                }}
               >
-                {contact.cta.label}
+                <span>{contact.cta.label}</span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                  className="transition-transform duration-200 group-hover:translate-x-1"
+                >
+                  <path
+                    d="M1 7h12M8 2l5 5-5 5"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </Link>
-              <p className="font-sans text-xs mt-5 text-center" style={{ color: "var(--color-sand-500)" }}>
-                {contact.cta.label}
+
+              {/* Assurance microcopy */}
+              <p
+                className="font-sans text-[11px] text-center leading-relaxed"
+                style={{ color: "rgba(225,233,243,0.25)", letterSpacing: "0.03em" }}
+              >
+                {contact.cta_assurance}
               </p>
             </div>
           </div>

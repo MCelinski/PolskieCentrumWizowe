@@ -34,7 +34,22 @@
       "PowerShell(New-Item *)",
       "Bash(node *)",
       "Bash(git checkout *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(npm run *)",
+      "Bash(npx playwright *)",
+      "Bash(npx *)",
+      "Bash(Remove-Item ss_*.png, screenshot_*.png -ErrorAction SilentlyContinue)",
+      "Bash(where playwright *)",
+      "PowerShell(head *)",
+      "PowerShell(python \"C:\\\\Users\\\\Tsuyoroshi\\\\.claude\\\\plugins\\\\cache\\\\ui-ux-pro-max-skill\\\\ui-ux-pro-max\\\\2.0.1\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"animation ticker marquee strip always visible\" --domain ux -n 4 2>&1)",
+      "PowerShell(Get-ChildItem *)",
+      "Bash(curl -s http://localhost:3001/health)",
+      "Bash(curl *)",
+      "Bash(Get-Process node *)",
+      "Bash(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "Bash(Write-Host \"Done\")",
+      "PowerShell(Get-Process *)",
+      "Bash(git rm *)"
     ]
   }
 }

@@ -14,14 +14,9 @@
       "eyebrow": "IMMIGRATION AND ADMINISTRATIVE ADVISORY",
       "headline": "Immigration proceedings. Conducted to conclusion.",
       "subheadline": "We represent individual and corporate clients in proceedings for visas, residence permits, work authorization and Polish citizenship. One dedicated team per matter. One point of accountability. One outcome.",
-      "cta_primary": { "label": "Confidential consultation", "href": "/#kontakt" },
+      "cta_primary": { "label": "Confidential consultation", "href": "/konsultacje" },
       "cta_secondary": { "label": "View services", "href": "/#uslugi" },
-      "microcopy": "Initial conversation — complimentary, up to 30 minutes, no commitment.",
-      "trust_indicators": [
-        "Clients from over 40 jurisdictions",
-        "Conducting proceedings since 2018",
-        "Counsel in five languages"
-      ]
+      "microcopy": "Initial conversation — complimentary, up to 30 minutes, no commitment."
     },
     "trust_bar": {
       "label": "Proceedings before:",
@@ -37,7 +32,7 @@
     },
     "about": {
       "section_label": "About",
-      "headline": "A pioneering approach to immigration law. The architecture of administrative procedures.",
+      "headline": "A pioneering approach to immigration law.",
       "paragraphs": [
         "Polskie Centrum Wizowe is an elite boutique advisory firm specializing in immigration and administrative law. We provide strategic counsel to individuals, families and international corporate groups whose status demands impeccable legal and operational command.",
         "We operate within a multi-disciplinary model. Each engagement is structured around dedicated attorneys-at-law (adwokaci), legal advisors (radcowie prawni) and experts in international markets. The integrity of the entire process — from initial risk analysis to final resolution — is personally secured by a designated Managing Partner.",
@@ -203,7 +198,9 @@
       "phone": "+48 22 123 45 67",
       "address": "ul. Górnośląska 6, suite 1, 00-444 Warsaw, Poland",
       "hours": "Mon–Fri: 9:00–17:00",
-      "cta": { "label": "Initiate contact", "href": "/#kontakt" }
+      "cta": { "label": "Initiate contact", "href": "/konsultacje" },
+      "cta_panel_title": "Schedule your first consultation",
+      "cta_assurance": "Free initial call · Response within 24 hours"
     }
   },
   "consultations": {
@@ -213,14 +210,45 @@
       "headline": "Book a consultation",
       "subheadline": "Choose the form of contact appropriate for your situation. We respond within 24 hours on business days."
     },
+    "trust_metrics": [
+      { "value": "24h", "label": "Response time", "sub": "on business days" },
+      { "value": "500+", "label": "Cases handled", "sub": "annually" },
+      { "value": "10 yrs", "label": "Experience", "sub": "in immigration law" }
+    ],
+    "trust_bar": [
+      { "label": "Secure data", "description": "GDPR-compliant protection" },
+      { "label": "24h response", "description": "On business days" },
+      { "label": "No obligation", "description": "Initial analysis free" }
+    ],
+    "labels": {
+      "for_whom": "Who is it for?",
+      "whats_next": "What's next?",
+      "nav_a": "Visa qualification",
+      "nav_b": "General consultation",
+      "time_a": "~3 minutes",
+      "time_b": "~2 minutes"
+    },
     "visa_form": {
       "title": "Initial Visa Qualification",
       "description": "Fill in the form below to check which visa options are available in your situation. We will respond with a preliminary assessment within 24 hours.",
+      "ideal_for": [
+        "You're planning to relocate to Poland",
+        "You want to check available visa pathways",
+        "You have a job offer or are planning an investment",
+        "You're at an early stage of planning"
+      ],
+      "whats_next": [
+        { "title": "We analyse your data", "desc": "We review the current legal situation and available visa pathways." },
+        { "title": "Preliminary assessment within 24h", "desc": "An adviser replies with a preliminary analysis and recommendation for the next step." },
+        { "title": "Detailed consultation", "desc": "Optionally we arrange a meeting to discuss the details of your case." }
+      ],
       "fields": {
-        "citizenship": { "label": "Citizenship", "placeholder": "e.g. Ukraine, Japan, India..." },
+        "email": { "label": "Email address", "placeholder": "john@example.com" },
+        "citizenship": { "label": "Citizenship", "placeholder": "e.g. Ukraine, Japan, India...", "hint": "Enter full country name, e.g. Ukraine, Japan, India" },
         "purpose": {
           "label": "Purpose of visit to Poland",
           "placeholder": "Select purpose",
+          "hint": "Helps us select the right visa pathway",
           "options": [
             { "value": "praca", "label": "Employment" },
             { "value": "biznes", "label": "Business / investment" },
@@ -257,20 +285,52 @@
       },
       "submit": "Check eligibility",
       "disclaimer": "This form does not constitute legal advice. After analysis, we will contact you with a preliminary assessment of your situation.",
-      "success": "Thank you! We will respond within 24 business hours."
+      "success": "Thank you! We will respond within 24 business hours.",
+      "success_title": "Thank you!",
+      "loading": "Sending...",
+      "network_error": "Could not connect to the server. Please try again.",
+      "server_error": "An error occurred. Please try again.",
+      "errors": {
+        "email": "Please enter a valid email address",
+        "citizenship": "Please enter your citizenship (min. 2 characters)",
+        "purpose": "Please select a purpose of visit",
+        "duration": "Please select your planned length of stay",
+        "job_offer": "Please select an answer",
+        "family_in_poland": "Please select an answer"
+      }
     },
     "general_form": {
       "title": "General Consultation",
       "description": "Have questions or want to discuss your situation? Write to us — an advisor will contact you to agree on the details and propose a meeting time.",
+      "ideal_for": [
+        "You have specific questions about residence or a visa",
+        "You're already in Poland and need assistance",
+        "You're seeking legal help for yourself or your family",
+        "You want to talk before filling in a form"
+      ],
+      "whats_next": [
+        { "title": "We read your message", "desc": "We review your situation description on the same day." },
+        { "title": "An adviser will contact you", "desc": "By phone or email within 24 hours on business days." },
+        { "title": "We schedule a meeting", "desc": "We propose a time for an online meeting or at our Warsaw office." }
+      ],
       "fields": {
         "name": { "label": "Full name", "placeholder": "John Smith" },
         "email": { "label": "Email address", "placeholder": "john@example.com" },
-        "phone": { "label": "Phone number", "placeholder": "+48 600 000 000" },
+        "phone": { "label": "Phone number", "placeholder": "+48 600 000 000", "helper": "Optional — speeds up contact" },
         "message": { "label": "Brief description of your situation", "placeholder": "Briefly describe your situation and the questions you would like to discuss..." }
       },
       "submit": "Send enquiry",
       "disclaimer": "Your data is protected in accordance with GDPR. We do not share it with third parties.",
-      "success": "Message sent! We will contact you within 24 hours."
+      "success": "Message sent! We will contact you within 24 hours.",
+      "success_title": "Message sent!",
+      "loading": "Sending...",
+      "network_error": "Could not connect to the server. Please try again.",
+      "server_error": "An error occurred. Please try again.",
+      "errors": {
+        "name": "Please enter your full name (min. 2 characters)",
+        "email": "Please enter a valid email address",
+        "message": "Message is too short (min. 5 characters)"
+      }
     }
   },
   "footer": {

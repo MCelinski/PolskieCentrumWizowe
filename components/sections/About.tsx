@@ -21,7 +21,7 @@ export default function About() {
       className={`surface-white in-view-group overflow-hidden${inView ? " is-visible" : ""}`}
       aria-labelledby="about-heading"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[820px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[640px]">
 
         {/* ── LEFT col: full-bleed photo ── */}
         <div
@@ -49,10 +49,11 @@ export default function About() {
 
           {/* Desktop: right edge blends into white content column */}
           <div
-            className="absolute inset-y-0 right-0 w-40 xl:w-56 hidden lg:block"
+            className="absolute inset-y-0 right-0 hidden lg:block"
             style={{
+              width: "56%",
               background:
-                "linear-gradient(to left, var(--color-white) 0%, rgba(255,255,255,0.6) 45%, transparent 100%)",
+                "linear-gradient(to left, var(--color-white) 0%, rgba(255,255,255,0.82) 22%, rgba(255,255,255,0.48) 50%, rgba(255,255,255,0.12) 78%, transparent 100%)",
             }}
             aria-hidden="true"
           />
@@ -77,24 +78,14 @@ export default function About() {
             aria-hidden="true"
           />
 
-          {/* Image label badge */}
+          {/* Corner crop mark */}
           <div
-            className="absolute top-5 left-5 md:top-8 md:left-8 border animate-fade-up"
-            style={{
-              animationDelay: "220ms",
-              borderColor: "rgba(225,233,243,0.18)",
-              backgroundColor: "rgba(7,27,58,0.42)",
-              backdropFilter: "blur(8px)",
-            }}
+            className="absolute top-5 left-5 md:top-8 md:left-8 z-10"
+            style={{ width: "20px", height: "20px" }}
+            aria-hidden="true"
           >
-            <div className="px-4 py-3 md:px-5 md:py-3.5">
-              <p
-                className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em]"
-                style={{ color: "rgba(225,233,243,0.68)" }}
-              >
-                {about.section_label}
-              </p>
-            </div>
+            <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "1px", backgroundColor: "rgba(196,32,33,0.55)" }} />
+            <div style={{ position: "absolute", top: 0, left: 0, width: "1px", height: "100%", backgroundColor: "rgba(196,32,33,0.55)" }} />
           </div>
         </div>
 

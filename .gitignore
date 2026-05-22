@@ -32,6 +32,11 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+!mail-api/.env.example
+
+# mail-api
+mail-api/node_modules/
 
 # vercel
 .vercel
@@ -51,4 +56,5 @@ next-env.d.ts
 .tmp_docx_text.txt
 .tmp_docx_text_utf8.txt
 PCW_input_rev.docx
+content/site-content.json
 content/site-content.recovered-from-next.json

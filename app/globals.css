@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-950: #06142a;
-  --color-navy-900: #071b3a;
-  --color-navy-800: #0b1f3a;
-  --color-navy-700: #1b3357;
-  --color-navy-600: #355174;
-  --color-navy-500: #4a6180;
-  --color-navy-400: #5b6472;
-  --color-navy-200: #d7dde6;
-  --color-navy-100: #eef2f7;
+  /* Brand navy scale anchored at client's primary #041c2d */
+  --color-navy-950: #021018;
+  --color-navy-900: #041c2d;
+  --color-navy-800: #072537;
+  --color-navy-700: #0d3850;
+  --color-navy-600: #1d506a;
+  --color-navy-500: #2e6882;
+  --color-navy-400: #4d849f;
+  --color-navy-200: #c2d5e1;
+  --color-navy-100: #e3eef4;
 
   --color-white: #ffffff;
-  --color-cream: #f8f7f4;
-  --color-sand-100: #f7f8fa;
-  --color-sand-200: #edf1f6;
-  --color-sand-300: #e5e7eb;
-  --color-sand-400: #c8ced8;
-  --color-sand-500: #7d8898;
-  --color-sand-600: #5b6472;
+  --color-cream: #f5f7f9;
+  --color-sand-100: #f4f7fa;
+  --color-sand-200: #e8eef4;
+  --color-sand-300: #d9e3ec;
+  --color-sand-400: #b8c8d5;
+  --color-sand-500: #708898;
+  --color-sand-600: #4d6272;
 
   --color-red-700: #9f1818;
   --color-red-600: #b91c1c;
@@ -147,7 +148,11 @@
 }
 
 .trust-bar-track {
-  animation: trust-marquee 36s linear infinite;
+  animation: trust-marquee 28s linear infinite;
+}
+
+.trust-bar-marquee:hover .trust-bar-track {
+  animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -234,8 +239,8 @@ h6 {
 
 @media (min-width: 1024px) {
   .section-padding {
-    padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
   }
 }
 
@@ -265,6 +270,20 @@ h6 {
 .surface-navy {
   background-color: var(--color-navy-900);
   color: var(--color-white);
+}
+
+.pcw-input {
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.pcw-input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 56, 80, 0.14);
+}
+
+.pcw-input::placeholder {
+  color: var(--color-sand-400);
+  opacity: 1;
 }
 
 .surface-white {

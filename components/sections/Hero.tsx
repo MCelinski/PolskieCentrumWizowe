@@ -81,43 +81,6 @@ export default function Hero() {
           )}
         </div>
 
-        <div
-          className="mt-auto pt-10 md:pt-14 animate-hero-enter"
-          style={{ animationDelay: "520ms" }}
-        >
-          <div
-            className="max-w-4xl border-t"
-            style={{ borderColor: "rgba(226, 234, 244, 0.18)" }}
-          >
-            <ul className="flex flex-col sm:flex-row list-none m-0 p-0">
-              {hero.trust_indicators.map((indicator, i) => (
-                <li
-                  key={i}
-                  className="flex-1 flex items-center gap-4 py-5 sm:py-6"
-                  style={{
-                    borderRight: i < hero.trust_indicators.length - 1
-                      ? "1px solid rgba(226,234,244,0.1)"
-                      : "none",
-                    paddingRight: i < hero.trust_indicators.length - 1 ? "1.5rem" : "0",
-                    paddingLeft: i > 0 ? "1.5rem" : "0",
-                  }}
-                >
-                  <span
-                    className="h-px w-6 flex-shrink-0"
-                    style={{ backgroundColor: "var(--color-red-500)" }}
-                    aria-hidden="true"
-                  />
-                  <span
-                    className="font-sans text-sm leading-snug"
-                    style={{ color: "rgba(226,234,244,0.72)" }}
-                  >
-                    {indicator}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
   );
