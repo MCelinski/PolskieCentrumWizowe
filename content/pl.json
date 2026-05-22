@@ -460,6 +460,7 @@
     "legal": {
       "copyright": "© 2025 Polskie Centrum Wizowe. Wszelkie prawa zastrzeżone.",
       "disclaimer": "Polskie Centrum Wizowe jest prywatnym podmiotem doradczym. Nie stanowimy organu administracji państwowej Rzeczypospolitej Polskiej.",
+      "disclaimer_full": "Polskie Centrum Wizowe jest prywatnym podmiotem gospodarczym świadczącym usługi doradcze na zasadach komercyjnych. Nie jesteśmy organem administracji państwowej Rzeczypospolitej Polskiej, jednostką sektora finansów publicznych ani podmiotem organizacyjnie lub kapitałowo powiązanym ze Skarbem Państwa. Nasze usługi stanowią doradztwo prawno-administracyjne; postępowania w sprawach wiz, zezwoleń na pobyt, zezwoleń na pracę oraz obywatelstwa polskiego prowadzone są przez właściwe organy administracyjne — konsulaty, wojewodów, Urząd do Spraw Cudzoziemców, Prezydenta Rzeczypospolitej Polskiej oraz inne organy upoważnione na mocy przepisów prawa.",
       "links": [
         { "label": "Polityka prywatności", "href": "/polityka-prywatnosci" },
         { "label": "Regulamin", "href": "/regulamin" }

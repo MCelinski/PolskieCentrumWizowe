@@ -1,3 +1,13 @@
+function escapeHtml(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
+}
+
 const NAVY = "#041c2d";
 const RED = "#c42021";
 const CREAM = "#f8f7f4";
@@ -65,7 +75,7 @@ const TRANSLATIONS = {
 
 function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
   const t = TRANSLATIONS[lang] || TRANSLATIONS.pl;
-  const greeting = name ? t.greetingNamed(name) : t.greetingAnon;
+  const greeting = name ? t.greetingNamed(escapeHtml(name)) : t.greetingAnon;
   const formLabel = t.formLabel[formType] || t.formLabel.general;
 
   return `<!DOCTYPE html>
@@ -87,7 +97,7 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td>
-                    <img src="${logoUrl}" alt="Polskie Centrum Wizowe" height="36" style="display:block;height:36px;" />
+                    <img src="${escapeHtml(logoUrl)}" alt="Polskie Centrum Wizowe" height="36" style="display:block;height:36px;" />
                   </td>
                   <td align="right">
                     <span style="font-family:Arial,sans-serif;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(225,233,243,0.5);">${t.badge}</span>
@@ -160,7 +170,7 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
                   <td>
                     <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:13px;font-weight:600;color:${NAVY};">Polskie Centrum Wizowe</p>
                     <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:${GREY};">
-                      <a href="${siteUrl}" style="color:${GREY};text-decoration:none;">${siteUrl.replace(/^https?:\/\//, "")}</a>
+                      <a href="${escapeHtml(siteUrl)}" style="color:${GREY};text-decoration:none;">${escapeHtml(siteUrl.replace(/^https?:\/\//, ""))}</a>
                     </p>
                   </td>
                 </tr>

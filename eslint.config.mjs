@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Standalone Node.js server — CommonJS, not linted by Next.js config
+    "mail-api/**",
   ]),
 ]);
 

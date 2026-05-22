@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useLanguage, useLangContent, type Lang } from "@/contexts/LanguageContext";
+import { LANGS, localizePath, stripLocalePrefix } from "@/lib/i18n";
 
 const LANG_LABELS: Record<Lang, string> = { pl: "PL", en: "EN", ua: "UA", ru: "RU" };
 
@@ -11,6 +13,8 @@ export default function Navbar() {
   const { lang, setLang } = useLanguage();
   const content = useLangContent();
   const { nav } = content;
+  const pathname = usePathname();
+  const currentPath = stripLocalePrefix(pathname);
 
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,7 +48,7 @@ export default function Navbar() {
     >
       <div className="container-editorial">
         <div className="flex h-[4.5rem] md:h-[5.25rem] items-center justify-between">
-          <Link href="/" aria-label="Polskie Centrum Wizowe - strona główna" className="shrink-0">
+          <Link href={localizePath("/", lang)} aria-label="Polskie Centrum Wizowe - strona główna" className="shrink-0">
             <Image
               src="/logo-dark.svg"
               alt="Polskie Centrum Wizowe"
@@ -63,7 +67,7 @@ export default function Navbar() {
               return (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={localizePath(link.href, lang)}
                   onClick={() => setActiveHash(hash || activeHash)}
                   className="font-sans text-sm font-semibold tracking-[0.02em] pb-1 border-b transition-colors duration-200"
                   style={{
@@ -79,9 +83,10 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center gap-1" role="group" aria-label="Wybor jezyka">
-              {(["pl", "en", "ua", "ru"] as Lang[]).map((l) => (
-                <button
+              {LANGS.map((l) => (
+                <Link
                   key={l}
+                  href={localizePath(currentPath, l)}
                   onClick={() => setLang(l)}
                   className="font-sans text-xs font-semibold px-2 py-1 transition-colors duration-150 cursor-pointer"
                   style={{
@@ -92,12 +97,12 @@ export default function Navbar() {
                   aria-label={`Jezyk: ${LANG_LABELS[l]}`}
                 >
                   {LANG_LABELS[l]}
-                </button>
+                </Link>
               ))}
             </div>
 
             <Link
-              href="/konsultacje"
+              href={localizePath("/konsultacje", lang)}
               className="inline-flex items-center justify-center px-5 py-2.5 font-sans text-sm font-semibold tracking-[0.02em] border transition-colors duration-200"
               style={{
                 color: "var(--color-white)",
@@ -141,7 +146,7 @@ export default function Navbar() {
             {nav.links.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
+                href={localizePath(link.href, lang)}
                 className="font-sans text-base font-semibold pb-1 border-b"
                 style={{ color: "var(--color-navy-800)", borderColor: "var(--color-sand-300)" }}
                 onClick={() => {
@@ -155,9 +160,10 @@ export default function Navbar() {
             ))}
 
             <div className="flex items-center gap-2 pt-1">
-              {(["pl", "en", "ua", "ru"] as Lang[]).map((l) => (
-                <button
+              {LANGS.map((l) => (
+                <Link
                   key={l}
+                  href={localizePath(currentPath, l)}
                   onClick={() => { setLang(l); setMenuOpen(false); }}
                   className="font-sans text-xs font-semibold px-3 py-1.5 border transition-colors duration-150 cursor-pointer"
                   style={{
@@ -167,12 +173,12 @@ export default function Navbar() {
                   }}
                 >
                   {LANG_LABELS[l]}
-                </button>
+                </Link>
               ))}
             </div>
 
             <Link
-              href="/konsultacje"
+              href={localizePath("/konsultacje", lang)}
               className="mt-2 inline-flex items-center justify-center px-5 py-3 font-sans text-sm font-semibold"
               style={{ backgroundColor: "var(--color-navy-800)", color: "var(--color-white)" }}
               onClick={() => setMenuOpen(false)}

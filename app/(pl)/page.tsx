@@ -8,7 +8,6 @@ import PrivateClient from "@/components/sections/PrivateClient";
 import ProcessSection from "@/components/sections/ProcessSection";
 import TrustMetrics from "@/components/sections/TrustMetrics";
 import Testimonials from "@/components/sections/Testimonials";
-import ClientLogos from "@/components/sections/ClientLogos";
 import Contact from "@/components/sections/Contact";
 
 export default function HomePage() {
@@ -26,7 +25,6 @@ export default function HomePage() {
         <ProcessSection />
         <TrustMetrics />
         <Testimonials />
-        <ClientLogos />
         <Contact />
       </main>
       <Footer />

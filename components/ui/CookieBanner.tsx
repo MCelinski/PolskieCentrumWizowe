@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 import { grantAnalyticsConsent } from "@/components/analytics/GoogleAnalytics";
+import { localizePath } from "@/lib/i18n";
 
 const STORAGE_KEY = "pcw_cookie_consent";
 
@@ -12,18 +13,22 @@ interface ConsentState {
 }
 
 export default function CookieBanner() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    try {
+      return !localStorage.getItem(STORAGE_KEY);
+    } catch {
+      return true;
+    }
+  });
   const content = useLangContent();
+  const { lang } = useLanguage();
   const t = content.cookies;
 
   useEffect(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (!stored) setVisible(true);
-    } catch {
-      setVisible(true);
-    }
-  }, []);
+    document.body.style.paddingBottom = visible ? "120px" : "";
+    return () => { document.body.style.paddingBottom = ""; };
+  }, [visible]);
 
   function save(consent: ConsentState) {
     try {
@@ -59,7 +64,7 @@ export default function CookieBanner() {
             >
               {t.description}{" "}
               <Link
-                href="/polityka-prywatnosci"
+                href={localizePath("/polityka-prywatnosci", lang)}
                 className="underline underline-offset-2 hover:opacity-80 transition-opacity"
                 style={{ color: "var(--color-sand-300)" }}
               >

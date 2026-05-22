@@ -1,12 +1,14 @@
 ﻿"use client";
 
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 import { useInView } from "@/hooks/useInView";
 import ServiceCard from "@/components/ui/ServiceCard";
 import Button from "@/components/ui/Button";
+import { localizePath } from "@/lib/i18n";
 
 export default function Services() {
   const content = useLangContent();
+  const { lang } = useLanguage();
   const { services } = content.home;
   const { ref, inView } = useInView(0.08);
 
@@ -43,7 +45,7 @@ export default function Services() {
               </p>
             )}
             <div className="animate-fade-up" style={{ animationDelay: "240ms" }}>
-              <Button label={content.nav.cta} href="/konsultacje" variant="outline-light" />
+              <Button label={content.nav.cta} href={localizePath("/konsultacje", lang)} variant="outline-light" />
             </div>
           </div>
 

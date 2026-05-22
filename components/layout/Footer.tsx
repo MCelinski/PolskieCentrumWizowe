@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 import disclaimers from "@/content/disclaimers";
+import { localizePath } from "@/lib/i18n";
 
 export default function Footer() {
   const content = useLangContent();
@@ -66,7 +67,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 {column.links.map((link) => (
                   <li key={link.label}>
-                    <Link href={link.href} className="font-sans text-sm transition-colors duration-150 hover:text-white" style={{ color: "rgba(223, 232, 243, 0.8)" }}>
+                    <Link href={localizePath(link.href, lang)} className="font-sans text-sm transition-colors duration-150 hover:text-white" style={{ color: "rgba(223, 232, 243, 0.8)" }}>
                       {link.label}
                     </Link>
                   </li>
@@ -91,7 +92,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6">
             {footer.legal.links.map((link) => (
-              <Link key={link.label} href={link.href} className="font-sans text-xs transition-colors duration-150 hover:text-white" style={{ color: "rgba(223, 232, 243, 0.62)" }}>
+              <Link key={link.label} href={localizePath(link.href, lang)} className="font-sans text-xs transition-colors duration-150 hover:text-white" style={{ color: "rgba(223, 232, 243, 0.62)" }}>
                 {link.label}
               </Link>
             ))}

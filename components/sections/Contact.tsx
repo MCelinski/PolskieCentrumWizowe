@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
+import { localizePath } from "@/lib/i18n";
 import { useInView } from "@/hooks/useInView";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function Contact() {
   const content = useLangContent();
   const { contact } = content.home;
+  const { lang } = useLanguage();
   const { ref, inView } = useInView(0.12);
 
   return (
@@ -79,7 +81,7 @@ export default function Contact() {
 
               {/* Primary CTA button */}
               <Link
-                href={contact.cta.href}
+                href={localizePath(contact.cta.href, lang)}
                 className="group inline-flex items-center justify-between w-full font-sans font-medium tracking-[0.12em] uppercase transition-all duration-200 mb-5"
                 style={{
                   fontSize: "0.7rem",

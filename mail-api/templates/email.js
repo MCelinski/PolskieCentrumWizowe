@@ -4,13 +4,23 @@ const CREAM = "#f8f7f4";
 const GREY = "#6b7280";
 const BORDER = "#e5e0d8";
 
+function escapeHtml(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
+}
+
 function row(label, value) {
   if (!value) return "";
   return `
     <tr>
       <td style="padding:14px 20px;border-bottom:1px solid ${BORDER};background:${CREAM};">
-        <p style="margin:0 0 4px;font-family:Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:${GREY};">${label}</p>
-        <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:${NAVY};line-height:1.5;">${value}</p>
+        <p style="margin:0 0 4px;font-family:Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:${GREY};">${escapeHtml(label)}</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:${NAVY};line-height:1.5;">${escapeHtml(value)}</p>
       </td>
     </tr>`;
 }
@@ -43,7 +53,7 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td>
-                    <img src="${logoUrl}" alt="Polskie Centrum Wizowe" height="36" style="display:block;height:36px;" />
+                    <img src="${escapeHtml(logoUrl)}" alt="Polskie Centrum Wizowe" height="36" style="display:block;height:36px;" />
                   </td>
                   <td align="right">
                     <span style="font-family:Arial,sans-serif;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(225,233,243,0.5);">Nowe zgłoszenie</span>
@@ -78,7 +88,7 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
           <!-- CTA -->
           <tr>
             <td style="background:#ffffff;padding:28px 32px 36px;">
-              ${replyTo ? `<a href="mailto:${replyTo}" style="display:inline-block;background:${NAVY};color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;padding:14px 28px;">Odpowiedz klientowi</a>` : ""}
+              ${replyTo ? `<a href="mailto:${escapeHtml(replyTo)}" style="display:inline-block;background:${NAVY};color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;padding:14px 28px;">Odpowiedz klientowi</a>` : ""}
             </td>
           </tr>
 
@@ -90,7 +100,7 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
                   <td>
                     <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:13px;font-weight:600;color:${NAVY};">Polskie Centrum Wizowe</p>
                     <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:${GREY};">
-                      <a href="${siteUrl}" style="color:${GREY};text-decoration:none;">${siteUrl.replace(/^https?:\/\//, "")}</a>
+                      <a href="${escapeHtml(siteUrl)}" style="color:${GREY};text-decoration:none;">${escapeHtml(siteUrl.replace(/^https?:\/\//, ""))}</a>
                     </p>
                   </td>
                 </tr>
@@ -102,7 +112,7 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
           <tr>
             <td style="padding:16px 32px;">
               <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#9ca3af;line-height:1.6;">
-                Ta wiadomość została wysłana automatycznie z formularza kontaktowego na stronie ${siteUrl.replace(/^https?:\/\//, "")}. Nie odpowiadaj na tego maila bezpośrednio — skorzystaj z przycisku powyżej.
+                Ta wiadomość została wysłana automatycznie z formularza kontaktowego na stronie ${escapeHtml(siteUrl.replace(/^https?:\/\//, ""))}. Nie odpowiadaj na tego maila bezpośrednio — skorzystaj z przycisku powyżej.
               </p>
             </td>
           </tr>

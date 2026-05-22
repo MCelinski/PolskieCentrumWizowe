@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
+import { localizePath } from "@/lib/i18n";
 import { useInView } from "@/hooks/useInView";
 
 export default function PrivateClient() {
   const content = useLangContent();
   const { private_client } = content.home;
+  const { lang } = useLanguage();
   const { ref, inView } = useInView(0.06);
 
   return (
@@ -182,7 +184,7 @@ export default function PrivateClient() {
             {/* CTA */}
             <div className="animate-fade-up" style={{ animationDelay: "360ms" }}>
               <Link
-                href={private_client.cta.href}
+                href={localizePath(private_client.cta.href, lang)}
                 className="group inline-flex items-center gap-5"
                 style={{ cursor: "pointer" }}
               >

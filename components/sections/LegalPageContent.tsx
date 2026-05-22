@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
+import { localizePath } from "@/lib/i18n";
 
 interface LegalPageContentProps {
   pageKey: "regulamin" | "polityka_prywatnosci";
@@ -8,6 +9,7 @@ interface LegalPageContentProps {
 
 export default function LegalPageContent({ pageKey }: LegalPageContentProps) {
   const content = useLangContent();
+  const { lang } = useLanguage();
   const legalPages = content.legal_pages;
   const page = legalPages[pageKey];
 
@@ -16,7 +18,7 @@ export default function LegalPageContent({ pageKey }: LegalPageContentProps) {
       <div className="container-editorial pt-28 pb-24">
 
         <Link
-          href="/"
+          href={localizePath("/", lang)}
           className="inline-flex items-center gap-2 font-sans text-sm font-medium mb-12 transition-colors hover:opacity-70"
           style={{ color: "var(--color-navy-500)" }}
         >
@@ -73,7 +75,7 @@ export default function LegalPageContent({ pageKey }: LegalPageContentProps) {
 
         <div className="mt-16 pt-10 border-t" style={{ borderColor: "var(--color-sand-300)" }}>
           <Link
-            href="/"
+            href={localizePath("/", lang)}
             className="inline-flex items-center gap-2 font-sans text-sm font-semibold px-6 py-3 rounded transition-colors"
             style={{
               backgroundColor: "var(--color-navy-900)",

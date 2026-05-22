@@ -68,7 +68,8 @@ export default function GeneralConsultationForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ formType: "general", lang, ...formData }),
       });
-      const json = await res.json();
+      const isJson = res.headers.get("content-type")?.includes("application/json");
+      const json = isJson ? await res.json() : {};
       if (!res.ok || !json.success) {
         setError(json.error || general_form.server_error);
       } else {

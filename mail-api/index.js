@@ -21,7 +21,7 @@ if (missing.length > 0) {
 }
 
 // ─── Middleware ───────────────────────────────────────────────────────────────
-app.use(express.json());
+app.use(express.json({ limit: "20kb" }));
 
 app.use(
   cors({

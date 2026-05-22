@@ -2,10 +2,10 @@
 
 import { createContext, useContext, useState, useEffect } from "react";
 import content from "@/content/index";
+import { LANG_HTML, type Lang } from "@/lib/i18n";
 
-export type Lang = "pl" | "en" | "ua" | "ru";
+export type { Lang };
 
-const LANGS: Lang[] = ["pl", "en", "ua", "ru"];
 const LANG_STORAGE_KEY = "pcw_lang";
 
 interface LanguageContextValue {
@@ -18,25 +18,18 @@ const LanguageContext = createContext<LanguageContextValue>({
   setLang: () => {},
 });
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Lang>("pl");
-
-  useEffect(() => {
-    const stored = localStorage.getItem(LANG_STORAGE_KEY);
-    if (stored && LANGS.includes(stored as Lang)) {
-      setLang(stored as Lang);
-      return;
-    }
-
-    const browser = navigator.language.slice(0, 2).toLowerCase();
-    const normalized = browser === "uk" ? "ua" : browser;
-    if (LANGS.includes(normalized as Lang)) {
-      setLang(normalized as Lang);
-    }
-  }, []);
+export function LanguageProvider({
+  children,
+  initialLang = "pl",
+}: {
+  children: React.ReactNode;
+  initialLang?: Lang;
+}) {
+  const [lang, setLang] = useState<Lang>(initialLang);
 
   useEffect(() => {
     localStorage.setItem(LANG_STORAGE_KEY, lang);
+    document.documentElement.lang = LANG_HTML[lang];
   }, [lang]);
 
   return (

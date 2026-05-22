@@ -11,12 +11,14 @@ export default function Testimonials() {
   const items = testimonials.items.slice(0, 4);
   const { ref, inView } = useInView(0.12);
 
+  const [prevTestimonials, setPrevTestimonials] = useState(testimonials);
   const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  useEffect(() => {
+  if (prevTestimonials !== testimonials) {
+    setPrevTestimonials(testimonials);
     setIndex(0);
-  }, [testimonials]);
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -1,11 +1,13 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { useLangContent } from "@/contexts/LanguageContext";
+import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
+import { localizePath } from "@/lib/i18n";
 
 export default function Hero() {
   const content = useLangContent();
   const { hero } = content.home;
+  const { lang } = useLanguage();
 
   return (
     <section className="surface-navy relative overflow-hidden flex-1 flex flex-col" aria-label="Hero">
@@ -56,14 +58,14 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 animate-hero-enter" style={{ animationDelay: "360ms" }}>
             <Link
-              href={hero.cta_primary.href}
+              href={localizePath(hero.cta_primary.href, lang)}
               className="inline-flex items-center justify-center px-8 py-4 font-sans text-sm font-semibold tracking-[0.02em] transition-colors duration-200"
               style={{ backgroundColor: "var(--color-white)", color: "var(--color-navy-800)" }}
             >
               {hero.cta_primary.label}
             </Link>
             <Link
-              href={hero.cta_secondary.href}
+              href={localizePath(hero.cta_secondary.href, lang)}
               className="inline-flex items-center justify-center px-8 py-4 font-sans text-sm font-semibold tracking-[0.02em] border transition-colors duration-200"
               style={{ color: "var(--color-white)", borderColor: "rgba(226, 234, 244, 0.55)" }}
             >
@@ -85,4 +87,3 @@ export default function Hero() {
     </section>
   );
 }
-

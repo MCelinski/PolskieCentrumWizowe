@@ -86,7 +86,8 @@ export default function VisaQualificationForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ formType: "visa", lang, ...formData }),
       });
-      const json = await res.json();
+      const isJson = res.headers.get("content-type")?.includes("application/json");
+      const json = isJson ? await res.json() : {};
       if (!res.ok || !json.success) {
         setError(json.error || visa_form.server_error);
       } else {
