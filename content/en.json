@@ -376,5 +376,215 @@
         { "label": "Terms of Service", "href": "/regulamin" }
       ]
     }
+  },
+  "cookies": {
+    "title": "We use cookies",
+    "description": "We use cookies to improve your experience and analyse site traffic. You may accept all or choose necessary only. Learn more in our",
+    "policy_link": "Privacy Policy",
+    "accept_all": "Accept all",
+    "accept_necessary": "Necessary only"
+  },
+  "legal_pages": {
+    "back_label": "← Back to home",
+    "regulamin": {
+      "title": "Terms of Service",
+      "subtitle": "Advisory Services Terms and Conditions",
+      "last_updated": "Last updated: 1 January 2025",
+      "sections": [
+        {
+          "title": "§ 1. General Provisions",
+          "paragraphs": [
+            "These Terms of Service (hereinafter: the Terms) define the rules for the provision of advisory services by Polskie Centrum Wizowe (hereinafter: the Centre) to clients (hereinafter: the Client).",
+            "Polskie Centrum Wizowe is a private commercial entity. It is not a public administration body of the Republic of Poland, a unit of the public finance sector, nor an entity organizationally or capital-affiliated with the State Treasury.",
+            "The Centre provides legal and administrative advisory services related to immigration law, visa procedures, residence permits, work authorisation, Polish citizenship, and related matters.",
+            "These Terms are available at the Centre's registered office and on its website. Before entering into a service agreement, the Client is obliged to read the Terms."
+          ]
+        },
+        {
+          "title": "§ 2. Scope of Services",
+          "paragraphs": [
+            "The Centre provides advisory services including: analysis of the Client's situation and eligibility for specific procedures, preparation and review of applications and supporting documents, representation before administrative authorities (where applicable), ongoing information on the status of proceedings, and other services specified in individual agreements.",
+            "The Centre does not guarantee a specific outcome of administrative proceedings, as final decisions are made exclusively by competent state authorities.",
+            "The scope of services in each case is defined in a written service agreement concluded with the Client."
+          ]
+        },
+        {
+          "title": "§ 3. Contract Formation",
+          "paragraphs": [
+            "A service agreement is concluded upon signing a written contract by both parties or upon confirmation of the order in a form accepted by the Centre.",
+            "Prior to concluding the agreement, the Centre provides the Client with full information on the scope of services, expected timeline, fees, and any risks associated with the proceedings.",
+            "The Centre reserves the right to refuse to conclude an agreement in justified cases, in particular where the Client's declared situation is inconsistent with applicable law or the Centre's ethical standards."
+          ]
+        },
+        {
+          "title": "§ 4. Client Rights",
+          "paragraphs": [
+            "The Client has the right to be fully and reliably informed about the status of their case at every stage of service provision.",
+            "The Client has the right to access all documents prepared by the Centre in connection with the provision of services.",
+            "The Client has the right to withdraw from the agreement at any time, subject to the terms set out in § 11 of these Terms.",
+            "The Client has the right to lodge a complaint in accordance with the procedure set out in § 11 of these Terms."
+          ]
+        },
+        {
+          "title": "§ 5. Client Obligations",
+          "paragraphs": [
+            "The Client is obliged to provide truthful and complete information and documents necessary for proper performance of the service.",
+            "The Client is obliged to promptly inform the Centre of any changes in their situation that may affect the course of proceedings.",
+            "The Client is obliged to pay the agreed remuneration on the dates and in the amounts specified in the service agreement.",
+            "The Client is obliged to cooperate with the Centre and to follow its guidance in matters necessary for effective conduct of the proceedings."
+          ]
+        },
+        {
+          "title": "§ 6. Centre Obligations",
+          "paragraphs": [
+            "The Centre undertakes to provide services with due diligence, in accordance with applicable law and current professional standards.",
+            "The Centre undertakes to keep confidential all information and documents obtained from the Client in connection with service provision.",
+            "The Centre undertakes to inform the Client without undue delay of any obstacles or circumstances that may affect the course or outcome of the proceedings.",
+            "The Centre undertakes to act exclusively in the Client's interest throughout the duration of the service agreement."
+          ]
+        },
+        {
+          "title": "§ 7. Fees and Payment Terms",
+          "paragraphs": [
+            "The remuneration for services is specified in the individual service agreement concluded with the Client.",
+            "The Centre applies transparent fee policies. All fees are disclosed to the Client prior to concluding the agreement.",
+            "Remuneration is generally payable in instalments: an advance payment upon conclusion of the agreement, and subsequent payments at stages agreed by the parties.",
+            "Fees for services do not include official charges, consular fees, or other public charges imposed by administrative authorities, unless expressly stated in the agreement.",
+            "In the event of withdrawal from the agreement by the Client, the rules for refunding or retaining amounts paid are set out in § 11 of these Terms."
+          ]
+        },
+        {
+          "title": "§ 8. Liability",
+          "paragraphs": [
+            "The Centre is liable to the Client for non-performance or improper performance of the service agreement to the extent provided for in applicable law.",
+            "The Centre is not liable for decisions taken by administrative authorities, which are independent in their actions and not subject to the Centre's influence.",
+            "The Centre is not liable for consequences resulting from the Client providing false, incomplete, or misleading information or documents.",
+            "The Centre's liability is limited to the amount of the remuneration actually received for the service in question, unless mandatory provisions of law provide otherwise."
+          ]
+        },
+        {
+          "title": "§ 9. Confidentiality",
+          "paragraphs": [
+            "The Centre undertakes to maintain the confidentiality of all information obtained from the Client in connection with the provision of services.",
+            "The confidentiality obligation shall remain in force after the termination of the service agreement, without any time limitation.",
+            "The confidentiality obligation does not apply to information that: is publicly available through lawful channels, was obtained from a third party without a confidentiality obligation, or must be disclosed under mandatory provisions of law."
+          ]
+        },
+        {
+          "title": "§ 10. Personal Data Protection",
+          "paragraphs": [
+            "The Centre processes the Client's personal data as the data controller within the meaning of Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR).",
+            "Detailed information on the processing of personal data, including purposes, legal bases, retention periods, and data subjects' rights, is set out in the Privacy Policy available on the Centre's website.",
+            "By concluding a service agreement, the Client confirms they have read the Privacy Policy."
+          ]
+        },
+        {
+          "title": "§ 11. Complaints and Withdrawal",
+          "paragraphs": [
+            "The Client has the right to lodge a complaint regarding the quality of services provided. Complaints should be submitted in writing to the Centre's registered office address or by electronic means.",
+            "The Centre undertakes to consider the complaint within 14 working days of its receipt and to inform the Client of the outcome.",
+            "The Client may withdraw from the service agreement at any time. In the event of withdrawal before the commencement of service provision, the advance payment will be refunded in full.",
+            "In the event of withdrawal after services have commenced, the Centre is entitled to remuneration for services actually performed up to the date of withdrawal. Any remaining amount shall be refunded within 14 days."
+          ]
+        },
+        {
+          "title": "§ 12. Final Provisions",
+          "paragraphs": [
+            "These Terms shall be governed by and construed in accordance with the law of the Republic of Poland.",
+            "Any disputes arising out of or in connection with the provision of services shall be resolved by the competent common court having jurisdiction over the Centre's registered office, unless the parties agree otherwise.",
+            "The Centre reserves the right to amend these Terms. Any amendments shall be communicated to Clients in advance, in writing or by electronic means, with at least 14 days' notice.",
+            "Matters not regulated by these Terms shall be governed by the provisions of the Polish Civil Code and other applicable legislation."
+          ]
+        }
+      ]
+    },
+    "polityka_prywatnosci": {
+      "title": "Privacy Policy",
+      "subtitle": "Personal Data Protection in Accordance with GDPR",
+      "last_updated": "Last updated: 1 January 2025",
+      "sections": [
+        {
+          "title": "1. Data Controller",
+          "paragraphs": [
+            "The controller of your personal data is Polskie Centrum Wizowe, a private commercial advisory company operating in the Republic of Poland.",
+            "You may contact us regarding matters related to the processing of personal data by post at our registered office address or by electronic mail at the address indicated on the website."
+          ]
+        },
+        {
+          "title": "2. Purposes and Legal Bases of Processing",
+          "paragraphs": [
+            "We process your personal data for the following purposes: (a) performance of the service agreement concluded with you — legal basis: Article 6(1)(b) GDPR; (b) fulfilling our legal obligations — legal basis: Article 6(1)(c) GDPR; (c) our legitimate interests, in particular the investigation and defence of claims — legal basis: Article 6(1)(f) GDPR; (d) sending marketing communications — legal basis: your consent under Article 6(1)(a) GDPR.",
+            "Providing data is voluntary but necessary for the conclusion and performance of the service agreement. Failure to provide data may prevent us from providing services."
+          ]
+        },
+        {
+          "title": "3. Categories of Data Processed",
+          "paragraphs": [
+            "We process the following categories of personal data: identification data (name, surname, date of birth, PESEL number or document number), contact data (address, telephone number, e-mail address), data contained in documents submitted in connection with the proceedings (including data from passports and other travel documents), and data concerning the immigration situation.",
+            "We do not process special categories of personal data (sensitive data) unless their processing is strictly necessary to perform the service and you have given your explicit consent."
+          ]
+        },
+        {
+          "title": "4. Data Retention Periods",
+          "paragraphs": [
+            "We retain your personal data for the period necessary to perform the service agreement and — after its termination — for the period required by law (including tax and accounting obligations) or until the expiry of the limitation periods for claims.",
+            "Data processed on the basis of consent is retained until the consent is withdrawn."
+          ]
+        },
+        {
+          "title": "5. Recipients of Personal Data",
+          "paragraphs": [
+            "Your data may be disclosed to: competent administrative authorities (consulates, voivodes, the Office for Foreigners, and other bodies) in connection with the conduct of proceedings on your behalf; IT service providers and other entities processing data on our instructions on the basis of data processing agreements; legal advisors and auditors, where required by law.",
+            "We do not sell or share your personal data with third parties for marketing purposes."
+          ]
+        },
+        {
+          "title": "6. Data Subject Rights",
+          "paragraphs": [
+            "You have the following rights with respect to the processing of your personal data: the right of access to your data, the right to rectification, the right to erasure, the right to restriction of processing, the right to data portability, and the right to object to processing.",
+            "If processing is based on your consent, you may withdraw that consent at any time without affecting the lawfulness of processing prior to the withdrawal.",
+            "You have the right to lodge a complaint with the President of the Office for Personal Data Protection (UODO) if you consider that the processing of your data infringes GDPR."
+          ]
+        },
+        {
+          "title": "7. International Data Transfers",
+          "paragraphs": [
+            "In connection with the conduct of proceedings before consulates or other authorities located outside the European Economic Area, your data may be transferred to third countries.",
+            "Such transfers are carried out only to the extent necessary to perform the service and are subject to appropriate safeguards, including standard contractual clauses or other mechanisms provided for in GDPR."
+          ]
+        },
+        {
+          "title": "8. Cookies",
+          "paragraphs": [
+            "Our website uses cookies — small text files stored on your device that allow us to provide a better user experience.",
+            "We use the following types of cookies: necessary cookies (essential for the website to function, always active) and analytical cookies (anonymous traffic and behaviour data collected via Google Analytics 4).",
+            "Analytical cookies are activated only after you give your consent through the banner displayed on your first visit. Until consent is granted, Google Analytics operates in anonymous mode with limited data collection (Consent Mode v2). You may withdraw or change your consent at any time by clearing the pcw_cookie_consent key from your browser's local storage or through your browser's cookie settings.",
+            "You may manage cookies through your browser settings. Disabling some cookies may affect the functionality of the website.",
+            "For more information about Google Analytics and the opt-out option, visit tools.google.com/dlpage/gaoptout."
+          ]
+        },
+        {
+          "title": "9. Data Security",
+          "paragraphs": [
+            "We apply technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure, including data encryption, access controls, and regular security reviews.",
+            "Our employees who process personal data are bound by confidentiality obligations and have received appropriate training in data protection."
+          ]
+        },
+        {
+          "title": "10. Changes to the Policy",
+          "paragraphs": [
+            "We reserve the right to update this Privacy Policy. Any changes will be published on our website with the date of the amendment indicated.",
+            "If significant changes are made that may affect your rights, we will additionally inform you by e-mail or by prominent notice on the website."
+          ]
+        },
+        {
+          "title": "11. Contact",
+          "paragraphs": [
+            "For all matters relating to the processing of your personal data, please contact us at the address indicated on the website or by electronic mail.",
+            "We will respond to your enquiry within 30 days of receipt, or — in complex cases — within such longer period as permitted by applicable law, having first informed you of the reason for the delay."
+          ]
+        }
+      ]
+    }
   }
 }

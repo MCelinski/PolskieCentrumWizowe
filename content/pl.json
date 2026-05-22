@@ -465,5 +465,229 @@
         { "label": "Regulamin", "href": "/regulamin" }
       ]
     }
+  },
+  "cookies": {
+    "title": "Używamy plików cookie",
+    "description": "Stosujemy pliki cookie, aby poprawić działanie serwisu i analizować ruch. Możesz zaakceptować wszystkie lub wybrać tylko niezbędne. Więcej informacji znajdziesz w naszej",
+    "policy_link": "Polityce prywatności",
+    "accept_all": "Akceptuj wszystkie",
+    "accept_necessary": "Tylko niezbędne"
+  },
+  "legal_pages": {
+    "back_label": "← Strona główna",
+    "regulamin": {
+      "title": "Regulamin",
+      "subtitle": "Warunki świadczenia usług doradczych",
+      "last_updated": "Ostatnia aktualizacja: 1 stycznia 2025 r.",
+      "sections": [
+        {
+          "title": "§ 1. Postanowienia ogólne",
+          "paragraphs": [
+            "1. Niniejszy Regulamin określa zasady i warunki świadczenia usług doradczych przez Polskie Centrum Wizowe z siedzibą przy ul. Górnośląskiej 6 lok. 1, 00-444 Warszawa (dalej: Centrum) na rzecz Klientów.",
+            "2. Polskie Centrum Wizowe jest prywatnym podmiotem doradczym specjalizującym się w prawie migracyjnym i administracyjnym. Centrum nie jest organem administracji państwowej Rzeczypospolitej Polskiej, jednostką sektora finansów publicznych ani podmiotem powiązanym organizacyjnie lub kapitałowo ze Skarbem Państwa.",
+            "3. Kontakt z Centrum: e-mail: kontakt@pcw.pl, tel.: +48 22 123 45 67, adres: ul. Górnośląska 6 lok. 1, 00-444 Warszawa.",
+            "4. Klientem jest osoba fizyczna, prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej, która zawarła z Centrum umowę o świadczenie usług lub złożyła zlecenie.",
+            "5. Korzystanie z usług Centrum jest równoznaczne z akceptacją niniejszego Regulaminu."
+          ]
+        },
+        {
+          "title": "§ 2. Zakres usług",
+          "paragraphs": [
+            "1. Centrum świadczy usługi doradztwa prawnego i administracyjnego w zakresie: postępowań wizowych (wizy krajowe i Schengen), zezwoleń na pobyt czasowy i stały, zezwoleń na pobyt rezydenta długoterminowego UE, zezwoleń na pracę (typy A–E, sezonowe, Niebieska Karta UE), nabycia obywatelstwa polskiego oraz reprezentacji przed organami administracji publicznej.",
+            "2. Szczegółowy zakres konkretnej usługi określa indywidualna umowa lub pisemne zlecenie potwierdzone przez obie strony.",
+            "3. Centrum nie gwarantuje osiągnięcia konkretnego rezultatu postępowania. Decyzje administracyjne wydawane są przez niezależne organy państwowe. Centrum zobowiązuje się do działania z najwyższą starannością zawodową.",
+            "4. Usługi Centrum mają charakter doradztwa i reprezentacji administracyjnej."
+          ]
+        },
+        {
+          "title": "§ 3. Zawarcie umowy",
+          "paragraphs": [
+            "1. Umowa o świadczenie usług zostaje zawarta z chwilą podpisania pisemnego zlecenia lub umowy albo potwierdzenia przez Centrum przyjęcia zlecenia drogą elektroniczną.",
+            "2. Warunkiem przystąpienia do realizacji usługi jest dostarczenie przez Klienta kompletnej dokumentacji oraz — w stosownych przypadkach — uiszczenie zaliczki.",
+            "3. Centrum zastrzega sobie prawo do odmowy przyjęcia zlecenia bez podania przyczyny."
+          ]
+        },
+        {
+          "title": "§ 4. Prawa i obowiązki Klienta",
+          "paragraphs": [
+            "1. Klient zobowiązany jest do: przekazywania Centrum kompletnych, rzetelnych i aktualnych dokumentów i informacji; niezwłocznego informowania o zmianach mających wpływ na postępowanie; terminowego regulowania wynagrodzenia; zachowania poufności informacji przekazanych przez Centrum.",
+            "2. Klient uprawniony jest do: bieżącego informowania o stanie sprawy; otrzymywania kopii dokumentów sporządzonych w jego imieniu; wypowiedzenia umowy na warunkach określonych w § 11.",
+            "3. Klient ponosi pełną odpowiedzialność za prawdziwość i kompletność przekazanych dokumentów i informacji."
+          ]
+        },
+        {
+          "title": "§ 5. Obowiązki Centrum",
+          "paragraphs": [
+            "1. Centrum zobowiązuje się do: starannego i profesjonalnego prowadzenia spraw Klienta zgodnie z obowiązującymi przepisami; zachowania tajemnicy zawodowej; bieżącego informowania Klienta o istotnych okolicznościach; działania w najlepszym interesie Klienta.",
+            "2. Centrum wykonuje usługi z należytą starannością, jednak nie ponosi odpowiedzialności za decyzje niezależnych organów administracyjnych."
+          ]
+        },
+        {
+          "title": "§ 6. Honorarium i warunki płatności",
+          "paragraphs": [
+            "1. Wysokość wynagrodzenia ustalana jest indywidualnie i określana w umowie lub zleceniu.",
+            "2. Wynagrodzenie może być płatne w formie jednorazowej opłaty, zaliczki z rozliczeniem końcowym lub opłat etapowych — stosownie do uzgodnień stron.",
+            "3. W przypadku opóźnienia w zapłacie Centrum jest uprawnione do naliczania odsetek ustawowych za opóźnienie.",
+            "4. Koszty zewnętrzne (opłaty skarbowe, konsularne, sądowe, tłumaczenia przysięgłe i inne) nie są wliczone w wynagrodzenie Centrum i rozliczane są odrębnie."
+          ]
+        },
+        {
+          "title": "§ 7. Odpowiedzialność",
+          "paragraphs": [
+            "1. Centrum ponosi odpowiedzialność za szkody wyrządzone Klientowi wyłącznie w przypadku udowodnionego zaniedbania lub rażącego niedbalstwa po stronie Centrum.",
+            "2. Odpowiedzialność Centrum ograniczona jest do wysokości wynagrodzenia netto faktycznie pobranego za daną usługę, chyba że przepisy prawa bezwzględnie obowiązującego stanowią inaczej.",
+            "3. Centrum nie ponosi odpowiedzialności za: opóźnienia wynikające z działania organów państwowych; decyzje odmowne kompetentnych organów; skutki podania przez Klienta niepełnych lub nieprawdziwych informacji; zdarzenia siły wyższej."
+          ]
+        },
+        {
+          "title": "§ 8. Poufność",
+          "paragraphs": [
+            "1. Centrum zobowiązuje się do zachowania w ścisłej tajemnicy wszelkich informacji dotyczących Klienta i jego sprawy, uzyskanych w toku świadczenia usług — przez cały czas trwania umowy i po jej zakończeniu.",
+            "2. Obowiązek poufności nie ma zastosowania w przypadku konieczności ujawnienia informacji na podstawie bezwzględnie obowiązujących przepisów prawa lub na żądanie właściwych organów.",
+            "3. Klient zobowiązuje się do nieujawniania osobom trzecim informacji o metodologii Centrum, strategiach procesowych i wewnętrznych procedurach."
+          ]
+        },
+        {
+          "title": "§ 9. Ochrona danych osobowych",
+          "paragraphs": [
+            "1. Administratorem danych osobowych Klientów jest Polskie Centrum Wizowe z siedzibą przy ul. Górnośląskiej 6 lok. 1, 00-444 Warszawa.",
+            "2. Dane osobowe przetwarzane są w celach: zawarcia i wykonania umowy; wypełnienia obowiązków prawnych; dochodzenia lub obrony roszczeń.",
+            "3. Szczegółowe informacje dotyczące przetwarzania danych osobowych zawarte są w Polityce prywatności dostępnej na stronie /polityka-prywatnosci."
+          ]
+        },
+        {
+          "title": "§ 10. Reklamacje",
+          "paragraphs": [
+            "1. Reklamacje należy składać pisemnie na adres siedziby Centrum lub drogą elektroniczną na adres kontakt@pcw.pl.",
+            "2. Reklamacja powinna zawierać: dane identyfikacyjne Klienta, opis zastrzeżeń z datą zdarzenia oraz oczekiwany sposób rozwiązania.",
+            "3. Centrum rozpatruje reklamację w terminie 14 dni roboczych od jej otrzymania."
+          ]
+        },
+        {
+          "title": "§ 11. Rozwiązanie umowy",
+          "paragraphs": [
+            "1. Każda ze stron może wypowiedzieć umowę z zachowaniem 14-dniowego okresu wypowiedzenia.",
+            "2. Centrum uprawnione jest do rozwiązania umowy ze skutkiem natychmiastowym w przypadku: rażącego naruszenia obowiązków przez Klienta; podania nieprawdziwych informacji lub dokumentów; opóźnienia w płatności powyżej 30 dni.",
+            "3. W przypadku rozwiązania umowy Klientowi przysługuje zwrot wynagrodzenia proporcjonalnie do niewykonanych usług, pomniejszony o koszty poniesione przez Centrum."
+          ]
+        },
+        {
+          "title": "§ 12. Postanowienia końcowe",
+          "paragraphs": [
+            "1. W sprawach nieuregulowanych stosuje się przepisy prawa polskiego, w szczególności Kodeksu cywilnego.",
+            "2. Wszelkie spory strony zobowiązują się rozwiązywać polubownie. W przypadku braku porozumienia właściwy jest sąd dla siedziby Centrum.",
+            "3. Centrum zastrzega sobie prawo do zmiany Regulaminu. O zmianach Klienci zostaną poinformowani drogą elektroniczną lub przez aktualizację na stronie internetowej.",
+            "4. Regulamin wchodzi w życie z dniem 1 stycznia 2025 r."
+          ]
+        }
+      ]
+    },
+    "polityka_prywatnosci": {
+      "title": "Polityka prywatności",
+      "subtitle": "Ochrona danych osobowych zgodna z RODO",
+      "last_updated": "Ostatnia aktualizacja: 1 stycznia 2025 r.",
+      "sections": [
+        {
+          "title": "1. Administrator danych osobowych",
+          "paragraphs": [
+            "Administratorem Pani/Pana danych osobowych jest Polskie Centrum Wizowe z siedzibą przy ul. Górnośląskiej 6 lok. 1, 00-444 Warszawa (dalej: Administrator).",
+            "W sprawach dotyczących ochrony danych osobowych prosimy o kontakt pod adresem e-mail: kontakt@pcw.pl lub pisemnie na adres siedziby."
+          ]
+        },
+        {
+          "title": "2. Cele i podstawy prawne przetwarzania",
+          "paragraphs": [
+            "Administrator przetwarza dane osobowe na następujących podstawach i w następujących celach:",
+            "a) Zawarcie i realizacja umowy o świadczenie usług doradczych — art. 6 ust. 1 lit. b RODO;",
+            "b) Wypełnienie obowiązków prawnych Administratora (m.in. obowiązki podatkowe, archiwizacyjne) — art. 6 ust. 1 lit. c RODO;",
+            "c) Dochodzenie lub obrona roszczeń i prawnie uzasadniony interes Administratora — art. 6 ust. 1 lit. f RODO;",
+            "d) Marketing bezpośredni i komunikacja informacyjna — art. 6 ust. 1 lit. a RODO (na podstawie zgody, którą można cofnąć w każdym czasie)."
+          ]
+        },
+        {
+          "title": "3. Kategorie przetwarzanych danych",
+          "paragraphs": [
+            "W zależności od rodzaju świadczonej usługi, Administrator przetwarza następujące kategorie danych:",
+            "Dane identyfikacyjne: imię, nazwisko, data i miejsce urodzenia, obywatelstwo, seria i numer dokumentu tożsamości.",
+            "Dane kontaktowe: adres e-mail, numer telefonu, adres zamieszkania lub korespondencyjny.",
+            "Dane migracyjne i prawne: historia pobytów, dane pracodawców, dokumenty aplikacyjne i decyzje administracyjne.",
+            "Dane wrażliwe: przetwarzane wyłącznie w zakresie niezbędnym do prowadzenia postępowania i za wyraźną zgodą osoby, której dane dotyczą, lub gdy wymagają tego przepisy prawa."
+          ]
+        },
+        {
+          "title": "4. Okres przechowywania danych",
+          "paragraphs": [
+            "Dane osobowe przechowywane są przez okres niezbędny do realizacji celów przetwarzania:",
+            "Dane umowne: przez czas trwania umowy oraz 5 lat od jej zakończenia — na potrzeby dowodowe i dochodzenia roszczeń.",
+            "Dokumentacja finansowa: przez okres wymagany przepisami podatkowymi (co do zasady 5 lat od zakończenia roku obrachunkowego).",
+            "Dane przetwarzane na podstawie zgody: do czasu jej cofnięcia lub osiągnięcia celu przetwarzania."
+          ]
+        },
+        {
+          "title": "5. Odbiorcy danych",
+          "paragraphs": [
+            "Dane osobowe mogą być przekazywane następującym kategoriom odbiorców:",
+            "Organy administracji publicznej: konsulaty, urzędy wojewódzkie, Urząd do Spraw Cudzoziemców, Straż Graniczna, urzędy pracy — wyłącznie w zakresie niezbędnym do prowadzenia postępowania.",
+            "Podwykonawcy i partnerzy: tłumacze przysięgli, współpracujące kancelarie — na podstawie umów powierzenia przetwarzania danych.",
+            "Dostawcy IT: podmioty zapewniające obsługę techniczną i chmurową — na podstawie umów powierzenia z zastosowaniem środków bezpieczeństwa."
+          ]
+        },
+        {
+          "title": "6. Prawa osób, których dane dotyczą",
+          "paragraphs": [
+            "Przysługują Pani/Panu następujące prawa:",
+            "Prawo dostępu (art. 15 RODO) — do uzyskania informacji o przetwarzanych danych i ich kopii.",
+            "Prawo do sprostowania (art. 16 RODO) — do żądania poprawienia nieprawidłowych danych.",
+            "Prawo do usunięcia (art. 17 RODO) — do usunięcia danych w przypadkach przewidzianych prawem.",
+            "Prawo do ograniczenia przetwarzania (art. 18 RODO) — do ograniczenia przetwarzania w określonych sytuacjach.",
+            "Prawo do przenoszenia danych (art. 20 RODO) — do otrzymania danych w ustrukturyzowanym formacie.",
+            "Prawo do sprzeciwu (art. 21 RODO) — wobec przetwarzania opartego na uzasadnionym interesie Administratora.",
+            "Prawo do cofnięcia zgody — w każdym czasie, bez wpływu na wcześniejsze przetwarzanie.",
+            "Prawo do skargi do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa."
+          ]
+        },
+        {
+          "title": "7. Przekazywanie danych poza EOG",
+          "paragraphs": [
+            "Administrator może przekazywać dane osobowe do państw trzecich (poza Europejski Obszar Gospodarczy) wyłącznie gdy jest to niezbędne do realizacji usługi (np. kontakt z konsulatami zagranicznymi lub postępowania przed organami w krajach trzecich).",
+            "W każdym przypadku Administrator zapewnia odpowiedni poziom ochrony danych zgodnie z przepisami RODO, stosując standardowe klauzule umowne lub inne dopuszczalne instrumenty prawne."
+          ]
+        },
+        {
+          "title": "8. Pliki cookies",
+          "paragraphs": [
+            "Strona internetowa Centrum wykorzystuje pliki cookies — małe pliki tekstowe zapisywane na urządzeniu użytkownika w celu zapewnienia prawidłowego działania serwisu.",
+            "Stosowane są następujące kategorie cookies: niezbędne (wymagane do prawidłowego działania serwisu, aktywne zawsze) oraz analityczne (zbieranie anonimowych danych o ruchu i zachowaniu użytkowników za pomocą usługi Google Analytics 4).",
+            "Cookies analityczne są aktywowane wyłącznie po wyrażeniu przez użytkownika zgody za pomocą baneru wyświetlanego przy pierwszej wizycie. Do czasu udzielenia zgody Google Analytics działa w trybie anonimowym z ograniczonym gromadzeniem danych (Consent Mode v2). Użytkownik może cofnąć zgodę lub zmienić jej zakres, usuwając dane z lokalnej pamięci przeglądarki (klucz pcw_cookie_consent) lub korzystając z ustawień przeglądarki.",
+            "Użytkownik może w każdej chwili zmienić ustawienia cookies w swojej przeglądarce. Wyłączenie niektórych cookies może ograniczyć funkcjonalność serwisu.",
+            "Więcej informacji o Google Analytics oraz możliwości rezygnacji z śledzenia: tools.google.com/dlpage/gaoptout."
+          ]
+        },
+        {
+          "title": "9. Bezpieczeństwo danych",
+          "paragraphs": [
+            "Administrator stosuje techniczne i organizacyjne środki bezpieczeństwa odpowiednie do ryzyka, zapewniające integralność, poufność i dostępność przetwarzanych danych osobowych.",
+            "Dostęp do danych osobowych Klientów mają wyłącznie upoważnione osoby, zobowiązane do zachowania poufności."
+          ]
+        },
+        {
+          "title": "10. Zmiany Polityki prywatności",
+          "paragraphs": [
+            "Administrator zastrzega sobie prawo do zmiany niniejszej Polityki prywatności w przypadku zmian przepisów prawa, zmian w sposobie przetwarzania danych lub z innych uzasadnionych przyczyn.",
+            "O istotnych zmianach użytkownicy zostaną poinformowani przez aktualizację treści Polityki na stronie internetowej lub drogą elektroniczną.",
+            "Aktualna wersja Polityki prywatności jest zawsze dostępna na stronie /polityka-prywatnosci."
+          ]
+        },
+        {
+          "title": "11. Kontakt",
+          "paragraphs": [
+            "W sprawach dotyczących ochrony danych osobowych:",
+            "E-mail: kontakt@pcw.pl",
+            "Adres: ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
+            "Administrator dokłada starań, aby odpowiadać na zapytania w zakresie danych osobowych w terminie 30 dni od ich otrzymania."
+          ]
+        }
+      ]
+    }
   }
 }

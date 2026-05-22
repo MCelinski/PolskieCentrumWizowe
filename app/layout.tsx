@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Manrope, Playfair_Display } from "next/font/google";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import CookieBanner from "@/components/ui/CookieBanner";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -33,7 +35,11 @@ export default function RootLayout({
   return (
     <html lang="pl" className={`${playfair.variable} ${manrope.variable}`}>
       <body className="antialiased">
-        <LanguageProvider>{children}</LanguageProvider>
+        <GoogleAnalytics />
+        <LanguageProvider>
+          {children}
+          <CookieBanner />
+        </LanguageProvider>
       </body>
     </html>
   );
