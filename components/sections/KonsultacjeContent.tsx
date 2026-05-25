@@ -181,9 +181,41 @@ export default function KonsultacjeContent() {
               animation: "fadeIn 180ms ease-out",
             }}
           >
+            {/* Active form intro */}
+            <div
+              className="px-5 pt-7 pb-6 sm:px-8 md:px-12 md:pt-8 border-b"
+              style={{ borderColor: "var(--color-sand-200)" }}
+            >
+              <div className="max-w-2xl">
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <span
+                    className="font-sans text-[11px] font-semibold uppercase tracking-[0.14em] px-2.5 py-1"
+                    style={{
+                      backgroundColor: "var(--color-navy-900)",
+                      color: "var(--color-cream)",
+                    }}
+                  >
+                    {active === "a" ? labels.time_a : labels.time_b}
+                  </span>
+                </div>
+                <h2
+                  className="font-serif text-2xl md:text-3xl font-medium leading-tight"
+                  style={{ color: "var(--color-navy-900)" }}
+                >
+                  {activeForm.title}
+                </h2>
+                <p
+                  className="font-sans text-[15px] md:text-base leading-relaxed mt-3"
+                  style={{ color: "var(--color-sand-600)" }}
+                >
+                  {activeForm.description}
+                </p>
+              </div>
+            </div>
+
             {/* "Dla kogo?" chips */}
             <div
-              className="px-8 md:px-12 pt-8 pb-6 border-b"
+              className="px-5 sm:px-8 md:px-12 pt-6 pb-6 border-b"
               style={{ borderColor: "var(--color-sand-200)" }}
             >
               <p
@@ -227,13 +259,13 @@ export default function KonsultacjeContent() {
             </div>
 
             {/* Form itself */}
-            <div className="px-8 md:px-12 py-10">
+            <div className="px-5 sm:px-8 md:px-12 py-9 md:py-10">
               <ActiveFormComponent key={active} />
             </div>
 
             {/* "Co dalej?" steps */}
             <div
-              className="px-8 md:px-12 pb-10 pt-2 border-t"
+              className="px-5 sm:px-8 md:px-12 pb-10 pt-2 border-t"
               style={{ borderColor: "var(--color-sand-200)" }}
             >
               <WhatHappensNext label={labels.whats_next} steps={activeForm.whats_next} />
@@ -303,7 +335,6 @@ function FormTab({
         borderLeft: isActive
           ? "4px solid var(--color-red-600)"
           : "4px solid transparent",
-        padding: "1.5rem 2rem",
         cursor: "pointer",
         outline: "none",
       }}
@@ -327,7 +358,7 @@ function FormTab({
         (e.currentTarget as HTMLElement).style.outline = "none";
       }}
     >
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-start sm:justify-between sm:gap-4 md:p-6 lg:p-8">
         <div className="flex items-center gap-3 min-w-0">
           {/* Badge */}
           <span
@@ -359,7 +390,7 @@ function FormTab({
               {title}
             </p>
             <p
-              className="font-sans text-xs mt-1 leading-relaxed line-clamp-2"
+              className="hidden sm:block font-sans text-xs mt-1 leading-relaxed line-clamp-2"
               style={{
                 color: isActive
                   ? "rgba(208,222,238,0.6)"
@@ -373,7 +404,7 @@ function FormTab({
 
         {/* Time badge */}
         <span
-          className="font-sans text-xs font-medium px-2.5 py-1 flex-shrink-0 mt-0.5"
+          className="hidden sm:inline-flex font-sans text-xs font-medium px-2.5 py-1 flex-shrink-0 mt-0.5"
           style={
             isActive
               ? {
@@ -393,7 +424,7 @@ function FormTab({
       {/* Active indicator underline */}
       {isActive && (
         <div
-          className="mt-4 h-px w-full"
+          className="mx-5 h-px sm:mx-6 lg:mx-8"
           style={{ backgroundColor: "rgba(168,196,224,0.12)" }}
           aria-hidden="true"
         />
