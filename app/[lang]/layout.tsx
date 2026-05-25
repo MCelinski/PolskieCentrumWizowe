@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SiteDocument from "@/app/site-document";
 import { isRouteLang, ROUTE_LANGS } from "@/lib/i18n";
+import { siteIcons } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import "../globals.css";
 
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   keywords:
     "wiza Polska, zezwolenie na pobyt, karta stałego pobytu, doradztwo wizowe, migracja do Polski",
+  icons: siteIcons,
   robots: {
     index: true,
     follow: true,

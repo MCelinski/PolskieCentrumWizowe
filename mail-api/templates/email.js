@@ -53,7 +53,7 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td>
-                    <img src="${escapeHtml(logoUrl)}" alt="Polskie Centrum Wizowe" height="36" style="display:block;height:36px;" />
+                    <img src="${escapeHtml(logoUrl)}" alt="Polskie Centrum Wizowe" height="52" style="display:block;height:52px;width:auto;" />
                   </td>
                   <td align="right">
                     <span style="font-family:Arial,sans-serif;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(225,233,243,0.5);">Nowe zgłoszenie</span>

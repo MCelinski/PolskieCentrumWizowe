@@ -37,6 +37,12 @@ const FIELD_FOCUS_IDS: Record<keyof FormData, string> = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+function describedBy(id: string, error?: string, helperText?: string) {
+  if (error) return `${id}-error`;
+  if (helperText) return `${id}-hint`;
+  return undefined;
+}
+
 export default function VisaQualificationForm() {
   const { visa_form } = useLangContent().consultations;
   const { lang } = useLanguage();
@@ -153,7 +159,7 @@ export default function VisaQualificationForm() {
             onBlur={() => handleBlur("email")}
             placeholder={visa_form.fields.email.placeholder}
             aria-invalid={touched.email && !!fieldErrors.email}
-            aria-describedby={touched.email && fieldErrors.email ? "visa-email-error" : undefined}
+            aria-describedby={describedBy("visa-email", touched.email ? fieldErrors.email : undefined)}
             className="pcw-input"
             style={inputStyle(touched.email && !!fieldErrors.email)}
           />
@@ -176,7 +182,11 @@ export default function VisaQualificationForm() {
             onBlur={() => handleBlur("citizenship")}
             placeholder={visa_form.fields.citizenship.placeholder}
             aria-invalid={touched.citizenship && !!fieldErrors.citizenship}
-            aria-describedby="visa-citizenship-hint"
+            aria-describedby={describedBy(
+              "visa-citizenship",
+              touched.citizenship ? fieldErrors.citizenship : undefined,
+              visa_form.fields.citizenship.hint
+            )}
             className="pcw-input"
             style={inputStyle(touched.citizenship && !!fieldErrors.citizenship)}
           />
@@ -198,7 +208,11 @@ export default function VisaQualificationForm() {
               onChange={(e) => setFormData({ ...formData, purpose: e.target.value })}
               onBlur={() => handleBlur("purpose")}
               aria-invalid={touched.purpose && !!fieldErrors.purpose}
-              aria-describedby="visa-purpose-hint"
+              aria-describedby={describedBy(
+                "visa-purpose",
+                touched.purpose ? fieldErrors.purpose : undefined,
+                visa_form.fields.purpose.hint
+              )}
               className="pcw-input"
               style={selectStyle(touched.purpose && !!fieldErrors.purpose)}
             >
@@ -225,6 +239,7 @@ export default function VisaQualificationForm() {
               onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
               onBlur={() => handleBlur("duration")}
               aria-invalid={touched.duration && !!fieldErrors.duration}
+              aria-describedby={describedBy("visa-duration", touched.duration ? fieldErrors.duration : undefined)}
               className="pcw-input"
               style={selectStyle(touched.duration && !!fieldErrors.duration)}
             >
@@ -246,7 +261,13 @@ export default function VisaQualificationForm() {
           required
           error={touched.job_offer ? fieldErrors.job_offer : undefined}
         >
-          <div className="flex flex-col sm:flex-row gap-3 mt-1" role="radiogroup" aria-labelledby="job_offer-label">
+          <div
+            className="flex flex-col sm:flex-row gap-3 mt-1"
+            role="radiogroup"
+            aria-labelledby="job_offer-label"
+            aria-invalid={touched.job_offer && !!fieldErrors.job_offer}
+            aria-describedby={describedBy("job_offer", touched.job_offer ? fieldErrors.job_offer : undefined)}
+          >
             {visa_form.fields.job_offer.options.map((o: { value: string; label: string }) => (
               <RadioOption
                 key={o.value}
@@ -272,7 +293,16 @@ export default function VisaQualificationForm() {
           required
           error={touched.family_in_poland ? fieldErrors.family_in_poland : undefined}
         >
-          <div className="flex gap-4 mt-1" role="radiogroup" aria-labelledby="family_in_poland-label">
+          <div
+            className="flex gap-4 mt-1"
+            role="radiogroup"
+            aria-labelledby="family_in_poland-label"
+            aria-invalid={touched.family_in_poland && !!fieldErrors.family_in_poland}
+            aria-describedby={describedBy(
+              "family_in_poland",
+              touched.family_in_poland ? fieldErrors.family_in_poland : undefined
+            )}
+          >
             {visa_form.fields.family_in_poland.options.map((o: { value: string; label: string }) => (
               <RadioOption
                 key={o.value}
@@ -434,10 +464,10 @@ function RadioOption({
         value={value}
         checked={checked}
         onChange={onChange}
-        className="sr-only"
+        className="peer sr-only"
       />
       <div
-        className="w-4 h-4 border flex-shrink-0 flex items-center justify-center transition-colors duration-150"
+        className="w-4 h-4 border flex-shrink-0 flex items-center justify-center transition-colors duration-150 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-red-600"
         style={{
           borderColor: checked ? "var(--color-navy-900)" : "var(--color-sand-400)",
           backgroundColor: checked ? "var(--color-navy-900)" : "transparent",

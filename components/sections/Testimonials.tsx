@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useLangContent } from "@/contexts/LanguageContext";
 import { useInView } from "@/hooks/useInView";
+import ResponsivePicture from "@/components/ui/ResponsivePicture";
 
 export default function Testimonials() {
   const content = useLangContent();
@@ -227,13 +227,12 @@ export default function Testimonials() {
 
         {/* ── RIGHT: full-bleed cinematic image ── */}
         <div className="relative min-h-[300px] lg:min-h-0 order-1 lg:order-2">
-          <Image
-            src="/images/testimonials2.png"
-            alt=""
-            fill
-            className="object-cover"
+          <ResponsivePicture
+            fallbackSrc="/images/testimonials2.webp"
+            srcSet="/images/testimonials2-640.webp 640w, /images/testimonials2-960.webp 960w, /images/testimonials2-1280.webp 1280w, /images/testimonials2.webp 1672w"
             sizes="(max-width: 1024px) 100vw, 40vw"
-            unoptimized
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
           />
 
           {/* Subtle mood tint — all viewports */}

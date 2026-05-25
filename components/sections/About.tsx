@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 import disclaimers from "@/content/disclaimers";
 import { useInView } from "@/hooks/useInView";
+import ResponsivePicture from "@/components/ui/ResponsivePicture";
 
 export default function About() {
   const content = useLangContent();
@@ -28,13 +28,12 @@ export default function About() {
           className="relative min-h-[460px] lg:min-h-0 order-2 lg:order-1 animate-fade-up"
           style={{ animationDelay: "120ms" }}
         >
-          <Image
-            src="/images/about.png"
-            alt=""
-            fill
-            className="object-cover"
+          <ResponsivePicture
+            fallbackSrc="/images/about.webp"
+            srcSet="/images/about-480.webp 480w, /images/about-720.webp 720w, /images/about-960.webp 960w, /images/about.webp 1086w"
             sizes="(max-width: 1024px) 100vw, 50vw"
-            unoptimized
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
           />
 
           {/* Subtle mood tint — all viewports */}

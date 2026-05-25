@@ -134,6 +134,7 @@ export default function GeneralConsultationForm() {
             onBlur={() => handleBlur("name")}
             placeholder={general_form.fields.name.placeholder}
             aria-invalid={touched.name && !!fieldErrors.name}
+            aria-describedby={touched.name && fieldErrors.name ? "name-error" : undefined}
             className="pcw-input"
             style={inputStyle(touched.name && !!fieldErrors.name)}
           />
@@ -157,6 +158,7 @@ export default function GeneralConsultationForm() {
             onBlur={() => handleBlur("email")}
             placeholder={general_form.fields.email.placeholder}
             aria-invalid={touched.email && !!fieldErrors.email}
+            aria-describedby={touched.email && fieldErrors.email ? "email-error" : undefined}
             className="pcw-input"
             style={inputStyle(touched.email && !!fieldErrors.email)}
           />
@@ -201,6 +203,7 @@ export default function GeneralConsultationForm() {
               onBlur={() => handleBlur("message")}
               placeholder={general_form.fields.message.placeholder}
               aria-invalid={touched.message && !!fieldErrors.message}
+              aria-describedby={touched.message && fieldErrors.message ? "message-error" : undefined}
               className="pcw-input"
               style={{ ...inputStyle(touched.message && !!fieldErrors.message), resize: "vertical" }}
             />

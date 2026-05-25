@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 import { localizePath } from "@/lib/i18n";
 import { useInView } from "@/hooks/useInView";
+import ResponsivePicture from "@/components/ui/ResponsivePicture";
 
 export default function PrivateClient() {
   const content = useLangContent();
@@ -235,14 +235,12 @@ export default function PrivateClient() {
         {/* ── RIGHT: Full-bleed image ── */}
         <div className="relative min-h-[420px] lg:min-h-0">
 
-          <Image
-            src="/images/private-client.jpg"
-            alt=""
-            fill
-            className="object-cover"
+          <ResponsivePicture
+            fallbackSrc="/images/private-client.webp"
+            srcSet="/images/private-client-640.webp 640w, /images/private-client-960.webp 960w, /images/private-client-1280.webp 1280w, /images/private-client-1600.webp 1600w, /images/private-client.webp 2048w"
             sizes="(max-width: 1024px) 100vw, 50vw"
-            priority={false}
-            unoptimized
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
           />
 
           {/* Subtle mood tint — all viewports */}

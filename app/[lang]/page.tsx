@@ -12,7 +12,8 @@ import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
 import content from "@/content";
 import { isRouteLang, ROUTE_LANGS } from "@/lib/i18n";
-import { localizedPath, pageAlternates, titled } from "@/lib/seo";
+import { localizedPath, OG_IMAGE_URL, pageAlternates, titled } from "@/lib/seo";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return ROUTE_LANGS.map((lang) => ({ lang }));
@@ -23,12 +24,30 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const lang = isRouteLang(rawLang) ? rawLang : "en";
   const home = content[lang].home;
 
+  const title = titled(home.hero.headline);
+  const description = home.hero.subheadline;
+  const url = `${SITE_URL}${localizedPath(lang, "/")}`;
+
   return {
-    title: titled(home.hero.headline),
-    description: home.hero.subheadline,
+    title,
+    description,
     alternates: {
       ...pageAlternates("/"),
       canonical: localizedPath(lang, "/"),
+    },
+    openGraph: {
+      type: "website",
+      url,
+      siteName: "Polskie Centrum Wizowe",
+      title,
+      description,
+      images: [{ url: OG_IMAGE_URL, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [OG_IMAGE_URL],
     },
   };
 }
