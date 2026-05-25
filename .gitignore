@@ -30,9 +30,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
 !.env.example
+!.env.production.example
 !mail-api/.env.example
 
 # mail-api
@@ -49,6 +50,9 @@ next-env.d.ts
 
 # claude
 .claude/settings.local.json
+
+# Passenger restart directory (tworzony dynamicznie przez deploy)
+mail-api/tmp/
 
 # temp / working files
 .tmp_docx_extract.zip

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 
 type FormData = {
@@ -40,6 +40,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export default function VisaQualificationForm() {
   const { visa_form } = useLangContent().consultations;
   const { lang } = useLanguage();
+  const loadTime = useRef(Date.now());
   const [formData, setFormData] = useState<FormData>(initialData);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -84,7 +85,7 @@ export default function VisaQualificationForm() {
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ formType: "visa", lang, ...formData }),
+        body: JSON.stringify({ formType: "visa", lang, ...formData, _hp: "", _t: Date.now() - loadTime.current }),
       });
       const isJson = res.headers.get("content-type")?.includes("application/json");
       const json = isJson ? await res.json() : {};
@@ -128,6 +129,11 @@ export default function VisaQualificationForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate>
+      {/* Honeypot — ukryte przed ludźmi, widoczne dla botów */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>
+        <label htmlFor="v-website">Strona internetowa</label>
+        <input id="v-website" name="website" type="text" defaultValue="" tabIndex={-1} autoComplete="off" />
+      </div>
       <div className="space-y-7">
         {/* Email */}
         <FormField

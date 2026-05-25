@@ -110,87 +110,87 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Quote panel */}
+          {/* Quote panel — wszystkie opinie są wyrenderowane naraz i stacked przez CSS grid.
+              Dzięki temu kontener ma zawsze wysokość najdłuższej opinii — zero layout shift. */}
           <div
             className="animate-scale-in"
             style={{
               borderTop: "1px solid var(--color-sand-300)",
               animationDelay: "80ms",
+              display: "grid",
             }}
           >
-            <article
-              style={{
-                opacity: visible ? 1 : 0,
-                transform: visible ? "translateY(0)" : "translateY(5px)",
-                transition: "opacity 0.26s ease, transform 0.26s ease",
-              }}
-            >
-              {/* Opening mark */}
-              <div
-                className="font-serif select-none mt-7 mb-4 leading-none"
-                style={{
-                  fontSize: "2.8rem",
-                  color: "var(--color-red-500)",
-                  opacity: 0.2,
-                }}
-                aria-hidden="true"
-              >
-                &ldquo;
-              </div>
-
-              <blockquote
-                className="font-serif"
-                style={{
-                  color: "var(--color-navy-800)",
-                  fontSize: "clamp(0.97rem, 1.35vw, 1.15rem)",
-                  lineHeight: 1.7,
-                  letterSpacing: "-0.01em",
-                  fontStyle: "italic",
-                  maxWidth: "620px",
-                  marginBottom: "1.5rem",
-                }}
-              >
-                {item.quote}
-              </blockquote>
-
-              {/* Closing mark */}
-              <div
-                className="font-serif select-none mb-4 leading-none"
-                style={{
-                  fontSize: "2.8rem",
-                  color: "var(--color-red-500)",
-                  opacity: 0.2,
-                  maxWidth: "620px",
-                  textAlign: "right",
-                }}
-                aria-hidden="true"
-              >
-                &rdquo;
-              </div>
-
-              <footer className="flex items-center gap-3">
-                <div
-                  className="w-5 h-px flex-shrink-0"
-                  style={{ backgroundColor: "var(--color-red-500)" }}
-                  aria-hidden="true"
-                />
-                <div>
-                  <p
-                    className="font-sans text-sm font-semibold"
-                    style={{ color: "var(--color-navy-800)" }}
+            {items.map((t, i) => {
+              const active = i === index;
+              return (
+                <article
+                  key={i}
+                  aria-hidden={!active}
+                  style={{
+                    gridArea: "1 / 1",
+                    opacity: active && visible ? 1 : 0,
+                    transform: active && visible ? "translateY(0)" : "translateY(5px)",
+                    transition: "opacity 0.26s ease, transform 0.26s ease",
+                    pointerEvents: active ? "auto" : "none",
+                  }}
+                >
+                  {/* Opening mark */}
+                  <div
+                    className="font-serif select-none mt-7 mb-4 leading-none"
+                    style={{ fontSize: "2.8rem", color: "var(--color-red-500)", opacity: 0.2 }}
+                    aria-hidden="true"
                   >
-                    {item.author}
-                  </p>
-                  <p
-                    className="font-sans text-xs mt-0.5"
-                    style={{ color: "var(--color-sand-500)" }}
+                    &ldquo;
+                  </div>
+
+                  <blockquote
+                    className="font-serif"
+                    style={{
+                      color: "var(--color-navy-800)",
+                      fontSize: "clamp(0.97rem, 1.35vw, 1.15rem)",
+                      lineHeight: 1.7,
+                      letterSpacing: "-0.01em",
+                      fontStyle: "italic",
+                      maxWidth: "620px",
+                      marginBottom: "1.5rem",
+                    }}
                   >
-                    {item.role}
-                    {item.entity ? ` · ${item.entity}` : ""}
-                  </p>
-                </div>
-              </footer>
-            </article>
+                    {t.quote}
+                  </blockquote>
+
+                  {/* Closing mark */}
+                  <div
+                    className="font-serif select-none mb-4 leading-none"
+                    style={{
+                      fontSize: "2.8rem",
+                      color: "var(--color-red-500)",
+                      opacity: 0.2,
+                      maxWidth: "620px",
+                      textAlign: "right",
+                    }}
+                    aria-hidden="true"
+                  >
+                    &rdquo;
+                  </div>
+
+                  <footer className="flex items-center gap-3">
+                    <div
+                      className="w-5 h-px flex-shrink-0"
+                      style={{ backgroundColor: "var(--color-red-500)" }}
+                      aria-hidden="true"
+                    />
+                    <div>
+                      <p className="font-sans text-sm font-semibold" style={{ color: "var(--color-navy-800)" }}>
+                        {t.author}
+                      </p>
+                      <p className="font-sans text-xs mt-0.5" style={{ color: "var(--color-sand-500)" }}>
+                        {t.role}{t.entity ? ` · ${t.entity}` : ""}
+                      </p>
+                    </div>
+                  </footer>
+                </article>
+              );
+            })}
           </div>
 
           {/* Dot nav — mobile */}

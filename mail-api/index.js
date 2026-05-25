@@ -157,8 +157,21 @@ const yesNoLabels = {
 
 // ─── Endpoint ─────────────────────────────────────────────────────────────────
 app.post("/contact", limiter, async (req, res) => {
-  const { formType } = req.body || {};
-  const lang = getLang(req.body?.lang);
+  const body = req.body || {};
+
+  // Honeypot — _hp musi być pustym stringiem; brak pola = bezpośrednie żądanie
+  if (body._hp !== "") {
+    return res.json({ success: true });
+  }
+
+  // Minimalny czas wypełnienia: 3 sekundy
+  const elapsed = parseInt(body._t ?? "0", 10);
+  if (isNaN(elapsed) || elapsed < 3000) {
+    return res.json({ success: true });
+  }
+
+  const { formType } = body;
+  const lang = getLang(body.lang);
   const e = FIELD_ERRORS[lang];
 
   if (formType !== "general" && formType !== "visa") {
