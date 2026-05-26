@@ -61,10 +61,15 @@ export default function GeneralConsultationForm() {
       return;
     }
 
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    if (!apiUrl) {
+      setError(general_form.server_error);
+      return;
+    }
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
+      const res = await fetch(`${apiUrl}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ formType: "general", lang, ...formData, _hp: "", _t: Date.now() - loadTime.current }),

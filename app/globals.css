@@ -96,6 +96,26 @@
   }
 }
 
+/* Form tab keyboard focus */
+.pcw-tab-btn:focus-visible {
+  outline: 2px solid var(--color-navy-700);
+  outline-offset: -2px;
+}
+
+/* Cookie banner button hover states */
+.pcw-cookie-secondary {
+  background-color: transparent;
+}
+.pcw-cookie-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.pcw-cookie-primary {
+  background-color: var(--color-white);
+}
+.pcw-cookie-primary:hover {
+  background-color: var(--color-sand-200);
+}
+
 .animate-fade-up {
   opacity: 0;
   animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;

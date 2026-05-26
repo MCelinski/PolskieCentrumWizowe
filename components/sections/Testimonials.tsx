@@ -31,8 +31,6 @@ export default function Testimonials() {
     return () => clearInterval(interval);
   }, [items.length]);
 
-  const item = items[index] ?? items[0];
-
   const goTo = (i: number) => {
     setVisible(false);
     setTimeout(() => { setIndex(i); setVisible(true); }, 300);

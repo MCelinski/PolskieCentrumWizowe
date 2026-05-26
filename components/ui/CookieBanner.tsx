@@ -77,37 +77,19 @@ export default function CookieBanner() {
           <div className="flex flex-col sm:flex-row gap-2 shrink-0">
             <button
               onClick={() => save({ necessary: true, analytics: false })}
-              className="px-5 py-2.5 rounded font-sans text-sm font-semibold border transition-colors cursor-pointer"
+              className="pcw-cookie-secondary px-5 py-2.5 rounded font-sans text-sm font-semibold border transition-colors cursor-pointer"
               style={{
                 borderColor: "var(--color-sand-400)",
                 color: "var(--color-sand-300)",
-                backgroundColor: "transparent",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.backgroundColor =
-                  "rgba(255,255,255,0.06)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.backgroundColor =
-                  "transparent";
               }}
             >
               {t.accept_necessary}
             </button>
             <button
               onClick={() => save({ necessary: true, analytics: true })}
-              className="px-5 py-2.5 rounded font-sans text-sm font-semibold transition-colors cursor-pointer"
+              className="pcw-cookie-primary px-5 py-2.5 rounded font-sans text-sm font-semibold transition-colors cursor-pointer"
               style={{
-                backgroundColor: "var(--color-white)",
                 color: "var(--color-navy-900)",
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.backgroundColor =
-                  "var(--color-sand-200)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLButtonElement).style.backgroundColor =
-                  "var(--color-white)";
               }}
             >
               {t.accept_all}

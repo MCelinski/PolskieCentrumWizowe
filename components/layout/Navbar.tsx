@@ -94,7 +94,7 @@ export default function Navbar() {
                     borderBottom: l === lang ? "1px solid var(--color-red-500)" : "1px solid transparent",
                   }}
                   aria-pressed={l === lang}
-                  aria-label={`Jezyk: ${LANG_LABELS[l]}`}
+                  aria-label={`Język: ${LANG_LABELS[l]}`}
                 >
                   {LANG_LABELS[l]}
                 </Link>

@@ -322,6 +322,8 @@ function FormTab({
   timeEstimate: string;
   onClick: () => void;
 }) {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <button
       id={id}
@@ -329,34 +331,20 @@ function FormTab({
       aria-selected={isActive}
       aria-controls={panelId}
       onClick={onClick}
-      className="w-full text-left transition-all duration-200"
+      className="pcw-tab-btn w-full text-left transition-all duration-200"
       style={{
-        backgroundColor: isActive ? "var(--color-navy-900)" : "var(--color-cream)",
+        backgroundColor: isActive
+          ? "var(--color-navy-900)"
+          : hovered
+            ? "var(--color-sand-100)"
+            : "var(--color-cream)",
         borderLeft: isActive
           ? "4px solid var(--color-red-600)"
           : "4px solid transparent",
         cursor: "pointer",
-        outline: "none",
       }}
-      onMouseEnter={(e) => {
-        if (!isActive) {
-          (e.currentTarget as HTMLElement).style.backgroundColor =
-            "var(--color-sand-100)";
-        }
-      }}
-      onMouseLeave={(e) => {
-        if (!isActive) {
-          (e.currentTarget as HTMLElement).style.backgroundColor =
-            "var(--color-cream)";
-        }
-      }}
-      onFocus={(e) => {
-        (e.currentTarget as HTMLElement).style.outline = "2px solid var(--color-navy-700)";
-        (e.currentTarget as HTMLElement).style.outlineOffset = "-2px";
-      }}
-      onBlur={(e) => {
-        (e.currentTarget as HTMLElement).style.outline = "none";
-      }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-start sm:justify-between sm:gap-4 md:p-6 lg:p-8">
         <div className="flex items-center gap-3 min-w-0">

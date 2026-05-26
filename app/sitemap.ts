@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const dynamic = "force-static";
 
 const paths = ["/", "/konsultacje/", "/regulamin/", "/polityka-prywatnosci/"];
-const lastModified = new Date("2026-05-22");
+const lastModified = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const polishUrls = paths.map((path) => ({

@@ -49,7 +49,11 @@
       "Bash(Stop-Process -Force -ErrorAction SilentlyContinue)",
       "Bash(Write-Host \"Done\")",
       "PowerShell(Get-Process *)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(netstat -ano)",
+      "Bash(findstr \":3000\")",
+      "Bash(findstr \"LISTENING\")",
+      "PowerShell(taskkill *)"
     ]
   }
 }
