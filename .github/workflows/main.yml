@@ -1,0 +1,87 @@
+name: Deploy API to CyberFolks
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "mail-api/**"
+      - ".github/workflows/deploy-api.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: cyberfolks-api-production
+  cancel-in-progress: false
+
+jobs:
+  deploy-api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate API production config
+        run: |
+          test -n "${API_PATH}" || (echo "Missing API_PATH secret" && exit 1)
+        env:
+          API_PATH: ${{ secrets.API_PATH }}
+
+      - name: Upload API files
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "mail-api/*"
+          target: "${{ secrets.API_PATH }}/_incoming"
+          strip_components: 1
+          rm: true
+
+      - name: Install API dependencies and restart Passenger
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            set -e
+
+            cd ${{ secrets.API_PATH }}
+            if [ ! -d _incoming ]; then
+              echo "Missing _incoming API upload"
+              exit 1
+            fi
+
+            INSTALL_DEPS=1
+            if [ -d node_modules ] && [ -f package-lock.json ] && cmp -s package-lock.json _incoming/package-lock.json; then
+              INSTALL_DEPS=0
+            fi
+
+            find . -mindepth 1 -maxdepth 1 \
+              ! -name ".env" \
+              ! -name "node_modules" \
+              ! -name "tmp" \
+              ! -name "_incoming" \
+              -exec rm -rf {} +
+
+            cp -R _incoming/. .
+            rm -rf _incoming
+
+            if [ ! -f .env ]; then
+              echo "Missing API .env file in ${{ secrets.API_PATH }}"
+              exit 1
+            fi
+
+            if [ "$INSTALL_DEPS" = "1" ]; then
+              npm ci --omit=dev
+            else
+              echo "API dependencies unchanged"
+            fi
+
+            mkdir -p tmp
+            touch tmp/restart.txt
+
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] API deploy OK"
