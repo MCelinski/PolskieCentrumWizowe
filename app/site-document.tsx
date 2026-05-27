@@ -4,14 +4,14 @@ import LocaleProviders from "@/components/LocaleProviders";
 import { LANG_HTML, type Lang } from "@/lib/i18n";
 
 const playfair = Playfair_Display({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["500", "600", "700"],
   variable: "--font-playfair",
   display: "swap",
 });
 
 const manrope = Manrope({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-manrope",
   display: "swap",

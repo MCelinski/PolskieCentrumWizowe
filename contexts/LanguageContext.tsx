@@ -6,8 +6,6 @@ import { LANG_HTML, type Lang } from "@/lib/i18n";
 
 export type { Lang };
 
-const LANG_STORAGE_KEY = "pcw_lang";
-
 interface LanguageContextValue {
   lang: Lang;
   setLang: (l: Lang) => void;
@@ -28,7 +26,6 @@ export function LanguageProvider({
   const [lang, setLang] = useState<Lang>(initialLang);
 
   useEffect(() => {
-    localStorage.setItem(LANG_STORAGE_KEY, lang);
     document.documentElement.lang = LANG_HTML[lang];
   }, [lang]);
 
