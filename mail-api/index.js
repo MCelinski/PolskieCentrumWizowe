@@ -160,7 +160,7 @@ const yesNoLabels = {
 };
 
 // ─── Endpoint ─────────────────────────────────────────────────────────────────
-app.post("/contact", limiter, async (req, res) => {
+const contactHandler = async (req, res) => {
   const body = req.body || {};
 
   // Honeypot — _hp musi być pustym stringiem; brak pola = bezpośrednie żądanie
@@ -266,10 +266,14 @@ app.post("/contact", limiter, async (req, res) => {
     console.error("Błąd wysyłania maila:", err.message);
     return res.status(500).json({ success: false, error: "Nie udało się wysłać wiadomości. Spróbuj ponownie lub napisz do nas bezpośrednio." });
   }
-});
+};
+
+app.post("/contact", limiter, contactHandler);
+app.post("/api/contact", limiter, contactHandler);
 
 // ─── Health check ─────────────────────────────────────────────────────────────
 app.get("/health", (_req, res) => res.json({ status: "ok" }));
+app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
 
 app.listen(PORT, () => {
   console.log(`Mail API uruchomione na porcie ${PORT} (${process.env.NODE_ENV || "development"})`);

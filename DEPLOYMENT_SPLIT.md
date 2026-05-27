@@ -33,8 +33,8 @@ SSH_USER=twoj_login_ssh
 SSH_PRIVATE_KEY=<prywatny klucz deploy>
 
 FRONTEND_PATH=/home/twoj_login/domains/centrum-wizowe.pl/public_html
-API_PATH=/home/twoj_login/domains/centrum-wizowe.pl/public_html/api.centrum-wizowe.pl/mail-api
-NEXT_PUBLIC_API_URL=https://api.centrum-wizowe.pl
+API_PATH=/home/twoj_login/nodeapps/pcw-mail-api
+NEXT_PUBLIC_API_URL=https://centrum-wizowe.pl/api
 ```
 
 `NEXT_PUBLIC_API_URL` nie może mieć slash na końcu.
@@ -44,7 +44,7 @@ NEXT_PUBLIC_API_URL=https://api.centrum-wizowe.pl
 Tych wartości nie trzymaj w GitHub Secrets. Utwórz je na hostingu w:
 
 ```text
-/home/twoj_login/domains/centrum-wizowe.pl/public_html/api.centrum-wizowe.pl/mail-api/.env
+/home/twoj_login/nodeapps/pcw-mail-api/.env
 ```
 
 Minimalny plik:
@@ -59,9 +59,9 @@ SMTP_PASS=TWOJE_HASLO_DO_SKRZYNKI
 SMTP_FROM="Polskie Centrum Wizowe" <office@centrum-wizowe.pl>
 CONTACT_EMAIL_TO=office@centrum-wizowe.pl
 
-CORS_ORIGIN=https://www.centrum-wizowe.pl,https://centrum-wizowe.pl,http://localhost:3000
-SITE_URL=https://www.centrum-wizowe.pl
-LOGO_URL=https://www.centrum-wizowe.pl/logo-footer.svg
+CORS_ORIGIN=https://centrum-wizowe.pl,https://www.centrum-wizowe.pl,http://localhost:3000
+SITE_URL=https://centrum-wizowe.pl
+LOGO_URL=https://centrum-wizowe.pl/logo-footer.svg
 
 NODE_ENV=production
 RATE_LIMIT_WINDOW_MS=900000
@@ -75,15 +75,15 @@ Nie ustawiaj `PORT` na produkcji, jeśli Passenger sam go wstrzykuje. Jeśli pan
 Po utworzeniu pliku:
 
 ```bash
-chmod 600 /home/twoj_login/domains/centrum-wizowe.pl/public_html/api.centrum-wizowe.pl/mail-api/.env
+chmod 600 /home/twoj_login/nodeapps/pcw-mail-api/.env
 ```
 
 ## Konfiguracja DirectAdmin Node.js
 
 Dla subdomeny API ustaw jedną aplikację Node.js:
 
-- Application root: `/home/twoj_login/domains/centrum-wizowe.pl/public_html/api.centrum-wizowe.pl/mail-api`
-- Application URL: `api.centrum-wizowe.pl`
+- Application root: `/home/twoj_login/nodeapps/pcw-mail-api`
+- Application URL: `centrum-wizowe.pl/api`
 - Startup file: `index.js`
 - Environment: `production`
 
