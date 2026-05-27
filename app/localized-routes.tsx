@@ -9,6 +9,7 @@ import PrivateClient from "@/components/sections/PrivateClient";
 import ProcessSection from "@/components/sections/ProcessSection";
 import TrustMetrics from "@/components/sections/TrustMetrics";
 import Testimonials from "@/components/sections/Testimonials";
+import ClientLogos from "@/components/sections/ClientLogos";
 import Contact from "@/components/sections/Contact";
 import KonsultacjeContent from "@/components/sections/KonsultacjeContent";
 import LegalPageContent from "@/components/sections/LegalPageContent";
@@ -108,6 +109,7 @@ export function LocalizedHomePage() {
         <ProcessSection />
         <TrustMetrics />
         <Testimonials />
+        <ClientLogos />
         <Contact />
       </main>
       <Footer />

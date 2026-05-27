@@ -255,7 +255,22 @@
     },
     "client_logos": {
       "section_label": "They trusted us",
-      "items": []
+      "items": [
+        { "src": "/images/logos/afa-agency.webp",  "name": "AFA Agency" },
+        { "src": "/images/logos/atlas-media.webp", "name": "Atlas Media Dom Mediowy" },
+        { "src": "/images/logos/chili-models.webp","name": "Chili Models" },
+        { "src": "/images/logos/habex.webp",       "name": "Habex" },
+        { "src": "/images/logos/mag.webp",         "name": "Monaco Fine Art Gallery" },
+        { "src": "/images/logos/nuorder.webp",     "name": "NuOrder" },
+        { "src": "/images/logos/packaging.webp",   "name": "Reusable Packaging Solutions" },
+        { "src": "/images/logos/u2d2-corp.webp",   "name": "U2D2 Corp" },
+        { "src": "/images/logos/swiss-tree.svg",  "name": "Swiss Tree" },
+        { "src": "/images/logos/phoria.webp",      "name": "phoria" },
+        { "src": "/images/logos/ib.webp",          "name": "Imperial Beauty" },
+        { "src": "/images/logos/woodeczka.webp",  "name": "Woodeczka" },
+        { "src": "/images/logos/wiw.webp",         "name": "WIW" },
+        { "src": "/images/logos/pasimito.webp",    "name": "Pasimito" }
+      ]
     },
     "contact": {
       "section_label": "",

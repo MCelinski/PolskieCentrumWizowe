@@ -1,69 +1,65 @@
 "use client";
 
+import Image from "next/image";
 import { useLangContent } from "@/contexts/LanguageContext";
+
+type LogoItem = { src: string; name: string };
 
 export default function ClientLogos() {
   const content = useLangContent();
   const { client_logos } = content.home;
-
-  type LogoItem = { src: string; name: string };
   const items = client_logos.items as unknown as LogoItem[];
 
-  if (!items || items.length === 0) {
-    return null;
-  }
+  if (!items || items.length === 0) return null;
 
+  // Duplicate the list so the seamless infinite scroll works
   const doubled = [...items, ...items];
 
   return (
-    <div
-      className="py-10 border-t border-b overflow-hidden"
-      style={{
-        backgroundColor: "var(--color-sand-100)",
-        borderColor: "var(--color-sand-300)",
-      }}
+    <section
+      className="py-12 bg-white border-t border-b"
+      style={{ borderColor: "var(--color-sand-200)" }}
       aria-label={client_logos.section_label}
     >
-      <div className="container-editorial mb-6">
+      {/* ── Section eyebrow ─────────────────────────────────────────────── */}
+      <div className="container-editorial mb-8 flex items-center gap-4">
+        <span
+          className="flex-1 h-px"
+          style={{ backgroundColor: "var(--color-sand-300)" }}
+          aria-hidden="true"
+        />
         <p
-          className="font-sans text-xs font-semibold uppercase tracking-[0.16em]"
+          className="font-sans text-[11px] font-semibold uppercase tracking-[0.2em] whitespace-nowrap"
           style={{ color: "var(--color-sand-500)" }}
         >
           {client_logos.section_label}
         </p>
+        <span
+          className="flex-1 h-px"
+          style={{ backgroundColor: "var(--color-sand-300)" }}
+          aria-hidden="true"
+        />
       </div>
 
-      <div className="relative">
-        <div
-          className="flex gap-16 items-center"
-          style={{
-            animation: "logos-scroll 32s linear infinite",
-            width: "max-content",
-          }}
-          aria-hidden="true"
-        >
-          {doubled.map((item: LogoItem, i: number) => (
-            <div
-              key={i}
-              className="flex-shrink-0 h-10 flex items-center"
-              style={{ filter: "grayscale(1)", opacity: 0.55 }}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={item.src} alt={item.name} className="max-h-10 w-auto" />
+      {/* ── Scrolling track ─────────────────────────────────────────────── */}
+      <div className="logos-marquee-wrap" aria-hidden="true">
+        <div className="logos-marquee-track">
+          {doubled.map((item, i) => (
+            <div key={i} className="logos-logo-item">
+              <Image
+                src={item.src}
+                alt={item.name}
+                width={160}
+                height={44}
+                className="h-11 object-contain"
+                style={{ width: "auto" }}
+                loading="lazy"
+                draggable={false}
+              />
             </div>
           ))}
         </div>
       </div>
-
-      <style>{`
-        @keyframes logos-scroll {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @media (prefers-reduced-motion: reduce) {
-          [style*="logos-scroll"] { animation: none; }
-        }
-      `}</style>
-    </div>
+    </section>
   );
 }
