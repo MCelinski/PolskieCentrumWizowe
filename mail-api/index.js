@@ -263,7 +263,13 @@ const contactHandler = async (req, res) => {
 
     return res.json({ success: true });
   } catch (err) {
-    console.error("Błąd wysyłania maila:", err.message);
+    console.error("Błąd wysyłania maila:", {
+      message: err.message,
+      code: err.code,
+      command: err.command,
+      responseCode: err.responseCode,
+      response: err.response,
+    });
     return res.status(500).json({ success: false, error: "Nie udało się wysłać wiadomości. Spróbuj ponownie lub napisz do nas bezpośrednio." });
   }
 };
