@@ -181,9 +181,6 @@ export default function TrustMetrics() {
             }}
           >
             <div>
-              <p className="section-eyebrow section-eyebrow-light mb-5">
-                {trust_metrics.section_label}
-              </p>
               <div className="accent-rule mb-6" aria-hidden="true" />
               <h2
                 id="trust-heading"
@@ -200,7 +197,7 @@ export default function TrustMetrics() {
             </div>
 
             <div
-              className="mt-8 pt-5 border-t animate-fade-up"
+              className="hidden"
               style={{
                 borderColor: "rgba(225,233,243,0.1)",
                 animationDelay: "120ms",

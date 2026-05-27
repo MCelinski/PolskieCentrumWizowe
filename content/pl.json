@@ -7,16 +7,16 @@
       { "label": "Private Client", "href": "/#private-client" },
       { "label": "Kontakt", "href": "/#kontakt" }
     ],
-    "cta": "Inicjuj kontakt"
+    "cta": "Umów konsultację"
   },
   "home": {
     "hero": {
-      "eyebrow": "DORADZTWO MIGRACYJNE I ADMINISTRACYJNE",
-      "headline": "Postępowania wizowe i migracyjne. Prowadzone do skutku.",
-      "subheadline": "Reprezentujemy klientów indywidualnych i korporacyjnych w procedurach legalizacji pobytu, zatrudnienia oraz uzyskania obywatelstwa polskiego. Każda sprawa — jeden dedykowany zespół, jedna odpowiedzialność, jedno zakończenie.",
-      "cta_primary": { "label": "Inicjuj kontakt", "href": "/konsultacje" },
-      "cta_secondary": { "label": "Zakres usług", "href": "/#uslugi" },
-      "microcopy": "Pierwsza rozmowa — bezpłatna, do 30 minut, bez zobowiązań."
+      "eyebrow": "DORADZTWO MIGRACYJNE I GOSPODARCZE",
+      "headline": "Strategiczne doradztwo migracyjne dla klientów indywidualnych i korporacyjnych.",
+      "subheadline": "Reprezentujemy klientów indywidualnych, inwestorów oraz przedsiębiorstwa w sprawach legalizacji pobytu, obywatelstwa oraz relokacji do Polski. Łączymy ekspertyzę prawną z doradztwem biznesowym, zapewniając najwyższy standard obsługi, pełną poufność oraz strategiczne zarządzanie całym procesem.",
+      "cta_primary": { "label": "Umów konsultację", "href": "/konsultacje" },
+      "cta_secondary": { "label": "Zakres doradztwa", "href": "/#uslugi" },
+      "microcopy": "Poufna analiza sytuacji prawnej i biznesowej."
     },
     "trust_bar": {
       "label": "Prowadzimy postępowania przed:",
@@ -39,15 +39,21 @@
         "Specjalizujemy się w sprawach o najwyższym stopniu złożoności: wielojurysdykcyjnych, łączących procedury migracyjne z międzynarodowym prawem korporacyjnym oraz wymagających reprezentacji przed kluczowymi organami państwowymi i służbami kontrolnymi.",
         "Nasz fundament to bezwzględna dyskrecja, klarowność intencji i pełna odpowiedzialność procesowa. Przyjmujemy wyłącznie ograniczoną liczbę spraw rocznie, gwarantując naszym Klientom absolutny priorytet."
       ],
-      "highlight": "80% klientów z polecenia",
+      "highlight": "85% klientów z rekomendacji",
       "highlight_sublabel": "Najlepsza miara naszej rzetelności"
     },
-    "slogan": "Doradztwo wykraczające poza wniosek.",
     "services": {
       "section_label": "Usługi",
       "headline": "Pełen zakres postępowań migracyjnych",
       "subheadline": "Od wiz i zezwoleń na pobyt po obywatelstwo i odwołania — prowadzimy każdy etap postępowania.",
       "items": [
+        {
+          "id": "doradztwo-gospodarcze-korporacyjne",
+          "icon": "building",
+          "title": "Doradztwo gospodarcze i korporacyjne",
+          "tags": ["Relokacja biznesu", "Struktury korporacyjne", "Corporate governance"],
+          "description": "Strategiczne wsparcie dla przedsiębiorców, kadry zarządzającej oraz międzynarodowych podmiotów rozwijających działalność w Polsce. Doradzamy w zakresie tworzenia i reorganizacji struktur biznesowych, relokacji działalności, rejestracji spółek oraz bieżącego ładu korporacyjnego. Łączymy kompetencje prawa handlowego i migracyjnego, zapewniając klientom spójne zarządzanie procesami administracyjnymi, operacyjnymi i biznesowymi. Fundamentem naszej pracy są dyskrecja, bezpieczeństwo operacyjne oraz indywidualne podejście do każdej sprawy."
+        },
         {
           "id": "wizy-pracownicze",
           "icon": "briefcase",
@@ -114,20 +120,19 @@
       ]
     },
     "private_client": {
-      "section_label": "Private Client",
+      "section_label": "Globalny kapitał. Lokalna precyzja.",
       "headline": "Private Client",
       "subheadline": "Indywidualna obsługa strategiczna",
-      "description": "Dedykowany ekosystem prawny dla wymagających kapitałowo. Linia Private Client powstała dla Klientów, których status prawny, biznesowy i osobisty wymaga holistycznej koordynacji wykraczającej poza standardowe ramy proceduralne. Obsługujemy przedsiębiorców, inwestorów, kadrę zarządzającą szczebla C-suite oraz family offices zarządzające złożonym majątkiem w wielu jurysdykcjach. Każda relacja objęta jest nadzorem indywidualnego Opiekuna Prawnego, który koordynuje pracą konsorcjum ekspertów — od prawa migracyjnego i podatkowego, po strukturyzację korporacyjną.",
+      "description": "Linia Private Client została stworzona z myślą o klientach wymagających indywidualnego podejścia, podwyższonego poziomu poufności oraz długoterminowego wsparcia w sprawach migracyjnych, administracyjnych i biznesowych. Obsługujemy przedsiębiorców, inwestorów, kadrę zarządzającą oraz family offices zarządzające złożonym majątkiem międzynarodowym.",
       "scope": [
-        "Relokację rodzinną i osobistą: pełna koordynacja logistyczna, w tym zabezpieczenie ciągłości edukacyjnej i prywatnych zasobów mieszkaniowych.",
-        "Strukturyzację obecności biznesowej: analiza i implementacja optymalnych form prawnych dla kapitału zagranicznego w Polsce.",
-        "Konsolidację międzynarodową: płynna współpraca z zagranicznymi doradcami Klienta — bankierskimi, prawnymi i podatkowymi.",
-        "Prewencję i ochronę prawną: bieżąca asysta w sprawach administracyjnych, kontrolnych i kryzysowych.",
-        "Architekturę statusu: długofalowe planowanie pozycji prawnej — od rezydentury po obywatelstwo."
+        "Model współpracy oparty jest na dedykowanym partnerze prowadzącym (Single Point of Contact), odpowiedzialnym za koordynację całego procesu oraz bieżącą współpracę z klientem i jego doradcami.",
+        "Zapewniamy kompleksowe wsparcie w zakresie relokacji do Polski, legalizacji pobytu, ochrony interesów rodzinnych oraz organizacji aspektów administracyjnych związanych z funkcjonowaniem klientów prywatnych i ich działalności biznesowej.",
+        "W wybranych sprawach współpracujemy również z zagranicznymi kancelariami, doradcami podatkowymi oraz partnerami korporacyjnymi, zapewniając spójne zarządzanie procesami obejmującymi wiele jurysdykcji.",
+        "Fundamentem tego modelu współpracy są dyskrecja, ograniczona liczba prowadzonych projektów oraz bezpośredni dostęp do zespołu odpowiedzialnego za sprawę."
       ],
-      "operating_mode": "Tryb operacyjny: bezwzględna poufność, pojedynczy punkt kontaktu (single point of contact), dostępność 24/7/365. Praca oparta na metodologii projektowej, gwarantująca przewidywalność kamieni milowych.",
-      "engagement_note": "Współpraca z linią Private Client ma charakter elitarny. Warunki zaangażowania oraz struktura honorariów są definiowane indywidualnie po przeprowadzeniu wstępnego audytu intencji.",
-      "cta": { "label": "Inicjuj kontakt", "href": "/konsultacje" }
+      "operating_mode": "",
+      "engagement_note": "Warunki współpracy oraz struktura zaangażowania ustalane są indywidualnie, po wstępnej analizie potrzeb i założeń klienta.",
+      "cta": { "label": "Umów konsultację", "href": "/konsultacje" }
     },
     "process": {
       "section_label": "Jak pracujemy",
@@ -156,139 +161,115 @@
       ]
     },
     "trust_metrics": {
-      "section_label": "Nasze liczby",
-      "headline": "Doświadczenie, które mówi samo za siebie",
+      "section_label": "",
+      "headline": "Precyzja mierzona wynikami.",
       "items": [
-        { "value": "500+", "label": "Spraw zakończonych sukcesem", "sublabel": "z ponad 40 krajów" },
-        { "value": "95%", "label": "Wskaźnik skuteczności", "sublabel": "pozytywnych decyzji" },
-        { "value": "10+", "label": "Lat doświadczenia", "sublabel": "w prawie migracyjnym" },
-        { "value": "80%", "label": "Klientów z polecenia", "sublabel": "najlepsza rekomendacja" }
+        { "value": "500+", "label": "Klientów międzynarodowych", "sublabel": "z ponad 40 jurysdykcji" },
+        { "value": "93%", "label": "Pozytywnych rozstrzygnięć" },
+        { "value": "10+", "label": "Lat praktyki" },
+        { "value": "85%", "label": "Klientów z rekomendacji" }
       ]
     },
-"testimonials": {
-  "section_label": "Doświadczenia klientów",
-  "headline": "Co mówią o nas klienci",
-  "items": [
-    {
-      "id": 1,
-      "quote": "Przeprowadzili nas przez relokację siedmiu osób z trzech krajów w ciągu jednego kwartału. To, co mi zostało w pamięci, to fakt, że nigdy nie musiałem pytać „co dalej”. Każdego tygodnia otrzymywałem zaktualizowany status. Dla działu HR, który prowadzi pięć innych projektów równolegle, to ma realną wartość.",
-      "author": "T. W.",
-      "role": "CFO",
-      "entity": "producent komponentów przemysłowych"
+    "testimonials": {
+      "section_label": "Doświadczenia klientów",
+      "headline": "Doświadczenia klientów",
+      "items": [
+        {
+          "id": 1,
+          "quote": "The Blue Card process is extremely formalized, especially for technical roles. The team handled most of the communication with the authorities and kept the process predictable. That was probably the biggest advantage.",
+          "author": "R. S.",
+          "role": "Engineering Manager",
+          "entity": "India"
+        },
+        {
+          "id": 2,
+          "quote": "In logistics, delays create operational problems very quickly. We needed to relocate several managers and dispatch coordinators to Poland within a limited timeframe. The communication was direct, realistic and business-oriented.",
+          "author": "Operations Director",
+          "role": "Transport & Logistics Sector",
+          "entity": "Pakistan"
+        },
+        {
+          "id": 3,
+          "quote": "Ми перевозили до Польщі частину команди після проблем із документами в іншій країні ЄС. Тут процес був значно більш структурований. Не було постійного хаосу чи зміни позиції кожні два тижні. Просто нормальна, професійна координація.",
+          "author": "Андрій K.",
+          "role": "COO",
+          "entity": "IT-компанія, Україна"
+        },
+        {
+          "id": 4,
+          "quote": "На першій консультації мені одразу сказали, що моя справа не така проста, як мені раніше обіцяли інші юристи. Це було неприємно чути, але принаймні чесно. У результаті саме такий підхід і допоміг уникнути відмови.",
+          "author": "Юлія M.",
+          "role": "приватний клієнт",
+          "entity": "Київ"
+        },
+        {
+          "id": 5,
+          "quote": "Я більше року намагався самостійно вирішити питання громадянства. Проблема виявилася значно меншою, ніж я думав, але потрібно було правильно зібрати і подати документи. Після аудиту справи процес нарешті зрушив.",
+          "author": "Тарас D.",
+          "role": "приватний клієнт",
+          "entity": "Львів"
+        },
+        {
+          "id": 6,
+          "quote": "Для меня критичным вопросом была конфиденциальность. После подписания NDA коммуникация была сведена к необходимому минимуму. Никакой лишней публичности, всё спокойно и профессионально.",
+          "author": "Частный клиент",
+          "role": "Москва",
+          "entity": ""
+        },
+        {
+          "id": 7,
+          "quote": "Przy większej liczbie cudzoziemców problemem nie jest sam urząd, tylko koordynacja całego procesu wewnątrz firmy. Zleciliśmy im przejęcie części spraw i od tego momentu HR przestał gasić pożary związane z legalizacją pobytu.",
+          "author": "Dyrektor HR",
+          "role": "sektor przemysłowy",
+          "entity": "Polska"
+        },
+        {
+          "id": 8,
+          "quote": "Cross-border residency matters are rarely simple when multiple jurisdictions are involved. What we appreciated most was the structured communication and the ability to coordinate legal and administrative aspects without unnecessary escalation.",
+          "author": "Managing Partner",
+          "role": "Family Office",
+          "entity": "Switzerland"
+        },
+        {
+          "id": 9,
+          "quote": "I started working with the Warsaw team several years ago during my temporary residence process. Today they also manage permanent residence matters for members of my family. The continuity of the relationship is something I value highly.",
+          "author": "Private Client",
+          "role": "South Korea",
+          "entity": ""
+        },
+        {
+          "id": 10,
+          "quote": "Opening a business in another country is always more complicated than expected. What I appreciated here was the clarity. They explained early which parts of the process were straightforward and which ones could realistically take longer.",
+          "author": "Founder",
+          "role": "E-commerce Sector",
+          "entity": "Nigeria"
+        },
+        {
+          "id": 11,
+          "quote": "Player mobility across different European jurisdictions involves far more administration than most people realize. We needed support not only with residency matters, but also with coordinating timelines around contracts, travel and federation requirements. The process was handled discreetly and with good operational discipline.",
+          "author": "Football Agent",
+          "role": "Sports Management Sector",
+          "entity": "Ghana"
+        }
+      ]
     },
-    {
-      "id": 2,
-      "quote": "Sprawa o uznanie za obywatela polskiego, którą wcześniej dwukrotnie próbowałem prowadzić samodzielnie. Pani mecenas zwróciła uwagę na trzy elementy, których wcześniej nikt mi nie wskazał. Decyzja pozytywna w czternastym miesiącu. Bez ich precyzji prawdopodobnie nadal bym próbował.",
-      "author": "Karol M.",
-      "role": "Lublin",
-      "entity": ""
-    },
-    {
-      "id": 3,
-      "quote": "Sprawa wymagająca koordynacji z naszym biurem podatkowym w Zurychu, kancelarią imigracyjną w Londynie oraz zespołem w Warszawie. Polecam bez zastrzeżeń.",
-      "author": "Partner zarządzający",
-      "role": "family office",
-      "entity": "Szwajcaria"
-    },
-    {
-      "id": 4,
-      "quote": "Pierwsza sprawa, w której nikt mi niczego nie obiecywał na pierwszej rozmowie. Powiedzieli mi dokładnie, jakie są ryzyka, co możemy zrobić i jak długo to potrwa. Dla mnie to był moment, w którym poczułam, że trafiłam we właściwe miejsce.",
-      "author": "Yulia K.",
-      "role": "Wrocław",
-      "entity": ""
-    },
-    {
-      "id": 5,
-      "quote": "Po dwudziestu latach prowadzenia działalności we Włoszech zdecydowałem się przenieść centrum aktywności do Polski. Procedura prowadzona kompleksowo, w komunikacji wyłącznie po włosku z dedykowaną osobą z zespołu. Najważniejsze: nikt nie tłumaczył mi, że „tak się robi w Polsce”. Wyjaśnili, jak my to zrobimy w mojej konkretnej sprawie.",
-      "author": "A. B.",
-      "role": "założyciel grupy hotelowej",
-      "entity": "Włochy"
-    },
-    {
-      "id": 6,
-      "quote": "Niebieska Karta UE w siedem tygodni. Pracodawca powiedział, że to najszybsze tempo, jakie widział.",
-      "author": "R. P.",
-      "role": "dyrektor inżynieryjny",
-      "entity": "Indie"
-    },
-    {
-      "id": 7,
-      "quote": "Po sprzedaży biznesu w Azji szukałam neutralnej, stabilnej jurysdykcji europejskiej. Zespół pomógł mi zrozumieć, dlaczego Polska — a nie Portugalia ani Malta — będzie sensownym wyborem na najbliższą dekadę. To była konsultacja, o której będę pamiętać.",
-      "author": "S. L.",
-      "role": "inwestorka prywatna",
-      "entity": "Singapur"
-    },
-    {
-      "id": 8,
-      "quote": "Sprawa wrażliwa, wymagająca pełnej dyskrecji. Wszystkie warunki, o które prosiłam, zostały zachowane. Nie mam co dodać, poza tym że poleciłam dalej.",
-      "author": "Klientka indywidualna",
-      "role": "Białoruś",
-      "entity": ""
-    },
-    {
-      "id": 9,
-      "quote": "Przenieśliśmy z Frankfurtu do Warszawy trzech członków zarządu wraz z rodzinami — dziewięć osób, w tym dzieci w wieku szkolnym. Zespół koordynował nie tylko procedury wizowe, ale również doradzał w sprawach szkół międzynarodowych i nieruchomości. Bez ich pracy projekt przeciągnąłby się o pół roku.",
-      "author": "H. K.",
-      "role": "CEO",
-      "entity": "grupa farmaceutyczna, Niemcy"
-    },
-    {
-      "id": 10,
-      "quote": "Współpracujemy regularnie w sprawach klientów wymagających koordynacji z amerykańskim systemem imigracyjnym. Jakość pracy porównywalna z biurami, z którymi pracujemy w Londynie i Wiedniu.",
-      "author": "Partner",
-      "role": "kancelaria imigracyjna",
-      "entity": "Stany Zjednoczone"
-    },
-    {
-      "id": 11,
-      "quote": "Sprawa trudna — bardzo trudna. Dostałem to, na co czekałem dwadzieścia siedem lat.",
-      "author": "Y. D.",
-      "role": "klient indywidualny",
-      "entity": "Turcja"
-    },
-    {
-      "id": 12,
-      "quote": "Polska jest dla naszego funduszu strategiczna. Zespół przeprowadził nas przez procesy migracyjne i połączył je ze strukturą holdingową w Luksemburgu. Wartość dodana była nieoczywista — i istotna.",
-      "author": "Założyciel",
-      "role": "fundusz rodzinny",
-      "entity": "Zjednoczone Emiraty Arabskie"
-    },
-    {
-      "id": 13,
-      "quote": "Czterdziestu pracowników produkcji w jednym kwartale. Bez jednej odmownej decyzji.",
-      "author": "Dyrektor HR",
-      "role": "producent elektroniki",
-      "entity": "Wietnam"
-    },
-    {
-      "id": 14,
-      "quote": "Polskie procedury migracyjne nie są intuicyjne dla osoby przyzwyczajonej do systemu portugalskojęzycznego. Wyjaśniali wszystko cierpliwie, dwukrotnie. Decyzja pozytywna.",
-      "author": "M. S.",
-      "role": "architekt",
-      "entity": "Brazylia"
-    },
-    {
-      "id": 15,
-      "quote": "Trzy lata po pierwszej konsultacji — ten sam zespół prowadzi moje postępowanie o pobyt stały. Ciągłość obsługi to coś, czego nie da się kupić po fakcie.",
-      "author": "J. K.",
-      "role": "klient indywidualny",
-      "entity": "Korea Południowa"
-    }
-  ]
-},
     "client_logos": {
       "section_label": "Zaufali nam",
       "items": []
     },
     "contact": {
-      "section_label": "Kontakt",
-      "headline": "Zacznijmy rozmowę",
-      "subheadline": "Skontaktuj się z nami i dowiedz się, jak możemy Ci pomóc.",
-      "email": "kontakt@pcw.pl",
-      "phone": "+48 22 123 45 67",
+      "section_label": "",
+      "headline": "Kontakt",
+      "subheadline": "",
+      "labels": {
+        "address": "Adres siedziby",
+        "email": "E-mail",
+        "website": "Strona internetowa"
+      },
+      "email": "office@centrum-wizowe.pl",
       "address": "ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
-      "hours": "Pon–Pt: 9:00–17:00",
-      "cta": { "label": "Inicjuj kontakt", "href": "/konsultacje" },
+      "website": "www.centrum-wizowe.pl",
+      "cta": { "label": "Umów konsultację", "href": "/konsultacje" },
       "cta_panel_title": "Umów pierwszą rozmowę",
       "cta_assurance": "Pierwsza rozmowa bezpłatna · Odpowiedź w ciągu 24 godzin"
     }
@@ -447,9 +428,9 @@
       }
     ],
     "contact": {
-      "email": "kontakt@pcw.pl",
-      "phone": "+48 22 123 45 67",
-      "address": "ul. Górnośląska 6 lok. 1, 00-444 Warszawa"
+      "email": "office@centrum-wizowe.pl",
+      "address": "ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
+      "website": "www.centrum-wizowe.pl"
     },
     "registration": {
       "label": "Dane rejestrowe",
@@ -486,7 +467,7 @@
           "paragraphs": [
             "1. Niniejszy Regulamin określa zasady i warunki świadczenia usług doradczych przez Polskie Centrum Wizowe z siedzibą przy ul. Górnośląskiej 6 lok. 1, 00-444 Warszawa (dalej: Centrum) na rzecz Klientów.",
             "2. Polskie Centrum Wizowe jest prywatnym podmiotem doradczym specjalizującym się w prawie migracyjnym i administracyjnym. Centrum nie jest organem administracji państwowej Rzeczypospolitej Polskiej, jednostką sektora finansów publicznych ani podmiotem powiązanym organizacyjnie lub kapitałowo ze Skarbem Państwa.",
-            "3. Kontakt z Centrum: e-mail: kontakt@pcw.pl, tel.: +48 22 123 45 67, adres: ul. Górnośląska 6 lok. 1, 00-444 Warszawa.",
+            "3. Kontakt z Centrum: e-mail: office@centrum-wizowe.pl, adres: ul. Górnośląska 6 lok. 1, 00-444 Warszawa.",
             "4. Klientem jest osoba fizyczna, prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej, która zawarła z Centrum umowę o świadczenie usług lub złożyła zlecenie.",
             "5. Korzystanie z usług Centrum jest równoznaczne z akceptacją niniejszego Regulaminu."
           ]
@@ -559,7 +540,7 @@
         {
           "title": "§ 10. Reklamacje",
           "paragraphs": [
-            "1. Reklamacje należy składać pisemnie na adres siedziby Centrum lub drogą elektroniczną na adres kontakt@pcw.pl.",
+            "1. Reklamacje należy składać pisemnie na adres siedziby Centrum lub drogą elektroniczną na adres office@centrum-wizowe.pl.",
             "2. Reklamacja powinna zawierać: dane identyfikacyjne Klienta, opis zastrzeżeń z datą zdarzenia oraz oczekiwany sposób rozwiązania.",
             "3. Centrum rozpatruje reklamację w terminie 14 dni roboczych od jej otrzymania."
           ]
@@ -592,7 +573,7 @@
           "title": "1. Administrator danych osobowych",
           "paragraphs": [
             "Administratorem Pani/Pana danych osobowych jest Polskie Centrum Wizowe z siedzibą przy ul. Górnośląskiej 6 lok. 1, 00-444 Warszawa (dalej: Administrator).",
-            "W sprawach dotyczących ochrony danych osobowych prosimy o kontakt pod adresem e-mail: kontakt@pcw.pl lub pisemnie na adres siedziby."
+            "W sprawach dotyczących ochrony danych osobowych prosimy o kontakt pod adresem e-mail: office@centrum-wizowe.pl lub pisemnie na adres siedziby."
           ]
         },
         {
@@ -683,7 +664,7 @@
           "title": "11. Kontakt",
           "paragraphs": [
             "W sprawach dotyczących ochrony danych osobowych:",
-            "E-mail: kontakt@pcw.pl",
+            "E-mail: office@centrum-wizowe.pl",
             "Adres: ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
             "Administrator dokłada starań, aby odpowiadać na zapytania w zakresie danych osobowych w terminie 30 dni od ich otrzymania."
           ]

@@ -7,16 +7,16 @@
       { "label": "Private Client", "href": "/#private-client" },
       { "label": "Contact", "href": "/#kontakt" }
     ],
-    "cta": "Initiate contact"
+    "cta": "Schedule a consultation"
   },
   "home": {
     "hero": {
-      "eyebrow": "IMMIGRATION AND ADMINISTRATIVE ADVISORY",
-      "headline": "Immigration proceedings. Conducted to conclusion.",
-      "subheadline": "We represent individual and corporate clients in proceedings for visas, residence permits, work authorization and Polish citizenship. One dedicated team per matter. One point of accountability. One outcome.",
-      "cta_primary": { "label": "Confidential consultation", "href": "/konsultacje" },
-      "cta_secondary": { "label": "View services", "href": "/#uslugi" },
-      "microcopy": "Initial conversation — complimentary, up to 30 minutes, no commitment."
+      "eyebrow": "IMMIGRATION AND CORPORATE ADVISORY",
+      "headline": "Strategic immigration advisory for private and corporate clients.",
+      "subheadline": "We represent private clients, investors and businesses in matters of residence legalization, citizenship and relocation to Poland. We combine legal expertise with business advisory, ensuring the highest standard of service, full confidentiality and strategic management of the entire process.",
+      "cta_primary": { "label": "Schedule a consultation", "href": "/konsultacje" },
+      "cta_secondary": { "label": "Scope of advisory", "href": "/#uslugi" },
+      "microcopy": "Confidential review of legal and business position."
     },
     "trust_bar": {
       "label": "Proceedings before:",
@@ -39,15 +39,21 @@
         "Our practice focuses on matters of the highest degree of complexity: multi-jurisdictional, combining immigration procedures with international corporate law, and requiring representation before key state authorities and inspection services.",
         "Our foundation is absolute discretion, clarity of intent and full procedural accountability. We accept only a limited number of matters per year, guaranteeing our Clients absolute priority."
       ],
-      "highlight": "80% clients by referral",
+      "highlight": "85% clients by recommendation",
       "highlight_sublabel": "The best measure of our reliability"
     },
-    "slogan": "Counsel beyond the application.",
     "services": {
       "section_label": "Services",
       "headline": "Full scope of immigration proceedings",
       "subheadline": "From visas and residence permits to citizenship and appeals — we handle every stage of the proceedings.",
       "items": [
+        {
+          "id": "business-corporate-advisory",
+          "icon": "building",
+          "title": "Business and corporate advisory",
+          "tags": ["Business relocation", "Corporate structures", "Corporate governance"],
+          "description": "Strategic support for entrepreneurs, executives and international entities developing their activities in Poland. We advise on the creation and reorganization of business structures, relocation of operations, registration of companies and ongoing corporate governance. We combine expertise in commercial and immigration law, ensuring clients coherent management of administrative, operational and business processes. The foundation of our work is discretion, operational security and an individual approach to every matter."
+        },
         {
           "id": "wizy-pracownicze",
           "icon": "briefcase",
@@ -114,20 +120,19 @@
       ]
     },
     "private_client": {
-      "section_label": "Private Client",
+      "section_label": "Global capital. Local precision.",
       "headline": "Private Client",
       "subheadline": "Individual strategic advisory",
-      "description": "A dedicated legal ecosystem for clients of substantial means. The Private Client line was established for Clients whose legal, business and personal status requires holistic coordination beyond standard procedural frameworks. We serve entrepreneurs, investors, C-suite executives and family offices managing complex wealth across multiple jurisdictions. Every relationship is overseen by an individual Relationship Counsel, who coordinates the work of a consortium of experts — from immigration and tax law to corporate structuring.",
+      "description": "The Private Client line was created for clients requiring an individual approach, an elevated level of confidentiality and long-term support in immigration, administrative and business matters. We serve entrepreneurs, investors, executives and family offices managing complex international wealth.",
       "scope": [
-        "Family and personal relocation: full logistical coordination, including continuity of education and private residential arrangements.",
-        "Structuring of business presence: analysis and implementation of optimal legal forms for foreign capital in Poland.",
-        "International consolidation: seamless cooperation with the Client's foreign advisors — banking, legal and tax.",
-        "Prevention and legal protection: ongoing assistance in administrative, inspection and crisis matters.",
-        "Status architecture: long-term planning of legal positioning — from residence to citizenship."
+        "The engagement model is based on a dedicated lead partner (Single Point of Contact), responsible for the coordination of the entire process and ongoing cooperation with the client and their advisors.",
+        "We provide comprehensive support in relocation to Poland, residence legalization, protection of family interests and the organization of administrative aspects related to the functioning of private clients and their business activities.",
+        "In selected matters, we also cooperate with foreign law firms, tax advisors and corporate partners, ensuring coherent management of processes spanning multiple jurisdictions.",
+        "The foundation of this engagement model is discretion, a limited number of matters undertaken and direct access to the team responsible for the case."
       ],
-      "operating_mode": "Operating mode: absolute confidentiality, a single point of contact, availability 24/7/365. Work is conducted under project methodology, ensuring the predictability of milestones.",
-      "engagement_note": "Engagement within the Private Client line is of an elite character. The terms of engagement and fee structure are defined individually following an initial audit of intent.",
-      "cta": { "label": "Initiate contact", "href": "/konsultacje" }
+      "operating_mode": "",
+      "engagement_note": "The terms of engagement and structure of fees are determined individually, following an initial analysis of the client's needs and objectives.",
+      "cta": { "label": "Schedule a consultation", "href": "/konsultacje" }
     },
     "process": {
       "section_label": "How we work",
@@ -156,34 +161,96 @@
       ]
     },
     "trust_metrics": {
-      "section_label": "Our figures",
-      "headline": "Experience that speaks for itself",
+      "section_label": "",
+      "headline": "Precision measured by outcomes.",
       "items": [
-        { "value": "500+", "label": "Cases completed successfully", "sublabel": "from over 40 countries" },
-        { "value": "95%", "label": "Success rate", "sublabel": "positive decisions" },
-        { "value": "10+", "label": "Years of experience", "sublabel": "in immigration law" },
-        { "value": "80%", "label": "Clients by referral", "sublabel": "the best recommendation" }
+        { "value": "500+", "label": "International clients", "sublabel": "from over 40 jurisdictions" },
+        { "value": "93%", "label": "Positive outcomes" },
+        { "value": "10+", "label": "Years of practice" },
+        { "value": "85%", "label": "Clients by recommendation" }
       ]
     },
     "testimonials": {
       "section_label": "Client experiences",
-      "headline": "What our clients say",
+      "headline": "Client experiences",
       "items": [
-        { "id": 1, "quote": "\"They moved seven people from three jurisdictions through relocation in a single quarter. What stayed with me was that I never had to ask 'what's next.' Every week, an updated status. For an HR function running five other projects in parallel, that has real value.\"", "author": "T. W.", "role": "CFO", "entity": "industrial components manufacturer" },
-        { "id": 2, "quote": "\"A citizenship recognition matter that I had previously attempted twice on my own. Counsel identified three issues that no one had flagged before. Positive decision in the fourteenth month. Without their precision, I would probably still be trying.\"", "author": "Karol M.", "role": "Lublin", "entity": "" },
-        { "id": 3, "quote": "\"An engagement requiring coordination with our tax practice in Zurich, our immigration counsel in London and the team in Warsaw. I recommend without reservation.\"", "author": "Managing Partner", "role": "family office", "entity": "Switzerland" },
-        { "id": 4, "quote": "\"The first matter where no one promised me anything in the first call. They told me exactly what the risks were, what could be done and how long it would take. That was the moment I knew I had come to the right place.\"", "author": "Yulia K.", "role": "Wrocław", "entity": "" },
-        { "id": 5, "quote": "\"After twenty years of operating in Italy, I decided to move my centre of activity to Poland. The procedure was conducted in full, with communication exclusively in Italian through a dedicated team member. What mattered most: no one told me 'this is how it's done in Poland.' They explained how we would do it in my particular matter.\"", "author": "A. B.", "role": "founder, hotel group", "entity": "Italy" },
-        { "id": 6, "quote": "\"EU Blue Card in seven weeks. My employer said it was the fastest he had seen.\"", "author": "R. P.", "role": "Engineering Director", "entity": "India" },
-        { "id": 7, "quote": "\"After the sale of my business in Asia, I was looking for a neutral, stable European jurisdiction. The team helped me understand why Poland — rather than Portugal or Malta — would be a sensible choice for the coming decade. It was a consultation I will remember.\"", "author": "S. L.", "role": "private investor", "entity": "Singapore" },
-        { "id": 8, "quote": "\"A sensitive matter requiring full discretion. Every condition I requested was observed. I have nothing to add, other than that I have recommended onward.\"", "author": "Private client", "role": "Belarus", "entity": "" },
-        { "id": 9, "quote": "\"We relocated three board members and their families from Frankfurt to Warsaw — nine people, including school-aged children. The team coordinated not only the visa procedures, but also advised on international schools and residential properties. Without their work, the project would have stretched out by six months.\"", "author": "H. K.", "role": "CEO", "entity": "pharmaceutical group, Germany" },
-        { "id": 10, "quote": "\"We collaborate regularly on matters requiring coordination with the U.S. immigration system. The quality of work is comparable to firms we work with in London and Vienna.\"", "author": "Partner", "role": "immigration law firm", "entity": "United States" },
-        { "id": 11, "quote": "\"A difficult matter — very difficult. I received what I had been waiting twenty-seven years for.\"", "author": "Y. D.", "role": "private client", "entity": "Türkiye" },
-        { "id": 12, "quote": "\"Poland is strategic for our fund. The team guided us through immigration processes and integrated them with our holding structure in Luxembourg. The added value was not obvious — and it was material.\"", "author": "Founder", "role": "family fund", "entity": "United Arab Emirates" },
-        { "id": 13, "quote": "\"Forty production workers in a single quarter. Without a single negative decision.\"", "author": "HR Director", "role": "electronics manufacturer", "entity": "Vietnam" },
-        { "id": 14, "quote": "\"Polish immigration procedures are not intuitive to someone accustomed to the Portuguese-language system. They explained everything patiently, twice. Positive decision.\"", "author": "M. S.", "role": "architect", "entity": "Brazil" },
-        { "id": 15, "quote": "\"Three years after the first consultation, the same team is handling my permanent residence proceedings. Continuity of representation is something that cannot be bought after the fact.\"", "author": "J. K.", "role": "private client", "entity": "South Korea" }
+        {
+          "id": 1,
+          "quote": "The Blue Card process is extremely formalized, especially for technical roles. The team handled most of the communication with the authorities and kept the process predictable. That was probably the biggest advantage.",
+          "author": "R. S.",
+          "role": "Engineering Manager",
+          "entity": "India"
+        },
+        {
+          "id": 2,
+          "quote": "In logistics, delays create operational problems very quickly. We needed to relocate several managers and dispatch coordinators to Poland within a limited timeframe. The communication was direct, realistic and business-oriented.",
+          "author": "Operations Director",
+          "role": "Transport & Logistics Sector",
+          "entity": "Pakistan"
+        },
+        {
+          "id": 3,
+          "quote": "Ми перевозили до Польщі частину команди після проблем із документами в іншій країні ЄС. Тут процес був значно більш структурований. Не було постійного хаосу чи зміни позиції кожні два тижні. Просто нормальна, професійна координація.",
+          "author": "Андрій K.",
+          "role": "COO",
+          "entity": "IT-компанія, Україна"
+        },
+        {
+          "id": 4,
+          "quote": "На першій консультації мені одразу сказали, що моя справа не така проста, як мені раніше обіцяли інші юристи. Це було неприємно чути, але принаймні чесно. У результаті саме такий підхід і допоміг уникнути відмови.",
+          "author": "Юлія M.",
+          "role": "приватний клієнт",
+          "entity": "Київ"
+        },
+        {
+          "id": 5,
+          "quote": "Я більше року намагався самостійно вирішити питання громадянства. Проблема виявилася значно меншою, ніж я думав, але потрібно було правильно зібрати і подати документи. Після аудиту справи процес нарешті зрушив.",
+          "author": "Тарас D.",
+          "role": "приватний клієнт",
+          "entity": "Львів"
+        },
+        {
+          "id": 6,
+          "quote": "Для меня критичным вопросом была конфиденциальность. После подписания NDA коммуникация была сведена к необходимому минимуму. Никакой лишней публичности, всё спокойно и профессионально.",
+          "author": "Частный клиент",
+          "role": "Москва",
+          "entity": ""
+        },
+        {
+          "id": 7,
+          "quote": "Przy większej liczbie cudzoziemców problemem nie jest sam urząd, tylko koordynacja całego procesu wewnątrz firmy. Zleciliśmy im przejęcie części spraw i od tego momentu HR przestał gasić pożary związane z legalizacją pobytu.",
+          "author": "Dyrektor HR",
+          "role": "sektor przemysłowy",
+          "entity": "Polska"
+        },
+        {
+          "id": 8,
+          "quote": "Cross-border residency matters are rarely simple when multiple jurisdictions are involved. What we appreciated most was the structured communication and the ability to coordinate legal and administrative aspects without unnecessary escalation.",
+          "author": "Managing Partner",
+          "role": "Family Office",
+          "entity": "Switzerland"
+        },
+        {
+          "id": 9,
+          "quote": "I started working with the Warsaw team several years ago during my temporary residence process. Today they also manage permanent residence matters for members of my family. The continuity of the relationship is something I value highly.",
+          "author": "Private Client",
+          "role": "South Korea",
+          "entity": ""
+        },
+        {
+          "id": 10,
+          "quote": "Opening a business in another country is always more complicated than expected. What I appreciated here was the clarity. They explained early which parts of the process were straightforward and which ones could realistically take longer.",
+          "author": "Founder",
+          "role": "E-commerce Sector",
+          "entity": "Nigeria"
+        },
+        {
+          "id": 11,
+          "quote": "Player mobility across different European jurisdictions involves far more administration than most people realize. We needed support not only with residency matters, but also with coordinating timelines around contracts, travel and federation requirements. The process was handled discreetly and with good operational discipline.",
+          "author": "Football Agent",
+          "role": "Sports Management Sector",
+          "entity": "Ghana"
+        }
       ]
     },
     "client_logos": {
@@ -191,14 +258,18 @@
       "items": []
     },
     "contact": {
-      "section_label": "Contact",
-      "headline": "Let's start a conversation",
-      "subheadline": "Get in touch and find out how we can help you.",
-      "email": "kontakt@pcw.pl",
-      "phone": "+48 22 123 45 67",
+      "section_label": "",
+      "headline": "Contact",
+      "subheadline": "",
+      "labels": {
+        "address": "Registered office",
+        "email": "E-mail",
+        "website": "Website"
+      },
+      "email": "office@centrum-wizowe.pl",
       "address": "ul. Górnośląska 6, suite 1, 00-444 Warsaw, Poland",
-      "hours": "Mon–Fri: 9:00–17:00",
-      "cta": { "label": "Initiate contact", "href": "/konsultacje" },
+      "website": "www.centrum-wizowe.pl",
+      "cta": { "label": "Schedule a consultation", "href": "/konsultacje" },
       "cta_panel_title": "Schedule your first consultation",
       "cta_assurance": "Free initial call · Response within 24 hours"
     }
@@ -357,9 +428,9 @@
       }
     ],
     "contact": {
-      "email": "kontakt@pcw.pl",
-      "phone": "+48 22 123 45 67",
-      "address": "ul. Górnośląska 6, suite 1, 00-444 Warsaw, Poland"
+      "email": "office@centrum-wizowe.pl",
+      "address": "ul. Górnośląska 6, suite 1, 00-444 Warsaw, Poland",
+      "website": "www.centrum-wizowe.pl"
     },
     "registration": {
       "label": "Registration details",

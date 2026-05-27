@@ -93,7 +93,7 @@ export default function GlobalNotFound() {
                   color: "var(--color-white)",
                 }}
               >
-                Inicjuj kontakt
+                Umów konsultację
               </a>
             </div>
           </div>

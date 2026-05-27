@@ -33,12 +33,14 @@ export default function Footer() {
               <a href={`mailto:${footer.contact.email}`} className="block font-sans text-sm transition-opacity duration-150 hover:opacity-80" style={{ color: "rgba(231, 239, 248, 0.88)" }}>
                 {footer.contact.email}
               </a>
-              <a href={`tel:${footer.contact.phone.replace(/\s/g, "")}`} className="block font-sans text-sm transition-opacity duration-150 hover:opacity-80" style={{ color: "rgba(231, 239, 248, 0.88)" }}>
-                {footer.contact.phone}
-              </a>
               <address className="not-italic font-sans text-sm" style={{ color: "rgba(223, 232, 243, 0.68)" }}>
                 {footer.contact.address}
               </address>
+              {footer.contact.website && (
+                <a href={`https://${footer.contact.website}`} className="block font-sans text-sm transition-opacity duration-150 hover:opacity-80" style={{ color: "rgba(231, 239, 248, 0.88)" }}>
+                  {footer.contact.website}
+                </a>
+              )}
             </div>
 
             {footer.registration && (

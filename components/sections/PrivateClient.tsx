@@ -156,16 +156,18 @@ export default function PrivateClient() {
             </div>
 
             {/* Operating mode */}
-            <p
-              className="font-sans text-xs leading-relaxed mb-8 animate-fade-up"
-              style={{
-                color: "rgba(225,233,243,0.36)",
-                letterSpacing: "0.025em",
-                animationDelay: "255ms",
-              }}
-            >
-              {private_client.operating_mode}
-            </p>
+            {private_client.operating_mode && (
+              <p
+                className="font-sans text-xs leading-relaxed mb-8 animate-fade-up"
+                style={{
+                  color: "rgba(225,233,243,0.36)",
+                  letterSpacing: "0.025em",
+                  animationDelay: "255ms",
+                }}
+              >
+                {private_client.operating_mode}
+              </p>
+            )}
 
             {/* Engagement note — serif blockquote */}
             <p

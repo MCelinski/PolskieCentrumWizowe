@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Globe, Mail, MapPin } from "lucide-react";
 import { useLangContent, useLanguage } from "@/contexts/LanguageContext";
 import { localizePath } from "@/lib/i18n";
 import { useInView } from "@/hooks/useInView";
@@ -27,10 +27,9 @@ export default function Contact() {
             />
 
             <div className="mt-10 space-y-6">
-              <ContactDetail icon={Mail} label="E-mail" value={contact.email} href={`mailto:${contact.email}`} delay="100ms" />
-              <ContactDetail icon={Phone} label="Telefon" value={contact.phone} href={`tel:${contact.phone.replace(/\s/g, "")}`} delay="160ms" />
-              <ContactDetail icon={MapPin} label="Adres" value={contact.address} delay="220ms" />
-              <ContactDetail icon={Clock} label="Godziny pracy" value={contact.hours} delay="280ms" />
+              <ContactDetail icon={MapPin} label={contact.labels.address} value={contact.address} delay="100ms" />
+              <ContactDetail icon={Mail} label={contact.labels.email} value={contact.email} href={`mailto:${contact.email}`} delay="160ms" />
+              <ContactDetail icon={Globe} label={contact.labels.website} value={contact.website} href={`https://${contact.website}`} delay="220ms" />
             </div>
           </div>
 

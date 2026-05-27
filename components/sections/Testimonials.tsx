@@ -8,7 +8,7 @@ import ResponsivePicture from "@/components/ui/ResponsivePicture";
 export default function Testimonials() {
   const content = useLangContent();
   const { testimonials } = content.home;
-  const items = testimonials.items.slice(0, 4);
+  const items = testimonials.items;
   const { ref, inView } = useInView(0.12);
 
   const [prevTestimonials, setPrevTestimonials] = useState(testimonials);
