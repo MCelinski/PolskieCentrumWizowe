@@ -1,58 +1,31 @@
-name: Deploy to CyberFolks
+name: Deploy API to CyberFolks
 
 on:
   push:
     branches: [master]
+    paths:
+      - "mail-api/**"
+      - ".github/workflows/deploy-api.yml"
   workflow_dispatch:
 
 concurrency:
-  group: cyberfolks-production
+  group: cyberfolks-api-production
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  deploy-api:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install frontend dependencies
-        run: npm ci
-
-      - name: Validate production config
+      - name: Validate API production config
         run: |
-          test -n "${NEXT_PUBLIC_API_URL}" || (echo "Missing NEXT_PUBLIC_API_URL secret" && exit 1)
-          test -n "${FRONTEND_PATH}" || (echo "Missing FRONTEND_PATH secret" && exit 1)
           test -n "${API_PATH}" || (echo "Missing API_PATH secret" && exit 1)
         env:
-          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
-          FRONTEND_PATH: ${{ secrets.FRONTEND_PATH }}
           API_PATH: ${{ secrets.API_PATH }}
-
-      - name: Build static site
-        run: npm run build
-        env:
-          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
-
-      - name: Upload static files
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          source: "out/*"
-          target: ${{ secrets.FRONTEND_PATH }}
-          strip_components: 1
-          rm: true
 
       - name: Upload API files
         uses: appleboy/scp-action@v0.1.7
@@ -111,4 +84,4 @@ jobs:
             mkdir -p tmp
             touch tmp/restart.txt
 
-            echo "[$(date '+%Y-%m-%d %H:%M:%S')] Deploy OK"
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] API deploy OK"

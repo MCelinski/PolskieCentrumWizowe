@@ -10,6 +10,10 @@ const { buildConfirmationHtml, getConfirmationSubject } = require("./templates/c
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const corsOrigins = (process.env.CORS_ORIGIN || "http://localhost:3000")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
 // ─── Walidacja zmiennych środowiskowych ──────────────────────────────────────
 const required = ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "SMTP_FROM", "CONTACT_EMAIL_TO"];
@@ -25,7 +29,7 @@ app.use(express.json({ limit: "20kb" }));
 
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:3000",
+    origin: corsOrigins,
     methods: ["POST", "OPTIONS"],
   })
 );

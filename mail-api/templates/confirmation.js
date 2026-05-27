@@ -134,7 +134,7 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
                       <tr>
                         <td style="padding-bottom:8px;">
                           <span style="font-family:Arial,sans-serif;font-size:13px;color:${GREY};display:inline-block;width:60px;">Email</span>
-                          <a href="mailto:kontakt@pcw.pl" style="font-family:Arial,sans-serif;font-size:13px;color:${NAVY};text-decoration:none;font-weight:600;">kontakt@pcw.pl</a>
+                          <a href="mailto:office@centrum-wizowe.pl" style="font-family:Arial,sans-serif;font-size:13px;color:${NAVY};text-decoration:none;font-weight:600;">office@centrum-wizowe.pl</a>
                         </td>
                       </tr>
                       <tr>

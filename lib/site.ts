@@ -1,1 +1,1 @@
-export const SITE_URL = "https://polskiecentrumwizowe.pl";
+export const SITE_URL = "https://www.centrum-wizowe.pl";
