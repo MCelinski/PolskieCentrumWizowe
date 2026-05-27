@@ -1,11 +1,26 @@
 {
   "nav": {
-    "logo": { "name": "Polskie Centrum Wizowe", "abbr": "PCW" },
+    "logo": {
+      "name": "Polskie Centrum Wizowe",
+      "abbr": "PCW"
+    },
     "links": [
-      { "label": "O nas", "href": "/#o-nas" },
-      { "label": "Usługi", "href": "/#uslugi" },
-      { "label": "Private Client", "href": "/#private-client" },
-      { "label": "Kontakt", "href": "/#kontakt" }
+      {
+        "label": "O nas",
+        "href": "/#o-nas"
+      },
+      {
+        "label": "Usługi",
+        "href": "/#uslugi"
+      },
+      {
+        "label": "Private Client",
+        "href": "/#private-client"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/#kontakt"
+      }
     ],
     "cta": "Umów konsultację"
   },
@@ -14,8 +29,14 @@
       "eyebrow": "DORADZTWO MIGRACYJNE I GOSPODARCZE",
       "headline": "Strategiczne doradztwo migracyjne dla klientów indywidualnych i korporacyjnych.",
       "subheadline": "Reprezentujemy klientów indywidualnych, inwestorów oraz przedsiębiorstwa w sprawach legalizacji pobytu, obywatelstwa oraz relokacji do Polski. Łączymy ekspertyzę prawną z doradztwem biznesowym, zapewniając najwyższy standard obsługi, pełną poufność oraz strategiczne zarządzanie całym procesem.",
-      "cta_primary": { "label": "Umów konsultację", "href": "/konsultacje" },
-      "cta_secondary": { "label": "Zakres doradztwa", "href": "/#uslugi" },
+      "cta_primary": {
+        "label": "Umów konsultację",
+        "href": "/konsultacje"
+      },
+      "cta_secondary": {
+        "label": "Zakres doradztwa",
+        "href": "/#uslugi"
+      },
       "microcopy": "Poufna analiza sytuacji prawnej i biznesowej."
     },
     "trust_bar": {
@@ -51,70 +72,110 @@
           "id": "doradztwo-gospodarcze-korporacyjne",
           "icon": "building",
           "title": "Doradztwo gospodarcze i korporacyjne",
-          "tags": ["Relokacja biznesu", "Struktury korporacyjne", "Corporate governance"],
+          "tags": [
+            "Relokacja biznesu",
+            "Struktury korporacyjne",
+            "Corporate governance"
+          ],
           "description": "Strategiczne wsparcie dla przedsiębiorców, kadry zarządzającej oraz międzynarodowych podmiotów rozwijających działalność w Polsce. Doradzamy w zakresie tworzenia i reorganizacji struktur biznesowych, relokacji działalności, rejestracji spółek oraz bieżącego ładu korporacyjnego. Łączymy kompetencje prawa handlowego i migracyjnego, zapewniając klientom spójne zarządzanie procesami administracyjnymi, operacyjnymi i biznesowymi. Fundamentem naszej pracy są dyskrecja, bezpieczeństwo operacyjne oraz indywidualne podejście do każdej sprawy."
         },
         {
           "id": "wizy-pracownicze",
           "icon": "briefcase",
           "title": "Wizy pracownicze",
-          "tags": ["Wiza krajowa typu D", "Zezwolenie na pracę", "Procedura konsularna"],
+          "tags": [
+            "Wiza krajowa typu D",
+            "Zezwolenie na pracę",
+            "Procedura konsularna"
+          ],
           "description": "Kompleksowa obsługa procesu wizowego dla cudzoziemców podejmujących zatrudnienie w Polsce. Prowadzimy postępowania o wizę krajową typu D, łącząc je z uzyskaniem zezwolenia na pracę oraz przygotowaniem dokumentacji wymaganej przez konsulat. Zespół koordynuje pracodawcę i pracownika, eliminując ryzyko proceduralne na każdym etapie — od audytu kwalifikowalności po odbiór decyzji."
         },
         {
           "id": "wizy-biznesowe",
           "icon": "building",
           "title": "Wizy biznesowe",
-          "tags": ["Wiza Schengen typu C", "Wiza krajowa typu D", "Delegowanie"],
+          "tags": [
+            "Wiza Schengen typu C",
+            "Wiza krajowa typu D",
+            "Delegowanie"
+          ],
           "description": "Doradztwo wizowe dla przedsiębiorców, kadry zarządzającej i osób delegowanych do Polski. Obsługujemy wizy Schengen typu C oraz krajowe typu D w celach gospodarczych, zarządzamy aspektami formalnymi delegacji oraz koordynujemy procedury z działami HR macierzystych spółek. Pracujemy zarówno z polskimi podmiotami zapraszającymi, jak i z zagranicznymi grupami kapitałowymi."
         },
         {
           "id": "wizy-studenckie",
           "icon": "graduation-cap",
           "title": "Wizy studenckie",
-          "tags": ["Wiza krajowa typu D", "Pobyt czasowy w celu kształcenia", "Przedłużenia"],
+          "tags": [
+            "Wiza krajowa typu D",
+            "Pobyt czasowy w celu kształcenia",
+            "Przedłużenia"
+          ],
           "description": "Wsparcie dla osób podejmujących studia w polskich uczelniach. Prowadzimy postępowania wizowe oraz przygotowujemy klientów do uzyskania zezwolenia na pobyt czasowy w celu kształcenia. Współpracujemy z uczelniami w zakresie wymaganej dokumentacji oraz z konsulatami w zakresie procedur, przejmując całość czynności formalnych."
         },
         {
           "id": "pobyt-czasowy",
           "icon": "home",
           "title": "Zezwolenie na pobyt czasowy",
-          "tags": ["Postępowanie przed wojewodą", "Karta pobytu", "Reprezentacja"],
+          "tags": [
+            "Postępowanie przed wojewodą",
+            "Karta pobytu",
+            "Reprezentacja"
+          ],
           "description": "Postępowanie administracyjne prowadzone przed wojewodą właściwym dla miejsca pobytu cudzoziemca. Obejmuje pełną analizę podstaw prawnych, sporządzenie wniosku, kompletację dokumentacji oraz reprezentację w toku postępowania. Prowadzimy sprawy we wszystkich trybach przewidzianych ustawą: zatrudnienia, prowadzenia działalności gospodarczej, studiów, pobytu z członkiem rodziny obywatela polskiego oraz pozostałych podstaw ustawowych."
         },
         {
           "id": "pobyt-staly",
           "icon": "shield",
           "title": "Zezwolenie na pobyt stały",
-          "tags": ["Karta Polaka", "Małżonek obywatela RP", "Pobyt bezterminowy"],
+          "tags": [
+            "Karta Polaka",
+            "Małżonek obywatela RP",
+            "Pobyt bezterminowy"
+          ],
           "description": "Postępowanie zarezerwowane dla osób spełniających ustawowe przesłanki — między innymi małżonków obywateli polskich, posiadaczy Karty Polaka oraz osób polskiego pochodzenia. Prowadzimy szczegółową analizę uprawnień, kompletujemy dokumentację potwierdzającą podstawę wniosku oraz reprezentujemy klienta przed wojewodą. Konsekwencje praktyczne uzyskanego zezwolenia: pobyt bezterminowy oraz uprawnienie do ubiegania się o obywatelstwo polskie."
         },
         {
           "id": "rezydent-ue",
           "icon": "award",
           "title": "Zezwolenie na pobyt rezydenta długoterminowego UE",
-          "tags": ["Dyrektywa 2003/109/WE", "Mobilność wewnątrz UE", "Wojewoda"],
+          "tags": [
+            "Dyrektywa 2003/109/WE",
+            "Mobilność wewnątrz UE",
+            "Wojewoda"
+          ],
           "description": "Status prawny przewidziany dyrektywą Rady 2003/109/WE, umożliwiający długoterminowy pobyt na terytorium państw członkowskich Unii Europejskiej. Obsługujemy postępowanie w pełnym zakresie: weryfikacja okresu legalnego pobytu, dochodów oraz znajomości języka polskiego, sporządzenie wniosku oraz reprezentacja przed wojewodą. Status otwiera możliwość przeniesienia centrum aktywności życiowej do innego państwa UE w trybie uproszczonym."
         },
         {
           "id": "obywatelstwo",
           "icon": "globe",
           "title": "Obywatelstwo polskie",
-          "tags": ["Nadanie przez Prezydenta RP", "Uznanie przez wojewodę", "Potwierdzenie obywatelstwa"],
+          "tags": [
+            "Nadanie przez Prezydenta RP",
+            "Uznanie przez wojewodę",
+            "Potwierdzenie obywatelstwa"
+          ],
           "description": "Dwa odrębne tryby uzyskania: nadanie obywatelstwa przez Prezydenta Rzeczypospolitej Polskiej oraz uznanie za obywatela polskiego przez wojewodę. Analizujemy ścieżkę optymalną dla danej sytuacji, sporządzamy uzasadnienie wniosku oraz kompletujemy dokumentację potwierdzającą integrację z Rzeczpospolitą. W sprawach złożonych prowadzimy także postępowania o potwierdzenie posiadania obywatelstwa polskiego — istotne w przypadkach historycznych oraz wynikających z linii rodzinnej."
         },
         {
           "id": "pip-sg",
           "icon": "file-check",
           "title": "Reprezentacja przed PIP i Strażą Graniczną",
-          "tags": ["Postępowania kontrolne", "Audyt zgodności", "Odwołania"],
+          "tags": [
+            "Postępowania kontrolne",
+            "Audyt zgodności",
+            "Odwołania"
+          ],
           "description": "Reprezentacja pracodawców i cudzoziemców w postępowaniach kontrolnych prowadzonych przez Państwową Inspekcję Pracy oraz Straż Graniczną. Zakres obejmuje udział w czynnościach kontrolnych, sporządzanie wyjaśnień i zastrzeżeń, reprezentację w postępowaniach mandatowych oraz odwoławczych. Prowadzimy także audyty wewnętrzne weryfikujące zgodność zatrudnienia cudzoziemców z obowiązującymi przepisami — element profilaktyki ryzyk regulacyjnych dla pracodawców o większej skali."
         },
         {
           "id": "zezwolenia-praca",
           "icon": "scale",
           "title": "Zezwolenia na pracę",
-          "tags": ["Typy A–E", "Niebieska Karta UE", "Oświadczenia o powierzeniu"],
+          "tags": [
+            "Typy A–E",
+            "Niebieska Karta UE",
+            "Oświadczenia o powierzeniu"
+          ],
           "description": "Obsługa wszystkich typów zezwoleń na pracę: A, B, C, D oraz E, zezwoleń sezonowych typu S, oświadczeń o powierzeniu wykonywania pracy oraz wniosków w ramach systemu Niebieskiej Karty Unii Europejskiej. Procesy prowadzimy w pełnej koordynacji z pracodawcą, zarządzając obowiązkami wobec wojewody, urzędu pracy oraz organów kontrolnych. Każde postępowanie kończymy raportem zamknięcia z rekomendacjami dla kolejnych zatrudnień."
         }
       ]
@@ -132,7 +193,10 @@
       ],
       "operating_mode": "",
       "engagement_note": "Warunki współpracy oraz struktura zaangażowania ustalane są indywidualnie, po wstępnej analizie potrzeb i założeń klienta.",
-      "cta": { "label": "Umów konsultację", "href": "/konsultacje" }
+      "cta": {
+        "label": "Umów konsultację",
+        "href": "/konsultacje"
+      }
     },
     "process": {
       "section_label": "Jak pracujemy",
@@ -164,10 +228,23 @@
       "section_label": "",
       "headline": "Precyzja mierzona wynikami.",
       "items": [
-        { "value": "500+", "label": "Klientów międzynarodowych", "sublabel": "z ponad 40 jurysdykcji" },
-        { "value": "93%", "label": "Pozytywnych rozstrzygnięć" },
-        { "value": "10+", "label": "Lat praktyki" },
-        { "value": "85%", "label": "Klientów z rekomendacji" }
+        {
+          "value": "500+",
+          "label": "Klientów międzynarodowych",
+          "sublabel": "z ponad 40 jurysdykcji"
+        },
+        {
+          "value": "93%",
+          "label": "Pozytywnych rozstrzygnięć"
+        },
+        {
+          "value": "10+",
+          "label": "Lat praktyki"
+        },
+        {
+          "value": "85%",
+          "label": "Klientów z rekomendacji"
+        }
       ]
     },
     "testimonials": {
@@ -256,20 +333,94 @@
     "client_logos": {
       "section_label": "Zaufali nam",
       "items": [
-        { "src": "/images/logos/afa-agency.webp",  "name": "AFA Agency" },
-        { "src": "/images/logos/atlas-media.webp", "name": "Atlas Media Dom Mediowy" },
-        { "src": "/images/logos/chili-models.webp","name": "Chili Models" },
-        { "src": "/images/logos/habex.webp",       "name": "Habex" },
-        { "src": "/images/logos/mag.webp",         "name": "Monaco Fine Art Gallery" },
-        { "src": "/images/logos/nuorder.webp",     "name": "NuOrder" },
-        { "src": "/images/logos/packaging.webp",   "name": "Reusable Packaging Solutions" },
-        { "src": "/images/logos/u2d2-corp.webp",   "name": "U2D2 Corp" },
-        { "src": "/images/logos/swiss-tree.svg",  "name": "Swiss Tree" },
-        { "src": "/images/logos/phoria.webp",      "name": "phoria" },
-        { "src": "/images/logos/ib.webp",          "name": "Imperial Beauty" },
-        { "src": "/images/logos/woodeczka.webp",  "name": "Woodeczka" },
-        { "src": "/images/logos/wiw.webp",         "name": "WIW" },
-        { "src": "/images/logos/pasimito.webp",    "name": "Pasimito" }
+        {
+          "src": "/images/logos/afa-agency.webp",
+          "name": "AFA Agency"
+        },
+        {
+          "src": "/images/logos/atlas-media.webp",
+          "name": "Atlas Media Dom Mediowy"
+        },
+        {
+          "src": "/images/logos/chili-models.webp",
+          "name": "Chili Models"
+        },
+        {
+          "src": "/images/logos/habex.webp",
+          "name": "Habex"
+        },
+        {
+          "src": "/images/logos/mag.webp",
+          "name": "Monaco Fine Art Gallery"
+        },
+        {
+          "src": "/images/logos/nuorder.webp",
+          "name": "NuOrder"
+        },
+        {
+          "src": "/images/logos/packaging.webp",
+          "name": "Reusable Packaging Solutions"
+        },
+        {
+          "src": "/images/logos/u2d2-corp.webp",
+          "name": "U2D2 Corp"
+        },
+        {
+          "src": "/images/logos/swiss-tree.svg",
+          "name": "Swiss Tree"
+        },
+        {
+          "src": "/images/logos/phoria.webp",
+          "name": "phoria"
+        },
+        {
+          "src": "/images/logos/ib.webp",
+          "name": "Imperial Beauty"
+        },
+        {
+          "src": "/images/logos/woodeczka.webp",
+          "name": "Woodeczka"
+        },
+        {
+          "src": "/images/logos/wiw.webp",
+          "name": "WIW"
+        },
+        {
+          "src": "/images/logos/pasimito.webp",
+          "name": "Pasimito"
+        },
+        {
+          "src": "/images/logos/excelentcook.webp",
+          "name": "Excellent Cook"
+        },
+        {
+          "src": "/images/logos/raumhirsch.webp",
+          "name": "Raumhirsch Furniture"
+        },
+        {
+          "src": "/images/logos/alejadrzew.svg",
+          "name": "Alejadrzew"
+        },
+        {
+          "src": "/images/logos/citygo.svg",
+          "name": "CityGo"
+        },
+        {
+          "src": "/images/logos/ov.svg",
+          "name": "OV"
+        },
+        {
+          "src": "/images/logos/gosia.webp",
+          "name": "Małgorzata Pielichowska Diet Mindfulness"
+        },
+        {
+          "src": "/images/logos/synergies.webp",
+          "name": "Synergies"
+        },
+        {
+          "src": "/images/logos/xr.webp",
+          "name": "Czekoladowy Cukiernia"
+        }
       ]
     },
     "contact": {
@@ -284,7 +435,10 @@
       "email": "office@centrum-wizowe.pl",
       "address": "ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
       "website": "www.centrum-wizowe.pl",
-      "cta": { "label": "Umów konsultację", "href": "/konsultacje" },
+      "cta": {
+        "label": "Umów konsultację",
+        "href": "/konsultacje"
+      },
       "cta_panel_title": "Umów pierwszą rozmowę",
       "cta_assurance": "Pierwsza rozmowa bezpłatna · Odpowiedź w ciągu 24 godzin"
     }
@@ -297,14 +451,35 @@
       "subheadline": "Wybierz formę kontaktu odpowiednią do Twojej sytuacji. Odpowiadamy w ciągu 24 godzin w dni robocze."
     },
     "trust_metrics": [
-      { "value": "24h", "label": "Czas odpowiedzi", "sub": "w dni robocze" },
-      { "value": "500+", "label": "Spraw prowadzonych", "sub": "rocznie" },
-      { "value": "10 lat", "label": "Doświadczenia", "sub": "w prawie migracyjnym" }
+      {
+        "value": "24h",
+        "label": "Czas odpowiedzi",
+        "sub": "w dni robocze"
+      },
+      {
+        "value": "500+",
+        "label": "Spraw prowadzonych",
+        "sub": "rocznie"
+      },
+      {
+        "value": "10 lat",
+        "label": "Doświadczenia",
+        "sub": "w prawie migracyjnym"
+      }
     ],
     "trust_bar": [
-      { "label": "Bezpieczne dane", "description": "Ochrona zgodna z RODO" },
-      { "label": "Odpowiedź w 24h", "description": "W dni robocze" },
-      { "label": "Bez zobowiązań", "description": "Wstępna analiza gratis" }
+      {
+        "label": "Bezpieczne dane",
+        "description": "Ochrona zgodna z RODO"
+      },
+      {
+        "label": "Odpowiedź w 24h",
+        "description": "W dni robocze"
+      },
+      {
+        "label": "Bez zobowiązań",
+        "description": "Wstępna analiza gratis"
+      }
     ],
     "labels": {
       "for_whom": "Dla kogo?",
@@ -324,48 +499,106 @@
         "Jesteś na wczesnym etapie planowania"
       ],
       "whats_next": [
-        { "title": "Analizujemy Twoje dane", "desc": "Sprawdzamy aktualną sytuację prawną i dostępne ścieżki wizowe." },
-        { "title": "Wstępna ocena w 24h", "desc": "Doradca odpisuje z wstępną analizą i rekomendacją następnego kroku." },
-        { "title": "Konsultacja szczegółowa", "desc": "Opcjonalnie umawiamy spotkanie dla omówienia szczegółów sprawy." }
+        {
+          "title": "Analizujemy Twoje dane",
+          "desc": "Sprawdzamy aktualną sytuację prawną i dostępne ścieżki wizowe."
+        },
+        {
+          "title": "Wstępna ocena w 24h",
+          "desc": "Doradca odpisuje z wstępną analizą i rekomendacją następnego kroku."
+        },
+        {
+          "title": "Konsultacja szczegółowa",
+          "desc": "Opcjonalnie umawiamy spotkanie dla omówienia szczegółów sprawy."
+        }
       ],
       "fields": {
-        "email": { "label": "Adres e-mail", "placeholder": "jan@przyklad.pl" },
-        "citizenship": { "label": "Obywatelstwo", "placeholder": "np. Ukraina, Japonia, Indie...", "hint": "Wpisz pełną nazwę kraju, np. Ukraina, Japonia, Indie" },
+        "email": {
+          "label": "Adres e-mail",
+          "placeholder": "jan@przyklad.pl"
+        },
+        "citizenship": {
+          "label": "Obywatelstwo",
+          "placeholder": "np. Ukraina, Japonia, Indie...",
+          "hint": "Wpisz pełną nazwę kraju, np. Ukraina, Japonia, Indie"
+        },
         "purpose": {
           "label": "Cel przyjazdu do Polski",
           "placeholder": "Wybierz cel",
           "hint": "Pomaga nam wybrać właściwą ścieżkę wizową",
           "options": [
-            { "value": "praca", "label": "Praca" },
-            { "value": "biznes", "label": "Biznes / inwestycja" },
-            { "value": "studia", "label": "Studia" },
-            { "value": "rodzina", "label": "Łączenie rodzin" },
-            { "value": "inne", "label": "Inne" }
+            {
+              "value": "praca",
+              "label": "Praca"
+            },
+            {
+              "value": "biznes",
+              "label": "Biznes / inwestycja"
+            },
+            {
+              "value": "studia",
+              "label": "Studia"
+            },
+            {
+              "value": "rodzina",
+              "label": "Łączenie rodzin"
+            },
+            {
+              "value": "inne",
+              "label": "Inne"
+            }
           ]
         },
         "duration": {
           "label": "Planowany czas pobytu",
           "placeholder": "Wybierz okres",
           "options": [
-            { "value": "do_3m", "label": "Do 3 miesięcy" },
-            { "value": "3_6m", "label": "3–6 miesięcy" },
-            { "value": "6_12m", "label": "6–12 miesięcy" },
-            { "value": "powyzej_roku", "label": "Powyżej roku" }
+            {
+              "value": "do_3m",
+              "label": "Do 3 miesięcy"
+            },
+            {
+              "value": "3_6m",
+              "label": "3–6 miesięcy"
+            },
+            {
+              "value": "6_12m",
+              "label": "6–12 miesięcy"
+            },
+            {
+              "value": "powyzej_roku",
+              "label": "Powyżej roku"
+            }
           ]
         },
         "job_offer": {
           "label": "Czy posiada Pan/Pani ofertę pracy w Polsce?",
           "options": [
-            { "value": "tak", "label": "Tak" },
-            { "value": "nie", "label": "Nie" },
-            { "value": "w_trakcie", "label": "W trakcie rozmów" }
+            {
+              "value": "tak",
+              "label": "Tak"
+            },
+            {
+              "value": "nie",
+              "label": "Nie"
+            },
+            {
+              "value": "w_trakcie",
+              "label": "W trakcie rozmów"
+            }
           ]
         },
         "family_in_poland": {
           "label": "Czy ma Pan/Pani rodzinę w Polsce?",
           "options": [
-            { "value": "tak", "label": "Tak" },
-            { "value": "nie", "label": "Nie" }
+            {
+              "value": "tak",
+              "label": "Tak"
+            },
+            {
+              "value": "nie",
+              "label": "Nie"
+            }
           ]
         }
       },
@@ -395,15 +628,37 @@
         "Chcesz porozmawiać zanim wypełnisz formularz"
       ],
       "whats_next": [
-        { "title": "Czytamy Twoją wiadomość", "desc": "Zapoznajemy się z opisem Twojej sytuacji jeszcze tego samego dnia." },
-        { "title": "Doradca skontaktuje się", "desc": "Telefon lub e-mail w ciągu 24 godzin w dni robocze." },
-        { "title": "Ustalamy termin", "desc": "Proponujemy termin spotkania online lub w naszym biurze w Warszawie." }
+        {
+          "title": "Czytamy Twoją wiadomość",
+          "desc": "Zapoznajemy się z opisem Twojej sytuacji jeszcze tego samego dnia."
+        },
+        {
+          "title": "Doradca skontaktuje się",
+          "desc": "Telefon lub e-mail w ciągu 24 godzin w dni robocze."
+        },
+        {
+          "title": "Ustalamy termin",
+          "desc": "Proponujemy termin spotkania online lub w naszym biurze w Warszawie."
+        }
       ],
       "fields": {
-        "name": { "label": "Imię i nazwisko", "placeholder": "Jan Kowalski" },
-        "email": { "label": "Adres e-mail", "placeholder": "jan@przykład.pl" },
-        "phone": { "label": "Numer telefonu", "placeholder": "+48 600 000 000", "helper": "Opcjonalnie — przyspiesza kontakt" },
-        "message": { "label": "Krótki opis sytuacji", "placeholder": "Opisz krótko swoją sytuację i pytania, z którymi chcesz się do nas zgłosić..." }
+        "name": {
+          "label": "Imię i nazwisko",
+          "placeholder": "Jan Kowalski"
+        },
+        "email": {
+          "label": "Adres e-mail",
+          "placeholder": "jan@przykład.pl"
+        },
+        "phone": {
+          "label": "Numer telefonu",
+          "placeholder": "+48 600 000 000",
+          "helper": "Opcjonalnie — przyspiesza kontakt"
+        },
+        "message": {
+          "label": "Krótki opis sytuacji",
+          "placeholder": "Opisz krótko swoją sytuację i pytania, z którymi chcesz się do nas zgłosić..."
+        }
       },
       "submit": "Wyślij zapytanie",
       "disclaimer": "Twoje dane są chronione zgodnie z RODO. Nie udostępniamy ich osobom trzecim.",
@@ -425,20 +680,47 @@
       {
         "title": "Usługi",
         "links": [
-          { "label": "Wizy pracownicze", "href": "/#uslugi" },
-          { "label": "Wizy biznesowe", "href": "/#uslugi" },
-          { "label": "Zezwolenie na pobyt", "href": "/#uslugi" },
-          { "label": "Zezwolenia na pracę", "href": "/#uslugi" },
-          { "label": "Obywatelstwo polskie", "href": "/#uslugi" }
+          {
+            "label": "Wizy pracownicze",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Wizy biznesowe",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Zezwolenie na pobyt",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Zezwolenia na pracę",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Obywatelstwo polskie",
+            "href": "/#uslugi"
+          }
         ]
       },
       {
         "title": "Firma",
         "links": [
-          { "label": "O nas", "href": "/#o-nas" },
-          { "label": "Private Client", "href": "/#private-client" },
-          { "label": "Kontakt", "href": "/#kontakt" },
-          { "label": "Konsultacje", "href": "/konsultacje" }
+          {
+            "label": "O nas",
+            "href": "/#o-nas"
+          },
+          {
+            "label": "Private Client",
+            "href": "/#private-client"
+          },
+          {
+            "label": "Kontakt",
+            "href": "/#kontakt"
+          },
+          {
+            "label": "Konsultacje",
+            "href": "/konsultacje"
+          }
         ]
       }
     ],
@@ -458,8 +740,14 @@
       "disclaimer": "Polskie Centrum Wizowe jest prywatnym podmiotem doradczym. Nie stanowimy organu administracji państwowej Rzeczypospolitej Polskiej.",
       "disclaimer_full": "Polskie Centrum Wizowe jest prywatnym podmiotem gospodarczym świadczącym usługi doradcze na zasadach komercyjnych. Nie jesteśmy organem administracji państwowej Rzeczypospolitej Polskiej, jednostką sektora finansów publicznych ani podmiotem organizacyjnie lub kapitałowo powiązanym ze Skarbem Państwa. Nasze usługi stanowią doradztwo prawno-administracyjne; postępowania w sprawach wiz, zezwoleń na pobyt, zezwoleń na pracę oraz obywatelstwa polskiego prowadzone są przez właściwe organy administracyjne — konsulaty, wojewodów, Urząd do Spraw Cudzoziemców, Prezydenta Rzeczypospolitej Polskiej oraz inne organy upoważnione na mocy przepisów prawa.",
       "links": [
-        { "label": "Polityka prywatności", "href": "/polityka-prywatnosci" },
-        { "label": "Regulamin", "href": "/regulamin" }
+        {
+          "label": "Polityka prywatności",
+          "href": "/polityka-prywatnosci"
+        },
+        {
+          "label": "Regulamin",
+          "href": "/regulamin"
+        }
       ]
     }
   },

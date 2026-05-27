@@ -1,11 +1,26 @@
 {
   "nav": {
-    "logo": { "name": "Polish Visa Centre", "abbr": "PCW" },
-      "links": [
-        { "label": "About", "href": "/#o-nas" },
-      { "label": "Services", "href": "/#uslugi" },
-      { "label": "Private Client", "href": "/#private-client" },
-      { "label": "Contact", "href": "/#kontakt" }
+    "logo": {
+      "name": "Polish Visa Centre",
+      "abbr": "PCW"
+    },
+    "links": [
+      {
+        "label": "About",
+        "href": "/#o-nas"
+      },
+      {
+        "label": "Services",
+        "href": "/#uslugi"
+      },
+      {
+        "label": "Private Client",
+        "href": "/#private-client"
+      },
+      {
+        "label": "Contact",
+        "href": "/#kontakt"
+      }
     ],
     "cta": "Schedule a consultation"
   },
@@ -14,8 +29,14 @@
       "eyebrow": "IMMIGRATION AND CORPORATE ADVISORY",
       "headline": "Strategic immigration advisory for private and corporate clients.",
       "subheadline": "We represent private clients, investors and businesses in matters of residence legalization, citizenship and relocation to Poland. We combine legal expertise with business advisory, ensuring the highest standard of service, full confidentiality and strategic management of the entire process.",
-      "cta_primary": { "label": "Schedule a consultation", "href": "/konsultacje" },
-      "cta_secondary": { "label": "Scope of advisory", "href": "/#uslugi" },
+      "cta_primary": {
+        "label": "Schedule a consultation",
+        "href": "/konsultacje"
+      },
+      "cta_secondary": {
+        "label": "Scope of advisory",
+        "href": "/#uslugi"
+      },
       "microcopy": "Confidential review of legal and business position."
     },
     "trust_bar": {
@@ -51,70 +72,110 @@
           "id": "business-corporate-advisory",
           "icon": "building",
           "title": "Business and corporate advisory",
-          "tags": ["Business relocation", "Corporate structures", "Corporate governance"],
+          "tags": [
+            "Business relocation",
+            "Corporate structures",
+            "Corporate governance"
+          ],
           "description": "Strategic support for entrepreneurs, executives and international entities developing their activities in Poland. We advise on the creation and reorganization of business structures, relocation of operations, registration of companies and ongoing corporate governance. We combine expertise in commercial and immigration law, ensuring clients coherent management of administrative, operational and business processes. The foundation of our work is discretion, operational security and an individual approach to every matter."
         },
         {
           "id": "wizy-pracownicze",
           "icon": "briefcase",
           "title": "Employment visas",
-          "tags": ["National D visa", "Work authorization", "Consular procedure"],
+          "tags": [
+            "National D visa",
+            "Work authorization",
+            "Consular procedure"
+          ],
           "description": "End-to-end handling of visa procedures for foreign nationals taking up employment in Poland. We conduct national D-type visa proceedings together with work authorization and consular documentation. Our team coordinates between employer and employee, eliminating procedural risk at every stage — from eligibility audit to issuance of the decision."
         },
         {
           "id": "wizy-biznesowe",
           "icon": "building",
           "title": "Business visas",
-          "tags": ["Schengen C visa", "National D visa", "Secondment"],
+          "tags": [
+            "Schengen C visa",
+            "National D visa",
+            "Secondment"
+          ],
           "description": "Advisory services for entrepreneurs, executives and individuals seconded to Poland. We handle Schengen C-type and national D-type visas for business purposes, manage the formal aspects of secondment, and coordinate procedures with HR departments of parent entities. We work both with Polish inviting parties and foreign corporate groups."
         },
         {
           "id": "wizy-studenckie",
           "icon": "graduation-cap",
           "title": "Student visas",
-          "tags": ["National D visa", "Temporary residence for education", "Extensions"],
+          "tags": [
+            "National D visa",
+            "Temporary residence for education",
+            "Extensions"
+          ],
           "description": "Support for individuals pursuing studies at Polish universities. We conduct visa proceedings and prepare clients for temporary residence permits for the purpose of education. We coordinate with universities on required documentation and with consulates on procedural matters, taking on the full administrative workload."
         },
         {
           "id": "pobyt-czasowy",
           "icon": "home",
           "title": "Temporary residence permit",
-          "tags": ["Voivode proceedings", "Residence card", "Representation"],
+          "tags": [
+            "Voivode proceedings",
+            "Residence card",
+            "Representation"
+          ],
           "description": "Administrative proceedings before the voivode (regional governor) with jurisdiction over the foreign national's place of residence. We provide full legal analysis of permit grounds, draft the application, compile supporting documentation and represent the client throughout the proceedings. We handle matters under all statutory grounds: employment, business activity, studies, residence with a family member of a Polish national, and other grounds prescribed by law."
         },
         {
           "id": "pobyt-staly",
           "icon": "shield",
           "title": "Permanent residence permit",
-          "tags": ["Pole's Card", "Spouse of Polish citizen", "Indefinite residence"],
+          "tags": [
+            "Pole's Card",
+            "Spouse of Polish citizen",
+            "Indefinite residence"
+          ],
           "description": "Available to individuals meeting statutory criteria — including spouses of Polish citizens, holders of the Pole's Card (Karta Polaka) and persons of Polish origin. We conduct detailed eligibility analysis, compile supporting documentation, and represent the client before the voivode. Practical outcome of a granted permit: indefinite right of residence and eligibility to apply for Polish citizenship."
         },
         {
           "id": "rezydent-ue",
           "icon": "award",
           "title": "EU long-term resident permit",
-          "tags": ["Directive 2003/109/EC", "Intra-EU mobility", "Voivode"],
+          "tags": [
+            "Directive 2003/109/EC",
+            "Intra-EU mobility",
+            "Voivode"
+          ],
           "description": "A status established under Council Directive 2003/109/EC, granting long-term residence rights across EU member states. We handle the full procedure: verification of lawful residence period, income and Polish language proficiency, application drafting and representation before the voivode. The status enables transfer of one's centre of life to another EU member state under a simplified regime."
         },
         {
           "id": "obywatelstwo",
           "icon": "globe",
           "title": "Polish citizenship",
-          "tags": ["Grant by the President", "Recognition by the voivode", "Citizenship confirmation"],
+          "tags": [
+            "Grant by the President",
+            "Recognition by the voivode",
+            "Citizenship confirmation"
+          ],
           "description": "Two distinct procedures: grant of citizenship by the President of the Republic of Poland, and recognition as a Polish citizen by the voivode. We assess the optimal route for each situation, draft the substantive reasoning of the application, and compile evidence of integration with the Republic. In complex cases, we also conduct proceedings confirming existing Polish citizenship — relevant in historical and lineage-based situations."
         },
         {
           "id": "pip-sg",
           "icon": "file-check",
           "title": "Representation before the National Labour Inspectorate and Border Guard",
-          "tags": ["Inspection proceedings", "Compliance audit", "Appeals"],
+          "tags": [
+            "Inspection proceedings",
+            "Compliance audit",
+            "Appeals"
+          ],
           "description": "Representation of employers and foreign nationals in inspection proceedings conducted by the National Labour Inspectorate (Państwowa Inspekcja Pracy / PIP) and the Border Guard (Straż Graniczna). Scope includes attendance during inspections, drafting of written explanations and objections, representation in administrative penalty and appeal proceedings. We also conduct internal compliance audits regarding foreign national employment — a regulatory risk-prevention measure for employers of larger scale."
         },
         {
           "id": "zezwolenia-praca",
           "icon": "scale",
           "title": "Work authorization",
-          "tags": ["Types A–E", "EU Blue Card", "Statements of intent"],
+          "tags": [
+            "Types A–E",
+            "EU Blue Card",
+            "Statements of intent"
+          ],
           "description": "Handling of all work permit types: A, B, C, D and E; seasonal permits type S; statements of intent to entrust work (oświadczenia o powierzeniu); and applications under the EU Blue Card framework. We conduct procedures in full coordination with the employer, managing obligations toward the voivode, the labour office (urząd pracy) and inspection authorities. Every matter is closed with a wrap-up report containing recommendations for subsequent hires."
         }
       ]
@@ -132,7 +193,10 @@
       ],
       "operating_mode": "",
       "engagement_note": "The terms of engagement and structure of fees are determined individually, following an initial analysis of the client's needs and objectives.",
-      "cta": { "label": "Schedule a consultation", "href": "/konsultacje" }
+      "cta": {
+        "label": "Schedule a consultation",
+        "href": "/konsultacje"
+      }
     },
     "process": {
       "section_label": "How we work",
@@ -164,10 +228,23 @@
       "section_label": "",
       "headline": "Precision measured by outcomes.",
       "items": [
-        { "value": "500+", "label": "International clients", "sublabel": "from over 40 jurisdictions" },
-        { "value": "93%", "label": "Positive outcomes" },
-        { "value": "10+", "label": "Years of practice" },
-        { "value": "85%", "label": "Clients by recommendation" }
+        {
+          "value": "500+",
+          "label": "International clients",
+          "sublabel": "from over 40 jurisdictions"
+        },
+        {
+          "value": "93%",
+          "label": "Positive outcomes"
+        },
+        {
+          "value": "10+",
+          "label": "Years of practice"
+        },
+        {
+          "value": "85%",
+          "label": "Clients by recommendation"
+        }
       ]
     },
     "testimonials": {
@@ -256,20 +333,94 @@
     "client_logos": {
       "section_label": "They trusted us",
       "items": [
-        { "src": "/images/logos/afa-agency.webp",  "name": "AFA Agency" },
-        { "src": "/images/logos/atlas-media.webp", "name": "Atlas Media Dom Mediowy" },
-        { "src": "/images/logos/chili-models.webp","name": "Chili Models" },
-        { "src": "/images/logos/habex.webp",       "name": "Habex" },
-        { "src": "/images/logos/mag.webp",         "name": "Monaco Fine Art Gallery" },
-        { "src": "/images/logos/nuorder.webp",     "name": "NuOrder" },
-        { "src": "/images/logos/packaging.webp",   "name": "Reusable Packaging Solutions" },
-        { "src": "/images/logos/u2d2-corp.webp",   "name": "U2D2 Corp" },
-        { "src": "/images/logos/swiss-tree.svg",  "name": "Swiss Tree" },
-        { "src": "/images/logos/phoria.webp",      "name": "phoria" },
-        { "src": "/images/logos/ib.webp",          "name": "Imperial Beauty" },
-        { "src": "/images/logos/woodeczka.webp",  "name": "Woodeczka" },
-        { "src": "/images/logos/wiw.webp",         "name": "WIW" },
-        { "src": "/images/logos/pasimito.webp",    "name": "Pasimito" }
+        {
+          "src": "/images/logos/afa-agency.webp",
+          "name": "AFA Agency"
+        },
+        {
+          "src": "/images/logos/atlas-media.webp",
+          "name": "Atlas Media Dom Mediowy"
+        },
+        {
+          "src": "/images/logos/chili-models.webp",
+          "name": "Chili Models"
+        },
+        {
+          "src": "/images/logos/habex.webp",
+          "name": "Habex"
+        },
+        {
+          "src": "/images/logos/mag.webp",
+          "name": "Monaco Fine Art Gallery"
+        },
+        {
+          "src": "/images/logos/nuorder.webp",
+          "name": "NuOrder"
+        },
+        {
+          "src": "/images/logos/packaging.webp",
+          "name": "Reusable Packaging Solutions"
+        },
+        {
+          "src": "/images/logos/u2d2-corp.webp",
+          "name": "U2D2 Corp"
+        },
+        {
+          "src": "/images/logos/swiss-tree.svg",
+          "name": "Swiss Tree"
+        },
+        {
+          "src": "/images/logos/phoria.webp",
+          "name": "phoria"
+        },
+        {
+          "src": "/images/logos/ib.webp",
+          "name": "Imperial Beauty"
+        },
+        {
+          "src": "/images/logos/woodeczka.webp",
+          "name": "Woodeczka"
+        },
+        {
+          "src": "/images/logos/wiw.webp",
+          "name": "WIW"
+        },
+        {
+          "src": "/images/logos/pasimito.webp",
+          "name": "Pasimito"
+        },
+        {
+          "src": "/images/logos/excelentcook.webp",
+          "name": "Excellent Cook"
+        },
+        {
+          "src": "/images/logos/raumhirsch.webp",
+          "name": "Raumhirsch Furniture"
+        },
+        {
+          "src": "/images/logos/alejadrzew.svg",
+          "name": "Alejadrzew"
+        },
+        {
+          "src": "/images/logos/citygo.svg",
+          "name": "CityGo"
+        },
+        {
+          "src": "/images/logos/ov.svg",
+          "name": "OV"
+        },
+        {
+          "src": "/images/logos/gosia.webp",
+          "name": "Małgorzata Pielichowska Diet Mindfulness"
+        },
+        {
+          "src": "/images/logos/synergies.webp",
+          "name": "Synergies"
+        },
+        {
+          "src": "/images/logos/xr.webp",
+          "name": "Czekoladowy Cukiernia"
+        }
       ]
     },
     "contact": {
@@ -284,7 +435,10 @@
       "email": "office@centrum-wizowe.pl",
       "address": "ul. Górnośląska 6, suite 1, 00-444 Warsaw, Poland",
       "website": "www.centrum-wizowe.pl",
-      "cta": { "label": "Schedule a consultation", "href": "/konsultacje" },
+      "cta": {
+        "label": "Schedule a consultation",
+        "href": "/konsultacje"
+      },
       "cta_panel_title": "Schedule your first consultation",
       "cta_assurance": "Free initial call · Response within 24 hours"
     }
@@ -297,14 +451,35 @@
       "subheadline": "Choose the form of contact appropriate for your situation. We respond within 24 hours on business days."
     },
     "trust_metrics": [
-      { "value": "24h", "label": "Response time", "sub": "on business days" },
-      { "value": "500+", "label": "Cases handled", "sub": "annually" },
-      { "value": "10 yrs", "label": "Experience", "sub": "in immigration law" }
+      {
+        "value": "24h",
+        "label": "Response time",
+        "sub": "on business days"
+      },
+      {
+        "value": "500+",
+        "label": "Cases handled",
+        "sub": "annually"
+      },
+      {
+        "value": "10 yrs",
+        "label": "Experience",
+        "sub": "in immigration law"
+      }
     ],
     "trust_bar": [
-      { "label": "Secure data", "description": "GDPR-compliant protection" },
-      { "label": "24h response", "description": "On business days" },
-      { "label": "No obligation", "description": "Initial analysis free" }
+      {
+        "label": "Secure data",
+        "description": "GDPR-compliant protection"
+      },
+      {
+        "label": "24h response",
+        "description": "On business days"
+      },
+      {
+        "label": "No obligation",
+        "description": "Initial analysis free"
+      }
     ],
     "labels": {
       "for_whom": "Who is it for?",
@@ -324,48 +499,106 @@
         "You're at an early stage of planning"
       ],
       "whats_next": [
-        { "title": "We analyse your data", "desc": "We review the current legal situation and available visa pathways." },
-        { "title": "Preliminary assessment within 24h", "desc": "An adviser replies with a preliminary analysis and recommendation for the next step." },
-        { "title": "Detailed consultation", "desc": "Optionally we arrange a meeting to discuss the details of your case." }
+        {
+          "title": "We analyse your data",
+          "desc": "We review the current legal situation and available visa pathways."
+        },
+        {
+          "title": "Preliminary assessment within 24h",
+          "desc": "An adviser replies with a preliminary analysis and recommendation for the next step."
+        },
+        {
+          "title": "Detailed consultation",
+          "desc": "Optionally we arrange a meeting to discuss the details of your case."
+        }
       ],
       "fields": {
-        "email": { "label": "Email address", "placeholder": "john@example.com" },
-        "citizenship": { "label": "Citizenship", "placeholder": "e.g. Ukraine, Japan, India...", "hint": "Enter full country name, e.g. Ukraine, Japan, India" },
+        "email": {
+          "label": "Email address",
+          "placeholder": "john@example.com"
+        },
+        "citizenship": {
+          "label": "Citizenship",
+          "placeholder": "e.g. Ukraine, Japan, India...",
+          "hint": "Enter full country name, e.g. Ukraine, Japan, India"
+        },
         "purpose": {
           "label": "Purpose of visit to Poland",
           "placeholder": "Select purpose",
           "hint": "Helps us select the right visa pathway",
           "options": [
-            { "value": "praca", "label": "Employment" },
-            { "value": "biznes", "label": "Business / investment" },
-            { "value": "studia", "label": "Studies" },
-            { "value": "rodzina", "label": "Family reunion" },
-            { "value": "inne", "label": "Other" }
+            {
+              "value": "praca",
+              "label": "Employment"
+            },
+            {
+              "value": "biznes",
+              "label": "Business / investment"
+            },
+            {
+              "value": "studia",
+              "label": "Studies"
+            },
+            {
+              "value": "rodzina",
+              "label": "Family reunion"
+            },
+            {
+              "value": "inne",
+              "label": "Other"
+            }
           ]
         },
         "duration": {
           "label": "Planned length of stay",
           "placeholder": "Select period",
           "options": [
-            { "value": "do_3m", "label": "Up to 3 months" },
-            { "value": "3_6m", "label": "3–6 months" },
-            { "value": "6_12m", "label": "6–12 months" },
-            { "value": "powyzej_roku", "label": "Over a year" }
+            {
+              "value": "do_3m",
+              "label": "Up to 3 months"
+            },
+            {
+              "value": "3_6m",
+              "label": "3–6 months"
+            },
+            {
+              "value": "6_12m",
+              "label": "6–12 months"
+            },
+            {
+              "value": "powyzej_roku",
+              "label": "Over a year"
+            }
           ]
         },
         "job_offer": {
           "label": "Do you have a job offer in Poland?",
           "options": [
-            { "value": "tak", "label": "Yes" },
-            { "value": "nie", "label": "No" },
-            { "value": "w_trakcie", "label": "In discussions" }
+            {
+              "value": "tak",
+              "label": "Yes"
+            },
+            {
+              "value": "nie",
+              "label": "No"
+            },
+            {
+              "value": "w_trakcie",
+              "label": "In discussions"
+            }
           ]
         },
         "family_in_poland": {
           "label": "Do you have family in Poland?",
           "options": [
-            { "value": "tak", "label": "Yes" },
-            { "value": "nie", "label": "No" }
+            {
+              "value": "tak",
+              "label": "Yes"
+            },
+            {
+              "value": "nie",
+              "label": "No"
+            }
           ]
         }
       },
@@ -395,15 +628,37 @@
         "You want to talk before filling in a form"
       ],
       "whats_next": [
-        { "title": "We read your message", "desc": "We review your situation description on the same day." },
-        { "title": "An adviser will contact you", "desc": "By phone or email within 24 hours on business days." },
-        { "title": "We schedule a meeting", "desc": "We propose a time for an online meeting or at our Warsaw office." }
+        {
+          "title": "We read your message",
+          "desc": "We review your situation description on the same day."
+        },
+        {
+          "title": "An adviser will contact you",
+          "desc": "By phone or email within 24 hours on business days."
+        },
+        {
+          "title": "We schedule a meeting",
+          "desc": "We propose a time for an online meeting or at our Warsaw office."
+        }
       ],
       "fields": {
-        "name": { "label": "Full name", "placeholder": "John Smith" },
-        "email": { "label": "Email address", "placeholder": "john@example.com" },
-        "phone": { "label": "Phone number", "placeholder": "+48 600 000 000", "helper": "Optional — speeds up contact" },
-        "message": { "label": "Brief description of your situation", "placeholder": "Briefly describe your situation and the questions you would like to discuss..." }
+        "name": {
+          "label": "Full name",
+          "placeholder": "John Smith"
+        },
+        "email": {
+          "label": "Email address",
+          "placeholder": "john@example.com"
+        },
+        "phone": {
+          "label": "Phone number",
+          "placeholder": "+48 600 000 000",
+          "helper": "Optional — speeds up contact"
+        },
+        "message": {
+          "label": "Brief description of your situation",
+          "placeholder": "Briefly describe your situation and the questions you would like to discuss..."
+        }
       },
       "submit": "Send enquiry",
       "disclaimer": "Your data is protected in accordance with GDPR. We do not share it with third parties.",
@@ -424,21 +679,48 @@
     "columns": [
       {
         "title": "Services",
-      "links": [
-        { "label": "Employment visas", "href": "/#uslugi" },
-          { "label": "Business visas", "href": "/#uslugi" },
-          { "label": "Residence permits", "href": "/#uslugi" },
-          { "label": "Work authorization", "href": "/#uslugi" },
-          { "label": "Polish citizenship", "href": "/#uslugi" }
+        "links": [
+          {
+            "label": "Employment visas",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Business visas",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Residence permits",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Work authorization",
+            "href": "/#uslugi"
+          },
+          {
+            "label": "Polish citizenship",
+            "href": "/#uslugi"
+          }
         ]
       },
       {
         "title": "Company",
-      "links": [
-        { "label": "About", "href": "/#o-nas" },
-          { "label": "Private Client", "href": "/#private-client" },
-          { "label": "Contact", "href": "/#kontakt" },
-          { "label": "Consultations", "href": "/konsultacje" }
+        "links": [
+          {
+            "label": "About",
+            "href": "/#o-nas"
+          },
+          {
+            "label": "Private Client",
+            "href": "/#private-client"
+          },
+          {
+            "label": "Contact",
+            "href": "/#kontakt"
+          },
+          {
+            "label": "Consultations",
+            "href": "/konsultacje"
+          }
         ]
       }
     ],
@@ -458,8 +740,14 @@
       "disclaimer": "Polskie Centrum Wizowe is a private advisory firm. We are not a public administration body of the Republic of Poland.",
       "disclaimer_full": "Polskie Centrum Wizowe is a private commercial entity providing advisory services on commercial terms. We are not a public administration body of the Republic of Poland, a unit of the public finance sector, nor an entity organizationally or capital-affiliated with the State Treasury. Our services constitute legal and administrative advisory; proceedings for visas, residence permits, work authorization and Polish citizenship are conducted by the competent administrative authorities — consulates, voivodes, the Office for Foreigners (Urząd do Spraw Cudzoziemców), the President of the Republic of Poland, and other authorities empowered by statute.",
       "links": [
-        { "label": "Privacy Policy", "href": "/polityka-prywatnosci" },
-        { "label": "Terms of Service", "href": "/regulamin" }
+        {
+          "label": "Privacy Policy",
+          "href": "/polityka-prywatnosci"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "/regulamin"
+        }
       ]
     }
   },
