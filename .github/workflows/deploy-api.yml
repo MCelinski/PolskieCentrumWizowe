@@ -78,6 +78,9 @@ jobs:
             if ! command -v npm >/dev/null 2>&1; then
               APP_REL="${PWD#$HOME/}"
               ACTIVATE="$(find "$HOME/nodevenv/$APP_REL" -path "*/bin/activate" -type f 2>/dev/null | sort -V | tail -n 1 || true)"
+              if [ -z "$ACTIVATE" ] && [ -d "$HOME/nodevenv" ]; then
+                ACTIVATE="$(find "$HOME/nodevenv" -path "*/bin/activate" -type f 2>/dev/null | grep -E 'api\.centrum-wizowe\.pl|mail-api' | sort -V | tail -n 1 || true)"
+              fi
               if [ -n "$ACTIVATE" ]; then
                 echo "Activating Node.js virtualenv: $ACTIVATE"
                 . "$ACTIVATE"
@@ -85,7 +88,27 @@ jobs:
             fi
 
             if ! command -v npm >/dev/null 2>&1; then
-              echo "npm command not found. In DirectAdmin, open the Node.js app and copy the 'Enter to virtual environment' command, then add that activation path to deploy-api.yml."
+              for NODE_BIN in \
+                /opt/alt/alt-nodejs20/root/usr/bin \
+                /opt/alt/alt-nodejs22/root/usr/bin \
+                /usr/local/bin \
+                /usr/bin
+              do
+                if [ -x "$NODE_BIN/npm" ]; then
+                  echo "Adding Node.js bin to PATH: $NODE_BIN"
+                  export PATH="$NODE_BIN:$PATH"
+                  break
+                fi
+              done
+            fi
+
+            if ! command -v npm >/dev/null 2>&1; then
+              echo "npm command not found."
+              echo "Debug: HOME=$HOME"
+              echo "Debug: PWD=$PWD"
+              echo "Debug: nodevenv candidates:"
+              find "$HOME/nodevenv" -maxdepth 8 -path "*/bin/activate" -type f 2>/dev/null || true
+              echo "In DirectAdmin, open the Node.js app and copy the 'Enter to virtual environment' command, then add that activation path to deploy-api.yml."
               exit 127
             fi
 
