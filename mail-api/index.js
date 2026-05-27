@@ -138,6 +138,13 @@ const transporter = nodemailer.createTransport({
 });
 
 // ─── Pomocnicze: etykiety pól ─────────────────────────────────────────────────
+const langLabels = {
+  pl: "Polski 🇵🇱",
+  en: "English 🇬🇧",
+  ru: "Русский 🇷🇺",
+  ua: "Українська 🇺🇦",
+};
+
 const purposeLabels = {
   praca: "Praca",
   biznes: "Biznes / inwestycja",
@@ -196,12 +203,14 @@ const contactHandler = async (req, res) => {
   const fields =
     formType === "general"
       ? [
+          { label: "Język klienta", value: langLabels[data.lang] || data.lang },
           { label: "Imię i nazwisko", value: data.name },
           { label: "Adres e-mail", value: data.email },
           { label: "Telefon", value: data.phone || "—" },
           { label: "Wiadomość", value: data.message },
         ]
       : [
+          { label: "Język klienta", value: langLabels[data.lang] || data.lang },
           { label: "Adres e-mail", value: data.email },
           { label: "Obywatelstwo", value: data.citizenship },
           { label: "Cel przyjazdu do Polski", value: purposeLabels[data.purpose] },
@@ -210,10 +219,11 @@ const contactHandler = async (req, res) => {
           { label: "Rodzina w Polsce", value: yesNoLabels[data.family_in_poland] },
         ];
 
+  const langTag = data.lang ? `[${data.lang.toUpperCase()}] ` : "";
   const subject =
     formType === "general"
-      ? `Nowe zgłoszenie — konsultacja ogólna (${data.name})`
-      : `Nowe zgłoszenie — kwalifikacja wizowa (${data.email})`;
+      ? `${langTag}Nowe zgłoszenie — konsultacja ogólna (${data.name})`
+      : `${langTag}Nowe zgłoszenie — kwalifikacja wizowa (${data.email})`;
 
   const siteUrl = process.env.SITE_URL || "http://localhost:3000";
   const logoUrl = process.env.LOGO_URL || `${siteUrl}/logo-footer.svg`;

@@ -43,6 +43,8 @@ export default function ClientLogos() {
 
       {/* ── Scrolling track ─────────────────────────────────────────────── */}
       <div className="logos-marquee-wrap" aria-hidden="true">
+        {/* Gradient edge fades — overlay divs instead of mask-image for GPU perf */}
+        <div className="logos-fade-left" />
         <div className="logos-marquee-track">
           {doubled.map((item, i) => (
             <div key={i} className="logos-logo-item">
@@ -59,6 +61,7 @@ export default function ClientLogos() {
             </div>
           ))}
         </div>
+        <div className="logos-fade-right" />
       </div>
     </section>
   );
