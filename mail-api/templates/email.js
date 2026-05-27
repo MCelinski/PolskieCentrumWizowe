@@ -25,6 +25,30 @@ function row(label, value) {
     </tr>`;
 }
 
+function buildText({ formType, fields, siteUrl, replyTo }) {
+  const isVisa = formType === "visa";
+  const formLabel = isVisa ? "Kwalifikacja wizowa" : "Konsultacja ogólna";
+
+  const fieldLines = fields
+    .filter(({ value }) => value && value !== "—")
+    .map(({ label, value }) => `${label}: ${value}`)
+    .join("\n");
+
+  return [
+    `Nowe zgłoszenie — ${formLabel}`,
+    "",
+    fieldLines,
+    "",
+    replyTo ? `Adres do odpowiedzi: ${replyTo}` : "",
+    "",
+    "---",
+    `Automatyczne zgłoszenie z formularza kontaktowego na stronie ${siteUrl}`,
+  ]
+    .filter((line) => line !== undefined)
+    .join("\n")
+    .trim();
+}
+
 function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
   const isVisa = formType === "visa";
   const formLabel = isVisa ? "Kwalifikacja wizowa" : "Konsultacja ogólna";
@@ -47,7 +71,6 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
       <td align="center">
         <table role="presentation" cellpadding="0" cellspacing="0" width="600" style="max-width:600px;width:100%;">
 
-          <!-- Header -->
           <tr>
             <td style="background:${NAVY};padding:28px 32px;">
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
@@ -62,21 +85,15 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
               </table>
             </td>
           </tr>
-
-          <!-- Red accent line -->
           <tr>
             <td style="background:${RED};height:3px;line-height:3px;font-size:0;">&nbsp;</td>
           </tr>
-
-          <!-- Title -->
           <tr>
             <td style="background:#ffffff;padding:32px 32px 24px;">
               <p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:${RED};">${formLabel}</p>
               <h1 style="margin:0;font-family:Georgia,serif;font-size:26px;font-weight:400;color:${NAVY};line-height:1.2;">Nowe zgłoszenie z formularza</h1>
             </td>
           </tr>
-
-          <!-- Data rows -->
           <tr>
             <td style="background:#ffffff;padding:0 32px 8px;">
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid ${BORDER};border-radius:2px;">
@@ -84,31 +101,11 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
               </table>
             </td>
           </tr>
-
-          <!-- CTA -->
           <tr>
             <td style="background:#ffffff;padding:28px 32px 36px;">
               ${replyTo ? `<a href="mailto:${escapeHtml(replyTo)}" style="display:inline-block;background:${NAVY};color:#ffffff;font-family:Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;padding:14px 28px;">Odpowiedz klientowi</a>` : ""}
             </td>
           </tr>
-
-          <!-- Footer -->
-          <tr>
-            <td style="background:${CREAM};padding:24px 32px;border-top:1px solid ${BORDER};">
-              <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td>
-                    <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:13px;font-weight:600;color:${NAVY};">Polskie Centrum Wizowe</p>
-                    <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:${GREY};">
-                      <a href="${escapeHtml(siteUrl)}" style="color:${GREY};text-decoration:none;">${escapeHtml(siteUrl.replace(/^https?:\/\//, ""))}</a>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- Disclaimer -->
           <tr>
             <td style="padding:16px 32px;">
               <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#9ca3af;line-height:1.6;">
@@ -125,4 +122,4 @@ function buildHtml({ formType, fields, logoUrl, siteUrl, replyTo }) {
 </html>`;
 }
 
-module.exports = { buildHtml };
+module.exports = { buildHtml, buildText };

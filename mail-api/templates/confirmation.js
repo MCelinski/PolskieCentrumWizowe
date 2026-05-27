@@ -73,6 +73,31 @@ const TRANSLATIONS = {
   },
 };
 
+function buildConfirmationText({ formType, name, lang, siteUrl }) {
+  const t = TRANSLATIONS[lang] || TRANSLATIONS.pl;
+  const greeting = name ? t.greetingNamed(name) : t.greetingAnon;
+  const formLabel = t.formLabel[formType] || t.formLabel.general;
+
+  return [
+    greeting,
+    "",
+    t.body1(formLabel).replace(/<strong>/g, "").replace(/<\/strong>/g, ""),
+    "",
+    t.body2,
+    "",
+    "---",
+    t.contactHeader + ":",
+    "Email: office@centrum-wizowe.pl",
+    "Adres: ul. Górnośląska 6 lok. 1, 00-444 Warszawa",
+    t.hours,
+    "",
+    "Polskie Centrum Wizowe",
+    siteUrl,
+    "",
+    t.disclaimer,
+  ].join("\n");
+}
+
 function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
   const t = TRANSLATIONS[lang] || TRANSLATIONS.pl;
   const greeting = name ? t.greetingNamed(escapeHtml(name)) : t.greetingAnon;
@@ -91,7 +116,6 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
       <td align="center">
         <table role="presentation" cellpadding="0" cellspacing="0" width="600" style="max-width:600px;width:100%;">
 
-          <!-- Header -->
           <tr>
             <td style="background:${NAVY};padding:28px 32px;">
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
@@ -106,13 +130,9 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
               </table>
             </td>
           </tr>
-
-          <!-- Red accent line -->
           <tr>
             <td style="background:${RED};height:3px;line-height:3px;font-size:0;">&nbsp;</td>
           </tr>
-
-          <!-- Title -->
           <tr>
             <td style="background:#ffffff;padding:36px 32px 28px;">
               <p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:${RED};">${t.redLabel}</p>
@@ -123,7 +143,6 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
             </td>
           </tr>
 
-          <!-- Contact info block -->
           <tr>
             <td style="background:#ffffff;padding:0 32px 36px;">
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background:${CREAM};border:1px solid ${BORDER};">
@@ -135,12 +154,6 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
                         <td style="padding-bottom:8px;">
                           <span style="font-family:Arial,sans-serif;font-size:13px;color:${GREY};display:inline-block;width:60px;">Email</span>
                           <a href="mailto:office@centrum-wizowe.pl" style="font-family:Arial,sans-serif;font-size:13px;color:${NAVY};text-decoration:none;font-weight:600;">office@centrum-wizowe.pl</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom:8px;">
-                          <span style="font-family:Arial,sans-serif;font-size:13px;color:${GREY};display:inline-block;width:60px;">Telefon</span>
-                          <a href="tel:+48221234567" style="font-family:Arial,sans-serif;font-size:13px;color:${NAVY};text-decoration:none;font-weight:600;">+48 22 123 45 67</a>
                         </td>
                       </tr>
                       <tr>
@@ -161,8 +174,6 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
               </table>
             </td>
           </tr>
-
-          <!-- Footer -->
           <tr>
             <td style="background:${CREAM};padding:24px 32px;border-top:1px solid ${BORDER};">
               <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
@@ -177,8 +188,6 @@ function buildConfirmationHtml({ formType, name, lang, logoUrl, siteUrl }) {
               </table>
             </td>
           </tr>
-
-          <!-- Disclaimer -->
           <tr>
             <td style="padding:16px 32px;">
               <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#9ca3af;line-height:1.6;">
@@ -199,4 +208,4 @@ function getConfirmationSubject(lang) {
   return (TRANSLATIONS[lang] || TRANSLATIONS.pl).subject;
 }
 
-module.exports = { buildConfirmationHtml, getConfirmationSubject };
+module.exports = { buildConfirmationHtml, buildConfirmationText, getConfirmationSubject };

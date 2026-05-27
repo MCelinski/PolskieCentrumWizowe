@@ -5,8 +5,8 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const rateLimit = require("express-rate-limit");
 const { z } = require("zod");
-const { buildHtml } = require("./templates/email");
-const { buildConfirmationHtml, getConfirmationSubject } = require("./templates/confirmation");
+const { buildHtml, buildText } = require("./templates/email");
+const { buildConfirmationHtml, buildConfirmationText, getConfirmationSubject } = require("./templates/confirmation");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -226,6 +226,13 @@ const contactHandler = async (req, res) => {
     replyTo: data.email,
   });
 
+  const text = buildText({
+    formType,
+    fields,
+    siteUrl,
+    replyTo: data.email,
+  });
+
   const confirmationHtml = buildConfirmationHtml({
     formType,
     lang: data.lang,
@@ -234,21 +241,32 @@ const contactHandler = async (req, res) => {
     siteUrl,
   });
 
+  const confirmationText = buildConfirmationText({
+    formType,
+    lang: data.lang,
+    name: formType === "general" ? data.name : undefined,
+    siteUrl,
+  });
+
   const confirmationSubject = getConfirmationSubject(data.lang);
 
   try {
     const [info, confirmationInfo] = await Promise.all([
+      // Notification to office — no Reply-To to avoid FREEMAIL_FORGED_REPLYTO spam trigger.
+      // Client's email is visible in the email body and via the "Odpowiedz klientowi" button.
       transporter.sendMail({
         from: process.env.SMTP_FROM,
         to: process.env.CONTACT_EMAIL_TO,
-        replyTo: data.email,
         subject,
+        text,
         html,
       }),
+      // Confirmation to the form submitter
       transporter.sendMail({
         from: process.env.SMTP_FROM,
         to: data.email,
         subject: confirmationSubject,
+        text: confirmationText,
         html: confirmationHtml,
       }),
     ]);
