@@ -75,6 +75,23 @@ jobs:
               exit 1
             fi
 
+            if ! command -v npm >/dev/null 2>&1; then
+              APP_REL="${PWD#$HOME/}"
+              ACTIVATE="$(find "$HOME/nodevenv/$APP_REL" -path "*/bin/activate" -type f 2>/dev/null | sort -V | tail -n 1 || true)"
+              if [ -n "$ACTIVATE" ]; then
+                echo "Activating Node.js virtualenv: $ACTIVATE"
+                . "$ACTIVATE"
+              fi
+            fi
+
+            if ! command -v npm >/dev/null 2>&1; then
+              echo "npm command not found. In DirectAdmin, open the Node.js app and copy the 'Enter to virtual environment' command, then add that activation path to deploy-api.yml."
+              exit 127
+            fi
+
+            echo "Using node: $(node -v)"
+            echo "Using npm: $(npm -v)"
+
             if [ "$INSTALL_DEPS" = "1" ]; then
               npm ci --omit=dev
             else
